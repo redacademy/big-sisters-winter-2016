@@ -60,7 +60,7 @@ gulp.task('browser-sync', function() {
    ];
 
     browserSync.init(files, {
-        proxy: 'bigsisters.dev',
+        proxy: 'localhost:8888/bigsisters',
     });
 });
 
