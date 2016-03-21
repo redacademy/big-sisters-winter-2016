@@ -559,7 +559,8 @@ a {
 --------------------------------------------------------------*/
 /* Posts and pages */
 .sticky {
-  display: block; }
+  display: block;
+  position: relative; }
 
 .hentry {
   margin: 0 0 1.5em; }
