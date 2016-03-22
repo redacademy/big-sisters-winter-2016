@@ -15,6 +15,30 @@ html {
 
 body {
 	background: $color__background-body; /* Fallback for when there is no custom background color defined. */
+	font-size: $font__basesize;
+}
+
+h1, h2, h3 {
+	font-family: $font__main;
+}
+
+h1 {
+	color: $color__purple-brand;
+	font-size: 2.4rem;
+	font-weight: 700;
+	font-family: $font__main;
+}
+
+h2 {
+	color: $color__deepblue-brand;
+	font-size: 1.8rem;
+	font-weight: 500;
+}
+
+h3 {
+	color: #000;
+	font-size: 1.4rem;
+	font-weight: 500;
 }
 
 blockquote, q {
@@ -29,8 +53,8 @@ blockquote, q {
 hr {
 	background-color: $color__background-hr;
 	border: 0;
-	height: 1px;
-	margin-bottom: $base__space-unit;
+	height: 2px;
+	margin: 0 35px $base__space-unit 35px;
 }
 
 ul, ol {

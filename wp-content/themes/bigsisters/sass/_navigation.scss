@@ -92,6 +92,9 @@ a {
 	.current_page_item > a,
 	.current-menu-item > a,
 	.current_page_ancestor > a {
+		color: $color__orange-brand;
+		padding-bottom: 5px;
+		border-bottom: $border__dashed;
 	}
 }
 

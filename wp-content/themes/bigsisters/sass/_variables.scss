@@ -1,8 +1,17 @@
+
+//Box-Shadow
+
+$shadow__main: 0px 2px 8px #888888;
+
 // Structure
 
 $base__space-unit: 1.5em;
+$margin__outter: 0 10px;
+$padding__inner: 10px;
+$width__mobile: 480px;
 
 // Colors
+//BS color palette
 
 $color__purple-header: #673BB6;
 $color__purple-brand: #663399;
@@ -12,14 +21,12 @@ $color__orange-brand: #FF9933;
 $color__green-brand: #99CC33;
 $color__yellow-brand: #FFCC66;
 $color__dusk-brand: #FF6633;
-
+$color__offwhite-brand: #F0F0F0;
 
 $color__background-body: #fff;
 $color__text-main: #404040;
-
 $color__background-screen: #f1f1f1;
 $color__text-screen: #21759b;
-
 $color__background-hr: #ccc;
 $color__background-pre: #eee;
 $color__background-ins: #fff9c0;
@@ -34,5 +41,10 @@ $color__link-hover: midnightblue;
 $font__main: "Roboto", sans-serif;
 $font__code: Monaco, Consolas, "Andale Mono", "DejaVu Sans Mono", monospace;
 $font__pre: "Courier 10 Pitch", Courier, monospace;
+$font__basesize: 12px;
 $font__line-height-body: 1.5;
 $font__line-height-pre: 1.6;
+
+//Border
+
+$border__dashed: 3px dashed $color__orange-brand;
