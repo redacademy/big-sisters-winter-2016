@@ -44,7 +44,7 @@ input[type="password"],
 input[type="search"],
 textarea {
 	color: #000;
-	border: 1px solid black;
+	border: 1px solid #000;
 	&::placeholder {
 		color: $color__offwhite-brand;
 	}
@@ -58,10 +58,10 @@ input[type="email"],
 input[type="url"],
 input[type="password"],
 input[type="search"] {
-	padding: 3px;
+	padding: 0.25rem;
 }
 
 textarea {
-	padding-left: 3px;
+	padding-left: 0.25rem;
 	width: 100%;
 }

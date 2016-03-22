@@ -18,6 +18,10 @@ body {
 	font-size: $font__basesize;
 }
 
+p {
+	line-height: $font__line-height-body;
+}
+
 h1, h2, h3 {
 	font-family: $font__main;
 }
@@ -53,8 +57,8 @@ blockquote, q {
 hr {
 	background-color: $color__background-hr;
 	border: 0;
-	height: 2px;
-	margin: 0 35px $base__space-unit 35px;
+	height: 0.16rem;
+	margin: 0 2.92rem $base__space-unit 2.92rem;
 }
 
 ul, ol {

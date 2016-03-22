@@ -13,15 +13,6 @@ get_header(); ?>
 		<?php if ( have_posts() ) : ?>
 
 			<header class="page-header">
-				<button class="button-white">Click Me</button>
-				<button class="button-brightblue">Click Me</button>
-				<button class="button-deepblue">Click Me</button>
-				<div class="info-panel">
-					<p>Our Beliefs</p><i class="fa fa-plus-circle"></i>
-				</div>
-				<input type="text" placeholder="Name"/>	
-
-
 				<?php
 					the_archive_title( '<h1 class="page-title">', '</h1>' );
 					the_archive_description( '<div class="taxonomy-description">', '</div>' );

@@ -18,8 +18,8 @@
 	color: #fff;
 	@include font-size(0.83);
 	line-height: 1;
-	width: 100px;
-	height: 30px;
+	width: 8.33rem;
+	height: 2.5rem;
 	text-transform: uppercase;
 }
 
@@ -28,10 +28,10 @@
 	justify-content: space-between;
 	align-items: center;
 	background-color: $color__offwhite-brand;
-	height: 45px;
-	padding: 12px;
+	height: 3.75rem;
+	padding: 1rem;
 	.fa-plus-circle, .fa-plus-circle {
 		color: $color__deepblue-brand;
-		font-size: 30px;
+		font-size: 2.5rem;
 	}
 }
