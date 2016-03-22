@@ -234,7 +234,7 @@ textarea {
   font-family: "Roboto", sans-serif;
   font-size: 16px;
   font-size: 1rem;
-  line-height: 1.5; }
+  line-height: 1.75; }
 
 /* Headings */
 h1, h2, h3, h4, h5, h6 {
@@ -299,6 +299,12 @@ body {
   /* Fallback for when there is no custom background color defined. */
   font-size: 12px; }
 
+.container {
+  padding: 0 2rem; }
+
+p {
+  line-height: 1.75; }
+
 h1, h2, h3 {
   font-family: "Roboto", sans-serif; }
 
@@ -326,8 +332,8 @@ blockquote, q {
 hr {
   background-color: #ccc;
   border: 0;
-  height: 2px;
-  margin: 0 35px 1.5em 35px; }
+  height: 0.16rem;
+  margin: 0 2.92rem 1.5em 2.92rem; }
 
 ul, ol {
   margin: 0 0 1.5em 3em; }
@@ -373,8 +379,8 @@ input[type="submit"] {
   font-size: 13.28px;
   font-size: 0.83rem;
   line-height: 1;
-  width: 100px;
-  height: 30px;
+  width: 8.33rem;
+  height: 2.5rem;
   text-transform: uppercase; }
   button:hover,
   input[type="button"]:hover,
@@ -396,8 +402,8 @@ input[type="submit"] {
   font-size: 13.28px;
   font-size: 0.83rem;
   line-height: 1;
-  width: 100px;
-  height: 30px;
+  width: 8.33rem;
+  height: 2.5rem;
   text-transform: uppercase;
   color: #006699;
   border: 2px solid #006699;
@@ -411,28 +417,10 @@ input[type="submit"] {
   font-size: 13.28px;
   font-size: 0.83rem;
   line-height: 1;
-  width: 100px;
-  height: 30px;
+  width: 8.33rem;
+  height: 2.5rem;
   text-transform: uppercase;
   background-color: #006699; }
-
-.info-panel {
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-justify-content: space-between;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-align-items: center;
-      -ms-flex-align: center;
-          align-items: center;
-  background-color: #F0F0F0;
-  height: 45px;
-  padding: 12px;
-  margin: 0 10px; }
-  .info-panel .fa-plus-circle, .info-panel .fa-plus-circle {
-    color: #006699;
-    font-size: 30px; }
 
 /* Fields */
 input[type="text"],
@@ -442,7 +430,7 @@ input[type="password"],
 input[type="search"],
 textarea {
   color: #000;
-  border: 1px solid black; }
+  border: 1px solid #000; }
   input[type="text"]::-webkit-input-placeholder,
   input[type="email"]::-webkit-input-placeholder,
   input[type="url"]::-webkit-input-placeholder,
@@ -484,10 +472,10 @@ input[type="email"],
 input[type="url"],
 input[type="password"],
 input[type="search"] {
-  padding: 3px; }
+  padding: 0.25rem; }
 
 textarea {
-  padding-left: 3px;
+  padding-left: 0.25rem;
   width: 100%; }
 
 /*--------------------------------------------------------------
@@ -544,7 +532,7 @@ a {
   .main-navigation .current-menu-item > a,
   .main-navigation .current_page_ancestor > a {
     color: #FF9933;
-    padding-bottom: 5px;
+    padding-bottom: 0.42rem;
     border-bottom: 3px dashed #FF9933; }
 
 /* Small menu. */
@@ -757,9 +745,6 @@ object {
 /*--------------------------------------------------------------
 # Footer
 --------------------------------------------------------------*/
-.container {
-  padding: 12px 24px; }
-
 .site-footer {
   font-size: 12px;
   color: #FFF;
