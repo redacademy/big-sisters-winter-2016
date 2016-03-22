@@ -18,6 +18,10 @@ body {
 	font-size: $font__basesize;
 }
 
+.container {
+	padding: 0 2rem;
+}
+
 p {
 	line-height: $font__line-height-body;
 }
