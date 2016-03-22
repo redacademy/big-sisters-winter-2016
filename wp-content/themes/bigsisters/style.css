@@ -303,8 +303,12 @@ body {
   padding: 0 2rem; }
 
 p {
+<<<<<<< HEAD
   line-height: 1.75;
   font-family: "Roboto", sans-serif; }
+=======
+  line-height: 1.75; }
+>>>>>>> footer_refactor
 
 h1, h2, h3 {
   font-family: "Roboto", sans-serif; }
@@ -748,7 +752,6 @@ object {
 --------------------------------------------------------------*/
 .site-footer {
   font-size: 12px;
-  color: #FFF;
   background-color: #663399; }
   .site-footer p {
     margin: 0; }
@@ -762,7 +765,11 @@ object {
           justify-content: space-between;
   -webkit-align-items: flex-start;
       -ms-flex-align: start;
-          align-items: flex-start; }
+          align-items: flex-start;
+  color: #FFF; }
+  .site-info h3 {
+    color: #FFF;
+    margin: 1rem 0 0.5rem; }
 
 .contact {
   display: -webkit-flex;
@@ -774,8 +781,6 @@ object {
   -webkit-flex-direction: column;
       -ms-flex-direction: column;
           flex-direction: column; }
-  .contact h2 {
-    margin: 12px 0 6px; }
   .contact .contact-button {
     color: #FFF;
     text-decoration: none;
@@ -788,7 +793,7 @@ object {
       color: #FFF; }
 
 .address, .phone-fax-email {
-  margin: 6px 0; }
+  margin: 0.5rem 0; }
   .address a, .phone-fax-email a {
     color: #FFF;
     text-decoration: none; }
@@ -798,11 +803,10 @@ object {
     .address a:visited, .phone-fax-email a:visited {
       color: #FFF; }
 
-.follow h2 {
-  margin: 12px 0 6px; }
-
-.follow .social-icons {
-  margin-top: 48px; }
-  .follow .social-icons i {
-    font-size: 20px;
-    padding: 0 6px; }
+.follow {
+  text-align: center; }
+  .follow .social-icons {
+    margin-top: 4rem;
+    font-size: 1.7rem; }
+    .follow .social-icons i {
+      padding: 0 1rem; }
