@@ -30,11 +30,6 @@ input[type="submit"] {
 	background-color: $color__deepblue-brand;
 }
 
-.info-panel {
-	@include info-panel-styles;
-	margin: 0 10px;
-}
-
 /* Fields */
 
 input[type="text"],
