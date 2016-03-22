@@ -753,3 +753,70 @@ object {
 /* Delete after test merge*/
 .class {
   position: relative; }
+
+/*--------------------------------------------------------------
+# Footer
+--------------------------------------------------------------*/
+.container {
+  padding: 12px 24px; }
+
+.site-footer {
+  font-size: 12px;
+  color: #FFF;
+  background-color: #663399; }
+  .site-footer p {
+    margin: 0; }
+
+.site-info {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-align-items: flex-start;
+      -ms-flex-align: start;
+          align-items: flex-start; }
+
+.contact {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column; }
+  .contact h2 {
+    margin: 12px 0 6px; }
+  .contact .contact-button {
+    color: #FFF;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    border: 1.5px solid #FFF; }
+    .contact .contact-button:hover {
+      color: #FFF;
+      text-decoration: underline; }
+    .contact .contact-button:visited {
+      color: #FFF; }
+
+.address, .phone-fax-email {
+  margin: 6px 0; }
+  .address a, .phone-fax-email a {
+    color: #FFF;
+    text-decoration: none; }
+    .address a:hover, .phone-fax-email a:hover {
+      color: #FFF;
+      text-decoration: underline; }
+    .address a:visited, .phone-fax-email a:visited {
+      color: #FFF; }
+
+.follow h2 {
+  margin: 12px 0 6px; }
+
+.follow .social-icons {
+  margin-top: 48px; }
+  .follow .social-icons i {
+    font-size: 20px;
+    padding: 0 6px; }
