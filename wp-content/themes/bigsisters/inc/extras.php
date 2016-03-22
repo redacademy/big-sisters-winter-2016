@@ -20,3 +20,15 @@ function red_starter_body_classes( $classes ) {
 	return $classes;
 }
 add_filter( 'body_class', 'red_starter_body_classes' );
+
+/*
+* filter archive post loops.
+*/
+function lrb_modify_archive_loop( $query ) {
+	if ( is_post_type_archive( array( 'success-story' ) ) && !is_admin() ) {
+		$query->set( 'orderby', 'title' );
+		$query->set( 'order', 'ASC' );
+		$query->set( 'posts_per_page', 12 );
+	}
+}
+add_action('pre_get_posts', 'lrb_modify_archive_loop');
