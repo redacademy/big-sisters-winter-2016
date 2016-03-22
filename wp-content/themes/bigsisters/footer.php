@@ -13,7 +13,7 @@
 				<div class="site-info container">
 
 					<div class="contact">
-						<h2><a href="#" class="contact-button">Contact Us</a></h2>
+						<h3><a href="#" class="contact-button">Contact Us</a></h3>
 						<div class="address">
 							<p>34 E. 12th Avenue</p>
 							<p>Vancouver, BC</p>
@@ -27,7 +27,7 @@
 					</div>
 
 					<div class="follow">
-						<h2>Follow Us:</h2>
+						<h3>Follow Us</h3>
 						<div class="social-icons">
 							<i class="fa fa-facebook"></i>
 							<i class="fa fa-twitter"></i>
