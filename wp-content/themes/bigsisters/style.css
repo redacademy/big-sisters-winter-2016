@@ -303,7 +303,8 @@ body {
   padding: 0 2rem; }
 
 p {
-  line-height: 1.75; }
+  line-height: 1.75;
+  font-family: "Roboto", sans-serif; }
 
 h1, h2, h3 {
   font-family: "Roboto", sans-serif; }
