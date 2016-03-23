@@ -4,7 +4,29 @@
 
 /* Front page */
 
-/* Delete after test merge*/
-.class {
+
+/* Success Stories */
+.stories-copy {
+  text-align: center;
+}
+
+.story-thumb {
+  border: 1px solid #fff;
+  height: 300px;
+  overflow: hidden;
   position: relative;
+  img {
+    left: 50%;
+    max-width: none;
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%) scale(1.25);
+  }
+}
+.story-title, .story-subhead {
+  font-weight: 700;
+  font-size: $font__basesize * 1.75;
+}
+.story-title {
+  color: $color__green-brand;
 }
