@@ -22,7 +22,11 @@ get_header(); ?>
 			<input type="text" placeholder="Email">
 			<input type="email" placeholder="Email">
 			<input type="url" placeholder="Email">
-			<textarea placeholder="Hello">
+			<textarea placeholder="Hello"></textarea>
+
+
+				<button class="button-deepblue">I am a button</button>
+
 		<?php if ( have_posts() ) : ?>
 
 			<?php if ( is_home() && ! is_front_page() ) : ?>

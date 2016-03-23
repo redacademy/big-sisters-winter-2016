@@ -398,6 +398,7 @@ input[type="submit"] {
   border-radius: 20px;
   background: #0BB7FF;
   color: #fff;
+  margin-bottom: 2rem;
   font-size: 13.28px;
   font-size: 0.83rem;
   line-height: 1;
@@ -407,12 +408,19 @@ input[type="submit"] {
   color: #006699;
   border: 2px solid #006699;
   background-color: #fff; }
+  @media (min-width: 1280px) {
+    .button-white {
+      width: 14.25rem;
+      height: 3.65rem;
+      border-radius: 41px;
+      font-size: 18px; } }
 
 .button-deepblue {
   border: none;
   border-radius: 20px;
   background: #0BB7FF;
   color: #fff;
+  margin-bottom: 2rem;
   font-size: 13.28px;
   font-size: 0.83rem;
   line-height: 1;
@@ -420,18 +428,31 @@ input[type="submit"] {
   height: 2.5rem;
   text-transform: uppercase;
   background-color: #006699; }
+  @media (min-width: 1280px) {
+    .button-deepblue {
+      width: 14.25rem;
+      height: 3.65rem;
+      border-radius: 41px;
+      font-size: 18px; } }
 
 .button-brightblue {
   border: none;
   border-radius: 20px;
   background: #0BB7FF;
   color: #fff;
+  margin-bottom: 2rem;
   font-size: 13.28px;
   font-size: 0.83rem;
   line-height: 1;
   width: 8.33rem;
   height: 2.5rem;
   text-transform: uppercase; }
+  @media (min-width: 1280px) {
+    .button-brightblue {
+      width: 14.25rem;
+      height: 3.65rem;
+      border-radius: 41px;
+      font-size: 18px; } }
 
 .panel {
   display: -webkit-flex;
