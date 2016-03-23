@@ -298,6 +298,9 @@ body {
   background: #fff;
   /* Fallback for when there is no custom background color defined. */
   font-size: 12px; }
+  @media (min-width: 1280px) {
+    body {
+      font-size: 20px; } }
 
 .container {
   padding: 0 2rem; }
@@ -373,16 +376,8 @@ table {
 button,
 input[type="button"],
 input[type="submit"] {
-  border: none;
-  border-radius: 20px;
-  background: #0BB7FF;
-  color: #fff;
-  font-size: 13.28px;
-  font-size: 0.83rem;
-  line-height: 1;
-  width: 8.33rem;
-  height: 2.5rem;
-  text-transform: uppercase; }
+  background-color: transparent;
+  border: none; }
   button:hover,
   input[type="button"]:hover,
   input[type="submit"]:hover {
@@ -422,6 +417,18 @@ input[type="submit"] {
   height: 2.5rem;
   text-transform: uppercase;
   background-color: #006699; }
+
+.button-brightblue {
+  border: none;
+  border-radius: 20px;
+  background: #0BB7FF;
+  color: #fff;
+  font-size: 13.28px;
+  font-size: 0.83rem;
+  line-height: 1;
+  width: 8.33rem;
+  height: 2.5rem;
+  text-transform: uppercase; }
 
 /* Fields */
 input[type="text"],

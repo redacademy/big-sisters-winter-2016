@@ -9,6 +9,16 @@ get_header(); ?>
 
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
+
+			<div class="panel">
+				<p>Hello</p>
+				<i class="fa fa-plus-circle"></i>
+			</div>
+			<hr />
+			<input type="text" placeholder="Email">
+			<input type="Email" placeholder="Email">
+			<input type="Search" placeholder="Email">
+			<textarea placeholder="Hello">
 		<?php if ( have_posts() ) : ?>
 
 			<?php if ( is_home() && ! is_front_page() ) : ?>

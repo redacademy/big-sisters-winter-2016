@@ -7,7 +7,8 @@
 button,
 input[type="button"],
 input[type="submit"] {
-	@include button-default-styles;
+	background-color: transparent;
+	border: none; 
 	&:hover {
 		cursor: pointer;
 	}
@@ -28,6 +29,10 @@ input[type="submit"] {
 .button-deepblue {
 	@include button-default-styles;
 	background-color: $color__deepblue-brand;
+}
+
+.button-brightblue {
+	@include button-default-styles;
 }
 
 /* Fields */

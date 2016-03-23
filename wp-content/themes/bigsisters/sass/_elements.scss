@@ -16,6 +16,9 @@ html {
 body {
 	background: $color__background-body; /* Fallback for when there is no custom background color defined. */
 	font-size: $font__basesize;
+	@include desktop {
+		font-size: $font__basesize-desktop;
+	}
 }
 
 .container {
