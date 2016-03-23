@@ -298,6 +298,9 @@ body {
   background: #fff;
   /* Fallback for when there is no custom background color defined. */
   font-size: 12px; }
+  @media (min-width: 1280px) {
+    body {
+      font-size: 20px; } }
 
 .container {
   padding: 0 2rem; }
@@ -333,8 +336,11 @@ blockquote, q {
 hr {
   background-color: #ccc;
   border: 0;
-  height: 0.16rem;
-  margin: 0 2.92rem 1.5em 2.92rem; }
+  height: 0.13rem;
+  margin: 1.5em 2.92rem; }
+  @media (min-width: 1280px) {
+    hr {
+      margin: 1.5em 10rem; } }
 
 ul, ol {
   margin: 0 0 1.5em 3em; }
@@ -373,16 +379,8 @@ table {
 button,
 input[type="button"],
 input[type="submit"] {
-  border: none;
-  border-radius: 20px;
-  background: #0BB7FF;
-  color: #fff;
-  font-size: 13.28px;
-  font-size: 0.83rem;
-  line-height: 1;
-  width: 8.33rem;
-  height: 2.5rem;
-  text-transform: uppercase; }
+  background-color: transparent;
+  border: none; }
   button:hover,
   input[type="button"]:hover,
   input[type="submit"]:hover {
@@ -400,6 +398,7 @@ input[type="submit"] {
   border-radius: 20px;
   background: #0BB7FF;
   color: #fff;
+  margin-bottom: 2rem;
   font-size: 13.28px;
   font-size: 0.83rem;
   line-height: 1;
@@ -409,12 +408,19 @@ input[type="submit"] {
   color: #006699;
   border: 2px solid #006699;
   background-color: #fff; }
+  @media (min-width: 1280px) {
+    .button-white {
+      width: 14.25rem;
+      height: 3.65rem;
+      border-radius: 41px;
+      font-size: 18px; } }
 
 .button-deepblue {
   border: none;
   border-radius: 20px;
   background: #0BB7FF;
   color: #fff;
+  margin-bottom: 2rem;
   font-size: 13.28px;
   font-size: 0.83rem;
   line-height: 1;
@@ -422,6 +428,31 @@ input[type="submit"] {
   height: 2.5rem;
   text-transform: uppercase;
   background-color: #006699; }
+  @media (min-width: 1280px) {
+    .button-deepblue {
+      width: 14.25rem;
+      height: 3.65rem;
+      border-radius: 41px;
+      font-size: 18px; } }
+
+.button-brightblue {
+  border: none;
+  border-radius: 20px;
+  background: #0BB7FF;
+  color: #fff;
+  margin-bottom: 2rem;
+  font-size: 13.28px;
+  font-size: 0.83rem;
+  line-height: 1;
+  width: 8.33rem;
+  height: 2.5rem;
+  text-transform: uppercase; }
+  @media (min-width: 1280px) {
+    .button-brightblue {
+      width: 14.25rem;
+      height: 3.65rem;
+      border-radius: 41px;
+      font-size: 18px; } }
 
 /* Fields */
 input[type="text"],
@@ -430,36 +461,45 @@ input[type="url"],
 input[type="password"],
 input[type="search"],
 textarea {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   color: #000;
-  border: 1px solid #000; }
+  border: 1px solid #000;
+  width: 94vw;
+  padding: 0.25rem 0.25rem 0.25rem 0.75rem;
+  margin: 0 auto 0.83rem auto; }
   input[type="text"]::-webkit-input-placeholder,
   input[type="email"]::-webkit-input-placeholder,
   input[type="url"]::-webkit-input-placeholder,
   input[type="password"]::-webkit-input-placeholder,
   input[type="search"]::-webkit-input-placeholder,
   textarea::-webkit-input-placeholder {
-    color: #F0F0F0; }
+    color: #bdbdbd; }
   input[type="text"]::-moz-placeholder,
   input[type="email"]::-moz-placeholder,
   input[type="url"]::-moz-placeholder,
   input[type="password"]::-moz-placeholder,
   input[type="search"]::-moz-placeholder,
   textarea::-moz-placeholder {
-    color: #F0F0F0; }
+    color: #bdbdbd; }
   input[type="text"]:-ms-input-placeholder,
   input[type="email"]:-ms-input-placeholder,
   input[type="url"]:-ms-input-placeholder,
   input[type="password"]:-ms-input-placeholder,
   input[type="search"]:-ms-input-placeholder,
   textarea:-ms-input-placeholder {
-    color: #F0F0F0; }
+    color: #bdbdbd; }
   input[type="text"]::placeholder,
   input[type="email"]::placeholder,
   input[type="url"]::placeholder,
   input[type="password"]::placeholder,
   input[type="search"]::placeholder,
   textarea::placeholder {
-    color: #F0F0F0; }
+    color: #bdbdbd; }
   input[type="text"]:focus,
   input[type="email"]:focus,
   input[type="url"]:focus,
@@ -467,17 +507,6 @@ textarea {
   input[type="search"]:focus,
   textarea:focus {
     color: #111; }
-
-input[type="text"],
-input[type="email"],
-input[type="url"],
-input[type="password"],
-input[type="search"] {
-  padding: 0.25rem; }
-
-textarea {
-  padding-left: 0.25rem;
-  width: 100%; }
 
 /*--------------------------------------------------------------
 # Navigation
@@ -751,10 +780,21 @@ object {
           align-items: center;
   background-color: #F0F0F0;
   height: 3.75rem;
-  padding: 1rem; }
+  padding: 0 1rem;
+  margin: 0 1rem 1.4rem 1rem;
+  width: 90vw; }
+  @media (min-width: 1280px) {
+    .info-panel-content {
+      margin: 0 auto 2.5rem auto;
+      height: 7rem;
+      width: 1230px;
+      padding: 0 3rem; } }
   .info-panel-content .fa-plus-circle, .info-panel-content .fa-minus-circle {
     color: #006699;
     font-size: 2.5rem; }
+    @media (min-width: 1280px) {
+      .info-panel-content .fa-plus-circle, .info-panel-content .fa-minus-circle {
+        font-size: 4rem; } }
 
 /* Success Stories */
 .stories-copy {

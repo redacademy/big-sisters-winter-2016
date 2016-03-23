@@ -1,3 +1,15 @@
+@mixin mobile {
+	@media (min-width: $mobile-width) {
+		@content;
+	}
+}
+
+@mixin desktop {
+	@media (min-width: $desktop-width) {
+		@content;
+	}
+}
+
 // Rem output with px fallback
 @mixin font-size($sizeValue: 1) {
 	font-size: ($sizeValue * 16) * 1px;
@@ -16,11 +28,18 @@
 	border-radius: 20px;
 	background: $color__brightblue-brand;
 	color: #fff;
+	margin-bottom: 2rem;
 	@include font-size(0.83);
 	line-height: 1;
 	width: 8.33rem;
 	height: 2.5rem;
 	text-transform: uppercase;
+	@include desktop {
+		width: 14.25rem;
+		height: 3.65rem;
+		border-radius: 41px;
+		font-size: 18px;
+	}
 }
 
 @mixin info-panel-styles {
@@ -29,21 +48,20 @@
 	align-items: center;
 	background-color: $color__offwhite-brand;
 	height: 3.75rem;
-	padding: 1rem;
+	padding: 0 1rem;
+	margin: 0 1rem 1.4rem 1rem;
+	width: 90vw;
+	@include desktop {
+		margin: 0 auto 2.5rem auto;
+		height: 7rem;
+		width: 1230px;
+		padding: 0 3rem;
+	}
 	.fa-plus-circle, .fa-minus-circle {
 		color: $color__deepblue-brand;
 		font-size: 2.5rem;
-	}
-}
-
-@mixin mobile {
-	@media (min-width: $mobile-width) {
-		@content;
-	}
-}
-
-@mixin desktop {
-	@media (min-width: $desktop-width) {
-		@content;
+		@include desktop {
+			font-size: 4rem;
+		}
 	}
 }

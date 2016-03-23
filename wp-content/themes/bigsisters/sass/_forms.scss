@@ -7,7 +7,8 @@
 button,
 input[type="button"],
 input[type="submit"] {
-	@include button-default-styles;
+	background-color: transparent;
+	border: none;
 	&:hover {
 		cursor: pointer;
 	}
@@ -30,6 +31,10 @@ input[type="submit"] {
 	background-color: $color__deepblue-brand;
 }
 
+.button-brightblue {
+	@include button-default-styles;
+}
+
 /* Fields */
 
 input[type="text"],
@@ -38,25 +43,17 @@ input[type="url"],
 input[type="password"],
 input[type="search"],
 textarea {
+	display: flex;
+	justify-content: center;
 	color: #000;
 	border: 1px solid #000;
+	width: 94vw;
+	padding: 0.25rem 0.25rem 0.25rem 0.75rem;
+	margin: 0 auto 0.83rem auto;
 	&::placeholder {
-		color: $color__offwhite-brand;
+		color: darken($color__offwhite-brand, 20%);
 	}
 	&:focus {
 		color: #111;
 	}
-}
-
-input[type="text"],
-input[type="email"],
-input[type="url"],
-input[type="password"],
-input[type="search"] {
-	padding: 0.25rem;
-}
-
-textarea {
-	padding-left: 0.25rem;
-	width: 100%;
 }
