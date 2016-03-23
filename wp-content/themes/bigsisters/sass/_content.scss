@@ -4,6 +4,13 @@
 
 /* Posts and pages */
 
+.site-content {
+	margin-top: 26px;
+	@include desktop {
+		margin-top: 80px;
+	}
+}
+
 .sticky {
 	display: block;
 	position: relative; //remove after test!
@@ -32,6 +39,8 @@
 	clear: both;
 	margin: 0 0 $base__space-unit;
 }
+
+
 
 /* Asides */
 

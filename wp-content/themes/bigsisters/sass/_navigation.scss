@@ -98,6 +98,38 @@ a {
 	}
 }
 
+.main-navigation {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: $color__purple-header;
+    height: 4.5rem;
+    padding: 10px 10px 0 10px;
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+    @include desktop {
+        height: 7rem;
+		padding: 10px 20px 0 20px;
+    }
+}
+
+.logo-wrap {
+    width: 140px;
+	@include desktop {
+		width: 200px;
+
+	}
+
+    a {
+        outline: none;
+    }
+    img {
+        width: 100%;
+    }
+}
+
 /* Small menu. */
 .menu-toggle,
 .main-navigation.toggled ul {

@@ -372,16 +372,6 @@ table {
   margin: 0 0 1.5em;
   width: 100%; }
 
-.site-header {
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-justify-content: space-between;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  background-color: #673BB6;
-  height: 4.5rem; }
-
 /*--------------------------------------------------------------
 # Forms
 --------------------------------------------------------------*/
@@ -575,6 +565,38 @@ a {
     padding-bottom: 0.42rem;
     border-bottom: 3px dashed #FF9933; }
 
+.main-navigation {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #673BB6;
+  height: 4.5rem;
+  padding: 10px 10px 0 10px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0; }
+  @media (min-width: 1280px) {
+    .main-navigation {
+      height: 7rem;
+      padding: 10px 20px 0 20px; } }
+
+.logo-wrap {
+  width: 140px; }
+  @media (min-width: 1280px) {
+    .logo-wrap {
+      width: 200px; } }
+  .logo-wrap a {
+    outline: none; }
+  .logo-wrap img {
+    width: 100%; }
+
 /* Small menu. */
 .menu-toggle,
 .main-navigation.toggled ul {
@@ -679,6 +701,12 @@ a {
 # Content
 --------------------------------------------------------------*/
 /* Posts and pages */
+.site-content {
+  margin-top: 26px; }
+  @media (min-width: 1280px) {
+    .site-content {
+      margin-top: 80px; } }
+
 .sticky {
   display: block;
   position: relative; }
