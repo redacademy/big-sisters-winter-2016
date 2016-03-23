@@ -303,12 +303,8 @@ body {
   padding: 0 2rem; }
 
 p {
-<<<<<<< HEAD
   line-height: 1.75;
   font-family: "Roboto", sans-serif; }
-=======
-  line-height: 1.75; }
->>>>>>> footer_refactor
 
 h1, h2, h3 {
   font-family: "Roboto", sans-serif; }
