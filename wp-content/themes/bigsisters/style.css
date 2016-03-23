@@ -739,6 +739,7 @@ object {
 # Page Templates
 --------------------------------------------------------------*/
 /* Front page */
+<<<<<<< HEAD
 .info-panel-content {
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -758,7 +759,31 @@ object {
 
 /* Delete after test merge*/
 .class {
+=======
+/* Success Stories */
+.stories-copy {
+  text-align: center; }
+
+.story-thumb {
+  border: 1px solid #fff;
+  height: 300px;
+  overflow: hidden;
+>>>>>>> success-stories
   position: relative; }
+  .story-thumb img {
+    left: 50%;
+    max-width: none;
+    position: absolute;
+    top: 50%;
+    -webkit-transform: translate(-50%, -50%) scale(1.25);
+            transform: translate(-50%, -50%) scale(1.25); }
+
+.story-title, .story-subhead {
+  font-weight: 700;
+  font-size: 21px; }
+
+.story-title {
+  color: #99CC33; }
 
 /*--------------------------------------------------------------
 # Footer

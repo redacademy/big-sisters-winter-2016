@@ -96,6 +96,18 @@ function red_starter_scripts() {
 }
 add_action( 'wp_enqueue_scripts', 'red_starter_scripts' );
 
+function bigsisters_archive_title($title) {
+    if (is_post_type_archive( array('story'))) {
+        $title = 'Success Stories';
+    }
+    // elseif ( is_tax('product_type')) {
+    // $term = get_term_by( 'slug', get_query_var( 'term' ), get_query_var( 'taxonomy' ) );
+    //     $title = $term->name;
+    // }
+    return $title;
+}
+add_filter('get_the_archive_title', 'bigsisters_archive_title');
+
 /**
  * Custom template tags for this theme.
  */
