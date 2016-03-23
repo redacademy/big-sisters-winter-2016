@@ -3,7 +3,9 @@
 --------------------------------------------------------------*/
 
 /* Front page */
-
+.info-panel-content {
+  @include info-panel-styles
+}
 /* Delete after test merge*/
 .class {
   position: relative;

@@ -303,12 +303,8 @@ body {
   padding: 0 2rem; }
 
 p {
-<<<<<<< HEAD
   line-height: 1.75;
   font-family: "Roboto", sans-serif; }
-=======
-  line-height: 1.75; }
->>>>>>> footer_refactor
 
 h1, h2, h3 {
   font-family: "Roboto", sans-serif; }
@@ -743,6 +739,23 @@ object {
 # Page Templates
 --------------------------------------------------------------*/
 /* Front page */
+.info-panel-content {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #F0F0F0;
+  height: 3.75rem;
+  padding: 1rem; }
+  .info-panel-content .fa-plus-circle, .info-panel-content .fa-minus-circle {
+    color: #006699;
+    font-size: 2.5rem; }
+
 /* Delete after test merge*/
 .class {
   position: relative; }
