@@ -35,3 +35,15 @@
 		font-size: 2.5rem;
 	}
 }
+
+@mixin mobile {
+	@media (min-width: $mobile-width) {
+		@content;
+	}
+}
+
+@mixin desktop {
+	@media (min-width: $desktop-width) {
+		@content;
+	}
+}
