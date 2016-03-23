@@ -336,8 +336,11 @@ blockquote, q {
 hr {
   background-color: #ccc;
   border: 0;
-  height: 0.16rem;
-  margin: 0 2.92rem 1.5em 2.92rem; }
+  height: 0.13rem;
+  margin: 1.5em 2.92rem; }
+  @media (min-width: 1280px) {
+    hr {
+      margin: 1.5em 10rem; } }
 
 ul, ol {
   margin: 0 0 1.5em 3em; }

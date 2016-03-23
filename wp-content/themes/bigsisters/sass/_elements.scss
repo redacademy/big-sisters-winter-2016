@@ -65,8 +65,11 @@ blockquote, q {
 hr {
 	background-color: $color__background-hr;
 	border: 0;
-	height: 0.16rem;
-	margin: 0 2.92rem $base__space-unit 2.92rem;
+	height: 0.13rem;
+	margin: $base__space-unit 2.92rem;
+	@include desktop {
+		margin: $base__space-unit 10rem; 
+	}
 }
 
 ul, ol {
