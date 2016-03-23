@@ -739,7 +739,6 @@ object {
 # Page Templates
 --------------------------------------------------------------*/
 /* Front page */
-<<<<<<< HEAD
 .info-panel-content {
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -757,9 +756,6 @@ object {
     color: #006699;
     font-size: 2.5rem; }
 
-/* Delete after test merge*/
-.class {
-=======
 /* Success Stories */
 .stories-copy {
   text-align: center; }
@@ -768,7 +764,6 @@ object {
   border: 1px solid #fff;
   height: 300px;
   overflow: hidden;
->>>>>>> success-stories
   position: relative; }
   .story-thumb img {
     left: 50%;

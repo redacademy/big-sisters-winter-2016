@@ -3,14 +3,9 @@
 --------------------------------------------------------------*/
 
 /* Front page */
-<<<<<<< HEAD
 .info-panel-content {
   @include info-panel-styles
 }
-/* Delete after test merge*/
-.class {
-=======
-
 
 /* Success Stories */
 .stories-copy {
@@ -21,7 +16,6 @@
   border: 1px solid #fff;
   height: 300px;
   overflow: hidden;
->>>>>>> success-stories
   position: relative;
   img {
     left: 50%;
