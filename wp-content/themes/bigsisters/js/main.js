@@ -1,20 +1,4 @@
 // /* Slide up/down Menus Funciton */
-//
-// jQuery(document).ready(function($){
-//   jQuery('.show-hide-container').hide();
-//   jQuery('.info-panel-content').on('click', function(event){
-//
-//     if( $('.show-hide-container').is(':visible') ){
-//
-//       $('.show-hide-container').slideUp();
-//
-//     }else{
-//
-//       $('.show-hide-container').slideDown();
-//     }
-//
-//   });
-// });
 
 jQuery(document).ready(function(){
   jQuery('.acr-box-content').hide();
