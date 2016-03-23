@@ -14,6 +14,10 @@ get_header(); ?>
 				<p>Hello</p>
 				<i class="fa fa-plus-circle"></i>
 			</div>
+			<div class="panel">
+				<p>Hello</p>
+				<i class="fa fa-plus-circle"></i>
+			</div>
 			<hr />
 			<input type="text" placeholder="Email">
 			<input type="Email" placeholder="Email">

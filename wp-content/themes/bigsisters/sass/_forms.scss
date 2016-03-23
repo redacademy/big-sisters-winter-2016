@@ -8,7 +8,7 @@ button,
 input[type="button"],
 input[type="submit"] {
 	background-color: transparent;
-	border: none; 
+	border: none;
 	&:hover {
 		cursor: pointer;
 	}
@@ -35,6 +35,12 @@ input[type="submit"] {
 	@include button-default-styles;
 }
 
+.panel {
+	@include info-panel-styles
+	p {
+		color: #000;
+	}
+}
 /* Fields */
 
 input[type="text"],

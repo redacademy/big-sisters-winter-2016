@@ -430,6 +430,35 @@ input[type="submit"] {
   height: 2.5rem;
   text-transform: uppercase; }
 
+.panel {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #F0F0F0;
+  height: 3.75rem;
+  padding: 0 1rem;
+  margin: 0 0.83rem 1.4rem 0.83rem; }
+  @media (min-width: 1280px) {
+    .panel {
+      margin: 0 auto 2.5rem auto;
+      height: 7rem;
+      width: 1230px;
+      padding: 0 3rem; } }
+  .panel .fa-plus-circle, .panel .fa-minus-circle {
+    color: #006699;
+    font-size: 2.5rem; }
+    @media (min-width: 1280px) {
+      .panel .fa-plus-circle, .panel .fa-minus-circle {
+        font-size: 4rem; } }
+  .panel p {
+    color: #000; }
+
 /* Fields */
 input[type="text"],
 input[type="email"],

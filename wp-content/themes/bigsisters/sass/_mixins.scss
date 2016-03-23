@@ -42,9 +42,18 @@
 	background-color: $color__offwhite-brand;
 	height: 3.75rem;
 	padding: 0 1rem;
-	margin: 0 0.83rem 1.67rem 0.83rem;
+	margin: 0 0.83rem 1.4rem 0.83rem;
+	@include desktop {
+		margin: 0 auto 2.5rem auto;
+		height: 7rem;
+		width: 1230px;
+		padding: 0 3rem;
+	}
 	.fa-plus-circle, .fa-minus-circle {
 		color: $color__deepblue-brand;
 		font-size: 2.5rem;
+		@include desktop {
+			font-size: 4rem;
+		}
 	}
 }
