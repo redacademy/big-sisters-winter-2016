@@ -467,7 +467,8 @@ input[type="submit"] {
   background-color: #F0F0F0;
   height: 3.75rem;
   padding: 0 1rem;
-  margin: 0 0.83rem 1.4rem 0.83rem; }
+  margin: 0 1rem 1.4rem 1rem;
+  width: 90vw; }
   @media (min-width: 1280px) {
     .panel {
       margin: 0 auto 2.5rem auto;
