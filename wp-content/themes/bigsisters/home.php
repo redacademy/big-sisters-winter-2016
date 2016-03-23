@@ -20,8 +20,8 @@ get_header(); ?>
 			</div>
 			<hr />
 			<input type="text" placeholder="Email">
-			<input type="Email" placeholder="Email">
-			<input type="Search" placeholder="Email">
+			<input type="email" placeholder="Email">
+			<input type="url" placeholder="Email">
 			<textarea placeholder="Hello">
 		<?php if ( have_posts() ) : ?>
 
