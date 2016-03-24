@@ -303,10 +303,10 @@ body {
       font-size: 20px; } }
 
 .site-content {
-  margin-top: 73px; }
+  margin-top: 72px; }
   @media (min-width: 1280px) {
     .site-content {
-      margin-top: 113px; } }
+      margin-top: 112px; } }
 
 .container {
   padding: 0 2rem; }
@@ -536,6 +536,17 @@ a {
 .sub-menu a {
   text-transform: capitalize; }
 
+.menu-main-menu-container {
+  width: 600px; }
+
+.menu {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center; }
+
 .main-navigation {
   clear: both;
   display: block;
@@ -578,9 +589,9 @@ a {
     border-bottom: 3px dashed #FF9933; }
 
 .main-navigation {
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
+  display: -webkit-flex !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
   -webkit-justify-content: space-between;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -589,6 +600,7 @@ a {
           align-items: center;
   background-color: #673BB6;
   height: 4.5rem;
+  width: 100vw;
   padding: 10px 10px 0 10px;
   position: fixed;
   top: 0;
@@ -596,18 +608,34 @@ a {
   right: 0; }
   @media (min-width: 1280px) {
     .main-navigation {
-      height: 7rem;
-      padding: 10px 20px 0 20px; } }
+      height: 7rem; } }
+
+.menu-main-menu-container {
+  width: 630px; }
+  .menu-main-menu-container .menu-item-106 {
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center; }
+
+.main-navigation a {
+  padding: 0 1.75rem;
+  color: #fff;
+  font-size: 18px;
+  text-transform: uppercase; }
 
 .logo-wrap {
-  width: 140px; }
-  @media (min-width: 1280px) {
-    .logo-wrap {
-      width: 200px; } }
+  max-width: 23.3rem;
+  margin-left: 10px; }
   .logo-wrap a {
-    outline: none; }
+    padding: 0; }
   .logo-wrap img {
     width: 100%; }
+  @media (min-width: 1280px) {
+    .logo-wrap {
+      width: 10rem; } }
 
 /* Small menu. */
 .menu-toggle,
