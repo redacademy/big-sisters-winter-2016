@@ -3,8 +3,47 @@
 --------------------------------------------------------------*/
 
 /* Front page */
-.info-panel-content {
-  @include info-panel-styles
+.hero-slider ul {
+    list-style-type: none;
+    margin-left: 0;
+    padding-left: 0;
+    li {
+        height: 263px;
+        p {
+            padding: 10px;
+            line-height: 24px;
+            width: 275px;
+        }
+    }
+    li:first-child {
+        background: url("../../assets/images/hero-images/hero-front.jpg") no-repeat;
+        background-size: 100vw;
+
+    }
+    li:nth-child(2) {
+        background: url("../../assets/images/hero-images/hero-big-little-snow.jpg") no-repeat;
+        background-size: 100vw;
+
+    }
+    li:nth-child(3) {
+        background: url("../../assets/images/hero-images/hero-big-little-power.jpg") no-repeat;
+        background-size: 100vw;
+
+    }
+
+}
+
+.bigsister-hero-fp {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 30px;
+    .hero-quote {
+        color: #fff;
+        background-color: rgba(100, 100, 100, 0.4);
+        font-size: 20px;
+
+    }
 }
 
 /* Success Stories */
