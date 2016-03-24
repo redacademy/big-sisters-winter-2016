@@ -32,3 +32,25 @@
 .story-title {
   color: $color__green-brand;
 }
+
+/* Refer A Little Page -------------------------------------------------*/
+
+.refer-title, .enroll-title, .study-buddy-title{
+  text-align: center;
+}
+
+.enroll-title, .study-buddy-title, .step-color {
+  color: #663399;
+}
+
+ul {
+  padding: 0 0;
+}
+
+.step-color {
+  font-weight: bold;
+}
+
+.steps-button {
+  margin: 0 auto 2rem 6rem;
+}
