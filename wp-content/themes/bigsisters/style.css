@@ -907,6 +907,59 @@ object {
       -ms-flex-align: center;
           align-items: center; }
 
+.initiative-block {
+  width: 100%;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-flex-flow: column;
+      -ms-flex-flow: column;
+          flex-flow: column; }
+
+.initiative-logo {
+  background: #fff;
+  border: solid 4px #aaa;
+  border-radius: 50%;
+  height: 12rem;
+  width: 12rem;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center; }
+
+.initiative-cta {
+  box-shadow: 0 2px 4px #646464;
+  font-size: 1.7rem;
+  height: 25rem;
+  padding-top: 6.5rem;
+  position: relative;
+  top: -6rem;
+  width: 25rem;
+  z-index: -1; }
+  .initiative-cta h2, .initiative-cta p {
+    color: #fff;
+    line-height: 1.25; }
+
+.big-sister-mentor {
+  background-color: #006699; }
+
+.study-buddy-mentor {
+  background-color: #FF6633; }
+
+.go-girls-mentor {
+  background-color: #FF9933; }
+
 /*--------------------------------------------------------------
 # Footer
 --------------------------------------------------------------*/
