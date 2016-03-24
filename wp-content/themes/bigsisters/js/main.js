@@ -2,18 +2,16 @@
 (function($) {
 
   $('.acr-box-content').hide();
-  // jQuery('info-panel-content').addClass('active');
 
   $('.info-panel-content').click(function(){
-    $('.acr-box-content').slideUp();
-    $('.info-panel-content .fa').attr('class', 'fa fa-minus-circle');
-    // jQuery('info-panel-content').removeClass('active');
+    // $('.acr-box-content').slideUp();
+    var currentText = $(this).text();
+    $(this).html(currentText+'<i class="fa fa-minus-circle"></i>');
     if($(this).next().is(':visible')){
+      $(this).html(currentText+'<i class="fa fa-plus-circle"></i>');
       $(this).next().slideUp();
-      $('.info-panel-content .fa').attr('class', 'fa fa-plus-circle');
     }else{
       $(this).next().slideDown();
-
     }
   });
 
