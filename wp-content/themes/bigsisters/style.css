@@ -970,3 +970,117 @@ object {
     font-size: 1.7rem; }
     .follow .social-icons i {
       padding: 0 1rem; }
+
+/*--------------------------------------------------------------
+# About Page
+--------------------------------------------------------------*/
+.about {
+  text-align: center; }
+  .about h2 {
+    color: #663399;
+    font-size: 1.5rem;
+    font-weight: 900; }
+  .about p {
+    font-size: 1.25rem;
+    padding: 0 1.5rem; }
+
+.about-video iframe {
+  width: 100%;
+  height: 16.9rem; }
+  @media (min-width: 1280px) {
+    .about-video iframe {
+      height: 45rem; } }
+
+.beliefs, .more-media, .board-directors, .loyalty-circles, .applause {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #F0F0F0;
+  height: 3.75rem;
+  padding: 0 1rem;
+  margin: 0 1rem 1.4rem 1rem;
+  width: 90vw; }
+  @media (min-width: 1280px) {
+    .beliefs, .more-media, .board-directors, .loyalty-circles, .applause {
+      margin: 0 auto 2.5rem auto;
+      height: 7rem;
+      width: 1230px;
+      padding: 0 3rem; } }
+  .beliefs .fa-plus-circle, .beliefs .fa-minus-circle, .more-media .fa-plus-circle, .more-media .fa-minus-circle, .board-directors .fa-plus-circle, .board-directors .fa-minus-circle, .loyalty-circles .fa-plus-circle, .loyalty-circles .fa-minus-circle, .applause .fa-plus-circle, .applause .fa-minus-circle {
+    color: #006699;
+    font-size: 2.5rem; }
+    @media (min-width: 1280px) {
+      .beliefs .fa-plus-circle, .beliefs .fa-minus-circle, .more-media .fa-plus-circle, .more-media .fa-minus-circle, .board-directors .fa-plus-circle, .board-directors .fa-minus-circle, .loyalty-circles .fa-plus-circle, .loyalty-circles .fa-minus-circle, .applause .fa-plus-circle, .applause .fa-minus-circle {
+        font-size: 4rem; } }
+  .beliefs span, .more-media span, .board-directors span, .loyalty-circles span, .applause span {
+    color: #006699;
+    font-weight: bold;
+    font-size: 1rem;
+    margin: 0; }
+
+.donor-panel {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #F0F0F0;
+  height: 3.75rem;
+  padding: 0 1rem;
+  margin: 0 1rem 1.4rem 1rem;
+  width: 90vw; }
+  @media (min-width: 1280px) {
+    .donor-panel {
+      margin: 0 auto 2.5rem auto;
+      height: 7rem;
+      width: 1230px;
+      padding: 0 3rem; } }
+  .donor-panel .fa-plus-circle, .donor-panel .fa-minus-circle {
+    color: #006699;
+    font-size: 2.5rem; }
+    @media (min-width: 1280px) {
+      .donor-panel .fa-plus-circle, .donor-panel .fa-minus-circle {
+        font-size: 4rem; } }
+  .donor-panel span {
+    margin: 0; }
+
+.month-panel {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #F0F0F0;
+  height: 3.75rem;
+  padding: 0 1rem;
+  margin: 0 1rem 1.4rem 1rem;
+  width: 90vw; }
+  @media (min-width: 1280px) {
+    .month-panel {
+      margin: 0 auto 2.5rem auto;
+      height: 7rem;
+      width: 1230px;
+      padding: 0 3rem; } }
+  .month-panel .fa-plus-circle, .month-panel .fa-minus-circle {
+    color: #006699;
+    font-size: 2.5rem; }
+    @media (min-width: 1280px) {
+      .month-panel .fa-plus-circle, .month-panel .fa-minus-circle {
+        font-size: 4rem; } }
+  .month-panel span {
+    font-size: 0.9rem;
+    margin: 0; }
