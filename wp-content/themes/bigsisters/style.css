@@ -892,6 +892,7 @@ object {
 .story-title {
   color: #99CC33; }
 
+<<<<<<< HEAD
 .story-panel-content:hover {
   cursor: pointer; }
 
@@ -959,6 +960,23 @@ object {
 
 .go-girls-mentor {
   background-color: #FF9933; }
+=======
+/* Refer A Little Page -------------------------------------------------*/
+.refer-title, .enroll-title, .study-buddy-title {
+  text-align: center; }
+
+.enroll-title, .study-buddy-title, .step-color {
+  color: #663399; }
+
+ul {
+  padding: 0 0; }
+
+.step-color {
+  font-weight: bold; }
+
+.steps-button {
+  margin: 0 auto 2rem 6rem; }
+>>>>>>> refer_a_little
 
 /*--------------------------------------------------------------
 # Footer
