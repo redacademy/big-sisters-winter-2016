@@ -16,12 +16,6 @@ html {
 body {
 	background: $color__background-body; /* Fallback for when there is no custom background color defined. */
 	font-size: $font__basesize;
-	#click-menu {
-		position: fixed;
-		top: 15px;
-		right: 20px;
-	}
-
 	@include desktop {
 		font-size: $font__basesize-desktop;
 	}

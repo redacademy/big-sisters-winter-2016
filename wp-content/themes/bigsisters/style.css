@@ -298,10 +298,6 @@ body {
   background: #fff;
   /* Fallback for when there is no custom background color defined. */
   font-size: 12px; }
-  body #click-menu {
-    position: fixed;
-    top: 15px;
-    right: 20px; }
   @media (min-width: 1280px) {
     body {
       font-size: 20px; } }
@@ -534,6 +530,12 @@ a {
     outline: 0; }
 
 /* Menus */
+.responsive-menu a {
+  text-transform: uppercase; }
+
+.sub-menu a {
+  text-transform: capitalize; }
+
 .main-navigation {
   clear: both;
   display: block;

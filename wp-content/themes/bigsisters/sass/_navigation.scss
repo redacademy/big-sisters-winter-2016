@@ -26,6 +26,24 @@ a {
 
 /* Menus */
 
+//Responsive Menu
+
+.responsive-menu {
+	a {
+		text-transform: uppercase;
+	}
+}
+
+.sub-menu {
+	a {
+		text-transform: capitalize;
+	}
+}
+
+.menu-main-menu {
+
+}
+
 .main-navigation {
 	clear: both;
 	display: block;
