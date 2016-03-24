@@ -31,27 +31,41 @@ get_header(); ?>
                     </li>
                 </ul>
             </section>
-            <section>
+            <section class="colored-menu-sections">
                 <a href="#">
                     <div>
-                        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/icons/two-girls-icon.svg" alt="Big Sisters Becoming a Mentor">
-                        <p>Become a Mentor</p>
+                        <div class="icon-container">
+                            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/icons/two-girls-icon.svg" alt="Big Sisters Becoming a Mentor">
+                        </div>
+                        <p>Becoming a Mentor</p>
                     </div>
                 </a>
                 <a href="#">
                     <div>
-                        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/icons/two-girls-icon.svg" alt="Big Sisters Refer a Little">
+                        <div class="icon-container">
+                            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/icons/two-girls-icon.svg" alt="Big Sisters Refer a Little">
+                        </div>
                         <p>Refer A Little</p>
                     </div>
                 </a>
                 <a href="#">
                     <div>
-                        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/icons/calender-icon.svg" alt="Big Sisters Events">
+                        <div class="icon-container">
+                            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/icons/calender-icon.svg" alt="Big Sisters Events">
+                        </div>
                         <p>Events</p>
                     </div>
                 </a>
             </section>
-
+            <section class="newsletter">
+                <h1>Sign Up for Big Sisters Newsletter</h1>
+                <form>
+                    <input type="email" placeholder="Email address" />
+                    <input type="text" placeholder="First name" />
+                    <input type="text" placeholder="Last name" />
+                    <button class="button-white">Sign Up</button>
+                </form>
+            </section>
 
 		</main><!-- #main -->
 	</div><!-- #primary -->
