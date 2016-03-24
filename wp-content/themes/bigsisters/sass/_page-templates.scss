@@ -3,9 +3,89 @@
 --------------------------------------------------------------*/
 
 /* Front page */
-.info-panel-content {
-  @include info-panel-styles
+.hero-slider ul {
+    list-style-type: none;
+    margin-left: 0;
+    padding-left: 0;
+    li {
+        height: 263px;
+        p {
+            padding: 10px;
+            line-height: 24px;
+            width: 235px;
+        }
+    }
+    li:first-child {
+        background: url("../../assets/images/hero-images/hero-front.jpg") no-repeat;
+        background-size: 100vw;
+
+    }
+    li:nth-child(2) {
+        background: url("../../assets/images/hero-images/hero-big-little-snow.jpg") no-repeat;
+        background-size: 100vw;
+
+    }
+    li:last-child {
+        background: url("../../assets/images/hero-images/hero-big-little-power.jpg") no-repeat;
+        background-size: 100vw;
+    }
 }
+
+.bigsister-hero-fp {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 30px;
+    .hero-quote {
+        color: #fff;
+        background-color: rgba(100, 100, 100, 0.4);
+        font-size: 20px;
+    }
+}
+
+.colored-menu-sections a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 18px;
+    div {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 170px;
+        margin: 1rem 0.83rem;
+    }
+}
+
+.colored-menu-sections {
+    a:first-child div {
+        background-color: $color__orange-brand;
+
+    }
+    a:nth-child(2) div {
+        background-color: $color__dusk-brand;
+    }
+    a:last-child div {
+        background-color: $color__deepblue-brand;
+    }
+}
+
+.icon-container {
+    width: 100px;
+    img {
+        width: 100%;
+    }
+}
+
+.newsletter {
+    form {
+        width: 100%;
+        padding: 0 0.83rem;
+        input {
+            // margin: 0 0.83rem;
+        }
+    }
+}
+
 
 /* Success Stories */
 .stories-copy {
