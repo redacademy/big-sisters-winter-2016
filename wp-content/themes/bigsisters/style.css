@@ -892,6 +892,21 @@ object {
 .story-title {
   color: #99CC33; }
 
+.story-panel-content:hover {
+  cursor: pointer; }
+
+.story-panel-content .button-white {
+  margin: 0 auto 2rem;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center; }
+
 /*--------------------------------------------------------------
 # Footer
 --------------------------------------------------------------*/
