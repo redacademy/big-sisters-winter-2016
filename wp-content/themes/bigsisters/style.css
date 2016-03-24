@@ -1155,3 +1155,36 @@ ul {
   .month-panel span {
     font-size: 0.9rem;
     margin: 0; }
+
+/*--------------------------------------------------------------
+# News Page
+--------------------------------------------------------------*/
+.recent-news {
+  text-align: center;
+  margin-bottom: 5rem; }
+  @media (min-width: 1280px) {
+    .recent-news {
+      padding: 0 5rem; } }
+  .recent-news h2 {
+    color: #663399;
+    font-weight: bold; }
+    @media (min-width: 1280px) {
+      .recent-news h2 {
+        font-size: 3rem; } }
+  .recent-news .post-title {
+    color: #006699; }
+    @media (min-width: 1280px) {
+      .recent-news .post-title {
+        text-align: left;
+        font-size: 2rem; } }
+  .recent-news ul {
+    list-style: none;
+    padding: 0;
+    margin: 0; }
+  .recent-news p {
+    text-align: left; }
+    @media (min-width: 1280px) {
+      .recent-news p {
+        font-size: 1.5rem; } }
+  .recent-news .read-more {
+    margin-top: 1.5rem; }

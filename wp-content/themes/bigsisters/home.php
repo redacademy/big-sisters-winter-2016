@@ -9,31 +9,56 @@ get_header(); ?>
 
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
-		<?php if ( have_posts() ) : ?>
 
-			<?php if ( is_home() && ! is_front_page() ) : ?>
-				<header>
-					<h1 class="page-title screen-reader-text"><?php single_post_title(); ?></h1>
-				</header>
-			<?php endif; ?>
+			<section class="recent-news">
 
-			<?php /* Start the Loop */ ?>
-			<?php while ( have_posts() ) : the_post(); ?>
+				<?php
+					$args = array('post_type' => 'post', 'posts_per_page' => 4);
+					$latest_posts = get_posts( $args );
+				?>
 
-				<?php get_template_part( 'template-parts/content' ); ?>
+				<div class="container">
+					<h2>In The News</h2>
 
-			<?php endwhile; ?>
+					<ul>
+						<?php foreach($latest_posts as $post) : setup_postdata( $post ); ?>
+							<li class="post-wrapper">
 
-			<?php the_posts_navigation(); ?>
+								<div class="post-meta">
+									<h3 class="post-title"><?php the_title(); ?></h3>
+									<p><?php red_starter_posted_on(); ?></p>
+									<?php the_content(); ?>
 
-		<?php else : ?>
+									<a href="<?php the_permalink(); ?>">
+										<button class="read-more button-white" type="button" name="button">Read More</button>
+									</a>
 
-			<?php get_template_part( 'template-parts/content', 'none' ); ?>
+								</div>
 
-		<?php endif; ?>
+							</li>
+						<?php endforeach; wp_reset_postdata(); ?>
+					</ul>
+
+					<div class="accordian-box">
+						<div class="acr-box-div">
+
+							<div class="info-panel-content older-stories">
+								<span>Older stories</span>
+								<i class="fa fa-plus-circle"></i>
+							</div> <!-- .older-stories -->
+							<div class="acr-box-content">
+								HIDDEN CONTENT
+							</div> <!-- .acr-box-content -->
+
+						</div> <!-- .acr-box-div -->
+					</div> <!-- .accordian-box -->
+
+
+				</div> <!-- .container -->
+
+			</section> <!-- .recent-news -->
 
 		</main><!-- #main -->
 	</div><!-- #primary -->
 
-<?php get_sidebar(); ?>
 <?php get_footer(); ?>
