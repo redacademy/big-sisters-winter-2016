@@ -7,8 +7,6 @@
 
 // Add your custom post types here...
 // Add Success Stories to site
-// Register Custom Post Type
-// Register Custom Post Type
 function story_post_type() {
 
 	$labels = array(
@@ -42,7 +40,7 @@ function story_post_type() {
 		'label'                 => 'Story',
 		'description'           => 'Success Story',
 		'labels'                => $labels,
-		'supports'              => array( 'title', 'editor', 'excerpt', 'author', 'thumbnail', 'custom-fields', ),
+		'supports'              => array( 'title', 'editor', 'excerpt', 'author', 'thumbnail', ),
 		'taxonomies'            => array( 'category', 'post_tag' ),
 		'hierarchical'          => false,
 		'public'                => true,
@@ -62,3 +60,59 @@ function story_post_type() {
 
 }
 add_action( 'init', 'story_post_type', 0 );
+
+// Register Board Of Directors Post-type
+function directors_post_type() {
+
+	$labels = array(
+		'name'                  => 'Directors',
+		'singular_name'         => 'Director',
+		'menu_name'             => 'Board Of Directors',
+		'name_admin_bar'        => 'Board Of Directors',
+		'archives'              => 'Director Archives',
+		'parent_item_colon'     => 'Parent Director:',
+		'all_items'             => 'All Directors',
+		'add_new_item'          => 'Add New Director',
+		'add_new'               => 'Add New',
+		'new_item'              => 'New Director',
+		'edit_item'             => 'Edit Director',
+		'update_item'           => 'Update Director',
+		'view_item'             => 'View Director',
+		'search_items'          => 'Search Director',
+		'not_found'             => 'Not found',
+		'not_found_in_trash'    => 'Not found in Trash',
+		'featured_image'        => 'Featured Image',
+		'set_featured_image'    => 'Set featured image',
+		'remove_featured_image' => 'Remove featured image',
+		'use_featured_image'    => 'Use as featured image',
+		'insert_into_item'      => 'Insert into Director',
+		'uploaded_to_this_item' => 'Uploaded to this Director',
+		'items_list'            => 'Directors list',
+		'items_list_navigation' => 'Directors list navigation',
+		'filter_items_list'     => 'Filter Directors list',
+	);
+	$args = array(
+		'label'                 => 'Director',
+		'description'           => 'Board Of Directors',
+		'labels'                => $labels,
+		'supports'              => array( 'title', 'editor', 'thumbnail', ),
+		'taxonomies'            => array( 'category', 'post_tag' ),
+		'hierarchical'          => false,
+		'public'                => true,
+		'show_ui'               => true,
+		'show_in_menu'          => true,
+		'menu_position'         => 5,
+		'menu_icon'             => 'dashicons-groups',
+		'show_in_admin_bar'     => true,
+		'show_in_nav_menus'     => true,
+		'can_export'            => true,
+		'has_archive'           => true,
+		'exclude_from_search'   => false,
+		'publicly_queryable'    => true,
+		'query_var'             => 'director',
+		'capability_type'       => 'page',
+	);
+	register_post_type( 'director', $args );
+
+}
+add_action( 'init', 'directors_post_type', 0 );
