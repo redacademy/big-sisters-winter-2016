@@ -17,8 +17,11 @@ get_header(); ?>
 			<?php the_post_navigation(); ?>
 
 			<div class="refer-a-little-container">
-				<header class="refer-header">
+				<header class="refer-header container">
 					<h1 class="refer-title"><?php echo esc_html(CFS()->get( 'title_refer' ) ); ?></h1>
+					<img class="quote-image-one" src="<?php echo CFS()->get( 'quote_image_one' ); ?>">
+					<img class="quote-image-two" src="<?php echo CFS()->get( 'quote_image_two' ); ?>">
+					<img class="quote-image-three" src="<?php echo CFS()->get( 'quote_image_three' ); ?>">
 				</header>
 
 				<div class="enroll-content">
