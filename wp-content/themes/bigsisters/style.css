@@ -845,11 +845,11 @@ object {
   margin-left: 0;
   padding-left: 0; }
   .hero-slider ul li {
-    height: 263px; }
+    height: 16.9rem; }
     .hero-slider ul li p {
-      padding: 10px;
+      padding: 0.83rem;
       line-height: 24px;
-      width: 235px; }
+      width: 19.6rem; }
   .hero-slider ul li:first-child {
     background: url("../../assets/images/hero-images/hero-front.jpg") no-repeat;
     background-size: 100vw; }
@@ -935,7 +935,6 @@ object {
 .story-title {
   color: #99CC33; }
 
-<<<<<<< HEAD
 .story-panel-content:hover {
   cursor: pointer; }
 
@@ -1003,7 +1002,7 @@ object {
 
 .go-girls-mentor {
   background-color: #FF9933; }
-=======
+
 /* Refer A Little Page -------------------------------------------------*/
 .refer-title, .enroll-title, .study-buddy-title {
   text-align: center; }
@@ -1019,7 +1018,6 @@ ul {
 
 .steps-button {
   margin: 0 auto 2rem 6rem; }
->>>>>>> refer_a_little
 
 /*--------------------------------------------------------------
 # Footer
