@@ -1,9 +1,7 @@
 <?php
 /**
  * Template Name: Refer a Little
- *
- * @package RED_Starter_Theme
- */
+ **/
 
 get_header(); ?>
 
