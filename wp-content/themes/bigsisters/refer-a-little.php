@@ -19,10 +19,25 @@ get_header(); ?>
 			<div class="refer-a-little-container">
 				<header class="refer-header container">
 					<h1 class="refer-title"><?php echo esc_html(CFS()->get( 'title_refer' ) ); ?></h1>
-					<img class="quote-image-one" src="<?php echo CFS()->get( 'quote_image_one' ); ?>">
-					<img class="quote-image-two" src="<?php echo CFS()->get( 'quote_image_two' ); ?>">
-					<img class="quote-image-three" src="<?php echo CFS()->get( 'quote_image_three' ); ?>">
 				</header>
+
+				<section class="quote-image-sections">
+					<div class="quote-image-container">
+						<img class="quote-image-one" src="<?php echo CFS()->get( 'quote_image_one' ); ?>">
+						<p class="quote-text-one"><?php echo esc_html(CFS()->get( 'quote_text_one' ) ); ?></p>
+					</div>
+
+					<div class="quote-image-container">
+						<img class="quote-image-two" src="<?php echo CFS()->get( 'quote_image_two' ); ?>">
+						<p class="quote-text-two"><?php echo esc_html(CFS()->get( 'quote_text_two' ) ); ?></p>
+					</div>
+
+					<div class="quote-image-container">
+						<img class="quote-image-three" src="<?php echo CFS()->get( 'quote_image_three' ); ?>">
+						<p class="quote-text-three"><?php echo esc_html(CFS()->get( 'quote_text_three' ) ); ?></p>
+					</div>
+
+			</section>
 
 				<div class="enroll-content">
 					<h2 class="enroll-title"><?php echo esc_html(CFS()->get( 'title_enroll' ) ); ?></h1>
