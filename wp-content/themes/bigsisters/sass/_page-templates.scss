@@ -9,25 +9,33 @@
     padding-left: 0;
     li {
         height: 16.9rem;
+        @include desktop {
+            padding: 0 0 10rem 5rem;
+            height: 40rem;
+        }
         p {
-            padding: 0.83rem;
-            line-height: 24px;
-            width: 19.6rem;
+            padding: 0.5rem;
+            line-height: 1.5rem;
+            width: 16.5rem;
+            @include desktop {
+                width: 29.6rem;
+                line-height: 2.7rem;
+            }
         }
     }
     li:first-child {
-        background: url("../../assets/images/hero-images/hero-front.jpg") no-repeat;
-        background-size: 100vw;
+        background: url("../../assets/images/hero-images/hero-donate.jpg") no-repeat;
+        background-size: cover;;
 
     }
     li:nth-child(2) {
         background: url("../../assets/images/hero-images/hero-big-little-snow.jpg") no-repeat;
-        background-size: 100vw;
+        background-size: cover;
 
     }
     li:last-child {
         background: url("../../assets/images/hero-images/hero-big-little-power.jpg") no-repeat;
-        background-size: 100vw;
+        background-size: cover;
     }
 }
 
@@ -38,15 +46,21 @@
     padding: 0 30px;
     .hero-quote {
         color: #fff;
-        background-color: rgba(100, 100, 100, 0.4);
-        font-size: 20px;
+        background-color: rgba(100, 100, 100, 0.3);
+        font-size: 1.2rem;
+        @include desktop {
+            font-size: 2.15rem;
+        }
     }
 }
 
 .colored-menu-sections a {
     text-decoration: none;
     color: #fff;
-    font-size: 18px;
+    font-size: 1.5rem;
+    @include desktop {
+        font-size: 22px;
+    }
     div {
         display: flex;
         flex-direction: column;
