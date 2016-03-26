@@ -12,7 +12,7 @@ get_header(); ?>
 				<p class="metor-hero-quote">We LOVE our mentors are we're here to support them!</p>
 			</section>
 
-			<section class="upcoming-events-section">
+			<section class="upcoming-events-section container">
 				<h2 class="current-mentor-title">Upcoming Big and Little Events</h1>
 				<p>
 					Check out these events happening in our own community! These are great
@@ -48,9 +48,9 @@ get_header(); ?>
 				</div>
 			</section>
 
-			<h2 class="articles-resources-title">Articles and Resources</h1>
+			<h2 class="articles-resources-title container">Articles and Resources</h2>
 
-			<section class="ar-menu-sections">
+			<section class="ar-menu-sections container">
 				<a href="#">
 						<div>
 								<div class="icon-container">
