@@ -2,10 +2,13 @@
 # Page Templates
 --------------------------------------------------------------*/
 
-/* Front page */
+/* Front page --------------------------------------------------------------------- */
+
+
+
 .hero-slider ul {
     list-style-type: none;
-    margin-left: 0;
+    margin: 0;
     padding-left: 0;
     li {
         height: 16.9rem;
@@ -25,13 +28,11 @@
     }
     li:first-child {
         background: url("../../assets/images/hero-images/hero-donate.jpg") no-repeat;
-        background-size: cover;;
-
+        background-size: cover;
     }
     li:nth-child(2) {
-        background: url("../../assets/images/hero-images/hero-big-little-snow.jpg") no-repeat;
+        background: url("../../assets/images/hero-images/hero-young-girl.jpg") no-repeat;
         background-size: cover;
-
     }
     li:last-child {
         background: url("../../assets/images/hero-images/hero-big-little-power.jpg") no-repeat;
@@ -59,21 +60,14 @@
     color: #fff;
     font-size: 1.5rem;
     @include desktop {
+        flex-basis: 33%;
         font-size: 22px;
-    }
-    div {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        height: 170px;
-        margin: 1rem 0.83rem;
     }
 }
 
 .colored-menu-sections {
     a:first-child div {
         background-color: $color__orange-brand;
-
     }
     a:nth-child(2) div {
         background-color: $color__dusk-brand;
@@ -81,14 +75,45 @@
     a:last-child div {
         background-color: $color__deepblue-brand;
     }
-}
+    @include desktop {
+        display: flex;
+        justify-content: center;
+        margin: 0;
+        a div {
+            margin: 0;
+        }
 
-.icon-container {
-    width: 100px;
-    img {
-        width: 100%;
     }
 }
+
+.colored-menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 170px;
+    margin: 1rem 0.83rem;
+    flex-basis: 33%;
+    @include desktop {
+        height: 16rem;
+
+    }
+    .icon-container {
+        width: 60px;
+        img {
+            width: 100%;
+        }
+        @include desktop {
+            width: 100px;
+        }
+    }
+    p {
+        margin: 0;
+    }
+
+}
+
+
 
 .newsletter {
     form {
@@ -98,6 +123,75 @@
             // margin: 0 0.83rem;
         }
     }
+}
+
+.hero-stories ul {
+    list-style-type: none;
+    margin-left: 0;
+    padding-left: 0;
+    li {
+        height: 16.9rem;
+        @include desktop {
+            padding: 0 0 10rem 5rem;
+            height: 40rem;
+        }
+    }
+    li:first-child {
+        background: url("../../assets/images/hero-images/hero-front.jpg") no-repeat;
+        background-size: cover;
+    }
+    li:nth-child(2) {
+        background: url("../../assets/images/quote-image.jpg") no-repeat;
+        background-size: cover;
+    }
+    li:last-child {
+        background: url("../../assets/images/hero-images/hero-big-little-snow.jpg") no-repeat;
+        background-size: cover;
+    }
+}
+
+.individual-hero-stories {
+    position: relative;
+    .hero-quote-wrap {
+        position: absolute;
+        bottom: 30px;
+    }
+    p {
+        // width: 100%;
+        margin: 0;
+        padding: 0 20px;
+    }
+}
+
+
+
+
+
+
+.stories-quote {
+    color: #fff;
+    background-color: rgba(100, 100, 100, 0.4);
+    font-size: 1.2rem;
+    line-height: 1.5rem;
+    @include desktop {
+        font-size: 2.15rem;
+    }
+}
+
+.quote-orange {
+    color: $color__orange-brand;
+}
+
+.quote-green {
+    color: $color__green-brand;
+}
+
+.quoter {
+    color: #fff;
+    font-size: 14px;
+    padding-right: 20px;
+    text-align: right;
+    background-color: rgba(100, 100, 100, 0.4);
 }
 
 

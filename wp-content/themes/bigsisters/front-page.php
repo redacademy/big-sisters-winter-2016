@@ -33,25 +33,25 @@ get_header(); ?>
             </section>
             <section class="colored-menu-sections">
                 <a href="#">
-                    <div>
+                    <div class="colored-menu">
                         <div class="icon-container">
-                            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/icons/two-girls-icon.svg" alt="Big Sisters Becoming a Mentor">
+                            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/icons/hands-up-icon.png" alt="Big Sisters Becoming a Mentor">
                         </div>
                         <p>Becoming a Mentor</p>
                     </div>
                 </a>
                 <a href="#">
-                    <div>
+                    <div class="colored-menu">
                         <div class="icon-container">
-                            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/icons/two-girls-icon.svg" alt="Big Sisters Refer a Little">
+                            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/icons/two-girls-icon.png" alt="Big Sisters Refer a Little">
                         </div>
                         <p>Refer A Little</p>
                     </div>
                 </a>
                 <a href="#">
-                    <div>
+                    <div class="colored-menu">
                         <div class="icon-container">
-                            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/icons/calender-icon.svg" alt="Big Sisters Events">
+                            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/icons/events-calendar-icon.png" alt="Big Sisters Events">
                         </div>
                         <p>Events</p>
                     </div>
@@ -66,7 +66,33 @@ get_header(); ?>
                     <button class="button-white">Sign Up</button>
                 </form>
             </section>
-
+			<section class="hero-stories">
+                <ul>
+                    <li class="individual-hero-stories">
+						<div class"hero-quote-wrap">
+	                        <p class="stories-quote">
+	                            "Offering my time and <span class="quote-orange">support</span> to my little <span class="quote-orange">sister</span> is one of the most <span>fulfilling</span> things I have done in my life."
+	                        </p>
+							<p class="quoter">- Big Sister Carolyn</p>
+						</div>
+                    </li>
+					<li class="individual-hero-stories">
+						<div class"hero-quote-wrap">
+	                        <p class="stories-quote">
+	                            <span class="quote-orange">92%</span> of  Little Sisters feel <span class="quote-orange">confident</span>
+	                        </p>
+						</div>
+                    </li>
+					<li class="individual-hero-stories">
+						<div class"hero-quote-wrap">
+	                        <p class="stories-quote">
+	                            "I have seen the girls <span class="quote-green">develop new friendships</span> with each other and display greater <span class="quote-green">confidence</span>"
+	                        </p>
+							<p class="quoter">- Shanny, Go Girls Mentor</p>
+						</div>
+                    </li>
+                </ul>
+            </section>
 		</main><!-- #main -->
 	</div><!-- #primary -->
 
