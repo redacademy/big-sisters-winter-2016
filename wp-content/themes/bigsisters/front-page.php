@@ -60,9 +60,9 @@ get_header(); ?>
             <section class="newsletter">
                 <h1>Sign Up for Big Sisters Newsletter</h1>
                 <form>
-                    <input type="email" placeholder="Email address" />
                     <input type="text" placeholder="First name" />
                     <input type="text" placeholder="Last name" />
+					<input type="email" placeholder="Email address" />
                     <button class="button-white">Sign Up</button>
                 </form>
             </section>
@@ -71,7 +71,7 @@ get_header(); ?>
                     <li class="individual-hero-stories">
 						<div class"hero-quote-wrap">
 	                        <p class="stories-quote">
-	                            "Offering my time and <span class="quote-orange">support</span> to my little <span class="quote-orange">sister</span> is one of the most <span>fulfilling</span> things I have done in my life."
+	                            "Offering my time and <span class="quote-orange">support to my little sister</span> is one of the most <span class="quote-green">fulfilling</span> things I have done in my life."
 	                        </p>
 							<p class="quoter">- Big Sister Carolyn</p>
 						</div>
@@ -79,14 +79,14 @@ get_header(); ?>
 					<li class="individual-hero-stories">
 						<div class"hero-quote-wrap">
 	                        <p class="stories-quote">
-	                            <span class="quote-orange">92%</span> of  Little Sisters feel <span class="quote-orange">confident</span>
+	                            <span class="quote-dusk">92%</span> of  Little Sisters feel <span class="quote-blue">confident</span>
 	                        </p>
 						</div>
                     </li>
 					<li class="individual-hero-stories">
 						<div class"hero-quote-wrap">
 	                        <p class="stories-quote">
-	                            "I have seen the girls <span class="quote-green">develop new friendships</span> with each other and display greater <span class="quote-green">confidence</span>"
+	                            "I have seen the girls <span class="quote-green">develop new friendships</span> with each other and display greater <span class="quote-orange">confidence</span>"
 	                        </p>
 							<p class="quoter">- Shanny, Go Girls Mentor</p>
 						</div>

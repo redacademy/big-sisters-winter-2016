@@ -60,7 +60,7 @@
     color: #fff;
     font-size: 1.5rem;
     @include desktop {
-        flex-basis: 33%;
+        flex-basis: 33.1%;
         font-size: 22px;
     }
 }
@@ -77,12 +77,11 @@
     }
     @include desktop {
         display: flex;
-        justify-content: center;
+        justify-content: space-between;
         margin: 0;
         a div {
             margin: 0;
         }
-
     }
 }
 
@@ -93,7 +92,6 @@
     align-items: center;
     height: 170px;
     margin: 1rem 0.83rem;
-    flex-basis: 33%;
     @include desktop {
         height: 16rem;
 
@@ -113,14 +111,38 @@
 
 }
 
-
-
 .newsletter {
+    h1 {
+        text-align: center;
+        font-size: 1.2rem;
+        @include desktop {
+            font-size: 2rem;
+        }
+    }
     form {
-        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 80%;
         padding: 0 0.83rem;
+        margin: 0 auto;
+        @include desktop {
+            flex-direction: row;
+            flex-wrap: wrap;
+        }
         input {
-            // margin: 0 0.83rem;
+            width: 100%;
+        }
+        &:last-child {
+            margin: 0 auto;
+        }
+        @include desktop {
+            &:first-child, &:nth-child(2) {
+                flex-basis: 45%;
+            }
+            &:nth-child(2), &:last-child {
+                flex-basis: 100%;
+            }
         }
     }
 }
@@ -143,6 +165,12 @@
     li:nth-child(2) {
         background: url("../../assets/images/quote-image.jpg") no-repeat;
         background-size: cover;
+        p {
+            height: 4rem;
+            line-height: 2rem;
+            font-size: 1.7rem;
+            padding: 0 30px;
+        }
     }
     li:last-child {
         background: url("../../assets/images/hero-images/hero-big-little-snow.jpg") no-repeat;
@@ -152,27 +180,27 @@
 
 .individual-hero-stories {
     position: relative;
-    .hero-quote-wrap {
+    margin: 0.83rem;
+    div {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        background-color: rgba(100, 100, 100, 0.4);
         position: absolute;
-        bottom: 30px;
+        bottom: 20px;
+        height: 150px;
+
     }
     p {
-        // width: 100%;
         margin: 0;
         padding: 0 20px;
     }
 }
 
-
-
-
-
-
 .stories-quote {
     color: #fff;
-    background-color: rgba(100, 100, 100, 0.4);
     font-size: 1.2rem;
-    line-height: 1.5rem;
+    line-height: 1.4rem;
     @include desktop {
         font-size: 2.15rem;
     }
@@ -182,18 +210,24 @@
     color: $color__orange-brand;
 }
 
+.quote-dusk {
+    color: $color__dusk-brand;
+}
+
+.quote-blue {
+    color: $color__brightblue-brand;
+}
+
 .quote-green {
     color: $color__green-brand;
 }
 
 .quoter {
     color: #fff;
-    font-size: 14px;
+    font-size: 1rem;
     padding-right: 20px;
     text-align: right;
-    background-color: rgba(100, 100, 100, 0.4);
 }
-
 
 /* Success Stories */
 .stories-copy {
