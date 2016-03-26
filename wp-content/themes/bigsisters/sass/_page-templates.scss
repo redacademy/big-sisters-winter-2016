@@ -171,17 +171,21 @@
 
 .quote-image-container {
   display: flex;
-  flex-direction: column;
+  // flex-direction: column;
   align-items: center;
-  position: relative;
   height: 170px;
   margin: 1rem 0.83rem;
+    p {
+      padding: 10px;
+      line-height: 24px;
+      width: 235px;
+      // position: absolute;
+    }
 }
 
 .quote-image-one, .quote-image-two, .quote-image-three {
   width: 300px;
   height: 170px;
-
 }
 
 .refer-title, .enroll-title, .study-buddy-title{
@@ -214,4 +218,27 @@ ul {
   background: url("../../assets/images/mentor-resources-images/current-mentor-hero.jpg") no-repeat;
   background-size: 100vw;
   height: 263px;
+}
+
+.upcoming-events-section {
+  img {
+    width: 100%;
+  }
+}
+
+.ar-menu-sections {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+    a {
+      text-decoration: none;
+      color: black;
+    }
+    div {
+      background-color: $color__offwhite-brand;
+      margin: 10px;
+    }
+    p {
+      text-align: center;
+    }
 }

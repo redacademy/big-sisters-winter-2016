@@ -19,7 +19,7 @@ get_header(); ?>
 					<h1 class="refer-title"><?php echo esc_html(CFS()->get( 'title_refer' ) ); ?></h1>
 				</header>
 
-				<section class="quote-image-sections">
+				<section class="quote-image-sections container">
 					<div class="quote-image-container">
 						<img class="quote-image-one" src="<?php echo CFS()->get( 'quote_image_one' ); ?>">
 						<p class="quote-text-one"><?php echo esc_html(CFS()->get( 'quote_text_one' ) ); ?></p>
