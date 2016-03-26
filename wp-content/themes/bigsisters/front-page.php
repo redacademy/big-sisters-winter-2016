@@ -81,7 +81,7 @@ get_header(); ?>
 					<li class="individual-hero-stories">
 						<div class"hero-quote-wrap">
 	                        <p class="stories-quote">
-	                            <span class="quote-dusk">92%</span> of  Little Sisters feel <span class="quote-blue">confident</span>
+	                            <span class="quote-dusk">92%</span> of  Little Sisters <span class="quote-blue">feel confident</span>
 	                        </p>
 						</div>
                     </li>
@@ -95,6 +95,49 @@ get_header(); ?>
                     </li>
                 </ul>
             </section>
+			<section class="fp-recent-donors">
+				<h1>Thank you to our<br/>recent donors</h1>
+				<ul>
+					<li class="individual-donor">
+						<h3 class="donor-name">ONNI Group</h3>
+						<p class="donation-amount">$5,000.00</p>
+						<p class="program-type">Grape Juice</p>
+						<p class="sponsor-level">Gold Sponsor</p>
+					</li>
+					<li class="individual-donor">
+						<h3 class="donor-name">CKNW Orphan's Fund</h3>
+						<p class="donation-amount">$15,000.00</p>
+						<p class="program-type">Go Girls!</p>
+						<p class="sponsor-level">Program Grant</p>
+					</li>
+					<li class="individual-donor">
+						<h3 class="donor-name">Boeing Canada - Aeroinfo</h3>
+						<p class="donation-amount">$15,000.00</p>
+						<p class="program-type">Big Sisters</p>
+						<p class="sponsor-level">Program Grant</p>
+					</li>
+					<li class="individual-donor">
+						<h3 class="donor-name">The R & J Stern Family Foundation</h3>
+						<p class="donation-amount">$10,000.00</p>
+						<p class="program-type">Golden Match</p>
+						<p class="sponsor-level">Maker</p>
+					</li>
+				</ul>
+			</section>
+			<section class="program-sponsors">
+				<h1>Special Thanks To Our Programming Sponsors</h1>
+				<ul>
+					<li class="sponsor-logo-wrap">
+						<img src="<?php echo get_template_directory_uri(); ?>/assets/images/sponsors/cityofvancouver-logo.png" alt="City of Vancouver Logo">
+					</li>
+					<li class="sponsor-logo-wrap">
+						<img src="<?php echo get_template_directory_uri(); ?>/assets/images/sponsors/unitedwayvan-logo.png" alt="United Way Vancouver Logo">
+					</li>
+					<li class="sponsor-logo-wrap">
+						<img src="<?php echo get_template_directory_uri(); ?>/assets/images/sponsors/unitedwayvan-logo.png" alt="United Way Vancouver Logo">
+					</li>
+				</ul>
+			</section>
 		</main><!-- #main -->
 	</div><!-- #primary -->
 
