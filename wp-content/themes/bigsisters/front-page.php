@@ -96,7 +96,7 @@ get_header(); ?>
                 </ul>
             </section>
 			<section class="fp-recent-donors">
-				<h1>Thank you to our<br/>recent donors</h1>
+				<h1>Thank you to our recent donors</h1>
 				<ul>
 					<li class="individual-donor">
 						<h3 class="donor-name">ONNI Group</h3>
@@ -131,10 +131,10 @@ get_header(); ?>
 						<img src="<?php echo get_template_directory_uri(); ?>/assets/images/sponsors/cityofvancouver-logo.png" alt="City of Vancouver Logo">
 					</li>
 					<li class="sponsor-logo-wrap">
-						<img src="<?php echo get_template_directory_uri(); ?>/assets/images/sponsors/unitedwayvan-logo.png" alt="United Way Vancouver Logo">
+						<img src="<?php echo get_template_directory_uri(); ?>/assets/images/sponsors/unitedway-logo.png" alt="United Way Vancouver Logo">
 					</li>
 					<li class="sponsor-logo-wrap">
-						<img src="<?php echo get_template_directory_uri(); ?>/assets/images/sponsors/unitedwayvan-logo.png" alt="United Way Vancouver Logo">
+						<img src="<?php echo get_template_directory_uri(); ?>/assets/images/sponsors/britishcolumbia-logo.png" alt="British Columbia Logo">
 					</li>
 				</ul>
 			</section>
