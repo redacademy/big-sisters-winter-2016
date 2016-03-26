@@ -947,58 +947,75 @@ object {
   .colored-menu p {
     margin: 0; }
 
-.newsletter h1 {
-  text-align: center;
-  font-size: 1.2rem; }
-  @media (min-width: 1280px) {
-    .newsletter h1 {
-      font-size: 2rem; } }
-
-.newsletter form {
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-direction: column;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-align-items: center;
-      -ms-flex-align: center;
-          align-items: center;
-  width: 80%;
-  padding: 0 0.83rem;
-  margin: 0 auto; }
-  @media (min-width: 1280px) {
-    .newsletter form {
-      -webkit-flex-direction: row;
-          -ms-flex-direction: row;
-              flex-direction: row;
-      -webkit-flex-wrap: wrap;
-          -ms-flex-wrap: wrap;
-              flex-wrap: wrap; } }
-  .newsletter form input {
-    width: 100%; }
-  .newsletter form:last-child {
+.newsletter {
+  padding: 50px 0; }
+  .newsletter h1 {
+    margin-top: 0;
+    text-align: center;
+    font-size: 1.2rem; }
+    @media (min-width: 1280px) {
+      .newsletter h1 {
+        font-size: 2rem; } }
+  .newsletter .name-container {
+    width: 100%;
+    margin-bottom: 0.83rem; }
+    @media (min-width: 1280px) {
+      .newsletter .name-container {
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-justify-content: space-between;
+            -ms-flex-pack: justify;
+                justify-content: space-between;
+        margin-bottom: 20px; }
+        .newsletter .name-container :first-child, .newsletter .name-container :last-child {
+          margin: 0;
+          -webkit-flex-basis: 48%;
+              -ms-flex-preferred-size: 48%;
+                  flex-basis: 48%; } }
+  .newsletter form {
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 80%;
+    padding: 0 0.83rem;
     margin: 0 auto; }
-  @media (min-width: 1280px) {
-    .newsletter form:first-child, .newsletter form:nth-child(2) {
-      -webkit-flex-basis: 45%;
-          -ms-flex-preferred-size: 45%;
-              flex-basis: 45%; }
-    .newsletter form:nth-child(2), .newsletter form:last-child {
-      -webkit-flex-basis: 100%;
-          -ms-flex-preferred-size: 100%;
-              flex-basis: 100%; } }
+    @media (min-width: 1280px) {
+      .newsletter form {
+        width: 50%; } }
+    .newsletter form input {
+      width: 100%; }
+      @media (min-width: 1280px) {
+        .newsletter form input {
+          height: 50px;
+          margin-bottom: 20px; } }
+    .newsletter form :last-child {
+      margin: 0 auto; }
 
 .hero-stories ul {
   list-style-type: none;
   margin-left: 0;
   padding-left: 0; }
+  @media (min-width: 1280px) {
+    .hero-stories ul {
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex; } }
   .hero-stories ul li {
     height: 16.9rem; }
     @media (min-width: 1280px) {
       .hero-stories ul li {
         padding: 0 0 10rem 5rem;
-        height: 40rem; } }
+        height: 40rem;
+        -webkit-flex-basis: 33%;
+            -ms-flex-preferred-size: 33%;
+                flex-basis: 33%; } }
   .hero-stories ul li:first-child {
     background: url("../../assets/images/hero-images/hero-front.jpg") no-repeat;
     background-size: cover; }
@@ -1008,7 +1025,7 @@ object {
     .hero-stories ul li:nth-child(2) p {
       height: 4rem;
       line-height: 2rem;
-      font-size: 1.7rem;
+      font-size: 1.74rem;
       padding: 0 30px; }
   .hero-stories ul li:last-child {
     background: url("../../assets/images/hero-images/hero-big-little-snow.jpg") no-repeat;
@@ -1030,7 +1047,7 @@ object {
     background-color: rgba(100, 100, 100, 0.4);
     position: absolute;
     bottom: 20px;
-    height: 150px; }
+    height: 8.2rem; }
   .individual-hero-stories p {
     margin: 0;
     padding: 0 20px; }

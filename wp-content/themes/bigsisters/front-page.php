@@ -60,8 +60,10 @@ get_header(); ?>
             <section class="newsletter">
                 <h1>Sign Up for Big Sisters Newsletter</h1>
                 <form>
-                    <input type="text" placeholder="First name" />
-                    <input type="text" placeholder="Last name" />
+					<div class="name-container">
+						<input type="text" placeholder="First name" />
+	                    <input type="text" placeholder="Last name" />
+					</div>
 					<input type="email" placeholder="Email address" />
                     <button class="button-white">Sign Up</button>
                 </form>

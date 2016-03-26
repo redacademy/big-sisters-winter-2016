@@ -112,13 +112,30 @@
 }
 
 .newsletter {
+    padding: 50px 0;
     h1 {
+        margin-top: 0;
         text-align: center;
         font-size: 1.2rem;
         @include desktop {
             font-size: 2rem;
         }
     }
+
+    .name-container {
+        width: 100%;
+        margin-bottom: 0.83rem;
+        @include desktop {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 20px;
+            & :first-child, & :last-child  {
+                margin: 0;
+                flex-basis: 48%
+            }
+        }
+    }
+
     form {
         display: flex;
         flex-direction: column;
@@ -127,22 +144,17 @@
         padding: 0 0.83rem;
         margin: 0 auto;
         @include desktop {
-            flex-direction: row;
-            flex-wrap: wrap;
+            width: 50%;
         }
         input {
             width: 100%;
+            @include desktop {
+                height: 50px;
+                margin-bottom: 20px;
+            }
         }
-        &:last-child {
+        & :last-child {
             margin: 0 auto;
-        }
-        @include desktop {
-            &:first-child, &:nth-child(2) {
-                flex-basis: 45%;
-            }
-            &:nth-child(2), &:last-child {
-                flex-basis: 100%;
-            }
         }
     }
 }
@@ -151,11 +163,15 @@
     list-style-type: none;
     margin-left: 0;
     padding-left: 0;
+    @include desktop {
+        display: flex;
+    }
     li {
         height: 16.9rem;
         @include desktop {
             padding: 0 0 10rem 5rem;
             height: 40rem;
+            flex-basis: 33%;
         }
     }
     li:first-child {
@@ -168,7 +184,7 @@
         p {
             height: 4rem;
             line-height: 2rem;
-            font-size: 1.7rem;
+            font-size: 1.74rem;
             padding: 0 30px;
         }
     }
@@ -188,8 +204,7 @@
         background-color: rgba(100, 100, 100, 0.4);
         position: absolute;
         bottom: 20px;
-        height: 150px;
-
+        height: 8.2rem;
     }
     p {
         margin: 0;
