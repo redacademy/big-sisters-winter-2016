@@ -916,7 +916,6 @@ object {
   text-align: center; }
 
 .story-thumb {
-  border: 1px solid #fff;
   height: 300px;
   overflow: hidden;
   position: relative; }
@@ -1064,12 +1063,15 @@ ul {
 
 .steps-button {
   margin: 0 auto 2rem 6rem; }
+<<<<<<< HEAD
 
 /* Current Mentor Resources Page -------------------------------------------*/
 .mentor-hero {
   background: url("../../assets/images/mentor-resources-images/current-mentor-hero.jpg") no-repeat;
   background-size: 100vw;
   height: 263px; }
+=======
+>>>>>>> initiatives-updates
 
 /*--------------------------------------------------------------
 # Footer
