@@ -59,7 +59,3 @@ wp-content/themes/*
 # Ignore npm packages #
 # =================== #
 wp-content/themes/bigsisters/node_modules/
-
-# Ignore Build Assets #
-# =================== #
-wp-content/themes/bigsisters/build/css/style.min.css
