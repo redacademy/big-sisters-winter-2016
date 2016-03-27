@@ -1,4 +1,4 @@
-// /* Slide up/down Menus Funciton */
+// Slide Up/Down menu Functionality
 (function($) {
 
   $('.acr-box-content').hide();
@@ -15,7 +15,7 @@
     }
   });
 
-// Success Story show/hide functionality
+// Success Story Show/Hide Functionality
     $('.story-box-content').hide();
     $('.story-panel-content').click(function() {
       $('.story-box-content').slideUp();
@@ -31,3 +31,12 @@
     });
 
  }(jQuery));
+
+//Bxslider Functionality  
+$(function(){
+  $('.bxslider').bxSlider({
+	speed: 500,
+  	controls: false,
+  	auto: true
+  });
+});

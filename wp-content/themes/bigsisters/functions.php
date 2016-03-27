@@ -87,8 +87,6 @@ function red_starter_scripts() {
 	wp_enqueue_style( 'big-sisters-font', 'https://fonts.googleapis.com/css?family=Roboto:700,500' );
 	wp_enqueue_style ( 'font-awesome-cdn' , 'https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css', array(), '4.4.0');
 
-	 wp_enqueue_script( 'bx-slider', get_template_directory_uri() . '/js/jquery.bxslider/jquery.bxslider.css');
-	wp_enqueue_script( 'script', get_template_directory_uri() . '/js/jquery.bxslider/jquery.bxslider.js', array());
 	wp_enqueue_script( 'red-starter-skip-link-focus-fix', get_template_directory_uri() . '/build/js/skip-link-focus-fix.min.js', array(), '20130115', true );
 	wp_enqueue_script( 'script', get_template_directory_uri() . '/js/main.js', array ( 'jquery' ), 1.1, true);
 
@@ -97,6 +95,7 @@ function red_starter_scripts() {
 	}
 }
 add_action( 'wp_enqueue_scripts', 'red_starter_scripts' );
+
 
 function bigsisters_archive_title($title) {
     if (is_post_type_archive( array('story'))) {

@@ -214,10 +214,13 @@
         justify-content: center;
         background-color: rgba(100, 100, 100, 0.6);
         position: absolute;
-        bottom: 35px;
+        bottom: 20px;
         left: 0;
         right: 0;
         height: 8.2rem;
+        @include desktop {
+            bottom: 35px;
+        }
     }
     p {
         margin: 0;
@@ -314,18 +317,24 @@
 
 .program-sponsors {
     background-color: $color__offwhite-brand;
-    padding: 20px 0;
+    padding: 30px 0;
+    @include desktop {
+        padding: 50px 0 20px;
+    }
     h1 {
+        width: 250px;
+        margin: 0 auto;
         font-size: 1.3rem;
         text-align: center;
         line-height: 2rem;
         @include desktop {
             font-size: 2rem;
+            width: 100%;
         }
     }
     ul {
         list-style-type: none;
-        margin: 0;
+        margin: 0 20px;
         padding-left: 0;
         display: flex;
         justify-content: space-around;
