@@ -42,7 +42,7 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding: 0 30px;
+    padding: 0 2.5rem;
     .hero-quote {
         color: #fff;
         background-color: rgba(100, 100, 100, 0.3);
@@ -88,7 +88,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 170px;
+    height: 14.2rem;
     margin: 1rem 0.83rem;
     @include desktop {
         height: 16rem;
