@@ -10,7 +10,7 @@ get_header(); ?>
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
             <section class="hero-slider">
-                <ul>
+                <ul class="bxslider">
                     <li class="bigsister-hero-fp">
                         <p class="hero-quote">
                             "Becoming a Big Sister gave me purpose to my life."<br/>- Anita

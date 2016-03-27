@@ -161,7 +161,7 @@
 
 .hero-stories ul {
     list-style-type: none;
-    margin-left: 0;
+    margin: 0;
     padding-left: 0;
     @include desktop {
         padding: 2rem 0.83rem;
@@ -258,10 +258,11 @@
 }
 
 .fp-recent-donors {
+    padding: 30px 30px 60px 30px;
     h1 {
         font-size: 1.7rem;
         text-align: center;
-        margin: 0 0 20px 0;
+        margin: 0 0 35px 0;
         line-height: 2rem;
         @include desktop {
             font-size: 2rem;
@@ -269,8 +270,11 @@
     }
     ul {
         list-style-type: none;
-        margin-left: 0;
+        margin: 0;
         padding-left: 0;
+        & :last-child .donor-name {
+            line-height: 1.75rem;
+        }
         @include desktop {
             display: flex;
             justify-content: space-around;
@@ -287,13 +291,26 @@
         flex-basis: 25%;
     }
     .donor-name {
+        font-size: 1rem;
         text-align: center;
         margin: 0;
+        @include desktop {
+            font-size: 1.4rem;
+            height: 80px;
+        }
     }
+
     p {
         margin: 0;
     }
+    @include desktop {
+        .donation-amount {
+            color: $color__deepblue-brand;
+        }
+    }
 }
+
+
 
 .program-sponsors {
     background-color: $color__offwhite-brand;
@@ -305,15 +322,13 @@
         @include desktop {
             font-size: 2rem;
         }
-
     }
     ul {
         list-style-type: none;
-        margin-left: 0;
+        margin: 0;
         padding-left: 0;
         display: flex;
         justify-content: space-around;
-
     }
 
     .sponsor-logo-wrap {

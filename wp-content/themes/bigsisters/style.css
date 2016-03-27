@@ -1000,7 +1000,7 @@ object {
 
 .hero-stories ul {
   list-style-type: none;
-  margin-left: 0;
+  margin: 0;
   padding-left: 0; }
   @media (min-width: 1280px) {
     .hero-stories ul {
@@ -1091,27 +1091,30 @@ object {
   padding-right: 20px;
   text-align: right; }
 
-.fp-recent-donors h1 {
-  font-size: 1.7rem;
-  text-align: center;
-  margin: 0 0 20px 0;
-  line-height: 2rem; }
-  @media (min-width: 1280px) {
-    .fp-recent-donors h1 {
-      font-size: 2rem; } }
-
-.fp-recent-donors ul {
-  list-style-type: none;
-  margin-left: 0;
-  padding-left: 0; }
-  @media (min-width: 1280px) {
-    .fp-recent-donors ul {
-      display: -webkit-flex;
-      display: -ms-flexbox;
-      display: flex;
-      -webkit-justify-content: space-around;
-          -ms-flex-pack: distribute;
-              justify-content: space-around; } }
+.fp-recent-donors {
+  padding: 30px 30px 60px 30px; }
+  .fp-recent-donors h1 {
+    font-size: 1.7rem;
+    text-align: center;
+    margin: 0 0 35px 0;
+    line-height: 2rem; }
+    @media (min-width: 1280px) {
+      .fp-recent-donors h1 {
+        font-size: 2rem; } }
+  .fp-recent-donors ul {
+    list-style-type: none;
+    margin: 0;
+    padding-left: 0; }
+    .fp-recent-donors ul :last-child .donor-name {
+      line-height: 1.75rem; }
+    @media (min-width: 1280px) {
+      .fp-recent-donors ul {
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-justify-content: space-around;
+            -ms-flex-pack: distribute;
+                justify-content: space-around; } }
 
 .individual-donor {
   display: -webkit-flex;
@@ -1130,10 +1133,18 @@ object {
           -ms-flex-preferred-size: 25%;
               flex-basis: 25%; } }
   .individual-donor .donor-name {
+    font-size: 1rem;
     text-align: center;
     margin: 0; }
+    @media (min-width: 1280px) {
+      .individual-donor .donor-name {
+        font-size: 1.4rem;
+        height: 80px; } }
   .individual-donor p {
     margin: 0; }
+  @media (min-width: 1280px) {
+    .individual-donor .donation-amount {
+      color: #006699; } }
 
 .program-sponsors {
   background-color: #F0F0F0;
@@ -1147,7 +1158,7 @@ object {
         font-size: 2rem; } }
   .program-sponsors ul {
     list-style-type: none;
-    margin-left: 0;
+    margin: 0;
     padding-left: 0;
     display: -webkit-flex;
     display: -ms-flexbox;
