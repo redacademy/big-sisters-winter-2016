@@ -30,6 +30,8 @@ body {
 
 .container {
 	padding: 0 2rem;
+	max-width: $desktop-maxwidth;
+	margin: 0 auto;
 }
 
 .acr-box-content {
