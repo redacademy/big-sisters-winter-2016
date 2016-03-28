@@ -242,3 +242,26 @@ ul {
       text-align: center;
     }
 }
+
+/* Ways to Give Page ---------------------------------------------------- */
+
+.donate-option {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.donate-option-description p {
+  // text-align: center;
+}
+
+.donate-icon {
+  margin-left: auto;
+  margin-right: auto;
+  img {
+    border: 1px solid black;
+    border-radius: 50%;
+    width: 73px;
+    height: 63px;
+  }
+}

@@ -8,8 +8,6 @@ get_header(); ?>
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
 
-    <section class="container">
-
         <h1>Frequently Asked Questions</h1>
 
         <h2>ABOUT THE PROGRAM</h2>
@@ -139,8 +137,6 @@ get_header(); ?>
             </div>
           </div>
         </div>
-
-    </section>
 
 		</main><!-- #main -->
 	</div><!-- #primary -->

@@ -1082,7 +1082,10 @@ ul {
           flex-wrap: wrap;
   -webkit-flex-direction: row;
       -ms-flex-direction: row;
-          flex-direction: row; }
+          flex-direction: row;
+  -webkit-justify-content: space-around;
+      -ms-flex-pack: distribute;
+          justify-content: space-around; }
   .ar-menu-sections a {
     text-decoration: none;
     color: black; }
@@ -1091,6 +1094,27 @@ ul {
     margin: 10px; }
   .ar-menu-sections p {
     text-align: center; }
+
+/* Ways to Give Page ---------------------------------------------------- */
+.donate-option {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center; }
+
+.donate-icon {
+  margin-left: auto;
+  margin-right: auto; }
+  .donate-icon img {
+    border: 1px solid black;
+    border-radius: 50%;
+    width: 73px;
+    height: 63px; }
 
 /*--------------------------------------------------------------
 # Footer

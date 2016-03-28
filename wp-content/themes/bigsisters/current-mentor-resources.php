@@ -21,30 +21,30 @@ get_header(); ?>
 
 				<div class="mentor-article-one">
 					<img class="article-one-image" src="<?php echo CFS()->get( 'article_one_image' ); ?>">
-					<p class="event-one-date"><?php echo esc_html(CFS()->get( 'event_one_date' ) ); ?></p>
-					<p class="event-one-title"><?php echo esc_html(CFS()->get( 'event_one_title' ) ); ?></p>
-					<p class="event-one-description"><?php echo esc_html(CFS()->get( 'event_one_description' ) ); ?></p>
+					<p class="event-date"><?php echo esc_html(CFS()->get( 'event_one_date' ) ); ?></p>
+					<p class="event-title"><?php echo esc_html(CFS()->get( 'event_one_title' ) ); ?></p>
+					<p class="event-description"><?php echo esc_html(CFS()->get( 'event_one_description' ) ); ?></p>
 				</div>
 
 				<div class="mentor-article-two">
 					<img class="article-two-image" src="<?php echo CFS()->get( 'article_two_image' ); ?>">
-					<p class="event-two-date"><?php echo esc_html(CFS()->get( 'event_two_date' ) ); ?></p>
-					<p class="event-two-title"><?php echo esc_html(CFS()->get( 'event_two_title' ) ); ?></p>
-					<p class="event-two-description"><?php echo esc_html(CFS()->get( 'event_two_description' ) ); ?></p>
+					<p class="event-date"><?php echo esc_html(CFS()->get( 'event_two_date' ) ); ?></p>
+					<p class="event-title"><?php echo esc_html(CFS()->get( 'event_two_title' ) ); ?></p>
+					<p class="event-description"><?php echo esc_html(CFS()->get( 'event_two_description' ) ); ?></p>
 				</div>
 
 				<div class="mentor-article-three">
 					<img class="article-three-image" src="<?php echo CFS()->get( 'article_three_image' ); ?>">
-					<p class="event-three-date"><?php echo esc_html(CFS()->get( 'event_three_date' ) ); ?></p>
-					<p class="event-three-title"><?php echo esc_html(CFS()->get( 'event_three_title' ) ); ?></p>
-					<p class="event-three-description"><?php echo esc_html(CFS()->get( 'event_three_description' ) ); ?></p>
+					<p class="event-date"><?php echo esc_html(CFS()->get( 'event_three_date' ) ); ?></p>
+					<p class="event-title"><?php echo esc_html(CFS()->get( 'event_three_title' ) ); ?></p>
+					<p class="event-description"><?php echo esc_html(CFS()->get( 'event_three_description' ) ); ?></p>
 				</div>
 
 				<div class="mentor-article-four">
 					<img class="article-four-image" src="<?php echo CFS()->get( 'article_four_image' ); ?>">
-					<p class="event-four-date"><?php echo esc_html(CFS()->get( 'event_four_date' ) ); ?></p>
-					<p class="event-four-title"><?php echo esc_html(CFS()->get( 'event_four_title' ) ); ?></p>
-					<p class="event-four-description"><?php echo esc_html(CFS()->get( 'event_four_description' ) ); ?></p>
+					<p class="event-date"><?php echo esc_html(CFS()->get( 'event_four_date' ) ); ?></p>
+					<p class="event-title"><?php echo esc_html(CFS()->get( 'event_four_title' ) ); ?></p>
+					<p class="event-description"><?php echo esc_html(CFS()->get( 'event_four_description' ) ); ?></p>
 				</div>
 			</section>
 
