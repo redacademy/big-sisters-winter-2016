@@ -26,11 +26,21 @@ get_header();?>
 
 				<hr>
 
-				<section class="mission-beliefs container">
+				<section class="our-mission-beliefs container">
+
 					<div class="mission">
 						<h2>Our Mission</h2>
 						<?php echo CFS()->get('mission'); ?>
 					</div> <!-- .mission -->
+
+				</section> <!-- .our-mission -->
+
+				<hr>
+
+				<section class="our-beliefs container">
+
+					<h2>Our Beliefs</h2>
+					<?php echo CFS()->get('beliefs'); ?>
 
 					<div class="accordian-box">
 						<div class="acr-box-div">
@@ -40,49 +50,58 @@ get_header();?>
 								<i class="fa fa-plus-circle"></i>
 							</div> <!-- .beliefs -->
 							<div class="acr-box-content">
-								HIDDEN CONTENT
+								<?php echo CFS()->get('beliefs'); ?>
 							</div> <!-- .acr-box-content -->
 
 						</div> <!-- .acr-box-div -->
 					</div> <!-- .accordian-box -->
 
-				</section> <!-- .mission-beliefs -->
+				</section> <!-- .our-beliefs -->
 
-				<section class="recent-news container">
-					<h2>Recent News</h2>
+				<section class="recent-news">
+					<div class="container">
 
-					<ul>
-						<?php foreach($latest_posts as $post) : setup_postdata( $post ); ?>
-							<li class="post-wrapper">
+						<h2>Recent News</h2>
 
-								<div class="post-meta">
-									<h3 class="post-title"><?php the_title(); ?></h3>
-									<p><?php red_starter_posted_on(); ?></p>
-									<?php the_content(); ?>
+						<?php
+							$args = array('post_type' => 'post', 'posts_per_page' => 4);
+							$latest_posts = get_posts( $args );
+						?>
 
-									<a href="<?php the_permalink(); ?>">
-										<button class="read-more button-white" type="button" name="button">Read More</button>
-									</a>
+						<ul>
+							<?php foreach($latest_posts as $post) : setup_postdata( $post ); ?>
+								<li class="post-wrapper">
 
-								</div>
+									<div class="post-meta">
+										<h3 class="post-title"><?php the_title(); ?></h3>
+										<p><?php red_starter_posted_on(); ?></p>
+										<?php the_content(); ?>
 
-							</li>
-						<?php endforeach; wp_reset_postdata(); ?>
-					</ul>
+										<a href="<?php the_permalink(); ?>">
+											<button class="read-more button-white" type="button" name="button">Read More</button>
+										</a>
 
-					<div class="accordian-box">
-						<div class="acr-box-div">
+									</div>
 
-							<div class="info-panel-content more-media">
-								<span>More Media</span>
-								<i class="fa fa-plus-circle"></i>
-							</div> <!-- more-media -->
-							<div class="acr-box-content">
-								HIDDEN CONTENT
-							</div> <!-- .acr-box-content -->
+								</li>
+							<?php endforeach; wp_reset_postdata(); ?>
+						</ul>
 
-						</div> <!-- .acr-box-div -->
-					</div> <!-- .accordian-box -->
+						<div class="accordian-box">
+							<div class="acr-box-div">
+
+								<div class="info-panel-content more-media">
+									<span>More Media</span>
+									<i class="fa fa-plus-circle"></i>
+								</div> <!-- more-media -->
+								<div class="acr-box-content">
+									HIDDEN CONTENT
+								</div> <!-- .acr-box-content -->
+
+							</div> <!-- .acr-box-div -->
+						</div> <!-- .accordian-box -->
+
+					</div> <!-- .container -->
 
 				</section> <!-- .recent-news -->
 
@@ -112,8 +131,8 @@ get_header();?>
 							<span>Advisors</span>
 							<i class="fa fa-plus-circle"></i>
 						</div> <!-- .board-advisors -->
-						<div class="acr-box-content">
-								HIDDEN CONTENT
+						<div class="acr-box-content advisor-list">
+							<?php echo CFS()->get('advisors'); ?>
 						</div> <!-- .acr-box-content -->
 
 					</div> <!-- .acr-box-div -->
@@ -132,21 +151,22 @@ get_header();?>
 							</div>
 							<div class="acr-box-content"> <!-- hidden content goes here -->
 
+								<?php echo CFS()->get('loyalty_paragraph') ?>
+
 								<div class="info-panel-content donor-panel">
 									<span>Visionary Match Makers ($50,000+)</span>
 									<i class="fa fa-plus-circle"></i>
 								</div>
 								<div class="acr-box-content">
-									Test
+									<?php echo CFS()->get('visionary_match_makers') ?>
 								</div>
-
 
 								<div class="info-panel-content donor-panel">
 									<span>Diamond Match Makers ($10,000 - $49,000)</span>
 									<i class="fa fa-plus-circle"></i>
 								</div>
 								<div class="acr-box-content">
-									Test 2
+									<?php echo CFS()->get('diamond_match_makers') ?>
 								</div>
 
 								<div class="donor-panel">
