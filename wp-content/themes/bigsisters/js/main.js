@@ -1,20 +1,25 @@
-// /* Slide up/down Menus Funciton */
 (function($) {
+  'use strict';
+   /* Slide up/down Menus Funciton */
 
-  $('.acr-box-content').hide();
-  // jQuery('info-panel-content').addClass('active');
+  $('.info-panel-content').click(function(e) {
+    	e.preventDefault();
 
-  $('.info-panel-content').click(function(){
-    $('.acr-box-content').slideUp();
-    $('.info-panel-content .fa').attr('class', 'fa fa-minus-circle');
-    // jQuery('info-panel-content').removeClass('active');
-    if($(this).next().is(':visible')){
-      $(this).next().slideUp();
-      $('.info-panel-content .fa').attr('class', 'fa fa-plus-circle');
-    }else{
-      $(this).next().slideDown();
+      var $this = $(this);
 
-    }
+      if ($this.next().hasClass('show')) {
+          $this.next().removeClass('show');
+          $this.next().slideUp(350);
+          // $this.children('.fa').toggleClass('fa-plus-circle');
+
+      } else {
+          $this.parent().parent().find('div .acr-box-content').removeClass('show');
+          $this.parent().parent().find('div .acr-box-content').slideUp(350);
+          $this.next().toggleClass('show');
+          $this.next().slideToggle(350);
+          // $this.children('.fa').toggleClass('fa-minus-circle');
+      }
+
   });
 
 // Success Story show/hide functionality
