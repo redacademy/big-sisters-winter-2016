@@ -20,13 +20,13 @@
 .about-video iframe {
   width: 100%;
   height: 16.9rem;
-  
+
   @include desktop {
     height: 45rem;
   }
 }
 
-.beliefs, .more-media, .board-directors, .loyalty-circles, .applause {
+.beliefs, .more-media, .directors, .advisors, .loyalty-circles, .applause {
   @include info-panel-styles;
 
   span {

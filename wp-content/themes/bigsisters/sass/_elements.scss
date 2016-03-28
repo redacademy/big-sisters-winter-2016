@@ -32,6 +32,11 @@ body {
 	padding: 0 2rem;
 }
 
+.acr-box-content {
+    display: none;
+    overflow: hidden;
+  }
+
 p {
 	line-height: $font__line-height-body;
 	font-family: $font__main;
