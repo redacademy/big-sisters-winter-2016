@@ -116,3 +116,113 @@ function directors_post_type() {
 
 }
 add_action( 'init', 'directors_post_type', 0 );
+
+// Register Sponsors Post Type
+function sponsors_post_type() {
+
+	$labels = array(
+		'name'                  => 'Sponsors',
+		'singular_name'         => 'Sponsor',
+		'menu_name'             => 'Sponsors',
+		'name_admin_bar'        => 'Sponsors',
+		'archives'              => 'Sponsor Archives',
+		'parent_item_colon'     => 'Parent Sponsor:',
+		'all_items'             => 'All Sponsors',
+		'add_new_item'          => 'Add New Sponsor',
+		'add_new'               => 'Add New',
+		'new_item'              => 'New Sponsor',
+		'edit_item'             => 'Edit Sponsor',
+		'update_item'           => 'Update Sponsor',
+		'view_item'             => 'View Sponsor',
+		'search_items'          => 'Search Sponsor',
+		'not_found'             => 'Not found',
+		'not_found_in_trash'    => 'Not found in Trash',
+		'featured_image'        => 'Featured Image',
+		'set_featured_image'    => 'Set featured image',
+		'remove_featured_image' => 'Remove featured image',
+		'use_featured_image'    => 'Use as featured image',
+		'insert_into_item'      => 'Insert into Sponsor',
+		'uploaded_to_this_item' => 'Uploaded to this Sponsor',
+		'items_list'            => 'Sponsors list',
+		'items_list_navigation' => 'Sponsors list navigation',
+		'filter_items_list'     => 'Filter Sponsors list',
+	);
+	$args = array(
+		'label'                 => 'Sponsor',
+		'description'           => 'List of all recruitment sponsors',
+		'labels'                => $labels,
+		'supports'              => array( 'title', ),
+		'taxonomies'            => array( 'category', 'post_tag' ),
+		'hierarchical'          => false,
+		'public'                => true,
+		'show_ui'               => true,
+		'show_in_menu'          => true,
+		'menu_position'         => 5,
+		'menu_icon'             => 'dashicons-thumbs-up',
+		'show_in_admin_bar'     => true,
+		'show_in_nav_menus'     => true,
+		'can_export'            => true,
+		'has_archive'           => 'sponsor',
+		'exclude_from_search'   => false,
+		'publicly_queryable'    => true,
+		'capability_type'       => 'page',
+	);
+	register_post_type( 'sponsor', $args );
+
+}
+add_action( 'init', 'sponsors_post_type', 0 );
+
+// Register Careers Post Type
+function careers_post_type() {
+
+	$labels = array(
+		'name'                  => 'Careers',
+		'singular_name'         => 'Career',
+		'menu_name'             => 'Careers',
+		'name_admin_bar'        => 'Careers',
+		'archives'              => 'Career Archives',
+		'parent_item_colon'     => 'Parent Career:',
+		'all_items'             => 'All Careers',
+		'add_new_item'          => 'Add New Career',
+		'add_new'               => 'Add New',
+		'new_item'              => 'New Career',
+		'edit_item'             => 'Edit Career',
+		'update_item'           => 'Update Career',
+		'view_item'             => 'View Career',
+		'search_items'          => 'Search Career',
+		'not_found'             => 'Not found',
+		'not_found_in_trash'    => 'Not found in Trash',
+		'featured_image'        => 'Featured Image',
+		'set_featured_image'    => 'Set featured image',
+		'remove_featured_image' => 'Remove featured image',
+		'use_featured_image'    => 'Use as featured image',
+		'insert_into_item'      => 'Insert into Career',
+		'uploaded_to_this_item' => 'Uploaded to this Career',
+		'items_list'            => 'Careers list',
+		'items_list_navigation' => 'Careers list navigation',
+		'filter_items_list'     => 'Filter Careers list',
+	);
+	$args = array(
+		'label'                 => 'Career',
+		'description'           => 'List of all available careers',
+		'labels'                => $labels,
+		'supports'              => array( 'title', 'editor', ),
+		'taxonomies'            => array( 'category', 'post_tag' ),
+		'hierarchical'          => false,
+		'public'                => true,
+		'show_ui'               => true,
+		'show_in_menu'          => true,
+		'menu_position'         => 5,
+		'menu_icon'             => 'dashicons-id-alt',
+		'show_in_admin_bar'     => true,
+		'show_in_nav_menus'     => true,
+		'can_export'            => true,
+		'has_archive'           => 'careers',
+		'exclude_from_search'   => false,
+		'publicly_queryable'    => true,
+		'capability_type'       => 'page',
+	);
+	register_post_type( 'career', $args );
+
+}
+add_action( 'init', 'careers_post_type', 0 );

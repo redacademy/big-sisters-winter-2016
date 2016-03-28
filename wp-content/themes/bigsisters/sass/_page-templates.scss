@@ -348,10 +348,12 @@
     }
 }
 
-/* Success Stories */
-.stories-copy {
+/* generic styles: success stories, get involved */
+.story-page-copy, .involved-copy {
   text-align: center;
 }
+
+/* Success Stories */
 .story-thumb {
   height: 300px;
   overflow: hidden;
@@ -412,9 +414,10 @@
   top: -6rem;
   width: 25rem;
   z-index: -1;
-  h2, p {
+  color: #fff;
+  line-height: 1.25;
+  .initiative-head {
     color: #fff;
-    line-height: 1.25;
   }
 }
 .big-sister-mentor {
@@ -425,6 +428,72 @@
 }
 .go-girls-mentor {
   background-color: $color__orange-brand;
+}
+
+/* Get Involved Main Page */
+.page-template-get-involved {
+  .involved-header {
+    color: $color__purple-brand;
+    text-align: center;
+    width: 90%;
+    margin: 0 auto;
+  }
+  .other-ways {
+    font-size: 1.25rem;
+    color: #fff;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  .other-ways li {
+    width: 100%;
+    height: 75px;
+    margin: .5rem 0;
+    display: flex;
+      justify-content: center;
+      align-items: center;
+  }
+  .other-ways li:first-child {
+    background: $color__yellow-brand;
+  }
+  .other-ways li:nth-child(2) {
+    background: $color__deepblue-brand;
+  }
+  .other-ways li:nth-child(3) {
+    background: $color__dusk-brand;
+  }
+  .other-ways li:nth-child(4) {
+    background: $color__green-brand;
+  }
+}
+.little-sister-hero {
+  background: #f00 url('../../assets/images/big-little-bench.jpg') 0 -25px no-repeat;
+  background-size: 115vw;
+  height: 250px;
+  margin-bottom: 2rem;
+  width: 100vw;
+  display: flex;
+    align-items: center;
+}
+.little-sister-quote {
+  color: #fff;
+  font-size: 1.15rem;
+  width: 60%;
+}
+.sponsor-grid {
+  width: 100%;
+  display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row wrap;
+    .sponsor {
+      padding: .5rem .5rem;
+      flex: 0 1 33.33%;
+      height: 75px;
+      display: flex;
+        justify-content: center;
+        align-items: center;
+    }
 }
 
 /* Refer A Little Page -------------------------------------------------*/

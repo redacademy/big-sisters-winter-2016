@@ -6,18 +6,18 @@
 */
 
 get_header(); ?>
-<div id="primary" class="content-area container stories-copy">
+<div id="primary" class="content-area">
 	<main id="main" class="site-main" role="main">
 
 		<?php if ( have_posts() ) : ?>
 
-			<header class="page-header">
+			<header class="container story-page-copy">
 				<?php
 				the_archive_title( '<h1 class="page-title">', '</h1>' );
 				?>
 			</header><!-- .page-header -->
 
-			<section class="success-section">
+			<section class="container story-page-copy">
 			<?php /* Start the Loop */ ?>
 			<?php while ( have_posts() ) : the_post(); ?>
 				<?php if ( has_post_thumbnail() ) : ?>
@@ -68,7 +68,7 @@ get_header(); ?>
 		</div>
 </section>
 
-<section class="initatives-sect">
+<section class="container story-page-copy">
 <?php include_once('inc/initatives.php'); ?>
 </section>
 
