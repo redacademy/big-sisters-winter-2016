@@ -7,7 +7,7 @@ get_header();?>
 <div id="primary" class="content-area">
 	<main id="main" class="site-main" role="main">
 		<header class="container story-page-copy">
-			<h2 class="involved-header">Learn About Becoming a Mentor!</h2>
+			<h1 class="involved-header">Learn About Becoming a Mentor!</h1>
 		</header>
 
 		<section class="container involved-copy">
@@ -61,10 +61,10 @@ get_header();?>
 		<!-- Refer a Little Sisiter -->
 		<section>
 			<h2 class="involved-header">Refer A Little Sister</h2>
-			<div class="little-sister-hero">
-				<div class="little-sister-quote container">
+			<div class="little-sister-hero container">
+				<div class="little-sister-quote">
 					<p>"Big Sisters is the best thing that has happenend to our family!"</p>
-					<button class="button-deepblue">Learn More</button>
+					<button class="button-brightblue">Learn More</button>
 				</div>
 			</div>
 		</section>

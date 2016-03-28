@@ -349,21 +349,53 @@
 }
 
 /* generic styles: success stories, get involved */
-.story-page-copy, .involved-copy {
-  text-align: center;
+.story-page-copy {
+  h1 {
+    text-align: center;
+  }
+  ul {
+    text-align: center;
+    list-style: none;
+    margin: 0;
+    @include desktop {
+      text-align: left;
+    }
+  }
 }
 
 /* Success Stories */
-.story-thumb {
-  height: 300px;
-  overflow: hidden;
-  position: relative;
-  img {
-    left: 50%;
-    max-width: none;
-    position: absolute;
-    top: 50%;
-    transform: translate(-50%, -50%) scale(1.25);
+.success-stories li {
+  @include desktop {
+    display: flex;
+      justify-content: space-between;
+      flex-flow: row wrap;
+  }
+  &:nth-child(even) {
+    @include desktop {
+    display: flex;
+    flex-flow: row nowrap;
+      .story-thumb {
+        order: 2;
+      }
+      .story-block {
+        order: 1;
+      }
+    }
+  }
+  &:nth-child(even) .story-thumb {
+    @include desktop {
+      margin-left: 2rem;
+    }
+  }
+  &:nth-child(odd) .story-block {
+    @include desktop {
+    padding-left: 2rem;
+  }
+  }
+}
+.story-block {
+  @include desktop {
+    flex: 0 1 70%;
   }
 }
 .story-title, .story-subhead {
@@ -373,7 +405,27 @@
 .story-title {
   color: $color__green-brand;
 }
-
+.story-thumb {
+  height: 250px;
+  overflow: hidden;
+  position: relative;
+  @include desktop {
+    height: 300px;
+    width: 100%;
+    flex: 0 1 30%;
+    margin-top: 1.5rem;
+  }
+  img {
+    top: 50%;
+    left: 50%;
+    max-width: none;
+    position: absolute;
+    transform: translate(-50%, -50%) scale(1.3);
+    @include desktop {
+      transform: translate(-50%, -50%) scale(1.15);
+    }
+  }
+}
 .story-panel-content {
   &:hover {
     cursor: pointer;
@@ -385,15 +437,25 @@
     align-items: center;
   }
 }
-
 // ========== Initiative blocks ============
-
+.volunteer-progs {
+  margin: 4rem 0 0;
+  width: 100%;
+  @include desktop {
+    display: flex;
+    justify-content: space-between;
+  }
+}
 .initiative-block {
   width: 100%;
+  text-align: center;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-flow: column;
+  @include desktop {
+    width: 33.33%;
+  }
 }
 .initiative-logo {
   background: #fff;
@@ -404,20 +466,43 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  @include desktop {
+    height: 9rem;
+    width: 9rem;
+    img {
+      width: 60%;
+    }
+  }
 }
 .initiative-cta {
   box-shadow: 0 2px 4px rgb(100, 100, 100);
   font-size: 1.7rem;
   height: 25rem;
-  padding-top: 6.5rem;
+  padding-top: 6rem;
   position: relative;
   top: -6rem;
   width: 25rem;
   z-index: -1;
   color: #fff;
   line-height: 1.25;
+  @include desktop {
+    min-height: 16rem;
+    max-height: 20rem;
+    min-width: 16rem;
+    max-width: 90%;
+    top: -4rem;
+    font-size: 1.25rem;
+    line-height: 1;
+    padding-top: 6rem;
+    p {
+      margin: 0;
+    }
+  }
   .initiative-head {
     color: #fff;
+    @include desktop {
+      font-size: 1.25rem;
+    }
   }
 }
 .big-sister-mentor {
@@ -428,6 +513,12 @@
 }
 .go-girls-mentor {
   background-color: $color__orange-brand;
+}
+.button-white {
+  @include desktop {
+    transform: scale(.75);
+    margin: 0;
+  }
 }
 
 /* Get Involved Main Page */
@@ -442,8 +533,12 @@
     font-size: 1.25rem;
     color: #fff;
     list-style: none;
-    margin: 0;
+    margin: 3rem 0;
     padding: 0;
+    @include desktop {
+      display: flex;
+      justify-content: space-between;
+    }
   }
   .other-ways li {
     width: 100%;
@@ -452,6 +547,11 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    @include desktop {
+      flex: 1 0 25%;
+      text-align: center;
+      padding: 5rem 2rem;
+    }
   }
   .other-ways li:first-child {
     background: $color__yellow-brand;
@@ -470,23 +570,35 @@
   background: #f00 url('../../assets/images/big-little-bench.jpg') 0 -25px no-repeat;
   background-size: 115vw;
   height: 250px;
-  margin-bottom: 2rem;
+  margin: 2rem 0;
   width: 100vw;
   display: flex;
   align-items: center;
+  @include desktop {
+    height: 400px;
+    align-items: flex-start;
+  }
 }
 .little-sister-quote {
   color: #fff;
   font-size: 1.15rem;
   width: 60%;
+  padding: 0;
+  @include desktop {
+    font-size: 2rem;
+  }
 }
 .sponsor-grid, .sponsor-grid ul {
   width: 100%;
+  margin: 3rem 0;
   text-align: center;
   display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row wrap;
+  @include desktop {
+    justify-content: space-between;
+  }
   .sponsor, li {
     padding: .5rem .5rem;
     flex: 0 1 33.33%;
@@ -494,6 +606,9 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    @include desktop {
+      flex: 0 1 20%;
+    }
   }
   ul {
     list-style: none;

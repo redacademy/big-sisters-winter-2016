@@ -1,4 +1,5 @@
-<div class="initiative-block">
+<section class="volunteer-progs">
+  <div class="initiative-block">
   <div class="initiative-logo">
     <img src="<?php echo get_template_directory_uri() ?>/assets/images/initiatives/big-sisters-mentor.jpg" alt="Become a Big Sisters Mentor" />
   </div>
@@ -39,3 +40,4 @@
     <button class="button-white">Learn More</button>
   </div>
 </div>
+</section>
