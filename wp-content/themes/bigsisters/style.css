@@ -911,10 +911,11 @@ object {
   width: 100%;
   padding: 0 0.83rem; }
 
-/* Success Stories */
-.stories-copy {
+/* generic styles: success stories, get involved */
+.story-page-copy, .involved-copy {
   text-align: center; }
 
+/* Success Stories */
 .story-thumb {
   height: 300px;
   overflow: hidden;
@@ -988,10 +989,11 @@ object {
   position: relative;
   top: -6rem;
   width: 25rem;
-  z-index: -1; }
-  .initiative-cta h2, .initiative-cta p {
-    color: #fff;
-    line-height: 1.25; }
+  z-index: -1;
+  color: #fff;
+  line-height: 1.25; }
+  .initiative-cta .initiative-head {
+    color: #fff; }
 
 .big-sister-mentor {
   background-color: #006699; }
@@ -1001,6 +1003,94 @@ object {
 
 .go-girls-mentor {
   background-color: #FF9933; }
+
+/* Get Involved Main Page */
+.page-template-get-involved .involved-header {
+  color: #663399;
+  text-align: center;
+  width: 90%;
+  margin: 0 auto; }
+
+.page-template-get-involved .other-ways {
+  font-size: 1.25rem;
+  color: #fff;
+  list-style: none;
+  margin: 0;
+  padding: 0; }
+
+.page-template-get-involved .other-ways li {
+  width: 100%;
+  height: 75px;
+  margin: .5rem 0;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center; }
+
+.page-template-get-involved .other-ways li:first-child {
+  background: #FFCC66; }
+
+.page-template-get-involved .other-ways li:nth-child(2) {
+  background: #006699; }
+
+.page-template-get-involved .other-ways li:nth-child(3) {
+  background: #FF6633; }
+
+.page-template-get-involved .other-ways li:nth-child(4) {
+  background: #99CC33; }
+
+.little-sister-hero {
+  background: #f00 url("../../assets/images/big-little-bench.jpg") 0 -25px no-repeat;
+  background-size: 115vw;
+  height: 250px;
+  margin-bottom: 2rem;
+  width: 100vw;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center; }
+
+.little-sister-quote {
+  color: #fff;
+  font-size: 1.15rem;
+  width: 60%; }
+
+.sponsor-grid {
+  width: 100%;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-flex-flow: row wrap;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap; }
+  .sponsor-grid .sponsor {
+    padding: .5rem .5rem;
+    -webkit-flex: 0 1 33.33%;
+        -ms-flex: 0 1 33.33%;
+            flex: 0 1 33.33%;
+    height: 75px;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center; }
 
 /* Refer A Little Page -------------------------------------------------*/
 .quote-image-container {
@@ -1063,15 +1153,12 @@ ul {
 
 .steps-button {
   margin: 0 auto 2rem 6rem; }
-<<<<<<< HEAD
 
 /* Current Mentor Resources Page -------------------------------------------*/
 .mentor-hero {
   background: url("../../assets/images/mentor-resources-images/current-mentor-hero.jpg") no-repeat;
   background-size: 100vw;
   height: 263px; }
-=======
->>>>>>> initiatives-updates
 
 /*--------------------------------------------------------------
 # Footer

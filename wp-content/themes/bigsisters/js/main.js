@@ -4,11 +4,10 @@
   $('.acr-box-content').hide();
 
   $('.info-panel-content').click(function(){
-    // $('.acr-box-content').slideUp();
     var currentText = $(this).text();
-    $(this).html(currentText+'<i class="fa fa-minus-circle"></i>');
+    $(this).html('<h3>'+currentText+'</h3><i class="fa fa-minus-circle"></i>');
     if($(this).next().is(':visible')){
-      $(this).html(currentText+'<i class="fa fa-plus-circle"></i>');
+      $(this).html('<h3>'+currentText+'</h3><i class="fa fa-plus-circle"></i>');
       $(this).next().slideUp();
     }else{
       $(this).next().slideDown();
