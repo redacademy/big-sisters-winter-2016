@@ -1344,8 +1344,9 @@ object {
   font-size: 1.15rem;
   width: 60%; }
 
-.sponsor-grid {
+.sponsor-grid, .sponsor-grid ul {
   width: 100%;
+  text-align: center;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
@@ -1358,7 +1359,7 @@ object {
   -webkit-flex-flow: row wrap;
       -ms-flex-flow: row wrap;
           flex-flow: row wrap; }
-  .sponsor-grid .sponsor {
+  .sponsor-grid .sponsor, .sponsor-grid li, .sponsor-grid ul .sponsor, .sponsor-grid ul li {
     padding: .5rem .5rem;
     -webkit-flex: 0 1 33.33%;
         -ms-flex: 0 1 33.33%;
@@ -1373,6 +1374,31 @@ object {
     -webkit-align-items: center;
         -ms-flex-align: center;
             align-items: center; }
+  .sponsor-grid ul, .sponsor-grid ul ul {
+    list-style: none;
+    padding: 0;
+    margin: 0; }
+
+/* Big Sister Information page -----------------------------------------*/
+.program-hero {
+  width: 100%;
+  margin-bottom: 2rem;
+  position: relative; }
+  .program-hero .program-hero-img {
+    height: 225px;
+    overflow: hidden; }
+    .program-hero .program-hero-img img {
+      width: 100%; }
+  .program-hero .program-quote {
+    background: rgba(50, 50, 50, 0.5);
+    color: #fff;
+    font-size: .95rem;
+    margin-bottom: 1rem;
+    position: absolute;
+    width: 100%;
+    bottom: 0; }
+    .program-hero .program-quote p {
+      line-height: 1.25; }
 
 /* Refer A Little Page -------------------------------------------------*/
 .quote-image-container {
@@ -1439,7 +1465,6 @@ ul {
   background: url("../../assets/images/mentor-resources-images/current-mentor-hero.jpg") no-repeat;
   background-size: 100vw;
   height: 263px; }
-<<<<<<< HEAD
 
 .upcoming-events-section img {
   width: 100%; }
@@ -1465,8 +1490,6 @@ ul {
     margin: 10px; }
   .ar-menu-sections p {
     text-align: center; }
-=======
->>>>>>> get-involved
 
 /*--------------------------------------------------------------
 # Footer
