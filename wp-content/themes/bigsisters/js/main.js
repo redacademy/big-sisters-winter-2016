@@ -1,24 +1,19 @@
-<<<<<<< HEAD
-// Slide Up/Down menu Functionality
-=======
->>>>>>> about_refactor
 (function($) {
   'use strict';
    /* Slide up/down Menus Funciton */
 
-<<<<<<< HEAD
-  $('.acr-box-content').hide();
+  // $('.acr-box-content').hide();
+  //
+  // $('.info-panel-content').click(function(){
+  //   var currentText = $(this).text();
+  //   $(this).html('<h3>'+currentText+'</h3><i class="fa fa-minus-circle"></i>');
+  //   if($(this).next().is(':visible')){
+  //     $(this).html('<h3>'+currentText+'</h3><i class="fa fa-plus-circle"></i>');
+  //     $(this).next().slideUp();
+  //   }else{
+  //     $(this).next().slideDown();
+  //   }
 
-  $('.info-panel-content').click(function(){
-    var currentText = $(this).text();
-    $(this).html('<h3>'+currentText+'</h3><i class="fa fa-minus-circle"></i>');
-    if($(this).next().is(':visible')){
-      $(this).html('<h3>'+currentText+'</h3><i class="fa fa-plus-circle"></i>');
-      $(this).next().slideUp();
-    }else{
-      $(this).next().slideDown();
-    }
-=======
   $('.info-panel-content').click(function(e) {
     	e.preventDefault();
 
@@ -36,8 +31,6 @@
           $this.next().slideToggle(350);
           // $this.children('.fa').toggleClass('fa-minus-circle');
       }
-
->>>>>>> about_refactor
   });
 
 // Success Story Show/Hide Functionality

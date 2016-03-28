@@ -51,6 +51,25 @@ get_header();?>
 				<section class="recent-news container">
 					<h2>Recent News</h2>
 
+					<ul>
+						<?php foreach($latest_posts as $post) : setup_postdata( $post ); ?>
+							<li class="post-wrapper">
+
+								<div class="post-meta">
+									<h3 class="post-title"><?php the_title(); ?></h3>
+									<p><?php red_starter_posted_on(); ?></p>
+									<?php the_content(); ?>
+
+									<a href="<?php the_permalink(); ?>">
+										<button class="read-more button-white" type="button" name="button">Read More</button>
+									</a>
+
+								</div>
+
+							</li>
+						<?php endforeach; wp_reset_postdata(); ?>
+					</ul>
+
 					<div class="accordian-box">
 						<div class="acr-box-div">
 
