@@ -19,23 +19,33 @@ get_header(); ?>
 					<h1 class="refer-title"><?php echo esc_html(CFS()->get( 'title_refer' ) ); ?></h1>
 				</header>
 
-				<section class="quote-image-sections container">
-					<div class="quote-image-container">
-						<img class="quote-image-one" src="<?php echo CFS()->get( 'quote_image_one' ); ?>">
-						<p class="quote-text-one"><?php echo esc_html(CFS()->get( 'quote_text_one' ) ); ?></p>
-					</div>
-
-					<div class="quote-image-container">
-						<img class="quote-image-two" src="<?php echo CFS()->get( 'quote_image_two' ); ?>">
-						<p class="quote-text-two"><?php echo esc_html(CFS()->get( 'quote_text_two' ) ); ?></p>
-					</div>
-
-					<div class="quote-image-container">
-						<img class="quote-image-three" src="<?php echo CFS()->get( 'quote_image_three' ); ?>">
-						<p class="quote-text-three"><?php echo esc_html(CFS()->get( 'quote_text_three' ) ); ?></p>
-					</div>
-
-			</section>
+				<section class="hero-stories">
+	                <ul>
+	                    <li class="individual-hero-stories">
+							<div class"hero-quote-wrap">
+		                        <p class="stories-quote">
+		                            "Offering my time and <span class="quote-orange">support to my little sister</span> is one of the most <span class="quote-green">fulfilling</span> things I have done in my life."
+		                        </p>
+								<p class="quoter">- Big Sister Carolyn</p>
+							</div>
+	                    </li>
+						<li class="individual-hero-stories">
+							<div class"hero-quote-wrap">
+		                        <p class="stories-quote">
+		                            <span class="quote-dusk">92%</span> of  Little Sisters <span class="quote-blue">feel confident</span>
+		                        </p>
+							</div>
+	                    </li>
+						<li class="individual-hero-stories">
+							<div class"hero-quote-wrap">
+		                        <p class="stories-quote">
+		                            "I have seen the girls <span class="quote-green">develop new friendships</span> with each other and display greater <span class="quote-orange">confidence</span>"
+		                        </p>
+								<p class="quoter">- Shanny, Go Girls Mentor</p>
+							</div>
+	                    </li>
+	                </ul>
+	            </section>
 
 				<div class="enroll-content">
 					<h2 class="enroll-title"><?php echo esc_html(CFS()->get( 'title_enroll' ) ); ?></h1>

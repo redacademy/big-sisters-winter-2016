@@ -1290,7 +1290,6 @@ object {
 .go-girls-mentor {
   background-color: #FF9933; }
 
-<<<<<<< HEAD
 /* Get Involved Main Page */
 .page-template-get-involved .involved-header {
   color: #663399;
@@ -1405,8 +1404,6 @@ object {
     .program-hero .program-quote p {
       line-height: 1.25; }
 
-=======
->>>>>>> about_refactor
 /* Refer A Little Page -------------------------------------------------*/
 .quote-image-container {
   display: -webkit-flex;
@@ -1466,7 +1463,6 @@ ul {
 
 .steps-button {
   margin: 0 auto 2rem 6rem; }
-<<<<<<< HEAD
 
 /* Current Mentor Resources Page -------------------------------------------*/
 .mentor-hero {
@@ -1486,10 +1482,7 @@ ul {
           flex-wrap: wrap;
   -webkit-flex-direction: row;
       -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-justify-content: space-around;
-      -ms-flex-pack: distribute;
-          justify-content: space-around; }
+          flex-direction: row; }
   .ar-menu-sections a {
     text-decoration: none;
     color: black; }
@@ -1498,29 +1491,47 @@ ul {
     margin: 10px; }
   .ar-menu-sections p {
     text-align: center; }
-=======
->>>>>>> about_refactor
+
+.ar-menu-sections img {
+  padding-top: 7px;
+  width: 100px;
+  height: 100px; }
 
 /* Ways to Give Page ---------------------------------------------------- */
 .donate-option {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  -webkit-flex-wrap: wrap;
-      -ms-flex-wrap: wrap;
-          flex-wrap: wrap;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -webkit-align-items: center;
       -ms-flex-align: center;
-          align-items: center; }
-
-.donate-icon {
-  margin-left: auto;
-  margin-right: auto; }
-  .donate-icon img {
-    border: 1px solid black;
-    border-radius: 50%;
+          align-items: center;
+  border-bottom: 1px solid black;
+  margin-top: 20px; }
+  .donate-option h3 {
+    color: #006699; }
+  .donate-option .donate-icon {
     width: 73px;
     height: 63px; }
+    .donate-option .donate-icon img {
+      width: 100%;
+      border: 1px solid black;
+      border-radius: 50%; }
+  @media (min-width: 900px) and (max-width: 1280px) {
+    .donate-option {
+      -webkit-flex-direction: row;
+          -ms-flex-direction: row;
+              flex-direction: row; } }
+
+.donate-icon {
+  width: 73px;
+  height: 63px; }
+  .donate-icon img {
+    width: 100%;
+    border: 1px solid black;
+    border-radius: 50%; }
 
 /*--------------------------------------------------------------
 # Footer
@@ -1621,26 +1632,15 @@ ul {
   padding: 0 1rem;
   margin: 0 auto 2.5rem;
   width: 90vw; }
-<<<<<<< HEAD
   @media (min-width: 900px) and (max-width: 1280px) {
-    .beliefs, .more-media, .board-directors, .loyalty-circles, .applause {
-=======
-  @media (min-width: 1280px) {
     .beliefs, .more-media, .directors, .advisors, .loyalty-circles, .applause {
-      margin: 0 auto 2.5rem auto;
->>>>>>> about_refactor
       height: 7rem;
       padding: 0 3rem; } }
   .beliefs .fa-plus-circle, .beliefs .fa-minus-circle, .more-media .fa-plus-circle, .more-media .fa-minus-circle, .directors .fa-plus-circle, .directors .fa-minus-circle, .advisors .fa-plus-circle, .advisors .fa-minus-circle, .loyalty-circles .fa-plus-circle, .loyalty-circles .fa-minus-circle, .applause .fa-plus-circle, .applause .fa-minus-circle {
     color: #006699;
     font-size: 2.5rem; }
-<<<<<<< HEAD
     @media (min-width: 900px) and (max-width: 1280px) {
-      .beliefs .fa-plus-circle, .beliefs .fa-minus-circle, .more-media .fa-plus-circle, .more-media .fa-minus-circle, .board-directors .fa-plus-circle, .board-directors .fa-minus-circle, .loyalty-circles .fa-plus-circle, .loyalty-circles .fa-minus-circle, .applause .fa-plus-circle, .applause .fa-minus-circle {
-=======
-    @media (min-width: 1280px) {
       .beliefs .fa-plus-circle, .beliefs .fa-minus-circle, .more-media .fa-plus-circle, .more-media .fa-minus-circle, .directors .fa-plus-circle, .directors .fa-minus-circle, .advisors .fa-plus-circle, .advisors .fa-minus-circle, .loyalty-circles .fa-plus-circle, .loyalty-circles .fa-minus-circle, .applause .fa-plus-circle, .applause .fa-minus-circle {
->>>>>>> about_refactor
         font-size: 4rem; } }
   .beliefs span, .more-media span, .directors span, .advisors span, .loyalty-circles span, .applause span {
     color: #006699;
