@@ -311,6 +311,10 @@ body {
 .container {
   padding: 0 2rem; }
 
+.acr-box-content {
+  display: none;
+  overflow: hidden; }
+
 p {
   line-height: 1.75;
   font-family: "Roboto", sans-serif; }
@@ -1286,6 +1290,7 @@ object {
 .go-girls-mentor {
   background-color: #FF9933; }
 
+<<<<<<< HEAD
 /* Get Involved Main Page */
 .page-template-get-involved .involved-header {
   color: #663399;
@@ -1400,6 +1405,8 @@ object {
     .program-hero .program-quote p {
       line-height: 1.25; }
 
+=======
+>>>>>>> about_refactor
 /* Refer A Little Page -------------------------------------------------*/
 .quote-image-container {
   display: -webkit-flex;
@@ -1459,6 +1466,7 @@ ul {
 
 .steps-button {
   margin: 0 auto 2rem 6rem; }
+<<<<<<< HEAD
 
 /* Current Mentor Resources Page -------------------------------------------*/
 .mentor-hero {
@@ -1490,6 +1498,8 @@ ul {
     margin: 10px; }
   .ar-menu-sections p {
     text-align: center; }
+=======
+>>>>>>> about_refactor
 
 /*--------------------------------------------------------------
 # Footer
@@ -1575,7 +1585,7 @@ ul {
     .about-video iframe {
       height: 45rem; } }
 
-.beliefs, .more-media, .board-directors, .loyalty-circles, .applause {
+.beliefs, .more-media, .directors, .advisors, .loyalty-circles, .applause {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
@@ -1590,17 +1600,28 @@ ul {
   padding: 0 1rem;
   margin: 0 auto 2.5rem;
   width: 90vw; }
+<<<<<<< HEAD
   @media (min-width: 900px) and (max-width: 1280px) {
     .beliefs, .more-media, .board-directors, .loyalty-circles, .applause {
+=======
+  @media (min-width: 1280px) {
+    .beliefs, .more-media, .directors, .advisors, .loyalty-circles, .applause {
+      margin: 0 auto 2.5rem auto;
+>>>>>>> about_refactor
       height: 7rem;
       padding: 0 3rem; } }
-  .beliefs .fa-plus-circle, .beliefs .fa-minus-circle, .more-media .fa-plus-circle, .more-media .fa-minus-circle, .board-directors .fa-plus-circle, .board-directors .fa-minus-circle, .loyalty-circles .fa-plus-circle, .loyalty-circles .fa-minus-circle, .applause .fa-plus-circle, .applause .fa-minus-circle {
+  .beliefs .fa-plus-circle, .beliefs .fa-minus-circle, .more-media .fa-plus-circle, .more-media .fa-minus-circle, .directors .fa-plus-circle, .directors .fa-minus-circle, .advisors .fa-plus-circle, .advisors .fa-minus-circle, .loyalty-circles .fa-plus-circle, .loyalty-circles .fa-minus-circle, .applause .fa-plus-circle, .applause .fa-minus-circle {
     color: #006699;
     font-size: 2.5rem; }
+<<<<<<< HEAD
     @media (min-width: 900px) and (max-width: 1280px) {
       .beliefs .fa-plus-circle, .beliefs .fa-minus-circle, .more-media .fa-plus-circle, .more-media .fa-minus-circle, .board-directors .fa-plus-circle, .board-directors .fa-minus-circle, .loyalty-circles .fa-plus-circle, .loyalty-circles .fa-minus-circle, .applause .fa-plus-circle, .applause .fa-minus-circle {
+=======
+    @media (min-width: 1280px) {
+      .beliefs .fa-plus-circle, .beliefs .fa-minus-circle, .more-media .fa-plus-circle, .more-media .fa-minus-circle, .directors .fa-plus-circle, .directors .fa-minus-circle, .advisors .fa-plus-circle, .advisors .fa-minus-circle, .loyalty-circles .fa-plus-circle, .loyalty-circles .fa-minus-circle, .applause .fa-plus-circle, .applause .fa-minus-circle {
+>>>>>>> about_refactor
         font-size: 4rem; } }
-  .beliefs span, .more-media span, .board-directors span, .loyalty-circles span, .applause span {
+  .beliefs span, .more-media span, .directors span, .advisors span, .loyalty-circles span, .applause span {
     color: #006699;
     font-weight: bold;
     font-size: 1rem;

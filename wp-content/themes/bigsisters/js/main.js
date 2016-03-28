@@ -1,6 +1,12 @@
+<<<<<<< HEAD
 // Slide Up/Down menu Functionality
+=======
+>>>>>>> about_refactor
 (function($) {
+  'use strict';
+   /* Slide up/down Menus Funciton */
 
+<<<<<<< HEAD
   $('.acr-box-content').hide();
 
   $('.info-panel-content').click(function(){
@@ -12,6 +18,26 @@
     }else{
       $(this).next().slideDown();
     }
+=======
+  $('.info-panel-content').click(function(e) {
+    	e.preventDefault();
+
+      var $this = $(this);
+
+      if ($this.next().hasClass('show')) {
+          $this.next().removeClass('show');
+          $this.next().slideUp(350);
+          // $this.children('.fa').toggleClass('fa-plus-circle');
+
+      } else {
+          $this.parent().parent().find('div .acr-box-content').removeClass('show');
+          $this.parent().parent().find('div .acr-box-content').slideUp(350);
+          $this.next().toggleClass('show');
+          $this.next().slideToggle(350);
+          // $this.children('.fa').toggleClass('fa-minus-circle');
+      }
+
+>>>>>>> about_refactor
   });
 
 // Success Story Show/Hide Functionality
