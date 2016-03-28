@@ -96,6 +96,7 @@ function red_starter_scripts() {
 }
 add_action( 'wp_enqueue_scripts', 'red_starter_scripts' );
 
+
 function bigsisters_archive_title($title) {
     if (is_post_type_archive( array('story'))) {
         $title = 'Success Stories';
