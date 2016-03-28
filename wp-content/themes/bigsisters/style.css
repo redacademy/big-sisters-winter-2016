@@ -303,23 +303,18 @@ body {
       font-size: 20px; } }
 
 .site-content {
-<<<<<<< HEAD
-
 
   @media (min-width: 900px) {
 
   margin-top: 4.5rem; }
-  @media (min-width: 900px) and (max-width: 1280px) {
 
-=======
-  margin-top: 72px; }
+
   @media (min-width: 900px) {
->>>>>>> desktop-vers
+
     .site-content {
       margin-top: 7rem; } }
 
 .container {
-<<<<<<< HEAD
   padding: 0 2rem;
   max-width: 1280px;
   margin: 0 auto; }
@@ -327,11 +322,6 @@ body {
 .acr-box-content {
   display: none;
   overflow: hidden; }
-=======
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 0 2rem; }
->>>>>>> desktop-vers
 
 p {
   line-height: 1.75;
@@ -660,16 +650,12 @@ a {
   position: fixed;
   top: 0;
   left: 0;
-<<<<<<< HEAD
   right: 0; }
   @media (min-width: 900px) {
     .main-navigation {
-=======
   right: 0;
   z-index: 999; }
-  @media (min-width: 900px) and (max-width: 1280px) {
     .main-navigation:not(.sub-menu) {
->>>>>>> header-fix
       height: 7rem; } }
 
 .menu-main-menu-container {
@@ -1667,11 +1653,8 @@ ul {
   height: 3.75rem;
   padding: 0 1rem;
   margin: 0 auto 2.5rem;
-<<<<<<< HEAD
-  width: 90vw; }
-=======
   width: 100%; }
->>>>>>> desktop-vers
+
   @media (min-width: 900px) {
     .info-panel-content {
       height: 7rem;
@@ -1856,29 +1839,16 @@ ul {
   height: 3.75rem;
   padding: 0 1rem;
   margin: 0 auto 2.5rem;
-<<<<<<< HEAD
-  width: 90vw; }
-
-  @media (min-width: 900px) {
-
-    .beliefs, .more-media, .directors, .advisors, .loyalty-circles, .applause {
-=======
   width: 100%; }
   @media (min-width: 900px) {
     .beliefs, .more-media, .board-directors, .loyalty-circles, .applause {
->>>>>>> desktop-vers
       height: 7rem;
       padding: 0 3rem; } }
   .beliefs .fa-plus-circle, .beliefs .fa-minus-circle, .more-media .fa-plus-circle, .more-media .fa-minus-circle, .directors .fa-plus-circle, .directors .fa-minus-circle, .advisors .fa-plus-circle, .advisors .fa-minus-circle, .loyalty-circles .fa-plus-circle, .loyalty-circles .fa-minus-circle, .applause .fa-plus-circle, .applause .fa-minus-circle {
     color: #006699;
     font-size: 2.5rem; }
     @media (min-width: 900px) {
-<<<<<<< HEAD
->>>>>>> desktop_about
       .beliefs .fa-plus-circle, .beliefs .fa-minus-circle, .more-media .fa-plus-circle, .more-media .fa-minus-circle, .directors .fa-plus-circle, .directors .fa-minus-circle, .advisors .fa-plus-circle, .advisors .fa-minus-circle, .loyalty-circles .fa-plus-circle, .loyalty-circles .fa-minus-circle, .applause .fa-plus-circle, .applause .fa-minus-circle {
-=======
-      .beliefs .fa-plus-circle, .beliefs .fa-minus-circle, .more-media .fa-plus-circle, .more-media .fa-minus-circle, .board-directors .fa-plus-circle, .board-directors .fa-minus-circle, .loyalty-circles .fa-plus-circle, .loyalty-circles .fa-minus-circle, .applause .fa-plus-circle, .applause .fa-minus-circle {
->>>>>>> desktop-vers
         font-size: 4rem; } }
   .beliefs span, .more-media span, .directors span, .advisors span, .loyalty-circles span, .applause span {
     color: #006699;
@@ -1900,11 +1870,8 @@ ul {
   height: 3.75rem;
   padding: 0 1rem;
   margin: 0 auto 2.5rem;
-<<<<<<< HEAD
-  width: 90vw; }
-=======
   width: 100%; }
->>>>>>> desktop-vers
+
   @media (min-width: 900px) {
     .donor-panel {
       height: 7rem;
@@ -1932,11 +1899,8 @@ ul {
   height: 3.75rem;
   padding: 0 1rem;
   margin: 0 auto 2.5rem;
-<<<<<<< HEAD
-  width: 90vw; }
-=======
   width: 100%; }
->>>>>>> desktop-vers
+
   @media (min-width: 900px) {
     .month-panel {
       height: 7rem;
