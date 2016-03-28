@@ -560,7 +560,7 @@ a {
     .main-navigation ul ul {
       float: left;
       position: absolute;
-      top: 1.5em;
+      top: 6.94rem;
       left: -999em;
       z-index: 99999; }
       .main-navigation ul ul ul {
@@ -587,7 +587,7 @@ a {
     padding-bottom: 0.42rem;
     border-bottom: 3px dashed #FF9933; }
 
-.main-navigation {
+.main-navigation:not(.sub-menu) {
   display: -webkit-flex !important;
   display: -ms-flexbox !important;
   display: flex !important;
@@ -600,18 +600,17 @@ a {
   background-color: #673BB6;
   height: 4.5rem;
   width: 100vw;
-  padding: 10px 10px 0 10px;
   position: fixed;
   top: 0;
   left: 0;
   right: 0;
   z-index: 999; }
   @media (min-width: 900px) and (max-width: 1280px) {
-    .main-navigation {
+    .main-navigation:not(.sub-menu) {
       height: 7rem; } }
 
 .menu-main-menu-container {
-  width: 630px; }
+  width: 1000px; }
   .menu-main-menu-container .menu-item-106 {
     display: -webkit-flex;
     display: -ms-flexbox;
@@ -620,11 +619,13 @@ a {
         -ms-flex-align: center;
             align-items: center; }
 
-.main-navigation a {
-  padding: 0 1.75rem;
-  color: #fff;
-  font-size: 18px;
-  text-transform: uppercase; }
+.main-navigation li {
+  padding: 0 35px; }
+  .main-navigation li a {
+    padding: 40px 0;
+    color: #fff;
+    font-size: 18px;
+    text-transform: uppercase; }
 
 .logo-wrap {
   width: 250px;
@@ -637,15 +638,29 @@ a {
     .logo-wrap {
       width: 200px; } }
 
-.sub-menu {
-  background-color: #673BB6; }
-  .sub-menu li {
-    margin-top: 36px;
-    background-color: #fff;
-    border: 1px solid #fff; }
-    .sub-menu li a {
-      font-size: 12px;
-      color: #663399; }
+.sub-menu li {
+  background-color: #fff;
+  padding: 10px;
+  width: 200px; }
+  .sub-menu li a {
+    padding: 0;
+    color: #663399;
+    font-size: 12px;
+    width: 200px; }
+
+.sub-menu::before {
+  content: '';
+  margin: 0 auto;
+  width: 0;
+  height: 0;
+  padding-top: 10px;
+  border-left: 25px solid transparent;
+  border-right: 25px solid transparent;
+  border-bottom: 25px solid #fff;
+  background-color: transparent;
+  position: absolute;
+  top: -28px;
+  left: 70px; }
 
 /* Small menu. */
 .menu-toggle,
