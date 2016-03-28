@@ -62,7 +62,6 @@ a {
 		padding-left: 0;
 
 		ul {
-			box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
 			float: left;
 			position: absolute;
 			top: $base__space-unit;
@@ -133,6 +132,7 @@ a {
 	top: 0;
 	left: 0;
 	right: 0;
+	z-index: 999;
     @include desktop {
         height: 7rem;
     }
@@ -154,7 +154,7 @@ a {
 }
 
 .logo-wrap {
-	max-width: 23.3rem;
+	width: 250px;
 	margin-left: 10px;
 	a {
 		padding: 0;
@@ -164,11 +164,22 @@ a {
 		width: 100%;
 	}
 	@include desktop {
-		width: 10rem;
+		width: 200px;
 	}
 }
 
-
+.sub-menu {
+	background-color: $color__purple-header;
+	li {
+		margin-top: 36px;
+		background-color: #fff;
+		border: 1px solid #fff;
+		a {
+			font-size: 12px;
+			color: $color__purple-brand;
+		}
+	}
+}
 
 /* Small menu. */
 .menu-toggle,
