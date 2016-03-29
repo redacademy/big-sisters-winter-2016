@@ -303,6 +303,7 @@ body {
       font-size: 20px; } }
 
 .site-content {
+<<<<<<< HEAD
 
   @media (min-width: 900px) {
 
@@ -311,6 +312,10 @@ body {
 
   @media (min-width: 900px) {
 
+=======
+  margin-top: 4.5rem; }
+  @media (min-width: 900px) {
+>>>>>>> image-upload
     .site-content {
       margin-top: 7rem; } }
 
@@ -650,11 +655,17 @@ a {
   position: fixed;
   top: 0;
   left: 0;
+<<<<<<< HEAD
   right: 0; }
   @media (min-width: 900px) {
     .main-navigation {
   right: 0;
   z-index: 999; }
+=======
+  right: 0;
+  z-index: 999; }
+  @media (min-width: 900px) {
+>>>>>>> image-upload
     .main-navigation:not(.sub-menu) {
       height: 7rem; } }
 
@@ -694,16 +705,18 @@ a {
     .logo-wrap {
       width: 200px; } }
 
-.sub-menu li {
-  background-color: #fff;
-  padding: 10px;
-  width: 200px;
-  border: 0; }
-  .sub-menu li a {
-    padding: 0;
-    color: #663399;
-    font-size: 12px;
-    width: 200px; }
+.sub-menu {
+  background-color: #fff; }
+  .sub-menu li {
+    background-color: #fff;
+    padding: 10px;
+    width: 200px;
+    border: 0; }
+    .sub-menu li a {
+      padding: 0;
+      color: #663399;
+      font-size: 12px;
+      width: 200px; }
 
 /* Small menu. */
 .menu-toggle,
@@ -1727,7 +1740,7 @@ ul {
       width: 100%;
       border: 1px solid black;
       border-radius: 50%; }
-  @media (min-width: 900px) and (max-width: 1280px) {
+  @media (min-width: 900px) {
     .donate-option {
       -webkit-flex-direction: row;
           -ms-flex-direction: row;
@@ -1839,9 +1852,15 @@ ul {
   height: 3.75rem;
   padding: 0 1rem;
   margin: 0 auto 2.5rem;
+<<<<<<< HEAD
   width: 100%; }
   @media (min-width: 900px) {
     .beliefs, .more-media, .board-directors, .loyalty-circles, .applause {
+=======
+  width: 90vw; }
+  @media (min-width: 900px) {
+    .beliefs, .more-media, .directors, .advisors, .loyalty-circles, .applause {
+>>>>>>> image-upload
       height: 7rem;
       padding: 0 3rem; } }
   .beliefs .fa-plus-circle, .beliefs .fa-minus-circle, .more-media .fa-plus-circle, .more-media .fa-minus-circle, .directors .fa-plus-circle, .directors .fa-minus-circle, .advisors .fa-plus-circle, .advisors .fa-minus-circle, .loyalty-circles .fa-plus-circle, .loyalty-circles .fa-minus-circle, .applause .fa-plus-circle, .applause .fa-minus-circle {
