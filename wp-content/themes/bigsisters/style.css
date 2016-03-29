@@ -303,13 +303,8 @@ body {
       font-size: 20px; } }
 
 .site-content {
-
-
-  @media (min-width: 900px) {
-
   margin-top: 4.5rem; }
-  @media (min-width: 900px) and (max-width: 1280px) {
-
+  @media (min-width: 900px) {
     .site-content {
       margin-top: 7rem; } }
 
@@ -649,16 +644,10 @@ a {
   position: fixed;
   top: 0;
   left: 0;
-<<<<<<< HEAD
-  right: 0; }
-  @media (min-width: 900px) {
-    .main-navigation {
-=======
   right: 0;
   z-index: 999; }
-  @media (min-width: 900px) and (max-width: 1280px) {
+  @media (min-width: 900px) {
     .main-navigation:not(.sub-menu) {
->>>>>>> header-fix
       height: 7rem; } }
 
 .menu-main-menu-container {
@@ -697,16 +686,18 @@ a {
     .logo-wrap {
       width: 200px; } }
 
-.sub-menu li {
-  background-color: #fff;
-  padding: 10px;
-  width: 200px;
-  border: 0; }
-  .sub-menu li a {
-    padding: 0;
-    color: #663399;
-    font-size: 12px;
-    width: 200px; }
+.sub-menu {
+  background-color: #fff; }
+  .sub-menu li {
+    background-color: #fff;
+    padding: 10px;
+    width: 200px;
+    border: 0; }
+    .sub-menu li a {
+      padding: 0;
+      color: #663399;
+      font-size: 12px;
+      width: 200px; }
 
 /* Small menu. */
 .menu-toggle,
@@ -1586,7 +1577,7 @@ ul {
       width: 100%;
       border: 1px solid black;
       border-radius: 50%; }
-  @media (min-width: 900px) and (max-width: 1280px) {
+  @media (min-width: 900px) {
     .donate-option {
       -webkit-flex-direction: row;
           -ms-flex-direction: row;
@@ -1699,9 +1690,7 @@ ul {
   padding: 0 1rem;
   margin: 0 auto 2.5rem;
   width: 90vw; }
-
   @media (min-width: 900px) {
-
     .beliefs, .more-media, .directors, .advisors, .loyalty-circles, .applause {
       height: 7rem;
       padding: 0 3rem; } }
@@ -1709,7 +1698,6 @@ ul {
     color: #006699;
     font-size: 2.5rem; }
     @media (min-width: 900px) {
->>>>>>> desktop_about
       .beliefs .fa-plus-circle, .beliefs .fa-minus-circle, .more-media .fa-plus-circle, .more-media .fa-minus-circle, .directors .fa-plus-circle, .directors .fa-minus-circle, .advisors .fa-plus-circle, .advisors .fa-minus-circle, .loyalty-circles .fa-plus-circle, .loyalty-circles .fa-minus-circle, .applause .fa-plus-circle, .applause .fa-minus-circle {
         font-size: 4rem; } }
   .beliefs span, .more-media span, .directors span, .advisors span, .loyalty-circles span, .applause span {
