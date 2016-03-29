@@ -1756,6 +1756,19 @@ ul {
     border: 1px solid black;
     border-radius: 50%; }
 
+/* Single Post Page ---------------------------------------------------- */
+.single .post {
+  margin: 5rem 0 2.5rem; }
+  @media (min-width: 900px) {
+    .single .post {
+      margin: 10rem 0 5rem; } }
+
+.single .entry-title {
+  line-height: 1; }
+
+.single .posted-on {
+  font-size: 1.1rem; }
+
 /*--------------------------------------------------------------
 # Footer
 --------------------------------------------------------------*/

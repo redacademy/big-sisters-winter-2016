@@ -64,7 +64,7 @@ get_header();?>
 						<h2>Recent News</h2>
 
 						<?php
-							$args = array('post_type' => 'post', 'posts_per_page' => 4);
+							$args = array('post_type' => 'post', 'posts_per_page' => 2);
 							$latest_posts = get_posts( $args );
 						?>
 
