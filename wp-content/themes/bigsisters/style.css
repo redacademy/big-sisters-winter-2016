@@ -303,23 +303,14 @@ body {
       font-size: 20px; } }
 
 .site-content {
-<<<<<<< HEAD
-
-  @media (min-width: 900px) {
-
-  margin-top: 4.5rem; }
-
-
-  @media (min-width: 900px) {
-
-=======
   margin-top: 4.5rem; }
   @media (min-width: 900px) {
->>>>>>> image-upload
     .site-content {
       margin-top: 7rem; } }
 
 .container {
+  max-width: 1280px;
+  margin: 0 auto;
   padding: 0 2rem;
   max-width: 1280px;
   margin: 0 auto; }
@@ -655,17 +646,9 @@ a {
   position: fixed;
   top: 0;
   left: 0;
-<<<<<<< HEAD
-  right: 0; }
-  @media (min-width: 900px) {
-    .main-navigation {
-  right: 0;
-  z-index: 999; }
-=======
   right: 0;
   z-index: 999; }
   @media (min-width: 900px) {
->>>>>>> image-upload
     .main-navigation:not(.sub-menu) {
       height: 7rem; } }
 
@@ -1473,7 +1456,7 @@ object {
             transform: scale(0.75);
     margin: 0; } }
 
-/* Get Involved Main Page */
+/* Get Involved Main Page ----------------------------------------------------*/
 .page-template-get-involved .involved-header {
   color: #663399;
   text-align: center;
@@ -1667,7 +1650,6 @@ ul {
   padding: 0 1rem;
   margin: 0 auto 2.5rem;
   width: 100%; }
-
   @media (min-width: 900px) {
     .info-panel-content {
       height: 7rem;
@@ -1753,6 +1735,140 @@ ul {
     width: 100%;
     border: 1px solid black;
     border-radius: 50%; }
+
+/* Donate Page --------------------------------------------------------------*/
+.hero-dp {
+  background: url("../../assets/images/hero-images/hero-donate.jpg") no-repeat;
+  background-size: cover;
+  height: 16.9rem;
+  padding: 30px 0 0 15px; }
+  @media (min-width: 900px) {
+    .hero-dp {
+      padding: 100px 0 0 50px;
+      height: 40rem; } }
+  .hero-dp p {
+    width: 70%;
+    color: #fff;
+    font-size: 1.2rem;
+    line-height: 1.5rem; }
+    @media (min-width: 900px) {
+      .hero-dp p {
+        width: 50%;
+        color: #fff;
+        font-size: 2.7rem;
+        line-height: 3rem;
+        margin-bottom: 40px; } }
+
+.why-donate {
+  padding: 1.6rem 0.83rem; }
+  .why-donate h1 {
+    text-align: center; }
+  .why-donate p {
+    text-align: center; }
+
+.donate-types {
+  padding: 0 0.83rem;
+  font-size: 16px; }
+  @media (min-width: 900px) {
+    .donate-types {
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex; } }
+  .donate-types a {
+    text-decoration: none; }
+  .donate-types a div {
+    color: #fff;
+    text-align: center;
+    padding: 20px 0; }
+    @media (min-width: 900px) {
+      .donate-types a div {
+        -webkit-flex-basis: 25%;
+            -ms-flex-preferred-size: 25%;
+                flex-basis: 25%;
+        padding: 40px 20px;
+        font-size: 32px;
+        box-shadow: 0px 2px 8px #888888;
+        line-height: 40px; }
+        .donate-types a div :hover {
+          cursor: pointer; } }
+
+.donate-types :first-child div, .donate-types :nth-child(2) div, .donate-types :nth-child(3) div {
+  margin-bottom: 0.5rem; }
+  @media (min-width: 900px) {
+    .donate-types :first-child div, .donate-types :nth-child(2) div, .donate-types :nth-child(3) div {
+      margin-bottom: 0; } }
+
+.donate-types :first-child div {
+  background-color: #FFCC66; }
+
+.donate-types :nth-child(2) div {
+  background-color: #006699; }
+  @media (min-width: 900px) {
+    .donate-types :nth-child(2) div {
+      padding: 40px; } }
+
+.donate-types :nth-child(3) div {
+  background-color: #FF6633; }
+
+.donate-types :last-child div {
+  background-color: #99CC33; }
+
+.to-donate-sponsor {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column; }
+  .to-donate-sponsor h1 {
+    text-align: center; }
+  .to-donate-sponsor p {
+    text-align: center; }
+
+.donor-contact {
+  margin: 0 auto;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 85vw; }
+  @media (min-width: 900px) {
+    .donor-contact {
+      -webkit-flex-direction: row;
+          -ms-flex-direction: row;
+              flex-direction: row;
+      -webkit-justify-content: center;
+          -ms-flex-pack: center;
+              justify-content: center; } }
+  .donor-contact span {
+    font-size: 1rem;
+    color: #99CC33; }
+    @media (min-width: 900px) {
+      .donor-contact span {
+        font-size: 2rem; } }
+  .donor-contact .name-number-wrap {
+    width: 90%;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    margin-bottom: 10px;
+    -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+            justify-content: space-between; }
+    @media (min-width: 900px) {
+      .donor-contact .name-number-wrap {
+        -webkit-justify-content: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+        margin-bottom: 0;
+        width: auto; }
+        .donor-contact .name-number-wrap span {
+          margin-right: 50px; } }
 
 /*--------------------------------------------------------------
 # Footer
@@ -1852,15 +1968,9 @@ ul {
   height: 3.75rem;
   padding: 0 1rem;
   margin: 0 auto 2.5rem;
-<<<<<<< HEAD
   width: 100%; }
   @media (min-width: 900px) {
-    .beliefs, .more-media, .board-directors, .loyalty-circles, .applause {
-=======
-  width: 90vw; }
-  @media (min-width: 900px) {
     .beliefs, .more-media, .directors, .advisors, .loyalty-circles, .applause {
->>>>>>> image-upload
       height: 7rem;
       padding: 0 3rem; } }
   .beliefs .fa-plus-circle, .beliefs .fa-minus-circle, .more-media .fa-plus-circle, .more-media .fa-minus-circle, .directors .fa-plus-circle, .directors .fa-minus-circle, .advisors .fa-plus-circle, .advisors .fa-minus-circle, .loyalty-circles .fa-plus-circle, .loyalty-circles .fa-minus-circle, .applause .fa-plus-circle, .applause .fa-minus-circle {
@@ -1890,7 +2000,6 @@ ul {
   padding: 0 1rem;
   margin: 0 auto 2.5rem;
   width: 100%; }
-
   @media (min-width: 900px) {
     .donor-panel {
       height: 7rem;
@@ -1919,7 +2028,6 @@ ul {
   padding: 0 1rem;
   margin: 0 auto 2.5rem;
   width: 100%; }
-
   @media (min-width: 900px) {
     .month-panel {
       height: 7rem;
