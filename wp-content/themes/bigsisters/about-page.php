@@ -116,7 +116,27 @@ get_header();?>
 								<i class="fa fa-plus-circle"></i>
 							</div>
 							<div class="acr-box-content">
-								HIDDEN CONTENT
+
+								<?php
+									$args = array('post_type' => 'director');
+									$board_directors = get_posts( $args );
+								?>
+
+								<div class="director-wrapper">
+									<ul>
+									<?php foreach($board_directors as $post) : setup_postdata( $post ); ?>
+										<li class="director-meta">
+												<div class="director-img">
+													<img src="<?php echo CFS()->get('picture'); ?>"/>
+												</div>
+												<p><?php echo CFS()->get('position'); ?></p>
+												<p><?php echo CFS()->get('name'); ?></p>
+												<p><a href="mailto:<?php echo CFS()->get('email');?>"><?php echo CFS()->get('email'); ?></a></p>
+										</li>
+									<?php endforeach; wp_reset_postdata(); ?>
+								</ul>
+							</div>
+
 							</div> <!-- .acr-box-content -->
 
 						</div> <!-- .acr-box-div -->
@@ -140,7 +160,7 @@ get_header();?>
 
 				<section class="supporters container">
 					<h2>Our Supporters</h2>
-					<?php echo CFS()->get('supporters'); ?>
+					<?php echo CFS()->get('supporters_paragraph'); ?>
 
 					<div class="accordian-box">
 						<div class="acr-box-div">
@@ -151,14 +171,14 @@ get_header();?>
 							</div>
 							<div class="acr-box-content"> <!-- hidden content goes here -->
 
-								<?php echo CFS()->get('loyalty_paragraph') ?>
+								<?php echo CFS()->get('loyalty_paragraph'); ?>
 
 								<div class="info-panel-content donor-panel">
 									<span>Visionary Match Makers ($50,000+)</span>
 									<i class="fa fa-plus-circle"></i>
 								</div>
 								<div class="acr-box-content">
-									<?php echo CFS()->get('visionary_match_makers') ?>
+									<?php echo CFS()->get('visionary_match_makers'); ?>
 								</div>
 
 								<div class="info-panel-content donor-panel">
@@ -166,42 +186,63 @@ get_header();?>
 									<i class="fa fa-plus-circle"></i>
 								</div>
 								<div class="acr-box-content">
-									<?php echo CFS()->get('diamond_match_makers') ?>
+									<?php echo CFS()->get('diamond_match_makers'); ?>
 								</div>
 
-								<div class="donor-panel">
+								<div class="info-panel-content donor-panel">
 									<span>Platinum Match Makers ($7,500 - $9,999)</span>
 									<i class="fa fa-plus-circle"></i>
 								</div>
+								<div class="acr-box-content">
+									<?php echo CFS()->get('platinum_match_makers'); ?>
+								</div>
 
-								<div class="donor-panel">
+								<div class="info-panel-content donor-panel">
 									<span>Golden Match Makers ($5,000 - $7,499)</span>
 									<i class="fa fa-plus-circle"></i>
 								</div>
+								<div class="acr-box-content">
+									<?php echo CFS()->get('golden_match_makers'); ?>
+								</div>
 
-								<div class="donor-panel">
+								<div class="info-panel-content donor-panel">
 									<span>Match Makers ($2,000 - $4,999)</span>
 									<i class="fa fa-plus-circle"></i>
 								</div>
+								<div class="acr-box-content">
+									<?php echo CFS()->get('match_makers'); ?>
+								</div>
 
-								<div class="donor-panel">
+								<div class="info-panel-content donor-panel">
 									<span>Champions ($1,000 - $1,999)</span>
 									<i class="fa fa-plus-circle"></i>
 								</div>
+								<div class="acr-box-content">
+									<?php echo CFS()->get('champions'); ?>
+								</div>
 
-								<div class="donor-panel">
+								<div class="info-panel-content donor-panel">
 									<span>Believers ($500 - $999)</span>
 									<i class="fa fa-plus-circle"></i>
 								</div>
+								<div class="acr-box-content">
+									<?php echo CFS()->get('believers'); ?>
+								</div>
 
-								<div class="donor-panel">
+								<div class="info-panel-content donor-panel">
 									<span>Friends ($100 - $499)</span>
 									<i class="fa fa-plus-circle"></i>
 								</div>
+								<div class="acr-box-content">
+									<?php echo CFS()->get('friends'); ?>
+								</div>
 
-								<div class="donor-panel">
+								<div class="info-panel-content donor-panel">
 									<span>Supporters ($1 -$99)</span>
 									<i class="fa fa-plus-circle"></i>
+								</div>
+								<div class="acr-box-content">
+									<?php echo CFS()->get('supporters'); ?>
 								</div>
 
 							</div> <!-- .acr-box-content -->

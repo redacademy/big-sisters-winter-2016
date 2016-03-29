@@ -32,7 +32,7 @@
   span {
     color: $color__deepblue-brand;
     font-weight: bold;
-    font-size: 1rem;
+    font-size: 1.1rem;
     margin: 0;
   }
 }
@@ -41,6 +41,7 @@
   @include info-panel-styles;
 
   span {
+    font-size: 0.9rem;
     margin: 0;
   }
 }
@@ -55,7 +56,6 @@
 }
 
 .our-beliefs {
-  padding-bottom: 5rem;
 
   h2, ul {
     display: none;
@@ -70,13 +70,15 @@
   }
 
   @include desktop {
+    padding-bottom: 5rem;
+
     h2 {
       display: inline-block;
     }
 
     ul {
       display: inline-block;
-      padding: 0 10rem;
+      padding: 0 18rem;
       margin: 0 auto;
     }
 
