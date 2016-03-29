@@ -118,7 +118,7 @@ get_header();?>
 							<div class="acr-box-content">
 
 								<?php
-									$args = array('post_type' => 'director');
+									$args = array('post_type' => 'director', 'posts_per_page' => -1);
 									$board_directors = get_posts( $args );
 								?>
 
