@@ -9,40 +9,34 @@ get_header();?>
 		<header class="container story-page-copy">
 			<?php the_title( '<h1>', '</h1>' ); ?>
 		</header>
-
-		<section class="container">
-			<div class="program-hero">
+<div class="hero-grid container">
+		<section class="program-hero">
 				<div class="program-hero-img">
 					<img src="<?php echo CFS()->get('hero1_img')?>" />
 				</div>
 				<div class="program-quote container">
 					<?php echo CFS()->get('hero1_quote')?>
 				</div>
-			</div>
 		</section>
 
-		<section class="container">
-			<div class="program-hero">
+		<section class="program-hero">
 				<div class="program-hero-img">
 					<img src="<?php echo CFS()->get('hero2_img')?>" />
 				</div>
 				<div class="program-quote container">
 					<?php echo CFS()->get('hero2_quote')?>
 				</div>
-			</div>
 		</section>
 
-		<section class="container">
-			<div class="program-hero">
+		<section class="program-hero">
 				<div class="program-hero-img">
 					<img src="<?php echo CFS()->get('hero3_img')?>" />
 				</div>
 				<div class="program-quote container">
 					<?php echo CFS()->get('hero3_quote')?>
 				</div>
-			</div>
 		</section>
-
+</div>
 		<!-- Step 1 -->
 		<section class="container">
 			<div class="accordian-box">

@@ -1,9 +1,9 @@
 /*!
-Theme Name: RED Starter Theme
+Theme Name: Big Sisters Wordpress Theme
 Theme URI: http://underscores.me/
-Author: RED Academy
-Author URI: http://www.redacademy.com
-Description: A WordPress starter theme for RED Academy students.
+Author: Big Sisters of BC Lower Mainland
+Author URI: http://www.bigsisters.bc.ca
+Description: A WordPress theme for Big Sisters of BC Lower Mainland
 Version: 1.0.0
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
@@ -303,18 +303,14 @@ body {
       font-size: 20px; } }
 
 .site-content {
-
-  @media (min-width: 900px) {
-
   margin-top: 4.5rem; }
-
-
   @media (min-width: 900px) {
-
     .site-content {
       margin-top: 7rem; } }
 
 .container {
+  max-width: 1280px;
+  margin: 0 auto;
   padding: 0 2rem;
   max-width: 1280px;
   margin: 0 auto; }
@@ -650,11 +646,9 @@ a {
   position: fixed;
   top: 0;
   left: 0;
-  right: 0; }
-  @media (min-width: 900px) {
-    .main-navigation {
   right: 0;
   z-index: 999; }
+  @media (min-width: 900px) {
     .main-navigation:not(.sub-menu) {
       height: 7rem; } }
 
@@ -1378,6 +1372,7 @@ object {
 .initiative-block {
   width: 100%;
   text-align: center;
+  position: relative;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
@@ -1389,12 +1384,18 @@ object {
           align-items: center;
   -webkit-flex-flow: column;
       -ms-flex-flow: column;
-          flex-flow: column; }
+          flex-flow: column;
+  margin-bottom: 9rem; }
   @media (min-width: 900px) {
     .initiative-block {
       width: 33.33%; } }
 
 .initiative-logo {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
   background: #fff;
   border: solid 4px #aaa;
   border-radius: 50%;
@@ -1422,9 +1423,8 @@ object {
   height: 25rem;
   padding-top: 6rem;
   position: relative;
-  top: -6rem;
+  top: 6rem;
   width: 25rem;
-  z-index: -1;
   color: #fff;
   line-height: 1.25; }
   @media (min-width: 900px) {
@@ -1433,10 +1433,10 @@ object {
       max-height: 20rem;
       min-width: 16rem;
       max-width: 90%;
-      top: -4rem;
       font-size: 1.25rem;
       line-height: 1;
-      padding-top: 6rem; }
+      padding-top: 6rem;
+      top: 4.5rem; }
       .initiative-cta p {
         margin: 0; } }
   .initiative-cta .initiative-head {
@@ -1560,11 +1560,6 @@ object {
   -webkit-flex-flow: row wrap;
       -ms-flex-flow: row wrap;
           flex-flow: row wrap; }
-  @media (min-width: 900px) {
-    .sponsor-grid, .sponsor-grid ul {
-      -webkit-justify-content: space-between;
-          -ms-flex-pack: justify;
-              justify-content: space-between; } }
   .sponsor-grid .sponsor, .sponsor-grid li, .sponsor-grid ul .sponsor, .sponsor-grid ul li {
     padding: .5rem .5rem;
     -webkit-flex: 0 1 33.33%;
@@ -1590,16 +1585,37 @@ object {
     padding: 0;
     margin: 0; }
 
-/* Big Sister Information page -----------------------------------------*/
+/* Volunteer programs -----------------------------------------*/
+@media (min-width: 900px) {
+  .hero-grid {
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+            justify-content: space-between; } }
+
 .program-hero {
   width: 100%;
   margin-bottom: 2rem;
   position: relative; }
+  @media (min-width: 900px) {
+    .program-hero {
+      -webkit-flex: 0 1 33%;
+          -ms-flex: 0 1 33%;
+              flex: 0 1 33%; } }
   .program-hero .program-hero-img {
     height: 225px;
     overflow: hidden; }
+    @media (min-width: 900px) {
+      .program-hero .program-hero-img {
+        height: 300px; } }
     .program-hero .program-hero-img img {
       width: 100%; }
+      @media (min-width: 900px) {
+        .program-hero .program-hero-img img {
+          -webkit-transform: scale(1.5);
+                  transform: scale(1.5); } }
   .program-hero .program-quote {
     background: rgba(50, 50, 50, 0.5);
     color: #fff;
@@ -1654,7 +1670,6 @@ ul {
   padding: 0 1rem;
   margin: 0 auto 2.5rem;
   width: 100%; }
-
   @media (min-width: 900px) {
     .info-panel-content {
       height: 7rem;
@@ -1727,7 +1742,7 @@ ul {
       width: 100%;
       border: 1px solid black;
       border-radius: 50%; }
-  @media (min-width: 900px) and (max-width: 1280px) {
+  @media (min-width: 900px) {
     .donate-option {
       -webkit-flex-direction: row;
           -ms-flex-direction: row;
@@ -1841,7 +1856,7 @@ ul {
   margin: 0 auto 2.5rem;
   width: 100%; }
   @media (min-width: 900px) {
-    .beliefs, .more-media, .board-directors, .loyalty-circles, .applause {
+    .beliefs, .more-media, .directors, .advisors, .loyalty-circles, .applause {
       height: 7rem;
       padding: 0 3rem; } }
   .beliefs .fa-plus-circle, .beliefs .fa-minus-circle, .more-media .fa-plus-circle, .more-media .fa-minus-circle, .directors .fa-plus-circle, .directors .fa-minus-circle, .advisors .fa-plus-circle, .advisors .fa-minus-circle, .loyalty-circles .fa-plus-circle, .loyalty-circles .fa-minus-circle, .applause .fa-plus-circle, .applause .fa-minus-circle {
@@ -1871,7 +1886,6 @@ ul {
   padding: 0 1rem;
   margin: 0 auto 2.5rem;
   width: 100%; }
-
   @media (min-width: 900px) {
     .donor-panel {
       height: 7rem;
@@ -1900,7 +1914,6 @@ ul {
   padding: 0 1rem;
   margin: 0 auto 2.5rem;
   width: 100%; }
-
   @media (min-width: 900px) {
     .month-panel {
       height: 7rem;

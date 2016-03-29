@@ -6,7 +6,6 @@
  */
 
 get_header(); ?>
-<h1>single-success-story.php</h1>
 <div id="primary" class="content-area container">
 	<main id="main" class="site-main" role="main">
 <?php while ( have_posts() ) : the_post(); ?>
@@ -21,9 +20,9 @@ get_header(); ?>
       	</header><!-- .entry-header -->
 
       	<div class="entry-content">
-					<div class="prod-price"><?php echo CFS()->get( 'story' ); ?></div>
-
-      		<?php the_content(); ?>
+					<p class="story-subhead"><?php echo CFS()->get('subhead')?></p>
+					<p><?php the_excerpt(); ?></p>
+					<p><?php echo CFS() -> get('story')?></p>
       	</div><!-- .entry-content -->
 
 

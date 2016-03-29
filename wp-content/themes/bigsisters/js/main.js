@@ -29,6 +29,7 @@
           $this.parent().parent().find('div .acr-box-content').slideUp(350);
           $this.next().toggleClass('show');
           $this.next().slideToggle(350);
+          $this.find('div .acr-box-content').hide();
           // $this.children('.fa').toggleClass('fa-minus-circle');
       }
   });
