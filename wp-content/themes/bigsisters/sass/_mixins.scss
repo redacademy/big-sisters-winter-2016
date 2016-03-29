@@ -63,3 +63,11 @@
 		}
 	}
 }
+
+@mixin img-overflow {
+    left: 50%;
+    max-width: none;
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}

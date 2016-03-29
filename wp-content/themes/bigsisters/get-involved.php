@@ -43,7 +43,7 @@ get_header();?>
 					</div>
 					<div class="acr-box-content">
 							<?php
-							$args = array('post_type' => 'career');
+							$args = array('post_type' => 'career', 'posts_per_page' => -1);
 							$all_careers = get_posts( $args );
 							?>
 							<?php if ( have_posts() ) : ?>
