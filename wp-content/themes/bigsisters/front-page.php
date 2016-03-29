@@ -1,10 +1,7 @@
 <?php
 /**
- * The template for displaying all pages.
- *
- * @package RED_Starter_Theme
+ * Template Name: Front Page
  */
-
 get_header(); ?>
 
 	<div id="primary" class="content-area">
@@ -97,30 +94,15 @@ get_header(); ?>
             </section>
 			<section class="fp-recent-donors">
 				<h1>Thank you to our recent donors</h1>
-				<ul>
+				<ul class="bxslider">
 					<li class="individual-donor">
-						<h3 class="donor-name">ONNI Group</h3>
-						<p class="donation-amount">$5,000.00</p>
-						<p class="program-type">Grape Juice</p>
-						<p class="sponsor-level">Gold Sponsor</p>
-					</li>
-					<li class="individual-donor">
-						<h3 class="donor-name">CKNW Orphan's Fund</h3>
-						<p class="donation-amount">$15,000.00</p>
-						<p class="program-type">Go Girls!</p>
-						<p class="sponsor-level">Program Grant</p>
-					</li>
-					<li class="individual-donor">
-						<h3 class="donor-name">Boeing Canada - Aeroinfo</h3>
-						<p class="donation-amount">$15,000.00</p>
-						<p class="program-type">Big Sisters</p>
-						<p class="sponsor-level">Program Grant</p>
-					</li>
-					<li class="individual-donor">
-						<h3 class="donor-name">The R & J Stern Family Foundation</h3>
-						<p class="donation-amount">$10,000.00</p>
-						<p class="program-type">Golden Match</p>
-						<p class="sponsor-level">Maker</p>
+						<?php $fields = CFS()->get( 'donation_information' );
+						foreach ( $fields as $field ) : ?>
+						    <h3 class="donor-name"><?php echo $field['donor_name']; ?></h3>
+							<p class="donation-amount"><?php echo $field['donation_amount']; ?></p>
+							<p class="program-type"><?php echo $field['program_name']; ?></p>
+							<p class="sponsor-level"><?php echo $field['additional_information']; ?></p>
+						<?php endforeach; ?>
 					</li>
 				</ul>
 			</section>
