@@ -779,7 +779,6 @@ ul {
   }
 }
 
-
 //--------------------- Board of Directors --------------------------
 .director-wrapper {
   width: 100%;
@@ -820,4 +819,25 @@ ul {
   img {
     @include img-overflow;
   }
+
+/* Single Post Page ---------------------------------------------------- */
+
+.single {
+
+  .post {
+    margin: 5rem 0 2.5rem;
+
+    @include desktop {
+      margin: 10rem 0 5rem;
+    }
+  }
+
+  .entry-title {
+    line-height: 1;
+  }
+
+  .posted-on {
+    font-size: 1.1rem;
+  }
+
 }
