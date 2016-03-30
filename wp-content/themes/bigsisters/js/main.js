@@ -1,8 +1,6 @@
-
-  /* Slide up/down Menus Funciton */
 (function($) {
   'use strict';
-
+/* Slide up/down Menus Funciton */
 
   // $('.acr-box-content').hide();
   //
@@ -36,29 +34,63 @@
       }
   });
 
-// Success Story Show/Hide Functionality
-    $('.story-box-content').hide();
-    $('.story-panel-content').click(function() {
-      $('.story-box-content').slideUp();
-      $('.story-panel-content').html('<div class="button-white">Read More</div>');
+/* Success Story Show/Hide Functionality */
 
-      if($(this).prev().is(':hidden')) {
-        $(this).prev().slideDown();
-        $(this).html('<div class="button-white">Read Less</div>');
-      } else {
-        $(this).prev().slideUp();
-        $(this).html('<div class="button-white">Read More</div>');
-      }
-    });
+  $('.story-box-content').hide();
+  $('.story-panel-content').click(function() {
+    $('.story-box-content').slideUp();
+    $('.story-panel-content').html('<div class="button-white">Read More</div>');
+
+    if($(this).prev().is(':hidden')) {
+      $(this).prev().slideDown();
+      $(this).html('<div class="button-white">Read Less</div>');
+    } else {
+      $(this).prev().slideUp();
+      $(this).html('<div class="button-white">Read More</div>');
+    }
+  });
 
  }(jQuery));
 
- //bxSlider Functionality
+/* bxSlider Functionality */
 
-jQuery(document).ready(function($){
- $('.bxslider').bxSlider({
-    speed: 500,
-    controls: false,
-    auto: true
- });
+  jQuery(document).ready(function($){
+   $('.bxslider').bxSlider({
+      speed: 500,
+      controls: false,
+      auto: true
+   });
+
+// Instagram API Functionality
+
+  var $photoList = $('.ig-photo-list');
+  var endpointURL = 'https://api.instagram.com/v1/users/self/media/recent/?count=6&access_token=260006638.ec2ce43.e6b06a897b984941ad22bae3fb27f977';
+  var photoElements = '';
+
+  var buildPhotoGrid = function (value) {
+    photoElements +=  '<li>';
+    photoElements +=    '<div class="photo-box">';
+    photoElements +=      '<a href="' + value.link + '"><img src="' + value.images.standard_resolution.url + '"/></a>';
+    photoElements +=    '</div>';
+    photoElements +=  '</li>';
+  };
+
+  $.ajax({
+    dataType: 'jsonp',
+    method: 'GET',
+    url: endpointURL,
+  })
+  .done(function (apiData) {
+
+    photoElements += '<ul>';
+
+    $.each(apiData.data, function (key, value) {
+      buildPhotoGrid(value);
+    });
+
+    photoElements += '</ul>';
+    $photoList.append(photoElements);
+
+  });
+
 });

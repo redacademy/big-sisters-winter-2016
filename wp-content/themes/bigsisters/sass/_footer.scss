@@ -12,10 +12,92 @@
 }
 
 .site-info {
+  padding-bottom: 1rem;
+}
+
+.ig-grid {
+  padding: 1.5rem 1rem;
+
+  @include desktop {
+    background-color: #FFF;
+    padding: 0;
+    margin: 5rem 0 0;
+  }
+
+  .ig-header {
+    margin: 0 0 1.5rem;
+
+    @include desktop {
+      margin: 0 0 5rem;
+    }
+
+    h3 {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: #FFF;
+      text-align: center;
+      margin: 0;
+
+      @include desktop {
+        color: $color__purple-brand;
+        font-size: 2.5rem;
+
+      }
+
+    }
+
+    .fa-instagram {
+      padding-right: 1rem;
+    }
+
+  }
+
+  .ig-photo-list {
+
+    ul {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      list-style: none;
+      padding: 0;
+      margin: 0;
+
+      @include desktop {
+        flex-wrap: nowrap;
+      }
+    }
+
+    li {
+      background-color: $color__purple-brand;
+      flex: 0 1 33.33%;
+      max-width: 33.33%;
+      padding: 0 0.15rem;
+
+      @include desktop {
+        flex: 0 1 100%;
+        max-width: 100%;
+        padding: 0;
+      }
+    }
+
+    img {
+      width: 100%;
+    }
+
+  }
+
+}
+
+.contact-follow {
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
   color: #FFF;
+
+  @include desktop {
+    padding-top: 1rem;
+  }
 
   h3 {
     color: #FFF;
@@ -71,6 +153,11 @@
   .social-icons {
     margin-top: 4rem;
     font-size: 1.7rem;
+
+    a {
+      color: #FFF;
+      text-decoration: none;
+    }
 
     i {
       padding: 0 1rem;

@@ -10,30 +10,49 @@
 			</div><!-- #content -->
 
 			<footer id="colophon" class="site-footer" role="contentinfo">
-				<div class="site-info container">
+				<div class="site-info">
 
-					<div class="contact">
-						<h3><a href="#" class="contact-button">Contact Us</a></h3>
-						<div class="address">
-							<p>34 E. 12th Avenue</p>
-							<p>Vancouver, BC</p>
-							<p>V5T 2G5</p>
+					<section class="ig-grid">
+						<div class="ig-header">
+							<h3><i class="fa fa-instagram fa-2x"></i> @BigSistersBCLM</h3>
 						</div>
-						<div class="phone-fax-email">
-							<p>P: 604.873.4525</p>
-							<p>F: 604.873.2122</p>
-							<p>E: <a href="mailto:info@bigsisters.bc.ca">info@bigsisters.bc.ca</a></p>
-						</div>
-					</div>
 
-					<div class="follow">
-						<h3>Follow Us</h3>
-						<div class="social-icons">
-							<i class="fa fa-facebook"></i>
-							<i class="fa fa-twitter"></i>
-							<i class="fa fa-instagram"></i>
+						<div class="ig-photo-list"></div>
+					</section> <!-- .ig-grid -->
+
+					<section class="contact-follow container">
+
+						<div class="contact">
+							<h3><a href="#" class="contact-button">Contact Us</a></h3>
+							<div class="address">
+								<p>34 E. 12th Avenue</p>
+								<p>Vancouver, BC</p>
+								<p>V5T 2G5</p>
+							</div>
+							<div class="phone-fax-email">
+								<p>P: 604.873.4525</p>
+								<p>F: 604.873.2122</p>
+								<p>E: <a href="mailto:info@bigsisters.bc.ca">info@bigsisters.bc.ca</a></p>
+							</div>
 						</div>
-					</div>
+
+						<div class="follow">
+							<h3>Follow Us</h3>
+							<div class="social-icons">
+								<a href="https://www.facebook.com/BigSistersBCLM/">
+									<i class="fa fa-facebook"></i>
+								</a>
+								<a href="https://twitter.com/bigsistersbclm">
+									<i class="fa fa-twitter"></i>
+								</a>
+								<a href="https://www.instagram.com/bigsistersbclm/">
+									<i class="fa fa-instagram"></i>
+								</a>
+							</div>
+						</div>
+
+					</section> <!-- .contact-follow -->
+
 
 				</div><!-- .site-info -->
 			</footer><!-- #colophon -->
