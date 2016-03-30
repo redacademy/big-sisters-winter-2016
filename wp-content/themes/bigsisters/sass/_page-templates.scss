@@ -732,22 +732,32 @@ ul {
   font-weight: bold;
 }
 
+.ar-menu-sections h3 {
+  color: $color__purple-brand;
+  text-align: center;
+}
+
 .ar-grid {
   display: flex;
   flex-flow: column wrap;
   height: 100vh;
   align-content: flex-start;
   list-style: none;
-
     li {
       width: 140px;
       height: 150px;
-      border: 1px solid black;
+      text-align: center;
     }
     img {
       max-height: 100px;
       width: auto;
+      margin: 13%;
     }
+}
+
+.grid-icon {
+  margin: 10px;
+  background-color: $color__offwhite-brand;
 }
 /* Ways to Give Page ---------------------------------------------------- */
 

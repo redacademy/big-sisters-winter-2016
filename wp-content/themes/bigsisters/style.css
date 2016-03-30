@@ -1708,6 +1708,10 @@ ul {
 .mentor-article p {
   font-weight: bold; }
 
+.ar-menu-sections h3 {
+  color: #663399;
+  text-align: center; }
+
 .ar-grid {
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -1723,10 +1727,15 @@ ul {
   .ar-grid li {
     width: 140px;
     height: 150px;
-    border: 1px solid black; }
+    text-align: center; }
   .ar-grid img {
     max-height: 100px;
-    width: auto; }
+    width: auto;
+    margin: 13%; }
+
+.grid-icon {
+  margin: 10px;
+  background-color: #F0F0F0; }
 
 /* Ways to Give Page ---------------------------------------------------- */
 .donate-option {

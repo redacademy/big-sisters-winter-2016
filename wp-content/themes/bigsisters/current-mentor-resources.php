@@ -50,16 +50,27 @@ get_header(); ?>
 				</div>
 			</section>
 
-			<h3>Articles and Resources</h3>
-
-			<section class="ar-menu-sections container">
+			<section class="ar-menu-sections">
+				<h3>Articles and Resources</h3>
 				<ul class="ar-grid">
-					<a href="#"><li><img src="<?php echo get_template_directory_uri(); ?>/assets/images/mentor-resources-images/healthy-eating-icon.png" alt="Big Sisters Healthy Eating Resource"></li></a>
-					<a href="#"><li><img src="<?php echo get_template_directory_uri(); ?>/assets/images/mentor-resources-images/lgtb-icon.png" alt="Big Sisters LGTB Resource"></li></a>
-					<a href="#"><li><img src="<?php echo get_template_directory_uri(); ?>/assets/images/mentor-resources-images/fitting-in-icon.png" alt="Big Sisters Fitting In Resource"></li></a>
-					<a href="#"><li><img src="<?php echo get_template_directory_uri(); ?>/assets/images/mentor-resources-images/grief-icon.png" alt="Big Sisters Grief Resource"></li></a>
-					<a href="#"><li><img src="<?php echo get_template_directory_uri(); ?>/assets/images/mentor-resources-images/pregnancy-icon.png" alt="Big Sisters Pregnancy Resource"></li></a>
-					<a href="#"><li><img src="<?php echo get_template_directory_uri(); ?>/assets/images/mentor-resources-images/hiv-icon.png" alt="Big Sisters HIV Resource"></li></a>
+					<div class="grid-icon">
+						<a href="#"><li><img src="<?php echo get_template_directory_uri(); ?>/assets/images/mentor-resources-images/healthy-eating-icon.png" alt="Big Sisters Healthy Eating Resource"></li></a>
+					</div>
+					<div class="grid-icon">
+						<a href="#"><li><img src="<?php echo get_template_directory_uri(); ?>/assets/images/mentor-resources-images/lgtb-icon.png" alt="Big Sisters LGTB Resource"></li></a>
+					</div>
+					<div class="grid-icon">
+						<a href="#"><li><img src="<?php echo get_template_directory_uri(); ?>/assets/images/mentor-resources-images/fitting-in-icon.png" alt="Big Sisters Fitting In Resource"></li></a>
+					</div>
+					<div class="grid-icon">
+						<a href="#"><li><img src="<?php echo get_template_directory_uri(); ?>/assets/images/mentor-resources-images/grief-icon.png" alt="Big Sisters Grief Resource"></li></a>
+					</div>
+					<div class="grid-icon">
+						<a href="#"><li><img src="<?php echo get_template_directory_uri(); ?>/assets/images/mentor-resources-images/pregnancy-icon.png" alt="Big Sisters Pregnancy Resource"></li></a>
+					</div>
+					<div class="grid-icon">
+						<a href="#"><li><img src="<?php echo get_template_directory_uri(); ?>/assets/images/mentor-resources-images/hiv-icon.png" alt="Big Sisters HIV Resource"></li></a>
+					</div>
 				</ul>
 			</section>
 
