@@ -9,11 +9,13 @@ get_header(); ?>
             <section class="hero-slider">
                 <ul class="bxslider">
                     <li class="bigsister-hero-fp">
-                        <p class="hero-quote">
-                            "Becoming a Big Sister gave me purpose to my life."<br/>- Anita
-                        </p>
-                        <button class="button-brightblue">Learn more</button>
-                    </li>
+						<div>
+	                        <p class="hero-quote">
+	                            "Becoming a Big Sister gave me purpose to my life."<br/>- Anita
+	                        </p>
+	                        <button class="button-brightblue">Learn more</button>
+						</div>
+					</li>
                     <li class="bigsister-hero-fp">
                         <p class="hero-quote">
                             "Becoming a Big Sister gave me purpose to my life."<br/>- Anita

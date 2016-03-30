@@ -825,7 +825,7 @@ ul {
   img {
     @include img-overflow;
   }
-
+}
 /* Single Post Page ---------------------------------------------------- */
 
 .single {
@@ -837,15 +837,13 @@ ul {
       margin: 10rem 0 5rem;
     }
   }
-
   .entry-title {
     line-height: 1;
   }
-
   .posted-on {
     font-size: 1.1rem;
   }
-
+}
 /* Donate Page --------------------------------------------------------------*/
 
 // Hero Image
