@@ -6,26 +6,26 @@ get_header(); ?>
 
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
-            <section class="hero-slider">
-                <ul class="bxslider">
-                    <li class="bigsister-hero-fp">
+            <section class="hero-slider bxstyles1">
+                <ul class="bxslider bxslider1">
+                    <li class="bigsister-hero-fp hero1">
+                        <p class="hero-quote ">
+                            "Becoming a Big Sister gave me purpose to my life."<br/>- Anita
+                        </p>
+                        <button class="button-brightblue">Learn more</button>
+					</li>
+					<li class="bigsister-hero-fp hero2">
                         <p class="hero-quote">
                             "Becoming a Big Sister gave me purpose to my life."<br/>- Anita
                         </p>
                         <button class="button-brightblue">Learn more</button>
-                    </li>
-                    <li class="bigsister-hero-fp">
+					</li>
+					<li class="bigsister-hero-fp hero3">
                         <p class="hero-quote">
                             "Becoming a Big Sister gave me purpose to my life."<br/>- Anita
                         </p>
                         <button class="button-brightblue">Learn more</button>
-                    </li>
-                    <li class="bigsister-hero-fp">
-                        <p class="hero-quote">
-                            "Becoming a Big Sister gave me purpose to my life."<br/>- Anita
-                        </p>
-                        <button class="button-brightblue">Learn more</button>
-                    </li>
+					</li>
                 </ul>
             </section>
             <section class="colored-menu-sections">
@@ -92,9 +92,9 @@ get_header(); ?>
                     </li>
                 </ul>
             </section>
-			<section class="fp-recent-donors">
+			<section class="fp-recent-donors bxstyles2">
 				<h1>Thank you to our recent donors</h1>
-				<ul class="bxslider">
+				<ul class="bxslider bxslider2">
 					<?php $fields = CFS()->get( 'donation_information' );
 					foreach ( $fields as $field ) : ?>
 					<li class="individual-donor">

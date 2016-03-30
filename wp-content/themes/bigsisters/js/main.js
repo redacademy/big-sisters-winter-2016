@@ -1,6 +1,7 @@
 (function($) {
   'use strict';
-/* Slide up/down Menus Funciton */
+
+/* Slide up/down Menus Function */
 
   // $('.acr-box-content').hide();
   //
@@ -52,15 +53,6 @@
 
  }(jQuery));
 
-/* bxSlider Functionality */
-
-  jQuery(document).ready(function($){
-   $('.bxslider').bxSlider({
-      speed: 500,
-      controls: false,
-      auto: true
-   });
-
 // Instagram API Functionality
 
   var $photoList = $('.ig-photo-list');
@@ -93,4 +85,20 @@
 
   });
 
+
+jQuery(document).ready(function($){
+    'use strict';
+    $('.bxslider1').bxSlider({
+       speed: 500,
+       controls: false,
+       auto: true
+    });
+
+ $('.bxslider2').bxSlider({
+    speed: 500,
+    controls: true,
+    auto: true,
+    pager: false,
+    minSlides: 4
+ });
 });
