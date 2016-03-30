@@ -9,50 +9,78 @@
   list-style-type: none;
   margin: 0 auto;
   padding-left: 0;
-}
+    .hero1 {
+        background: url("../../assets/images/hero-images/hero-donate.jpg") no-repeat;
+        background-size: cover;
+        @include desktop {
+            display: none;
+        }
+    }
 
-.bigsisters-hero-fp {
-    z-index: 1;
-    position: relative;
-    .quote-button-wrap {
-        z-index: 3;
-        position: absolute;
-        top: 0;
+    .hero2 {
+        background: url("../../assets/images/hero-images/hero-big-little-power.jpg") no-repeat;
+        background-size: cover;
     }
-    img {
-         height: 16.9rem;
-         @include desktop {
-             padding: 0 0 10rem 5rem;
-             height: 40rem;
-         }
+    .hero3 {
+        background: url("../../assets/images/hero-images/hero-big-little-snow.jpg") no-repeat;
+        background-size: cover;
     }
-    .quote-button-wrap {
-        p {
+    .bigsister-hero-fp {
+        display: flex;
+        flex-direction: column;
+        padding: 2rem 2.5rem 0 2rem;
+        height: 16.9rem;
+        @include desktop {
+            padding: 5rem 0 0 5rem;
+            height: 82vh;
+        }
+        .hero-quote {
             padding: 0.5rem;
             line-height: 1.5rem;
             width: 16.5rem;
+            color: #fff;
+            background-color: rgba(100, 100, 100, 0.3);
+            font-size: 1.2rem;
             @include desktop {
                 width: 29.6rem;
                 line-height: 2.7rem;
+                font-size: 2.15rem;
           }
         }
     }
 }
 
-.bigsister-hero-fp div {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  padding: 0 2.5rem;
-  .hero-quote {
-    color: #fff;
-    background-color: rgba(100, 100, 100, 0.3);
-    font-size: 1.2rem;
-    @include desktop {
-      font-size: 2.15rem;
+//bxslider1 styles
+
+.bxstyles1 {
+    .bx-wrapper .bx-viewport {
+    	-moz-box-shadow: none;
+    	-webkit-box-shadow: none;
+    	box-shadow: none;
+    	border:  0;
+    	left: 0;
+    	background: #fff;
     }
-  }
+    .bx-wrapper {
+        width: 100vw;
+    }
+    .bx-wrapper .bx-pager,
+    .bx-wrapper .bx-controls-auto {
+    	position: absolute;
+    	bottom: 6px;
+    	width: 100%;
+    }
+    .bx-wrapper .bx-pager.bx-default-pager a {
+    	background: rgba(102,102,102,0.7);
+    }
+    .bx-wrapper .bx-pager.bx-default-pager a:hover,
+    .bx-wrapper .bx-pager.bx-default-pager a.active {
+    	background: #fff;
+    }
 }
+
+
+
 
 // Colored section of front-page
 .colored-menu-sections a {
@@ -112,7 +140,7 @@
 // Newsletter Sign Up
 
 .newsletter {
-  padding: 4.2rem 0;
+  padding: 2rem 0;
   h1 {
     margin-top: 0;
     text-align: center;
@@ -141,7 +169,7 @@
     flex-direction: column;
     align-items: center;
     width: 80%;
-    padding: 0 0.83rem;
+    padding: 0.83rem;
     margin: 0 auto;
     @include desktop {
       width: 50%;
@@ -180,7 +208,7 @@
     }
   }
   li:first-child {
-    background: url("../../assets/images/hero-images/hero-front.jpg") no-repeat right;
+    background: url("../../assets/images/hero-images/hero-front.jpg") no-repeat left;
     background-size: cover;
   }
   li:nth-child(2) {
@@ -291,8 +319,9 @@
   flex-direction: column;
   align-items: center;
   padding: 10px;
+  width: 90%;
   @include desktop {
-    flex-basis: 25%;
+    width: 25%;
   }
   .donor-name {
     font-size: 1rem;
@@ -314,8 +343,33 @@
   }
 }
 
-.fp-recent-donors .bxslider {
+//bxslider2 styles
 
+.bxstyles2 {
+    .bx-wrapper .bx-viewport {
+    	-moz-box-shadow: none;
+    	-webkit-box-shadow: none;
+    	box-shadow: none;
+    	border:  0;
+    	left: 0;
+    	background: #fff;
+    }
+    .bx-wrapper {
+        width: 100vw;
+    }
+    .bx-wrapper .bx-pager,
+    .bx-wrapper .bx-controls-auto {
+    	position: absolute;
+    	bottom: -30px;
+    	width: 100%;
+    }
+    .bx-wrapper .bx-pager.bx-default-pager a {
+    	background: rgba(102,102,102,0.7);
+    }
+    .bx-wrapper .bx-pager.bx-default-pager a:hover,
+    .bx-wrapper .bx-pager.bx-default-pager a.active {
+    	background: #fff;
+    }
 }
 
 // Program sponsor section

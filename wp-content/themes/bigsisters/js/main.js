@@ -3,7 +3,6 @@
 (function($) {
   'use strict';
 
-
   // $('.acr-box-content').hide();
   //
   // $('.info-panel-content').click(function(){
@@ -56,9 +55,18 @@
  //bxSlider Functionality
 
 jQuery(document).ready(function($){
- $('.bxslider').bxSlider({
+    'use strict';
+    $('.bxslider1').bxSlider({
+       speed: 500,
+       controls: false,
+       auto: true
+    });
+
+ $('.bxslider2').bxSlider({
     speed: 500,
-    controls: false,
-    auto: false
+    controls: true,
+    auto: true,
+    pager: false,
+    minSlides: 4
  });
 });
