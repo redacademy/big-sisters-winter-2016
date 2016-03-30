@@ -51,54 +51,51 @@
     }
   });
 
+  // bxSlider
+      $('.bxslider1').bxSlider({
+         speed: 500,
+         controls: false,
+         auto: true
+      });
+
+   $('.bxslider2').bxSlider({
+      speed: 500,
+      controls: true,
+      auto: true,
+      pager: false,
+      minSlides: 4
+   });
+
+   // Instagram API Functionality
+
+     var $photoList = $('.ig-photo-list');
+     var endpointURL = 'https://api.instagram.com/v1/users/self/media/recent/?count=6&access_token=260006638.ec2ce43.e6b06a897b984941ad22bae3fb27f977';
+     var photoElements = '';
+
+     var buildPhotoGrid = function (value) {
+       photoElements +=  '<li>';
+       photoElements +=    '<div class="photo-box">';
+       photoElements +=      '<a href="' + value.link + '"><img src="' + value.images.standard_resolution.url + '"/></a>';
+       photoElements +=    '</div>';
+       photoElements +=  '</li>';
+     };
+
+     $.ajax({
+       dataType: 'jsonp',
+       method: 'GET',
+       url: endpointURL,
+     })
+     .done(function (apiData) {
+
+       photoElements += '<ul>';
+
+       $.each(apiData.data, function (key, value) {
+         buildPhotoGrid(value);
+       });
+
+       photoElements += '</ul>';
+       $photoList.append(photoElements);
+
+     });
+
  }(jQuery));
-
-// Instagram API Functionality
-
-  var $photoList = $('.ig-photo-list');
-  var endpointURL = 'https://api.instagram.com/v1/users/self/media/recent/?count=6&access_token=260006638.ec2ce43.e6b06a897b984941ad22bae3fb27f977';
-  var photoElements = '';
-
-  var buildPhotoGrid = function (value) {
-    photoElements +=  '<li>';
-    photoElements +=    '<div class="photo-box">';
-    photoElements +=      '<a href="' + value.link + '"><img src="' + value.images.standard_resolution.url + '"/></a>';
-    photoElements +=    '</div>';
-    photoElements +=  '</li>';
-  };
-
-  $.ajax({
-    dataType: 'jsonp',
-    method: 'GET',
-    url: endpointURL,
-  })
-  .done(function (apiData) {
-
-    photoElements += '<ul>';
-
-    $.each(apiData.data, function (key, value) {
-      buildPhotoGrid(value);
-    });
-
-    photoElements += '</ul>';
-    $photoList.append(photoElements);
-
-  });
-
-
-jQuery(document).ready(function($){
-    'use strict';
-    $('.bxslider1').bxSlider({
-       speed: 500,
-       controls: false,
-       auto: true
-    });
-
- $('.bxslider2').bxSlider({
-    speed: 500,
-    controls: true,
-    auto: true,
-    pager: false,
-    minSlides: 4
- });
-});
