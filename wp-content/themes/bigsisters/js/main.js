@@ -1,6 +1,8 @@
+
+  /* Slide up/down Menus Funciton */
 (function($) {
   'use strict';
-   /* Slide up/down Menus Funciton */
+
 
   // $('.acr-box-content').hide();
   //

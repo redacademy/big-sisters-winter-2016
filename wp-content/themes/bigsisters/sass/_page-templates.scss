@@ -4,6 +4,7 @@
 
 /* Front page --------------------------------------------------------------------- */
 
+// Hero Images
 .hero-slider ul {
   list-style-type: none;
   margin: 0;
@@ -53,6 +54,7 @@
   }
 }
 
+// Colored section of front-page
 .colored-menu-sections a {
   text-decoration: none;
   color: #fff;
@@ -108,6 +110,8 @@
 
 }
 
+// Newsletter Sign Up
+
 .newsletter {
   padding: 4.2rem 0;
   h1 {
@@ -155,6 +159,7 @@
     }
   }
 }
+
 
 .hero-stories ul {
   list-style-type: none;
@@ -256,7 +261,7 @@
   padding-right: 1.6rem;
   text-align: right;
 }
-
+// Recent donor section
 .fp-recent-donors {
   padding: 2.5rem 2.5rem 5rem;
   h1 {
@@ -309,7 +314,7 @@
     }
   }
 }
-
+// Program sponsor section
 .program-sponsors {
   background-color: $color__offwhite-brand;
   padding: 2.5rem 0;
@@ -523,7 +528,7 @@
   }
 }
 
-/* Get Involved Main Page */
+/* Get Involved Main Page ----------------------------------------------------*/
 .page-template-get-involved {
   .involved-header {
     color: $color__purple-brand;
@@ -779,6 +784,7 @@ ul {
   }
 }
 
+
 //--------------------- Board of Directors --------------------------
 .director-wrapper {
   width: 100%;
@@ -840,4 +846,156 @@ ul {
     font-size: 1.1rem;
   }
 
+/* Donate Page --------------------------------------------------------------*/
+
+// Hero Image
+.hero-dp {
+    background: url("../../assets/images/hero-images/hero-donate.jpg") no-repeat;
+    background-size: cover;
+    height: 16.9rem;
+    padding: 30px 0 0 15px;
+    @include desktop {
+        padding: 100px 0 0 50px;
+        height: 40rem;
+    }
+    p {
+        width: 70%;
+        color: #fff;
+        font-size: 1.2rem;
+        line-height: 1.5rem;
+        @include desktop {
+            width: 50%;
+            color: #fff;
+            font-size: 2.7rem;
+            line-height: 3rem;
+            margin-bottom: 40px;
+        }
+    }
+}
+
+//Why Donate Section
+
+.why-donate {
+    padding: 1.6rem 0.83rem;
+    h1 {
+        font-size: 1.3rem;
+        width: 90%;
+        text-align: center;
+        margin: 0 auto;
+        @include desktop {
+            font-size: 2.5rem;
+        }
+    }
+    p {
+        text-align: center;
+    }
+}
+
+//Colored Donate Types Section
+
+.donate-types {
+    padding: 0 0.83rem;
+    font-size: 16px;
+    @include desktop {
+        display: flex;
+    }
+    a {
+        text-decoration: none;
+    }
+    a div {
+        color: #fff;
+        text-align: center;
+        padding: 20px 0;
+        @include desktop {
+            flex-basis: 25%;
+            padding: 40px 20px;
+            font-size: 32px;
+            box-shadow: $shadow__main;
+            line-height: 40px;
+            & :hover {
+                cursor: pointer;
+            }
+        }
+    }
+}
+
+.donate-types {
+    & :first-child div,  & :nth-child(2) div, & :nth-child(3) div {
+        margin-bottom: 0.5rem;
+        @include desktop {
+            margin-bottom: 0;
+        }
+    }
+    & :first-child div {
+        background-color: $color__yellow-brand;
+    }
+    & :nth-child(2) div {
+        background-color: $color__deepblue-brand;
+        @include desktop {
+            padding: 40px 50px;
+
+        }
+    }
+    & :nth-child(3) div {
+        background-color: $color__dusk-brand;
+        @include desktop {
+            padding: 40px;
+        }
+    }
+    & :last-child div {
+        background-color: $color__green-brand;
+    }
+}
+
+//To Donate or Sponsor event section
+
+.to-donate-sponsor {
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+    h1 {
+        font-size: 1.3rem;
+        width: 90%;
+        text-align: center;
+        margin: 0 auto;
+        @include desktop {
+            font-size: 2.5rem;
+        }
+    }
+    p {
+        text-align: center;
+    }
+}
+
+.donor-contact {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 85vw;
+    padding-bottom: 30px;
+    @include desktop {
+        flex-direction: row;
+        justify-content: center;
+    }
+    span {
+        font-size: 1rem;
+        color: $color__green-brand;
+        @include desktop {
+            font-size: 2rem;
+        }
+    }
+    .name-number-wrap{
+        width: 90%;
+        display: flex;
+        justify-content: space-between;
+        @include desktop {
+            justify-content: center;
+            margin-bottom: 0;
+            width: auto;
+            span {
+                margin-right: 50px;
+            }
+        }
+    }
 }

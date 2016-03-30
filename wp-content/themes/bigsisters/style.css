@@ -688,16 +688,18 @@ a {
     .logo-wrap {
       width: 200px; } }
 
-.sub-menu li {
-  background-color: #fff;
-  padding: 10px;
-  width: 200px;
-  border: 0; }
-  .sub-menu li a {
-    padding: 0;
-    color: #663399;
-    font-size: 12px;
-    width: 200px; }
+.sub-menu {
+  background-color: #fff; }
+  .sub-menu li {
+    background-color: #fff;
+    padding: 10px;
+    width: 200px;
+    border: 0; }
+    .sub-menu li a {
+      padding: 0;
+      color: #663399;
+      font-size: 12px;
+      width: 200px; }
 
 /* Small menu. */
 .menu-toggle,
@@ -1462,7 +1464,7 @@ object {
             transform: scale(0.75);
     margin: 0; } }
 
-/* Get Involved Main Page */
+/* Get Involved Main Page ----------------------------------------------------*/
 .page-template-get-involved .involved-header {
   color: #663399;
   text-align: center;
@@ -1758,6 +1760,7 @@ ul {
     border: 1px solid black;
     border-radius: 50%; }
 
+<<<<<<< HEAD
 .director-wrapper {
   width: 100%; }
   .director-wrapper ul {
@@ -1825,6 +1828,157 @@ ul {
 .single .posted-on {
   font-size: 1.1rem; }
 >>>>>>> single_post
+=======
+/* Donate Page --------------------------------------------------------------*/
+.hero-dp {
+  background: url("../../assets/images/hero-images/hero-donate.jpg") no-repeat;
+  background-size: cover;
+  height: 16.9rem;
+  padding: 30px 0 0 15px; }
+  @media (min-width: 900px) {
+    .hero-dp {
+      padding: 100px 0 0 50px;
+      height: 40rem; } }
+  .hero-dp p {
+    width: 70%;
+    color: #fff;
+    font-size: 1.2rem;
+    line-height: 1.5rem; }
+    @media (min-width: 900px) {
+      .hero-dp p {
+        width: 50%;
+        color: #fff;
+        font-size: 2.7rem;
+        line-height: 3rem;
+        margin-bottom: 40px; } }
+
+.why-donate {
+  padding: 1.6rem 0.83rem; }
+  .why-donate h1 {
+    font-size: 1.3rem;
+    width: 90%;
+    text-align: center;
+    margin: 0 auto; }
+    @media (min-width: 900px) {
+      .why-donate h1 {
+        font-size: 2.5rem; } }
+  .why-donate p {
+    text-align: center; }
+
+.donate-types {
+  padding: 0 0.83rem;
+  font-size: 16px; }
+  @media (min-width: 900px) {
+    .donate-types {
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex; } }
+  .donate-types a {
+    text-decoration: none; }
+  .donate-types a div {
+    color: #fff;
+    text-align: center;
+    padding: 20px 0; }
+    @media (min-width: 900px) {
+      .donate-types a div {
+        -webkit-flex-basis: 25%;
+            -ms-flex-preferred-size: 25%;
+                flex-basis: 25%;
+        padding: 40px 20px;
+        font-size: 32px;
+        box-shadow: 0px 2px 8px #888888;
+        line-height: 40px; }
+        .donate-types a div :hover {
+          cursor: pointer; } }
+
+.donate-types :first-child div, .donate-types :nth-child(2) div, .donate-types :nth-child(3) div {
+  margin-bottom: 0.5rem; }
+  @media (min-width: 900px) {
+    .donate-types :first-child div, .donate-types :nth-child(2) div, .donate-types :nth-child(3) div {
+      margin-bottom: 0; } }
+
+.donate-types :first-child div {
+  background-color: #FFCC66; }
+
+.donate-types :nth-child(2) div {
+  background-color: #006699; }
+  @media (min-width: 900px) {
+    .donate-types :nth-child(2) div {
+      padding: 40px 50px; } }
+
+.donate-types :nth-child(3) div {
+  background-color: #FF6633; }
+  @media (min-width: 900px) {
+    .donate-types :nth-child(3) div {
+      padding: 40px; } }
+
+.donate-types :last-child div {
+  background-color: #99CC33; }
+
+.to-donate-sponsor {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 30px; }
+  .to-donate-sponsor h1 {
+    font-size: 1.3rem;
+    width: 90%;
+    text-align: center;
+    margin: 0 auto; }
+    @media (min-width: 900px) {
+      .to-donate-sponsor h1 {
+        font-size: 2.5rem; } }
+  .to-donate-sponsor p {
+    text-align: center; }
+
+.donor-contact {
+  margin: 0 auto;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 85vw;
+  padding-bottom: 30px; }
+  @media (min-width: 900px) {
+    .donor-contact {
+      -webkit-flex-direction: row;
+          -ms-flex-direction: row;
+              flex-direction: row;
+      -webkit-justify-content: center;
+          -ms-flex-pack: center;
+              justify-content: center; } }
+  .donor-contact span {
+    font-size: 1rem;
+    color: #99CC33; }
+    @media (min-width: 900px) {
+      .donor-contact span {
+        font-size: 2rem; } }
+  .donor-contact .name-number-wrap {
+    width: 90%;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+            justify-content: space-between; }
+    @media (min-width: 900px) {
+      .donor-contact .name-number-wrap {
+        -webkit-justify-content: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+        margin-bottom: 0;
+        width: auto; }
+        .donor-contact .name-number-wrap span {
+          margin-right: 50px; } }
+>>>>>>> donate-page
 
 /*--------------------------------------------------------------
 # Footer
