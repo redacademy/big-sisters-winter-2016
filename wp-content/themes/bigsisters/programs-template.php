@@ -96,11 +96,14 @@ get_header();?>
 
 		<section class="container">
 			<div class="sponsor-grid">
-		<?php while ( have_posts() ) : the_post(); ?>
-
-			<?php the_content(); ?>
-
-		<?php endwhile; // End of the loop. ?>
+				<h2><?php echo CFS()->get('thank_you_msg'); ?></h2>
+				<ul>
+				<?php
+					$loop = CFS()->get('sponsor');
+					foreach($loop as $row) : ?>
+				 <li>	<img src="<?php echo $row['sponsor_logo']; ?>" /></li>
+				 <?php endforeach; ?>
+			 </ul>
 	</div>
 	</section>
 
