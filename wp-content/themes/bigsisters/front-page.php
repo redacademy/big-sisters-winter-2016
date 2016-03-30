@@ -9,25 +9,32 @@ get_header(); ?>
             <section class="hero-slider">
                 <ul class="bxslider">
                     <li class="bigsister-hero-fp">
-						<div>
+						<img src="<?php echo get_template_directory_uri(); ?>/assets/images/hero-images/hero-donate.jpg" alt="Big Sisters">
+						<div class="quote-button-wrap">
 	                        <p class="hero-quote">
 	                            "Becoming a Big Sister gave me purpose to my life."<br/>- Anita
 	                        </p>
 	                        <button class="button-brightblue">Learn more</button>
 						</div>
 					</li>
-                    <li class="bigsister-hero-fp">
-                        <p class="hero-quote">
-                            "Becoming a Big Sister gave me purpose to my life."<br/>- Anita
-                        </p>
-                        <button class="button-brightblue">Learn more</button>
-                    </li>
-                    <li class="bigsister-hero-fp">
-                        <p class="hero-quote">
-                            "Becoming a Big Sister gave me purpose to my life."<br/>- Anita
-                        </p>
-                        <button class="button-brightblue">Learn more</button>
-                    </li>
+					<li class="bigsister-hero-fp">
+						<img src="<?php echo get_template_directory_uri(); ?>/assets/images/hero-images/hero-young-girl.jpg" alt="Big Sisters">
+						<div class="quote-button-wrap">
+	                        <p class="hero-quote">
+	                            "Becoming a Big Sister gave me purpose to my life."<br/>- Anita
+	                        </p>
+	                        <button class="button-brightblue">Learn more</button>
+						</div>
+					</li>
+					<li class="bigsister-hero-fp">
+						<img src="<?php echo get_template_directory_uri(); ?>/assets/images/hero-images/hero-big-little-power.jpg" alt="Big Sisters">
+						<div class="quote-button-wrap">
+	                        <p class="hero-quote">
+	                            "Becoming a Big Sister gave me purpose to my life."<br/>- Anita
+	                        </p>
+	                        <button class="button-brightblue">Learn more</button>
+						</div>
+					</li>
                 </ul>
             </section>
             <section class="colored-menu-sections">
@@ -96,7 +103,7 @@ get_header(); ?>
             </section>
 			<section class="fp-recent-donors">
 				<h1>Thank you to our recent donors</h1>
-				<ul class="bxslider">
+				<ul class="bxslider donations-slider">
 					<?php $fields = CFS()->get( 'donation_information' );
 					foreach ( $fields as $field ) : ?>
 					<li class="individual-donor">

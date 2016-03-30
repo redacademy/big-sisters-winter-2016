@@ -59,6 +59,6 @@ jQuery(document).ready(function($){
  $('.bxslider').bxSlider({
     speed: 500,
     controls: false,
-    auto: true
+    auto: false
  });
 });
