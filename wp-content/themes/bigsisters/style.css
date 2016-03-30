@@ -1760,7 +1760,6 @@ ul {
     border: 1px solid black;
     border-radius: 50%; }
 
-<<<<<<< HEAD
 .director-wrapper {
   width: 100%; }
   .director-wrapper ul {
@@ -1827,8 +1826,7 @@ ul {
 
 .single .posted-on {
   font-size: 1.1rem; }
->>>>>>> single_post
-=======
+
 /* Donate Page --------------------------------------------------------------*/
 .hero-dp {
   background: url("../../assets/images/hero-images/hero-donate.jpg") no-repeat;
@@ -1978,7 +1976,6 @@ ul {
         width: auto; }
         .donor-contact .name-number-wrap span {
           margin-right: 50px; } }
->>>>>>> donate-page
 
 /*--------------------------------------------------------------
 # Footer
