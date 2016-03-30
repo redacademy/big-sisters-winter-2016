@@ -62,6 +62,9 @@
 			font-size: 4rem;
 		}
 	}
+	&:hover {
+		cursor: pointer;
+	}
 }
 
 @mixin img-overflow {

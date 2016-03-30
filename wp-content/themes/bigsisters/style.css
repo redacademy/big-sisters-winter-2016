@@ -1559,29 +1559,24 @@ object {
 
 .little-sister-hero {
   background: #f00 url("../../assets/images/big-little-bench.jpg") 0 -25px no-repeat;
-  background-size: 115vw;
-  height: 250px;
+  background-size: cover;
+  height: 300px;
   margin: 2rem 0;
-  width: 100vw;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-      -ms-flex-align: center;
-          align-items: center; }
+  width: 100vw; }
   @media (min-width: 900px) {
     .little-sister-hero {
-      height: 400px;
-      -webkit-align-items: flex-start;
-          -ms-flex-align: start;
-                  -ms-grid-row-align: flex-start;
-              align-items: flex-start; } }
+      height: 600px; } }
 
 .little-sister-quote {
   color: #fff;
   font-size: 1.15rem;
-  width: 60%;
-  padding: 0; }
+  max-width: 35%;
+  padding-left: 5rem;
+  position: relative;
+  text-align: left;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%); }
   @media (min-width: 900px) {
     .little-sister-quote {
       font-size: 2rem; } }
@@ -1602,12 +1597,11 @@ object {
   -webkit-flex-flow: row wrap;
       -ms-flex-flow: row wrap;
           flex-flow: row wrap; }
-  .sponsor-grid .sponsor, .sponsor-grid li, .sponsor-grid ul .sponsor, .sponsor-grid ul li {
-    padding: .5rem .5rem;
+  .sponsor-grid li, .sponsor-grid ul li {
+    padding: .75rem 2rem;
     -webkit-flex: 0 1 33.33%;
         -ms-flex: 0 1 33.33%;
             flex: 0 1 33.33%;
-    height: 75px;
     display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
@@ -1618,7 +1612,7 @@ object {
         -ms-flex-align: center;
             align-items: center; }
     @media (min-width: 900px) {
-      .sponsor-grid .sponsor, .sponsor-grid li, .sponsor-grid ul .sponsor, .sponsor-grid ul li {
+      .sponsor-grid li, .sponsor-grid ul li {
         -webkit-flex: 0 1 20%;
             -ms-flex: 0 1 20%;
                 flex: 0 1 20%; } }
@@ -1722,6 +1716,8 @@ ul {
     @media (min-width: 900px) {
       .info-panel-content .fa-plus-circle, .info-panel-content .fa-minus-circle {
         font-size: 4rem; } }
+  .info-panel-content:hover {
+    cursor: pointer; }
 
 .step-color {
   font-weight: bold; }
@@ -2038,6 +2034,31 @@ ul {
         .donor-contact .name-number-wrap span {
           margin-right: 50px; } }
 
+div.pp_pic_holder {
+  width: 800px !important; }
+
+.pp_fade {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100% !important; }
+
+div.pp_content, div#pp_container {
+  height: auto !important; }
+
+div.pp_default .pp_description, .pp_content, div.pp_details {
+  font-size: 1rem;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  width: 100% !important; }
+
+div.pp_details {
+  padding: 0 1rem; }
+
+div#pp_full_res img {
+  width: 150px !important;
+  height: auto !important; }
+
 /*--------------------------------------------------------------
 # Footer
 --------------------------------------------------------------*/
@@ -2222,6 +2243,8 @@ ul {
     @media (min-width: 900px) {
       .beliefs .fa-plus-circle, .beliefs .fa-minus-circle, .more-media .fa-plus-circle, .more-media .fa-minus-circle, .directors .fa-plus-circle, .directors .fa-minus-circle, .advisors .fa-plus-circle, .advisors .fa-minus-circle, .loyalty-circles .fa-plus-circle, .loyalty-circles .fa-minus-circle, .applause .fa-plus-circle, .applause .fa-minus-circle {
         font-size: 4rem; } }
+  .beliefs:hover, .more-media:hover, .directors:hover, .advisors:hover, .loyalty-circles:hover, .applause:hover {
+    cursor: pointer; }
   .beliefs span, .more-media span, .directors span, .advisors span, .loyalty-circles span, .applause span {
     color: #006699;
     font-weight: bold;
@@ -2253,6 +2276,8 @@ ul {
     @media (min-width: 900px) {
       .donor-panel .fa-plus-circle, .donor-panel .fa-minus-circle {
         font-size: 4rem; } }
+  .donor-panel:hover {
+    cursor: pointer; }
   .donor-panel span {
     font-size: 0.9rem;
     margin: 0; }
@@ -2282,6 +2307,8 @@ ul {
     @media (min-width: 900px) {
       .month-panel .fa-plus-circle, .month-panel .fa-minus-circle {
         font-size: 4rem; } }
+  .month-panel:hover {
+    cursor: pointer; }
   .month-panel span {
     font-size: 0.9rem;
     margin: 0; }

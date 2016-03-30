@@ -633,22 +633,23 @@
 }
 .little-sister-hero {
   background: #f00 url('../../assets/images/big-little-bench.jpg') 0 -25px no-repeat;
-  background-size: 115vw;
-  height: 250px;
+  background-size: cover;
+  height: 300px;
   margin: 2rem 0;
   width: 100vw;
-  display: flex;
-  align-items: center;
   @include desktop {
-    height: 400px;
-    align-items: flex-start;
+    height: 600px;
   }
 }
 .little-sister-quote {
   color: #fff;
   font-size: 1.15rem;
-  width: 60%;
-  padding: 0;
+  max-width: 35%;
+  padding-left: 5rem;
+  position: relative;
+  text-align: left;
+  top: 50%;
+  transform: translateY(-50%);
   @include desktop {
     font-size: 2rem;
   }
@@ -661,10 +662,9 @@
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
-  .sponsor, li {
-    padding: .5rem .5rem;
+  li {
+    padding: .75rem 2rem;
     flex: 0 1 33.33%;
-    height: 75px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -1075,4 +1075,29 @@ ul {
       }
     }
   }
+}
+
+// -------------------------- Override Lightobx plugin styles -------------------------- //
+div.pp_pic_holder {
+  width: 800px !important;
+}
+.pp_fade {
+  display: flex;
+  width: 100% !important;
+}
+div.pp_content, div#pp_container {
+  height: auto !important;
+}
+div.pp_default .pp_description, .pp_content, div.pp_details {
+  font-size: 1rem;
+  font-family: $font__main;
+  font-weight: 500;
+  width: 100% !important;
+}
+div.pp_details {
+  padding: 0 1rem;
+}
+div#pp_full_res img{
+    width: 150px !important;
+    height: auto !important;
 }

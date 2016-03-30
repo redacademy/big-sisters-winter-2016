@@ -61,7 +61,7 @@ get_header();?>
 		<!-- Refer a Little Sisiter -->
 		<section>
 			<h2 class="involved-header">Refer A Little Sister</h2>
-			<div class="little-sister-hero container">
+			<div class="little-sister-hero">
 				<div class="little-sister-quote">
 					<p>"Big Sisters is the best thing that has happenend to our family!"</p>
 					<a href="<?php get_template_directory_uri() ?>/story"><button class="button-brightblue">Learn More</button></a>

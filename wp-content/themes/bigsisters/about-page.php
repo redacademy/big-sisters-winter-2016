@@ -127,7 +127,7 @@ get_header();?>
 									<?php foreach($board_directors as $post) : setup_postdata( $post ); ?>
 										<li class="director-meta">
 												<div class="director-img">
-													<img src="<?php echo CFS()->get('picture'); ?>"/>
+													<a href="<?php echo CFS()->get('picture');?>" data-rel="lightbox"  title="<?php echo CFS()->get('name');?><p><?php echo CFS()->get('position');?></p><?php echo CFS()->get('summary');?>"><img src="<?php echo CFS()->get('picture'); ?>"/></a>
 												</div>
 												<p><?php echo CFS()->get('position'); ?></p>
 												<p><?php echo CFS()->get('name'); ?></p>
