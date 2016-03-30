@@ -95,15 +95,15 @@ get_header(); ?>
 			<section class="fp-recent-donors">
 				<h1>Thank you to our recent donors</h1>
 				<ul class="bxslider">
+					<?php $fields = CFS()->get( 'donation_information' );
+					foreach ( $fields as $field ) : ?>
 					<li class="individual-donor">
-						<?php $fields = CFS()->get( 'donation_information' );
-						foreach ( $fields as $field ) : ?>
-						    <h3 class="donor-name"><?php echo $field['donor_name']; ?></h3>
-							<p class="donation-amount"><?php echo $field['donation_amount']; ?></p>
-							<p class="program-type"><?php echo $field['program_name']; ?></p>
-							<p class="sponsor-level"><?php echo $field['additional_information']; ?></p>
-						<?php endforeach; ?>
+					    <h3 class="donor-name"><?php echo $field['donor_name']; ?></h3>
+						<p class="donation-amount"><?php echo $field['donation_amount']; ?></p>
+						<p class="program-type"><?php echo $field['program_name']; ?></p>
+						<p class="sponsor-level"><?php echo $field['additional_information']; ?></p>
 					</li>
+					<?php endforeach; ?>
 				</ul>
 			</section>
 			<section class="program-sponsors">

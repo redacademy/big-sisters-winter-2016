@@ -14,31 +14,25 @@ get_header(); ?>
                 <a href="#"><button class="button-brightblue">Donate Now</button></a>
             </section>
             <section class="why-donate">
-                <h1>Why Donte to Big Sisters</h1>
-                <p>
-                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
-                </p>
+                <h1>Why Donate to Big Sisters</h1>
+                <p><?php echo CFS()->get('why_donate'); ?></p>
             </section>
             <div class="donate-types">
-                <a href="#"><div>Current mentor resources</div></a>
+                <a href="#"><div>Other ways to Donate</div></a>
                 <a href="#"><div>Corporate Giving</div></a>
                 <a href="#"><div>Host A Fundraiser Or Event</div></a>
-                <a href="#"><div>Host a big and little event</div></a>
+                <a href="#"><div>Host A Big And Little Event</div></a>
             </div>
             <section class="to-donate-sponsor">
                 <h1>Want to sponsor or donate to an event?</h1>
                 <p>Please contact our manager of Corporate and Foundation giving</p>
                 <div class="donor-contact">
 					<div class="name-number-wrap">
-                    	<span>Fleur Cooper</span>
-                    	<span>604-873-4525 ext. 317</span>
+                    	<span><?php echo CFS()->get('donation_manager_name'); ?></span>
+                    	<span><?php echo CFS()->get('manager_phone'); ?></span>
 					</div>
-                    <span>Fcooper@bigsisters.bc.ca</span>
+                    <span><?php echo CFS()->get('manager_email'); ?></span>
                 </div>
-            </section>
-            <section>
-                <i class="fa fa-instagram"></i><h1>@BigSistersBCLM</h1>
-                <div class="instagram-images"></div>
             </section>
 		</main><!-- #main -->
 	</div><!-- #primary -->
