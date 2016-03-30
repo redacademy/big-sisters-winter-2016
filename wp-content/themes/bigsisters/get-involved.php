@@ -82,7 +82,7 @@ get_header();?>
 		<!-- Sponsor thank you -->
 		<section class="container">
 			<div class="sponsor-grid">
-				<h2 class="involved-header">Thank you to our volunteer recruitment sponsors</h2>
+				<h2><?php echo CFS()->get('thank_you_msg'); ?></h2>
 				<ul>
 				<?php
 					$loop = CFS()->get('sponsor');
