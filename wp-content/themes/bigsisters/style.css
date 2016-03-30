@@ -1705,6 +1705,16 @@ ul {
 .upcoming-events-section img {
   width: 100%; }
 
+@media (min-width: 900px) {
+  .mentor-article {
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    margin-bottom: 2rem; } }
+
+.mentor-article p {
+  margin-left: 1rem; }
+
 .mentor-article p {
   font-weight: bold; }
 

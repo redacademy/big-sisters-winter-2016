@@ -728,6 +728,16 @@ ul {
   }
 }
 
+.mentor-article {
+  @include desktop {
+    display: flex;
+    margin-bottom: 2rem;
+  }
+  p {
+    margin-left: 1rem;
+  }
+}
+
 .mentor-article p {
   font-weight: bold;
 }
