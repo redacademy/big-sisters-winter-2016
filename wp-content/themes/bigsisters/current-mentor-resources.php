@@ -13,92 +13,54 @@ get_header(); ?>
 			</section>
 
 			<section class="upcoming-events-section container">
-				<h2 class="current-mentor-title">Upcoming Big and Little Events</h1>
-				<p>
-					Check out these events happening in our own community! These are great
-					ideas to do with your Little for the upcoming weeks!
-				</p>
+				<header class="cmr-header">
+					<h3>Upcoming Big and Little Events</h3>
+						<p>
+							Check out these events happening in our own community! These are great
+							ideas to do with your Little for the upcoming weeks!
+						</p>
+				</header>
 
-				<div class="mentor-article-one">
+				<div class="mentor-article">
 					<img class="article-one-image" src="<?php echo CFS()->get( 'article_one_image' ); ?>">
-					<p class="event-date"><?php echo esc_html(CFS()->get( 'event_one_date' ) ); ?></p>
-					<p class="event-title"><?php echo esc_html(CFS()->get( 'event_one_title' ) ); ?></p>
+					<p class="event-date"><?php echo esc_html(CFS()->get( 'event_one_date' ) ); ?></br>
+																<?php echo esc_html(CFS()->get( 'event_one_title' ) ); ?></p>
 					<p class="event-description"><?php echo esc_html(CFS()->get( 'event_one_description' ) ); ?></p>
 				</div>
 
-				<div class="mentor-article-two">
+				<div class="mentor-article">
 					<img class="article-two-image" src="<?php echo CFS()->get( 'article_two_image' ); ?>">
-					<p class="event-date"><?php echo esc_html(CFS()->get( 'event_two_date' ) ); ?></p>
-					<p class="event-title"><?php echo esc_html(CFS()->get( 'event_two_title' ) ); ?></p>
+					<p class="event-date"><?php echo esc_html(CFS()->get( 'event_two_date' ) ); ?><br/>
+																<?php echo esc_html(CFS()->get( 'event_two_title' ) ); ?></p>
 					<p class="event-description"><?php echo esc_html(CFS()->get( 'event_two_description' ) ); ?></p>
 				</div>
 
-				<div class="mentor-article-three">
+				<div class="mentor-article">
 					<img class="article-three-image" src="<?php echo CFS()->get( 'article_three_image' ); ?>">
-					<p class="event-date"><?php echo esc_html(CFS()->get( 'event_three_date' ) ); ?></p>
-					<p class="event-title"><?php echo esc_html(CFS()->get( 'event_three_title' ) ); ?></p>
+					<p class="event-date"><?php echo esc_html(CFS()->get( 'event_three_date' ) ); ?><br/>
+																<?php echo esc_html(CFS()->get( 'event_three_title' ) ); ?></p>
 					<p class="event-description"><?php echo esc_html(CFS()->get( 'event_three_description' ) ); ?></p>
 				</div>
 
-				<div class="mentor-article-four">
+				<div class="mentor-article">
 					<img class="article-four-image" src="<?php echo CFS()->get( 'article_four_image' ); ?>">
-					<p class="event-date"><?php echo esc_html(CFS()->get( 'event_four_date' ) ); ?></p>
-					<p class="event-title"><?php echo esc_html(CFS()->get( 'event_four_title' ) ); ?></p>
+					<p class="event-date"><?php echo esc_html(CFS()->get( 'event_four_date' ) ); ?></br>
+																<?php echo esc_html(CFS()->get( 'event_four_title' ) ); ?></p>
 					<p class="event-description"><?php echo esc_html(CFS()->get( 'event_four_description' ) ); ?></p>
 				</div>
 			</section>
 
-			<h2 class="articles-resources-title container">Articles and Resources</h2>
+			<h3>Articles and Resources</h3>
 
 			<section class="ar-menu-sections container">
-				<a href="#">
-						<div>
-								<div class="icon-container">
-										<img src="<?php echo get_template_directory_uri(); ?>/assets/images/mentor-resources-images/healthy-eating-icon.png" alt="Big Sisters Healthy Eating Resource">
-								</div>
-								<p>Eating Healthy</p>
-						</div>
-				</a>
-				<a href="#">
-						<div>
-								<div class="icon-container">
-										<img src="<?php echo get_template_directory_uri(); ?>/assets/images/mentor-resources-images/lgtb-icon.png" alt="Big Sisters LGTB Resource">
-								</div>
-								<p>LGBT Youth</p>
-						</div>
-				</a>
-				<a href="#">
-						<div>
-								<div class="icon-container">
-										<img src="<?php echo get_template_directory_uri(); ?>/assets/images/mentor-resources-images/fitting-in-icon.png" alt="Big Sisters Fitting In Resource">
-								</div>
-								<p>Fitting In</p>
-						</div>
-				</a>
-				<a href="#">
-						<div>
-								<div class="icon-container">
-										<img src="<?php echo get_template_directory_uri(); ?>/assets/images/mentor-resources-images/grief-icon.png" alt="Big Sisters Grief Resource">
-								</div>
-								<p>Grief</p>
-						</div>
-				</a>
-				<a href="#">
-						<div>
-								<div class="icon-container">
-										<img src="<?php echo get_template_directory_uri(); ?>/assets/images/mentor-resources-images/pregnancy-icon.png" alt="Big Sisters Pregnancy Resource">
-								</div>
-								<p>Pregnancy</p>
-						</div>
-				</a>
-				<a href="#">
-						<div>
-								<div class="icon-container">
-										<img src="<?php echo get_template_directory_uri(); ?>/assets/images/mentor-resources-images/hiv-icon.png" alt="Big Sisters HIV Resource">
-								</div>
-								<p>Eating Healthy</p>
-						</div>
-				</a>
+				<ul class="ar-grid">
+					<a href="#"><li><img src="<?php echo get_template_directory_uri(); ?>/assets/images/mentor-resources-images/healthy-eating-icon.png" alt="Big Sisters Healthy Eating Resource"></li></a>
+					<a href="#"><li><img src="<?php echo get_template_directory_uri(); ?>/assets/images/mentor-resources-images/lgtb-icon.png" alt="Big Sisters LGTB Resource"></li></a>
+					<a href="#"><li><img src="<?php echo get_template_directory_uri(); ?>/assets/images/mentor-resources-images/fitting-in-icon.png" alt="Big Sisters Fitting In Resource"></li></a>
+					<a href="#"><li><img src="<?php echo get_template_directory_uri(); ?>/assets/images/mentor-resources-images/grief-icon.png" alt="Big Sisters Grief Resource"></li></a>
+					<a href="#"><li><img src="<?php echo get_template_directory_uri(); ?>/assets/images/mentor-resources-images/pregnancy-icon.png" alt="Big Sisters Pregnancy Resource"></li></a>
+					<a href="#"><li><img src="<?php echo get_template_directory_uri(); ?>/assets/images/mentor-resources-images/hiv-icon.png" alt="Big Sisters HIV Resource"></li></a>
+				</ul>
 			</section>
 
 		<?php while ( have_posts() ) : the_post(); ?>

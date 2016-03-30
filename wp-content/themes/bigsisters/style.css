@@ -1467,35 +1467,39 @@ ul {
 /* Current Mentor Resources Page -------------------------------------------*/
 .mentor-hero {
   background: url("../../assets/images/mentor-resources-images/current-mentor-hero.jpg") no-repeat;
-  background-size: 100vw;
+  background-size: cover;
   height: 263px; }
+
+.cmr-header {
+  text-align: center; }
+  .cmr-header h3 {
+    color: #663399; }
 
 .upcoming-events-section img {
   width: 100%; }
 
-.ar-menu-sections {
+.mentor-article p {
+  font-weight: bold; }
+
+.ar-grid {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  -webkit-flex-wrap: wrap;
-      -ms-flex-wrap: wrap;
-          flex-wrap: wrap;
-  -webkit-flex-direction: row;
-      -ms-flex-direction: row;
-          flex-direction: row; }
-  .ar-menu-sections a {
-    text-decoration: none;
-    color: black; }
-  .ar-menu-sections div {
-    background-color: #F0F0F0;
-    margin: 10px; }
-  .ar-menu-sections p {
-    text-align: center; }
-
-.ar-menu-sections img {
-  padding-top: 7px;
-  width: 100px;
-  height: 100px; }
+  -webkit-flex-flow: column wrap;
+      -ms-flex-flow: column wrap;
+          flex-flow: column wrap;
+  height: 100vh;
+  -webkit-align-content: flex-start;
+      -ms-flex-line-pack: start;
+          align-content: flex-start;
+  list-style: none; }
+  .ar-grid li {
+    width: 140px;
+    height: 150px;
+    border: 1px solid black; }
+  .ar-grid img {
+    max-height: 100px;
+    width: auto; }
 
 /* Ways to Give Page ---------------------------------------------------- */
 .donate-option {
