@@ -60,15 +60,16 @@ get_header(); ?>
 						<i class="fa fa-plus-circle"></i>
 					</div>
 					<div class="acr-box-content">
+						<?php
+						$args = array('post_type' => 'story', 'posts_per_page' => -1);
+						$all_stories = get_posts( $args );
+						?>
 						<?php if ( have_posts() ) : ?>
-							<?php /* Start the Loop */ ?>
-							<?php $my_query = new WP_Query( 'post_type=story&&showposts=15' ); ?>
-							<?php while ( $my_query->have_posts() ) : $my_query->the_post(); ?>
-								<!-- Do special_cat stuff... -->
-								<a href="<?php the_permalink() ?>"><p><?php the_title(); ?></p></a>
-							<?php endwhile; ?>
+						<?php foreach($all_stories as $post) : setup_postdata( $post ); ?>
+							<a href="<?php the_permalink() ?>"><p><?php the_title(); ?></p></a>
+						<?php endforeach; wp_reset_postdata(); ?>
 						<?php else : ?>
-							<?php get_template_part( 'template-parts/content', 'none' ); ?>
+						<?php get_template_part( 'template-parts/content', 'none' ); ?>
 						<?php endif; ?>
 					</div>
 				</div>

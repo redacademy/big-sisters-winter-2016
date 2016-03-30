@@ -23,12 +23,12 @@ get_header();?>
 					</div>
 					<div class="acr-box-content">
 						<h4>Activities Committee Member<br /> (6 hours/month)</h4>
-						<p>Help plan group activities for Big &amp; Little Sister matches such as sporting activities, First Nations cultural events, seasonal parties, craft days, slumber parties, and more. Download volunteer application.</p>
+						<p>Help plan group activities for Big &amp; Little Sister matches such as sporting activities, First Nations cultural events, seasonal parties, craft days, slumber parties, and more. <a href="" target="_blank">Download volunteer application.</a></p>
 						<hr>
 						<h4>Event and Fundraising Admin Volunteer Opportunity</h4>
-						<p>The fundraising team is looking for a superstar volunteer to help with upcoming events and various administrative tasks. Download the full volunteer posting here. To apply send your resume and cover letter to Meagan Smith, Events Manager at msmith@bigsisters.bc.ca by March 14th, 2016</p>
+						<p>The fundraising team is looking for a superstar volunteer to help with upcoming events and various administrative tasks. Download the <a href="" target="_blank">full volunteer posting here.</a> To apply send your resume and cover letter to Meagan Smith, Events Manager at <a href="mailto:msmith@bigsisters.bc.ca">msmith@bigsisters.bc.ca</a> by March 14th, 2016</p>
 					<hr>
-					<p>Interested in being a Big Brother? Contact Big Brothers of Greater Vancouver at 604-876-2447 or visit http://www.bigbrothersvancouver.com</p>
+					<p>Interested in being a Big Brother? Contact Big Brothers of Greater Vancouver at 604-876-2447 or visit <a href="http://www.bigbrothersvancouver.com" target="_blank">http://www.bigbrothersvancouver.com</a></p>
 					</div>
 				</div>
 			</div>
@@ -64,7 +64,7 @@ get_header();?>
 			<div class="little-sister-hero container">
 				<div class="little-sister-quote">
 					<p>"Big Sisters is the best thing that has happenend to our family!"</p>
-					<button class="button-brightblue">Learn More</button>
+					<a href="<?php get_template_directory_uri() ?>/story"><button class="button-brightblue">Learn More</button></a>
 				</div>
 			</div>
 		</section>
@@ -81,24 +81,18 @@ get_header();?>
 
 		<!-- Sponsor thank you -->
 		<section class="container">
-			<h2 class="involved-header">Thank you to our volunteer recruitment sponsors</h2>
 			<div class="sponsor-grid">
+				<h2 class="involved-header">Thank you to our volunteer recruitment sponsors</h2>
+				<ul>
 				<?php
-				$args = array('post_type' => 'sponsor');
-				$all_sponsors = get_posts( $args );
-				?>
-				<?php foreach($all_sponsors as $post) : setup_postdata( $post ); ?>
-					<div class="sponsor">
-						<a href="<?php echo CFS()->get('sponsor_link')?>" target="_blank">
-							<img src="<?php echo CFS()->get('sponsor')?>" />
-						</a>
-					</div>
-				<?php endforeach; wp_reset_postdata(); ?>
-			</div>
-		</section>
+					$loop = CFS()->get('sponsor');
+				  foreach($loop as $row) : ?>
+				 <li>	<img src="<?php echo $row['sponsor_logo']; ?>" /></li>
+				 <?php endforeach; ?>
+			 </ul>
+	</div>
+	</section>
 	</main> <!-- #main -->
 </div> <!-- #primary -->
-
-<!-- Other ways to be involved colour blocks -->
 
 <?php get_footer(); ?>
