@@ -711,8 +711,15 @@ ul {
 
 .mentor-hero {
   background: url("../../assets/images/mentor-resources-images/current-mentor-hero.jpg") no-repeat;
-  background-size: 100vw;
+  background-size: cover;
   height: 263px;
+}
+
+.cmr-header {
+  text-align: center;
+  h3 {
+    color: $color__purple-brand;
+  }
 }
 
 .upcoming-events-section {
@@ -721,29 +728,27 @@ ul {
   }
 }
 
-.ar-menu-sections {
+.mentor-article p {
+  font-weight: bold;
+}
+
+.ar-grid {
   display: flex;
-  flex-wrap: wrap;
-  flex-direction: row;
-  a {
-    text-decoration: none;
-    color: black;
-  }
-  div {
-    background-color: $color__offwhite-brand;
-    margin: 10px;
-  }
-  p {
-    text-align: center;
-  }
-}
+  flex-flow: column wrap;
+  height: 100vh;
+  align-content: flex-start;
+  list-style: none;
 
-.ar-menu-sections img {
-  padding-top: 7px;
-  width: 100px;
-  height: 100px;
+    li {
+      width: 140px;
+      height: 150px;
+      border: 1px solid black;
+    }
+    img {
+      max-height: 100px;
+      width: auto;
+    }
 }
-
 /* Ways to Give Page ---------------------------------------------------- */
 
 .donate-option {
