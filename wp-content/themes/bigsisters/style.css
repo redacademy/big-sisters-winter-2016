@@ -1534,30 +1534,30 @@ object {
     margin: 0; } }
 
 /* Get Involved Main Page ----------------------------------------------------*/
-.page-template-get-involved .involved-header {
+.page-template-get-involved .involved-header, .site-main .involved-header {
   color: #663399;
   text-align: center;
   width: 90%;
   margin: 0 auto; }
 
-.page-template-get-involved .other-way-blocks {
+.page-template-get-involved .other-way-blocks, .site-main .other-way-blocks {
   padding: 0 2rem; }
   @media (min-width: 900px) {
-    .page-template-get-involved .other-way-blocks {
+    .page-template-get-involved .other-way-blocks, .site-main .other-way-blocks {
       padding: 0;
       width: 100vw; } }
-  .page-template-get-involved .other-way-blocks a:link, .page-template-get-involved .other-way-blocks a:hover, .page-template-get-involved .other-way-blocks a:visited, .page-template-get-involved .other-way-blocks a:active {
+  .page-template-get-involved .other-way-blocks a:link, .page-template-get-involved .other-way-blocks a:hover, .page-template-get-involved .other-way-blocks a:visited, .page-template-get-involved .other-way-blocks a:active, .site-main .other-way-blocks a:link, .site-main .other-way-blocks a:hover, .site-main .other-way-blocks a:visited, .site-main .other-way-blocks a:active {
     color: #fff;
     text-decoration: none; }
 
-.page-template-get-involved .other-ways {
+.page-template-get-involved .other-ways, .site-main .other-ways {
   font-size: 1.25rem;
   color: #fff;
   list-style: none;
   margin: 3rem 0;
   padding: 0; }
   @media (min-width: 900px) {
-    .page-template-get-involved .other-ways {
+    .page-template-get-involved .other-ways, .site-main .other-ways {
       display: -webkit-flex;
       display: -ms-flexbox;
       display: flex;
@@ -1565,7 +1565,7 @@ object {
           -ms-flex-pack: justify;
               justify-content: space-between; } }
 
-.page-template-get-involved .other-ways li, .page-template-get-involved .other-way-links {
+.page-template-get-involved .other-ways li, .page-template-get-involved .other-way-links, .site-main .other-ways li, .site-main .other-way-links {
   width: 100%;
   height: 75px;
   margin: .5rem 0;
@@ -1579,23 +1579,23 @@ object {
       -ms-flex-align: center;
           align-items: center; }
   @media (min-width: 900px) {
-    .page-template-get-involved .other-ways li, .page-template-get-involved .other-way-links {
+    .page-template-get-involved .other-ways li, .page-template-get-involved .other-way-links, .site-main .other-ways li, .site-main .other-way-links {
       -webkit-flex: 1 0 25%;
           -ms-flex: 1 0 25%;
               flex: 1 0 25%;
       text-align: center;
       padding: 5rem 2rem; } }
 
-.page-template-get-involved .other-ways li:first-child {
+.page-template-get-involved .other-ways li:first-child, .site-main .other-ways li:first-child {
   background: #FFCC66; }
 
-.page-template-get-involved .other-ways li:nth-child(2) {
+.page-template-get-involved .other-ways li:nth-child(2), .site-main .other-ways li:nth-child(2) {
   background: #006699; }
 
-.page-template-get-involved .other-ways li:nth-child(3) {
+.page-template-get-involved .other-ways li:nth-child(3), .site-main .other-ways li:nth-child(3) {
   background: #FF6633; }
 
-.page-template-get-involved .other-ways li:nth-child(4) {
+.page-template-get-involved .other-ways li:nth-child(4), .site-main .other-ways li:nth-child(4) {
   background: #99CC33; }
 
 .involved-copy h3 {
