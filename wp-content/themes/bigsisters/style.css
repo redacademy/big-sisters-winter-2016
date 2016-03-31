@@ -538,8 +538,32 @@ a {
     outline: 0; }
 
 /* Menus ----------------------------------------------------------------------*/
-.responsive-menu a {
+#click-menu {
+  position: fixed !important;
+  top: 18px !important;
+  right: 20px !important; }
+
+#responsive-menu.RMOpened {
+  margin-top: 72px !important; }
+
+.menu-mobile-menu-container {
+  margin: 0 20px !important; }
+
+#responsive-menu div {
+  width: auto !important; }
+
+#responsive-menu a {
   text-transform: uppercase; }
+
+#responsive-menu #click-menu {
+  position: fixed;
+  top: 18px;
+  right: 20px; }
+
+#responsive-menu.RMOpened {
+  margin-top: 72px; }
+  #responsive-menu.RMOpened .menu-mobile-menu-container {
+    margin: 0 27px; }
 
 .sub-menu a {
   text-transform: capitalize; }
@@ -594,7 +618,7 @@ a {
   .main-navigation .current-menu-item > a,
   .main-navigation .current_page_ancestor > a {
     color: #FF9933;
-    padding-bottom: 0.42rem;
+    padding: 40px;
     text-decoration: underline; }
 
 .site-header {
@@ -1886,16 +1910,16 @@ ul {
 
 /* Donate Page --------------------------------------------------------------*/
 .hero-dp {
-  background: url("../../assets/images/hero-images/hero-donate.jpg") no-repeat;
+  background: url("../../assets/images/hero-images/hero-donate.jpg") no-repeat center center;
   background-size: cover;
   height: 16.9rem;
-  padding: 30px 0 0 15px; }
+  padding: 30px 0 0 30px; }
   @media (min-width: 900px) {
     .hero-dp {
       padding: 100px 0 0 50px;
-      height: 40rem; } }
+      height: 82vh; } }
   .hero-dp p {
-    width: 70%;
+    width: 75%;
     color: #fff;
     font-size: 1.2rem;
     line-height: 1.5rem; }
@@ -1922,28 +1946,33 @@ ul {
 
 .donate-types {
   padding: 0 0.83rem;
-  font-size: 16px; }
+  font-size: 1.1rem; }
   @media (min-width: 900px) {
     .donate-types {
+      width: 100%;
       display: -webkit-flex;
       display: -ms-flexbox;
-      display: flex; } }
+      display: flex;
+      -webkit-justify-content: center;
+          -ms-flex-pack: center;
+              justify-content: center; } }
   .donate-types a {
     text-decoration: none; }
-  .donate-types a div {
+  .donate-types div {
     color: #fff;
     text-align: center;
     padding: 20px 0; }
     @media (min-width: 900px) {
-      .donate-types a div {
-        -webkit-flex-basis: 25%;
-            -ms-flex-preferred-size: 25%;
-                flex-basis: 25%;
+      .donate-types div {
+        height: 250px;
+        -webkit-flex: 1 0 25%;
+            -ms-flex: 1 0 25%;
+                flex: 1 0 25%;
         padding: 40px 20px;
-        font-size: 32px;
+        font-size: 1.25rem;
         box-shadow: 0px 2px 8px #888888;
         line-height: 40px; }
-        .donate-types a div :hover {
+        .donate-types div :hover {
           cursor: pointer; } }
 
 .donate-types :first-child div, .donate-types :nth-child(2) div, .donate-types :nth-child(3) div {
@@ -2000,8 +2029,7 @@ ul {
   -webkit-align-items: center;
       -ms-flex-align: center;
           align-items: center;
-  width: 85vw;
-  padding-bottom: 30px; }
+  width: 85vw; }
   @media (min-width: 900px) {
     .donor-contact {
       -webkit-flex-direction: row;

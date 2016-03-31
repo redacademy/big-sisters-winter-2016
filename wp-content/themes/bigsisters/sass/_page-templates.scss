@@ -927,16 +927,16 @@ ul {
 
 // Hero Image
 .hero-dp {
-  background: url("../../assets/images/hero-images/hero-donate.jpg") no-repeat;
+  background: url("../../assets/images/hero-images/hero-donate.jpg") no-repeat center center;
   background-size: cover;
   height: 16.9rem;
-  padding: 30px 0 0 15px;
+  padding: 30px 0 0 30px;
   @include desktop {
     padding: 100px 0 0 50px;
-    height: 40rem;
+    height: 82vh;
   }
   p {
-    width: 70%;
+    width: 75%;
     color: #fff;
     font-size: 1.2rem;
     line-height: 1.5rem;
@@ -972,25 +972,28 @@ ul {
 
 .donate-types {
   padding: 0 0.83rem;
-  font-size: 16px;
+  font-size: 1.1rem;
   @include desktop {
+    width: 100%;
     display: flex;
+    justify-content: center;
   }
   a {
     text-decoration: none;
   }
-  a div {
+  div {
     color: #fff;
     text-align: center;
     padding: 20px 0;
     @include desktop {
-      flex-basis: 25%;
-      padding: 40px 20px;
-      font-size: 32px;
-      box-shadow: $shadow__main;
-      line-height: 40px;
-      & :hover {
-        cursor: pointer;
+        height: 250px;
+        flex: 1 0 25%;
+        padding: 40px 20px;
+        font-size: 1.25rem;
+        box-shadow: $shadow__main;
+        line-height: 40px;
+            & :hover {
+            cursor: pointer;
       }
     }
   }
@@ -1050,7 +1053,6 @@ ul {
   flex-direction: column;
   align-items: center;
   width: 85vw;
-  padding-bottom: 30px;
   @include desktop {
     flex-direction: row;
     justify-content: center;

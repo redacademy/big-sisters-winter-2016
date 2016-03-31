@@ -17,7 +17,7 @@ get_header(); ?>
                 <h1>Why Donate to Big Sisters</h1>
                 <p><?php echo CFS()->get('why_donate'); ?></p>
             </section>
-            <div class="donate-types">
+            <div class="donate-types container">
                 <a href="#"><div>Other ways to Donate</div></a>
                 <a href="#"><div>Corporate Giving</div></a>
                 <a href="#"><div>Host A Fundraiser Or Event</div></a>

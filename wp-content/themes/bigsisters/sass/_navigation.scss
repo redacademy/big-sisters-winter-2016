@@ -28,17 +28,49 @@ a {
 
 //Responsive Menu (#click-menu)
 
-.responsive-menu {
-	a {
-		text-transform: uppercase;
+	#click-menu {
+		position: fixed !important;
+		top: 18px !important;
+		right: 20px !important;
 	}
-}
 
-.sub-menu {
-	a {
-		text-transform: capitalize;
+	#responsive-menu.RMOpened {
+    	margin-top: 72px !important;
 	}
-}
+
+	.menu-mobile-menu-container {
+		margin: 0 20px !important;
+	}
+
+	#responsive-menu {
+		div {
+			width: auto !important;
+		}
+		a {
+			text-transform: uppercase;
+		}
+	}
+
+	#responsive-menu #click-menu {
+		position: fixed;
+		top: 18px;
+		right: 20px;
+	}
+
+	#responsive-menu.RMOpened {
+	    margin-top: 72px;
+		.menu-mobile-menu-container{
+
+			margin: 0 27px;
+
+		}
+	}
+	.sub-menu {
+		a {
+			text-transform: capitalize;
+		}
+	}
+
 
 .menu-main-menu-container {
 	width: 600px;
@@ -122,7 +154,7 @@ a {
 	.current-menu-item > a,
 	.current_page_ancestor > a {
 		color: $color__orange-brand;
-		padding-bottom: 0.42rem;
+		padding: 40px;
 		text-decoration: underline;
 	}
 }
