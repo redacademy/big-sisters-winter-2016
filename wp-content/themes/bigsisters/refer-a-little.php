@@ -51,7 +51,7 @@ get_header(); ?>
 					<h2 class="enroll-title"><?php echo esc_html(CFS()->get( 'title_enroll' ) ); ?></h1>
 
 						<div class="accordian-box">
-							<div class="acr-box-div">
+							<div class="acr-box-div container">
 								<div class="info-panel-content">
 									<p><span class="step-color">Step 1.</span> General Information</span></p>
 									<i class="fa fa-plus-circle"></i>
@@ -76,7 +76,7 @@ get_header(); ?>
 								</div>
 							</div>
 
-							<div class="acr-box-div">
+							<div class="acr-box-div container">
 								<div class="info-panel-content">
 									<p><span class="step-color">Step 2.</span> Requirements</span></p>
 									<i class="fa fa-plus-circle"></i>
@@ -93,7 +93,7 @@ get_header(); ?>
 								</div>
 							</div>
 
-							<div class="acr-box-div">
+							<div class="acr-box-div container">
 								<div class="info-panel-content">
 									<p><span class="step-color">Step 3.</span> Apply Now!</span></p>
 									<i class="fa fa-plus-circle"></i>
@@ -113,7 +113,7 @@ get_header(); ?>
 								</div>
 							</div>
 
-							<div class="acr-box-div">
+							<div class="acr-box-div container">
 								<div class="info-panel-content">
 									<p><span class="step-color">Step 4.</span> Next Steps</span></p>
 									<i class="fa fa-plus-circle"></i>
@@ -145,7 +145,7 @@ get_header(); ?>
 						<h2 class="study-buddy-title"><?php echo esc_html(CFS()->get( 'title_study_buddy' ) ); ?></h1>
 
 						<div class="accordian-box">
-							<div class="acr-box-div">
+							<div class="acr-box-div container">
 								<div class="info-panel-content">
 									<p><span class="step-color">Step 1.</span> General Information</span></p>
 									<i class="fa fa-plus-circle"></i>
@@ -160,7 +160,7 @@ get_header(); ?>
 								</div>
 							</div>
 
-							<div class="acr-box-div">
+							<div class="acr-box-div container">
 								<div class="info-panel-content">
 									<p><span class="step-color">Step 2.</span> Requirements</span></p>
 									<i class="fa fa-plus-circle"></i>
@@ -175,7 +175,7 @@ get_header(); ?>
 								</div>
 							</div>
 
-							<div class="acr-box-div">
+							<div class="acr-box-div container">
 								<div class="info-panel-content">
 									<p><span class="step-color">Step 3.</span> Apply Now!</span></p>
 									<i class="fa fa-plus-circle"></i>
@@ -190,7 +190,7 @@ get_header(); ?>
 								</div>
 							</div>
 
-							<div class="acr-box-div">
+							<div class="acr-box-div container">
 								<div class="info-panel-content">
 									<p><span class="step-color">Step 4.</span> Next Steps</p>
 									<i class="fa fa-plus-circle"></i>

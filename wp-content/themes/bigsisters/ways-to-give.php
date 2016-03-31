@@ -8,7 +8,7 @@ get_header(); ?>
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
 
-      <section>
+      <section class="container">
         <h1>Our Donors make Big Sisters possible. Every little bit helps.</h1>
         <p>
           We undestand that every one is different. Which is why Big Sisters
@@ -17,7 +17,7 @@ get_header(); ?>
         </p>
       </section>
 
-      <section class="donate-option-sections">
+      <section class="donate-option-sections container">
         <div class="donate-option">
           <div class="donate-icon">
             <img src="<?php echo get_template_directory_uri(); ?>/assets/images/icons/one-time-donation-icon.svg" alt="Big Sisters One Time Donation">
