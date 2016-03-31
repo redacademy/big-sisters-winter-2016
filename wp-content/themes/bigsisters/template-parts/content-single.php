@@ -2,7 +2,7 @@
 /**
  * Template part for displaying single posts.
  *
- * @package RED_Starter_Theme
+ * @package Big_Sisters_Theme
  */
 
 ?>
@@ -16,7 +16,7 @@
 		<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
 
 		<div class="entry-meta">
-			<?php red_starter_posted_on(); ?>
+			<?php big_sisters_posted_on(); ?>
 		</div><!-- .entry-meta -->
 	</header><!-- .entry-header -->
 
@@ -31,6 +31,6 @@
 	</div><!-- .entry-content -->
 
 	<footer class="entry-footer">
-		<?php red_starter_entry_footer(); ?>
+		<?php big_sisters_entry_footer(); ?>
 	</footer><!-- .entry-footer -->
 </article><!-- #post-## -->

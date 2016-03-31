@@ -2,7 +2,7 @@
 /**
  * The main template file.
  *
- * @package RED_Starter_Theme
+ * @package Big_Sisters_Theme
  */
 
 get_header(); ?>
@@ -26,7 +26,7 @@ get_header(); ?>
 
 								<div class="post-meta">
 									<h3 class="post-title"><?php the_title(); ?></h3>
-									<p><?php red_starter_posted_on(); ?></p>
+									<p><?php big_sisters_posted_on(); ?></p>
 									<?php the_content(); ?>
 
 									<a href="<?php the_permalink(); ?>">

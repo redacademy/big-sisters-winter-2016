@@ -64,20 +64,13 @@ get_header();?>
 			<div class="little-sister-hero">
 				<div class="little-sister-quote">
 					<p>"Big Sisters is the best thing that has happenend to our family!"</p>
-					<a href="<?php get_template_directory_uri() ?>/story"><button class="button-brightblue">Learn More</button></a>
+					<a href="<?php get_template_directory_uri(); ?>/story"><button class="button-brightblue">Learn More</button></a>
 				</div>
 			</div>
 		</section>
 
 		<!-- Other ways to get involved -->
-		<section class="container">
-			<ul class="other-ways">
-				<li class="other-ways-block">Other Ways To Donate</li>
-				<li class="other-ways-block">Host A Fundraiser Or Event</li>
-				<li class="other-ways-block">Host A Big And Little Sister Activity</li>
-				<li class="other-ways-block">Corporate Giving</li>
-			</ul>
-		</section>
+	<?php include_once('inc/otherways.php'); ?>
 
 		<!-- Sponsor thank you -->
 		<section class="container">

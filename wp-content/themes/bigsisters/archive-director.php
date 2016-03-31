@@ -2,7 +2,7 @@
 /**
 * The template for displaying testimonials archive.
 *
-* @package RED_Starter_Theme
+* @package Big_Sisters_Theme
 */
 
 get_header(); ?>
