@@ -8,11 +8,11 @@ get_header(); ?>
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
 
-        <h1>Frequently Asked Questions</h1>
+        <h1 class="container">Frequently Asked Questions</h1>
 
-        <h2>ABOUT THE PROGRAM</h2>
+        <h2 class="container">ABOUT THE PROGRAM</h2>
 
-        <div class="accordian-box">
+        <div class="accordian-box container">
           <div class="acr-box-div">
             <div class="info-panel-content">
               <p>What is the Go Girls Program</p>
@@ -74,9 +74,9 @@ get_header(); ?>
           </div>
         </div>
 
-        <h2>HOSTING A FUNDRAISER</h2>
+        <h2 class="container">HOSTING A FUNDRAISER</h2>
 
-        <div class="accordian-box">
+        <div class="accordian-box container">
           <div class="acr-box-div">
             <div class="info-panel-content">
               <p>Can I claim taxes back on donation?</p>
