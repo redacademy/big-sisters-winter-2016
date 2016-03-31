@@ -319,6 +319,12 @@ body {
   display: none;
   overflow: hidden; }
 
+.page-header-style h1 {
+  margin-top: 96px; }
+  @media (min-width: 900px) {
+    .page-header-style h1 {
+      margin-top: 132px; } }
+
 p {
   line-height: 1.75;
   font-family: "Roboto", sans-serif; }
@@ -547,23 +553,24 @@ a {
   margin-top: 72px !important; }
 
 .menu-mobile-menu-container {
-  margin: 0 20px !important; }
+  margin: 0 auto !important; }
 
-#responsive-menu div {
-  width: auto !important; }
+#responsive-menu .responsive-menu li a {
+  border-top: 0 !important;
+  border-bottom: 1px solid #ff6633 !important;
+  padding: 12px 0px 12px 1% !important; }
 
-#responsive-menu a {
+#responsive-menu .responsive-menu li {
+  width: 70vw !important; }
+
+#responsive-menu .appendLink {
+  border: 0 !important; }
+
+#responsive-menu .sub-menu {
+  border-bottom: 0 !important; }
+
+.responsive-menu a {
   text-transform: uppercase; }
-
-#responsive-menu #click-menu {
-  position: fixed;
-  top: 18px;
-  right: 20px; }
-
-#responsive-menu.RMOpened {
-  margin-top: 72px; }
-  #responsive-menu.RMOpened .menu-mobile-menu-container {
-    margin: 0 27px; }
 
 .sub-menu a {
   text-transform: capitalize; }

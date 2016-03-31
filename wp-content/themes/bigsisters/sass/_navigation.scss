@@ -28,49 +28,48 @@ a {
 
 //Responsive Menu (#click-menu)
 
-	#click-menu {
-		position: fixed !important;
-		top: 18px !important;
-		right: 20px !important;
+#click-menu {
+	position: fixed !important;
+	top: 18px !important;
+	right: 20px !important;
+}
+
+#responsive-menu.RMOpened {
+	margin-top: 72px !important;
+}
+
+.menu-mobile-menu-container {
+	margin: 0 auto !important;
+}
+
+#responsive-menu {
+	.responsive-menu li a {
+		border-top: 0 !important;
+		border-bottom: 1px solid #ff6633 !important;
+		padding: 12px 0px 12px 1% !important;
 	}
-
-	#responsive-menu.RMOpened {
-    	margin-top: 72px !important;
+	.responsive-menu li {
+		width: 70vw !important;
 	}
-
-	.menu-mobile-menu-container {
-		margin: 0 20px !important;
-	}
-
-	#responsive-menu {
-		div {
-			width: auto !important;
-		}
-		a {
-			text-transform: uppercase;
-		}
-	}
-
-	#responsive-menu #click-menu {
-		position: fixed;
-		top: 18px;
-		right: 20px;
-	}
-
-	#responsive-menu.RMOpened {
-	    margin-top: 72px;
-		.menu-mobile-menu-container{
-
-			margin: 0 27px;
-
-		}
+	.appendLink {
+		border: 0 !important;
 	}
 	.sub-menu {
-		a {
-			text-transform: capitalize;
-		}
+		border-bottom: 0 !important;
 	}
 
+
+}
+
+.responsive-menu a {
+	text-transform: uppercase;
+}
+
+.sub-menu {
+	a {
+		text-transform: capitalize;
+	}
+}
 
 .menu-main-menu-container {
 	width: 600px;
