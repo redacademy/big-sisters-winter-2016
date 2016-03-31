@@ -41,6 +41,15 @@ body {
     overflow: hidden;
   }
 
+.page-header-style {
+	h1 {
+		margin-top: 96px;
+		@include desktop {
+			margin-top: 132px;
+		}
+	}
+}
+
 p {
 	line-height: $font__line-height-body;
 	font-family: $font__main;

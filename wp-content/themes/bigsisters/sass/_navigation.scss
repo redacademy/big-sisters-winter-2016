@@ -28,10 +28,41 @@ a {
 
 //Responsive Menu (#click-menu)
 
-.responsive-menu {
-	a {
-		text-transform: uppercase;
+#click-menu {
+	position: fixed !important;
+	top: 18px !important;
+	right: 20px !important;
+}
+
+#responsive-menu.RMOpened {
+	margin-top: 72px !important;
+}
+
+.menu-mobile-menu-container {
+	margin: 0 auto !important;
+}
+
+#responsive-menu {
+	.responsive-menu li a {
+		border-top: 0 !important;
+		border-bottom: 1px solid #ff6633 !important;
+		padding: 12px 0px 12px 1% !important;
 	}
+	.responsive-menu li {
+		width: 70vw !important;
+	}
+	.appendLink {
+		border: 0 !important;
+	}
+	.sub-menu {
+		border-bottom: 0 !important;
+	}
+
+
+}
+
+.responsive-menu a {
+	text-transform: uppercase;
 }
 
 .sub-menu {
@@ -122,7 +153,7 @@ a {
 	.current-menu-item > a,
 	.current_page_ancestor > a {
 		color: $color__orange-brand;
-		padding-bottom: 0.42rem;
+		padding: 40px;
 		text-decoration: underline;
 	}
 }
@@ -199,7 +230,7 @@ a {
 	}
 }
 
-.main-navigation #menu-item-106 a {
+.main-navigation #menu-item-118 a {
 	padding: 1rem 3.5rem;
 	background: $color__brightblue-brand;
 	border-radius: 41px;
