@@ -9,7 +9,7 @@ get_header(); ?>
 		<main id="main" class="site-main" role="main">
 
       <section class="container">
-        <h1>Our Donors make Big Sisters possible. Every little bit helps.</h1>
+        <h1 class="page-header-style">Our Donors make Big Sisters possible. Every little bit helps.</h1>
         <p>
           We undestand that every one is different. Which is why Big Sisters
           offers so many different ways to contribute to our cause. We
@@ -18,7 +18,7 @@ get_header(); ?>
       </section>
 
       <section class="donate-option-sections container">
-        <div class="donate-option">
+        <div class="donate-option odd-color">
           <div class="donate-icon">
             <img src="<?php echo get_template_directory_uri(); ?>/assets/images/icons/one-time-donation-icon.svg" alt="Big Sisters One Time Donation">
           </div>
@@ -185,6 +185,7 @@ get_header(); ?>
 							long-term basis. For more information please contact Justine Green
 							at 604-873-4525 x307.
             </p>
+						<hr/>
           </div>
         </div>
 

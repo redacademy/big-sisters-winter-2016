@@ -10,13 +10,9 @@ get_header(); ?>
 
 		<?php while ( have_posts() ) : the_post(); ?>
 
-			<?php get_template_part( 'template-parts/content', 'single' ); ?>
-
-			<?php the_post_navigation(); ?>
-
 			<div class="refer-a-little-container">
 				<header class="refer-header container">
-					<h1 class="refer-title"><?php echo esc_html(CFS()->get( 'title_refer' ) ); ?></h1>
+					<h1 class="page-header-style"><?php echo esc_html(CFS()->get( 'title_refer' ) ); ?></h1>
 				</header>
 
 				<section class="hero-stories">
@@ -53,7 +49,7 @@ get_header(); ?>
 						<div class="accordian-box">
 							<div class="acr-box-div container">
 								<div class="info-panel-content">
-									<p><span class="step-color">Step 1.</span> General Information</span></p>
+									<h3><span class="step-color">Step 1.</span> General Information</span></h3>
 									<i class="fa fa-plus-circle"></i>
 								</div>
 								<div class="acr-box-content container">
@@ -78,7 +74,7 @@ get_header(); ?>
 
 							<div class="acr-box-div container">
 								<div class="info-panel-content">
-									<p><span class="step-color">Step 2.</span> Requirements</span></p>
+									<h3><span class="step-color">Step 2.</span> Requirements</span></h3>
 									<i class="fa fa-plus-circle"></i>
 								</div>
 								<div class="acr-box-content container">
@@ -95,7 +91,7 @@ get_header(); ?>
 
 							<div class="acr-box-div container">
 								<div class="info-panel-content">
-									<p><span class="step-color">Step 3.</span> Apply Now!</span></p>
+									<h3><span class="step-color">Step 3.</span> Apply Now!</span></h3>
 									<i class="fa fa-plus-circle"></i>
 								</div>
 								<div class="acr-box-content container">
@@ -115,7 +111,7 @@ get_header(); ?>
 
 							<div class="acr-box-div container">
 								<div class="info-panel-content">
-									<p><span class="step-color">Step 4.</span> Next Steps</span></p>
+									<h3><span class="step-color">Step 4.</span> Next Steps</span></h3>
 									<i class="fa fa-plus-circle"></i>
 								</div>
 								<div class="acr-box-content container">
@@ -147,7 +143,7 @@ get_header(); ?>
 						<div class="accordian-box">
 							<div class="acr-box-div container">
 								<div class="info-panel-content">
-									<p><span class="step-color">Step 1.</span> General Information</span></p>
+									<h3><span class="step-color">Step 1.</span> General Information</span></h3>
 									<i class="fa fa-plus-circle"></i>
 								</div>
 								<div class="acr-box-content container">
@@ -162,7 +158,7 @@ get_header(); ?>
 
 							<div class="acr-box-div container">
 								<div class="info-panel-content">
-									<p><span class="step-color">Step 2.</span> Requirements</span></p>
+									<h3><span class="step-color">Step 2.</span> Requirements</span></h3>
 									<i class="fa fa-plus-circle"></i>
 								</div>
 								<div class="acr-box-content container">
@@ -177,7 +173,7 @@ get_header(); ?>
 
 							<div class="acr-box-div container">
 								<div class="info-panel-content">
-									<p><span class="step-color">Step 3.</span> Apply Now!</span></p>
+									<h3><span class="step-color">Step 3.</span> Apply Now!</span></h3>
 									<i class="fa fa-plus-circle"></i>
 								</div>
 								<div class="acr-box-content container">
@@ -192,7 +188,7 @@ get_header(); ?>
 
 							<div class="acr-box-div container">
 								<div class="info-panel-content">
-									<p><span class="step-color">Step 4.</span> Next Steps</p>
+									<h3><span class="step-color">Step 4.</span> Next Steps</h3>
 									<i class="fa fa-plus-circle"></i>
 								</div>
 								<div class="acr-box-content container">

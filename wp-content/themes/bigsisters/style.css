@@ -1749,6 +1749,10 @@ ul {
 .mentor-article p {
   margin-left: 1rem; }
 
+@media (min-width: 900px) {
+  .cmr-color {
+    color: #006699; } }
+
 .mentor-article p {
   font-weight: bold; }
 
@@ -1760,26 +1764,39 @@ ul {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  -webkit-flex-flow: column wrap;
-      -ms-flex-flow: column wrap;
-          flex-flow: column wrap;
-  height: 100vh;
+  -webkit-flex-flow: row wrap;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
   -webkit-align-content: flex-start;
       -ms-flex-line-pack: start;
           align-content: flex-start;
-  list-style: none; }
-  .ar-grid li {
-    width: 140px;
-    height: 150px;
-    text-align: center; }
-  .ar-grid img {
-    max-height: 100px;
-    width: auto;
-    margin: 13%; }
+  list-style: none;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 2rem; }
 
 .grid-icon {
-  margin: 10px;
+  -webkit-flex: 0 1 48%;
+      -ms-flex: 0 1 48%;
+          flex: 0 1 48%;
+  text-align: center;
+  margin: 6px 0;
   background-color: #F0F0F0; }
+  @media (min-width: 900px) {
+    .grid-icon {
+      -webkit-flex: 0 1 32%;
+          -ms-flex: 0 1 32%;
+              flex: 0 1 32%;
+      padding: 2rem;
+      height: 200px; } }
+  .grid-icon img {
+    padding: 1rem;
+    max-height: 100px;
+    width: auto; }
+  .grid-icon a {
+    text-decoration: none;
+    color: black; }
 
 /* Ways to Give Page ---------------------------------------------------- */
 .donate-option {
@@ -1792,7 +1809,6 @@ ul {
   -webkit-align-items: center;
       -ms-flex-align: center;
           align-items: center;
-  border-bottom: 1px solid black;
   margin-top: 20px; }
   .donate-option h3 {
     color: #006699; }
@@ -1808,6 +1824,9 @@ ul {
       -webkit-flex-direction: row;
           -ms-flex-direction: row;
               flex-direction: row; } }
+
+.odd-color {
+  background-color: #F0F0F0; }
 
 .donate-icon {
   width: 73px;

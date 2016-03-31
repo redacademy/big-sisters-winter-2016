@@ -796,6 +796,12 @@ ul {
   }
 }
 
+.cmr-color {
+  @include desktop {
+    color: $color__deepblue-brand;
+  }
+}
+
 .mentor-article p {
   font-weight: bold;
 }
@@ -807,25 +813,32 @@ ul {
 
 .ar-grid {
   display: flex;
-  flex-flow: column wrap;
-  height: 100vh;
+  flex-flow: row wrap;
   align-content: flex-start;
   list-style: none;
-    li {
-      width: 140px;
-      height: 150px;
-      text-align: center;
-    }
-    img {
-      max-height: 100px;
-      width: auto;
-      margin: 13%;
-    }
+  justify-content: space-between;
+  margin-bottom: 2rem;
 }
 
 .grid-icon {
-  margin: 10px;
+  flex: 0 1 48%;
+  text-align: center;
+  margin: 6px 0;
   background-color: $color__offwhite-brand;
+    @include desktop {
+      flex: 0 1 32%;
+      padding: 2rem;
+      height: 200px;
+    }
+    img {
+      padding: 1rem;
+      max-height: 100px;
+      width: auto;
+  }
+    a {
+      text-decoration: none;
+      color: black;
+    }
 }
 /* Ways to Give Page ---------------------------------------------------- */
 
@@ -833,7 +846,7 @@ ul {
   display: flex;
   flex-direction: column;
   align-items: center;
-  border-bottom: 1px solid black;
+  // border-bottom: 1px solid black;
   margin-top: 20px;
   h3 {
     color: #006699;
@@ -851,6 +864,15 @@ ul {
     flex-direction: row;
   }
 }
+.odd-color {
+  background-color: $color__offwhite-brand;
+}
+
+// .donate-option-sections {
+//   & :nth-child(odd) {
+//     background-color: red;
+//   }
+// }
 
 .donate-icon {
   width: 73px;

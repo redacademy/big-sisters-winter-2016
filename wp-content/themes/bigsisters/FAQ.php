@@ -8,14 +8,14 @@ get_header(); ?>
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
 
-        <h1 class="container">Frequently Asked Questions</h1>
+        <h1 class="page-header-style container">Frequently Asked Questions</h1>
 
         <h2 class="container">ABOUT THE PROGRAM</h2>
 
         <div class="accordian-box container">
           <div class="acr-box-div">
             <div class="info-panel-content">
-              <p>What is the Go Girls Program</p>
+              <h3>What is the Go Girls Program</h3>
               <i class="fa fa-plus-circle"></i>
             </div>
             <div class="acr-box-content container">
@@ -30,7 +30,7 @@ get_header(); ?>
 
           <div class="acr-box-div">
             <div class="info-panel-content">
-              <p>What is Big Sisters?</p>
+              <h3>What is Big Sisters?</h3>
               <i class="fa fa-plus-circle"></i>
             </div>
             <div class="acr-box-content container">
@@ -45,7 +45,7 @@ get_header(); ?>
 
           <div class="acr-box-div">
             <div class="info-panel-content">
-              <p>What king of support can I expect after joining Big Sisters?</p>
+              <h3>What king of support can I expect after joining Big Sisters?</h3>
               <i class="fa fa-plus-circle"></i>
             </div>
             <div class="acr-box-content container">
@@ -60,7 +60,7 @@ get_header(); ?>
 
           <div class="acr-box-div">
             <div class="info-panel-content">
-              <p>When can I see my Little Sister?</p>
+              <h3>When can I see my Little Sister?</h3>
               <i class="fa fa-plus-circle"></i>
             </div>
             <div class="acr-box-content container">
@@ -79,7 +79,7 @@ get_header(); ?>
         <div class="accordian-box container">
           <div class="acr-box-div">
             <div class="info-panel-content">
-              <p>Can I claim taxes back on donation?</p>
+              <h3>Can I claim taxes back on donation?</h3>
               <i class="fa fa-plus-circle"></i>
             </div>
             <div class="acr-box-content container">
@@ -94,7 +94,7 @@ get_header(); ?>
 
           <div class="acr-box-div">
             <div class="info-panel-content">
-              <p>Will my donation make a difference?</p>
+              <h3>Will my donation make a difference?</h3>
               <i class="fa fa-plus-circle"></i>
             </div>
             <div class="acr-box-content container">
@@ -109,7 +109,7 @@ get_header(); ?>
 
           <div class="acr-box-div">
             <div class="info-panel-content">
-              <p>How much does it cost to match a Big and Little?</p>
+              <h3>How much does it cost to match a Big and Little?</h3>
               <i class="fa fa-plus-circle"></i>
             </div>
             <div class="acr-box-content container">
@@ -124,7 +124,7 @@ get_header(); ?>
 
           <div class="acr-box-div">
             <div class="info-panel-content">
-              <p>Can I make a corporate donation?</p>
+              <h3>Can I make a corporate donation?</h3>
               <i class="fa fa-plus-circle"></i>
             </div>
             <div class="acr-box-content container">
