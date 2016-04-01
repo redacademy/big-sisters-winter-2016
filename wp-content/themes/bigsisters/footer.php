@@ -14,7 +14,14 @@
 
 					<section class="ig-grid">
 						<div class="ig-header">
-							<h3><i class="fa fa-instagram fa-2x"></i> @BigSistersBCLM</h3>
+							<h3>
+								<a href="https://www.instagram.com/bigsistersbclm/">
+									<i class="fa fa-instagram fa-2x"></i>
+								</a>
+								<a class="bs-ig-username" href="https://www.instagram.com/bigsistersbclm/">
+									@BigSistersBCLM
+								</a>
+							</h3>
 						</div>
 
 						<div class="ig-photo-list"></div>
