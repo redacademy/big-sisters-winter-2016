@@ -3,18 +3,6 @@
 
 /* Slide up/down Menus Function */
 
-  // $('.acr-box-content').hide();
-  //
-  // $('.info-panel-content').click(function(){
-  //   var currentText = $(this).text();
-  //   $(this).html('<h3>'+currentText+'</h3><i class="fa fa-minus-circle"></i>');
-  //   if($(this).next().is(':visible')){
-  //     $(this).html('<h3>'+currentText+'</h3><i class="fa fa-plus-circle"></i>');
-  //     $(this).next().slideUp();
-  //   }else{
-  //     $(this).next().slideDown();
-  //   }
-
   $('.info-panel-content').click(function(e) {
     	e.preventDefault();
 
@@ -23,15 +11,21 @@
       if ($this.next().hasClass('show')) {
           $this.next().removeClass('show');
           $this.next().slideUp(350);
-          // $this.children('.fa').toggleClass('fa-plus-circle');
+          // switch top-level dropdown from minus icon to plus icon on click
+          $this.children('.fa').removeClass('fa-minus-circle').addClass('fa-plus-circle');
 
       } else {
           $this.parent().parent().find('div .acr-box-content').removeClass('show');
           $this.parent().parent().find('div .acr-box-content').slideUp(350);
           $this.next().toggleClass('show');
           $this.next().slideToggle(350);
-          $this.find('div .acr-box-content').hide();
-          // $this.children('.fa').toggleClass('fa-minus-circle');
+          // switch nested dropdown to minus icon on click
+          $this.children('.fa').addClass('fa-minus-circle');
+          // switch any sibling nested dropdowns to plus icon on click
+          $this.siblings('.info-panel-content').children('.fa').removeClass('fa-minus-circle');
+          // switch any nested dropdowns to plus if top-level dropdown is closed
+          $this.next().children('.info-panel-content').children('.fa').removeClass('fa-minus-circle');
+
       }
   });
 
