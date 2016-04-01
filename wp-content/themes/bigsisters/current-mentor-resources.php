@@ -9,12 +9,12 @@ get_header(); ?>
 		<main id="main" class="site-main" role="main">
 
 			<section class="mentor-hero">
-				<p class="metor-hero-quote">We LOVE our mentors are we're here to support them!</p>
+				<p class="little-sister-quote">We <span style="color: red">LOVE</span> our mentors are we're here to support them!</p>
 			</section>
 
 			<section class="upcoming-events-section container">
 				<header class="cmr-header">
-					<h3>Upcoming Big and Little Events</h3>
+					<h2>Upcoming Big and Little Events</h2>
 						<p>
 							Check out these events happening in our own community! These are great
 							ideas to do with your Little for the upcoming weeks!
@@ -58,7 +58,9 @@ get_header(); ?>
 				</div>
 			</section>
 
-			<h3 class="container">Articles and Resources</h3>
+			<section class="art-resc-title container">
+				<h2>Articles and Resources</h2>
+			</section>
 
 				<ul class="ar-grid container">
 					<li class="grid-icon">

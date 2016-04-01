@@ -740,7 +740,6 @@
 
 .quote-image-container {
   display: flex;
-  // flex-direction: column;
   align-items: center;
   height: 170px;
   margin: 1rem 0.83rem;
@@ -748,7 +747,6 @@
     padding: 10px;
     line-height: 24px;
     width: 235px;
-    // position: absolute;
   }
 }
 
@@ -757,7 +755,11 @@
   height: 170px;
 }
 
-.refer-title, .enroll-title, .study-buddy-title{
+.refer-title,
+.enroll-title,
+.study-buddy-title,
+.art-resc-title,
+.page-header-style {
   text-align: center;
 }
 
@@ -784,14 +786,34 @@ ul {
 /* Current Mentor Resources Page -------------------------------------------*/
 
 .mentor-hero {
-  background: url("../../assets/images/mentor-resources-images/current-mentor-hero.jpg") no-repeat;
+  background: url("../../assets/images/hero-images/hero-deva-zorina2.jpg") no-repeat center center;
   background-size: cover;
-  height: 263px;
+  display: flex;
+  flex-direction: column;
+  padding: 2rem 2.5rem 0 2rem;
+  height: 16.9rem;
+    @include desktop {
+        padding: 5rem 0 0 5rem;
+        height: 82vh;
+    }
+  .little-sister-quote {
+      padding: 0.5rem;
+      line-height: 1.5rem;
+      width: 16.5rem;
+      color: #fff;
+      background-color: rgba(100, 100, 100, 0.3);
+      font-size: 1.2rem;
+      @include desktop {
+          width: 29.6rem;
+          line-height: 2.7rem;
+          font-size: 2.15rem;
+    }
+  }
 }
 
-.cmr-header {
+.cmr-header, .art-resc-title {
   text-align: center;
-  h3 {
+  h2, h3 {
     color: $color__purple-brand;
   }
 }
@@ -840,6 +862,7 @@ ul {
   flex: 0 1 48%;
   text-align: center;
   margin: 6px 0;
+  box-shadow: 3px 3px 3px 3px #ccc;
   background-color: $color__offwhite-brand;
     @include desktop {
       flex: 0 1 32%;
@@ -858,18 +881,41 @@ ul {
 }
 /* Ways to Give Page ---------------------------------------------------- */
 
-.donate-option {
+.ways2give-hero {
+  background: url("../../assets/images/hero-images/hero-fall.jpg") no-repeat center center;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  padding: 2rem 2.5rem 0 2rem;
+  height: 16.9rem;
+    @include desktop {
+        padding: 5rem 0 0 5rem;
+        height: 82vh;
+    }
+  .ways2give-quote {
+      padding: 0.5rem;
+      line-height: 1.5rem;
+      width: 16.5rem;
+      color: #fff;
+      background-color: rgba(100, 100, 100, 0.3);
+      font-size: 1.2rem;
+      @include desktop {
+          width: 29.6rem;
+          line-height: 2.7rem;
+          font-size: 2.15rem;
+    }
+  }
+}
+
+.give-flex {
   display: flex;
   flex-direction: column;
   align-items: center;
-  // border-bottom: 1px solid black;
-  margin-top: 20px;
   h3 {
     color: #006699;
   }
   .donate-icon {
-    width: 73px;
-    height: 63px;
+    flex: 0 1 10%;
     img {
       width: 100%;
       border: 1px solid black;
@@ -879,25 +925,17 @@ ul {
   @include desktop {
     flex-direction: row;
   }
+  .donate-option-description {
+    flex: 0 1 75%;
+    margin-left: 2rem;
+  }
+}
+
+.donate-option {
+  border-bottom: 1px solid black;
 }
 .odd-color {
   background-color: $color__offwhite-brand;
-}
-
-// .donate-option-sections {
-//   & :nth-child(odd) {
-//     background-color: red;
-//   }
-// }
-
-.donate-icon {
-  width: 73px;
-  height: 63px;
-  img {
-    width: 100%;
-    border: 1px solid black;
-    border-radius: 50%;
-  }
 }
 
 //--------------------- Board of Directors --------------------------
