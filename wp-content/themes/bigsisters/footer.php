@@ -20,7 +20,7 @@
 						<div class="ig-photo-list"></div>
 					</section> <!-- .ig-grid -->
 
-					<section class="contact-follow container">
+					<section class="contact-follow">
 
 						<div class="contact">
 							<h3><a href="#" class="contact-button">Contact Us</a></h3>
