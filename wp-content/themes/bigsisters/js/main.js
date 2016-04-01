@@ -59,11 +59,15 @@
       });
 
    $('.bxslider2').bxSlider({
-      speed: 500,
-      controls: true,
-      auto: true,
-      pager: false,
-      minSlides: 4
+        slideWidth: 300,
+        speed: 500,
+        controls: true,
+        auto: true,
+        pager: false,
+        // minSlides: 2,
+        maxSlides: 4,
+        slideMargin: 1,
+        moveSlides: 1,
    });
 
    // Instagram API Functionality

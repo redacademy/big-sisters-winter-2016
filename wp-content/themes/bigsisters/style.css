@@ -940,16 +940,16 @@ object {
   margin: 0 auto;
   padding-left: 0; }
   .hero-slider ul .hero1 {
-    background: url("../../assets/images/hero-images/hero-donate.jpg") no-repeat;
+    background: url("../../assets/images/hero-images/hero-donate.jpg") no-repeat center center;
     background-size: cover; }
     @media (min-width: 900px) {
       .hero-slider ul .hero1 {
         display: none; } }
   .hero-slider ul .hero2 {
-    background: url("../../assets/images/hero-images/hero-big-little-power.jpg") no-repeat;
+    background: url("../../assets/images/hero-images/hero-fishing.jpg") no-repeat center center;
     background-size: cover; }
   .hero-slider ul .hero3 {
-    background: url("../../assets/images/hero-images/hero-big-little-snow.jpg") no-repeat;
+    background: url("../../assets/images/hero-images/hero-big-little-snow.jpg") no-repeat center center;
     background-size: cover; }
   .hero-slider ul .bigsister-hero-fp {
     display: -webkit-flex;
@@ -977,27 +977,28 @@ object {
           line-height: 2.7rem;
           font-size: 2.15rem; } }
 
-.bxstyles1 .bx-wrapper .bx-viewport {
-  box-shadow: none;
-  border: 0;
-  left: 0;
-  background: #fff; }
-
-.bxstyles1 .bx-wrapper {
-  width: 100vw; }
-
-.bxstyles1 .bx-wrapper .bx-pager,
-.bxstyles1 .bx-wrapper .bx-controls-auto {
-  position: absolute;
-  bottom: 6px;
-  width: 100%; }
-
-.bxstyles1 .bx-wrapper .bx-pager.bx-default-pager a {
-  background: rgba(102, 102, 102, 0.7); }
-
-.bxstyles1 .bx-wrapper .bx-pager.bx-default-pager a:hover,
-.bxstyles1 .bx-wrapper .bx-pager.bx-default-pager a.active {
-  background: #fff; }
+.bxstyles1 {
+  margin-bottom: -40px; }
+  @media (min-width: 900px) {
+    .bxstyles1 {
+      margin-bottom: -61px; } }
+  .bxstyles1 .bx-wrapper .bx-viewport {
+    box-shadow: none;
+    border: 0;
+    left: 0;
+    background: #fff; }
+  .bxstyles1 .bx-wrapper {
+    width: 100vw; }
+  .bxstyles1 .bx-wrapper .bx-pager,
+  .bxstyles1 .bx-wrapper .bx-controls-auto {
+    position: absolute;
+    bottom: 6px;
+    width: 100%; }
+  .bxstyles1 .bx-wrapper .bx-pager.bx-default-pager a {
+    background: rgba(102, 102, 102, 0.7); }
+  .bxstyles1 .bx-wrapper .bx-pager.bx-default-pager a:hover,
+  .bxstyles1 .bx-wrapper .bx-pager.bx-default-pager a.active {
+    background: #fff; }
 
 .colored-menu-sections a {
   text-decoration: none;
@@ -1051,16 +1052,16 @@ object {
       height: 16rem; } }
   .colored-menu .icon-container {
     width: 5rem; }
-    .colored-menu .icon-container img {
-      width: 100%; }
     @media (min-width: 900px) {
       .colored-menu .icon-container {
         width: 100px; } }
+    .colored-menu .icon-container img {
+      width: 100%; }
   .colored-menu p {
     margin: 0; }
 
 .newsletter {
-  padding: 2rem 0; }
+  padding-top: 2rem; }
   .newsletter h1 {
     margin-top: 0;
     text-align: center;
@@ -1070,7 +1071,7 @@ object {
         font-size: 2rem; } }
   .newsletter .name-container {
     width: 100%;
-    margin-bottom: 0.83rem; }
+    margin-bottom: 1.2rem; }
     @media (min-width: 900px) {
       .newsletter .name-container {
         display: -webkit-flex;
@@ -1078,8 +1079,7 @@ object {
         display: flex;
         -webkit-justify-content: space-between;
             -ms-flex-pack: justify;
-                justify-content: space-between;
-        margin-bottom: 1rem; }
+                justify-content: space-between; }
         .newsletter .name-container :first-child, .newsletter .name-container :last-child {
           margin: 0;
           -webkit-flex-basis: 48%;
@@ -1108,7 +1108,7 @@ object {
           height: 2.5rem;
           margin-bottom: 1rem; } }
     .newsletter form :last-child {
-      margin: 0 auto; }
+      margin: 20px auto 0; }
 
 .hero-stories ul {
   list-style-type: none;
@@ -1242,10 +1242,7 @@ object {
       -ms-flex-align: center;
           align-items: center;
   padding: 10px;
-  width: 90%; }
-  @media (min-width: 900px) {
-    .individual-donor {
-      width: 25%; } }
+  width: 100%; }
   .individual-donor .donor-name {
     font-size: 1rem;
     text-align: center;
@@ -1259,6 +1256,12 @@ object {
   @media (min-width: 900px) {
     .individual-donor .donation-amount {
       color: #006699; } }
+
+.bxstyles2 .individual-donor .bx-clone {
+  display: none; }
+
+.bxstyles2 .bx-wrapper {
+  max-width: 90% !important; }
 
 .bxstyles2 .bx-wrapper .bx-viewport {
   box-shadow: none;
