@@ -40,9 +40,20 @@
       margin: 0;
 
       @include desktop {
-        color: $color__purple-brand;
         font-size: 2.5rem;
+      }
 
+      a {
+        color: #FFF;
+        text-decoration: none;
+
+        @include desktop {
+          color: $color__purple-brand;
+        }
+
+        &:hover {
+          text-decoration: underline;
+        }
       }
 
     }

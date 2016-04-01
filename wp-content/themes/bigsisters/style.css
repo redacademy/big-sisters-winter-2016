@@ -2241,8 +2241,15 @@ div#pp_full_res img {
       margin: 0; }
       @media (min-width: 900px) {
         .ig-grid .ig-header h3 {
-          color: #663399;
           font-size: 2.5rem; } }
+      .ig-grid .ig-header h3 a {
+        color: #FFF;
+        text-decoration: none; }
+        @media (min-width: 900px) {
+          .ig-grid .ig-header h3 a {
+            color: #663399; } }
+        .ig-grid .ig-header h3 a:hover {
+          text-decoration: underline; }
     .ig-grid .ig-header .fa-instagram {
       padding-right: 1rem; }
   .ig-grid .ig-photo-list ul {
