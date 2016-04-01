@@ -14,7 +14,7 @@ get_header();?>
 				</div> <!-- .page-header -->
 
 				<div class="about-video">
-					<iframe src="https://www.youtube.com/embed/nNSrSozCeU4?&showinfo=0" frameborder="0" allowfullscreen></iframe>
+					<iframe src="https://www.youtube.com/embed/nNSrSozCeU4?&showinfo=0" allowfullscreen></iframe>
 				</div> <!-- .about-video -->
 
 				<section class="our-vision container">
@@ -147,16 +147,18 @@ get_header();?>
 					<div class="accordian-box">
 						<div class="acr-box-div">
 
-						<div class="info-panel-content advisors">
-							<span>Advisors</span>
-							<i class="fa fa-plus-circle"></i>
-						</div> <!-- .board-advisors -->
-						<div class="acr-box-content advisor-list">
-							<?php echo CFS()->get('advisors'); ?>
-						</div> <!-- .acr-box-content -->
+							<div class="info-panel-content advisors">
+								<span>Advisors</span>
+								<i class="fa fa-plus-circle"></i>
+							</div> <!-- .board-advisors -->
+							<div class="acr-box-content advisor-list">
+								<?php echo CFS()->get('advisors'); ?>
+							</div> <!-- .acr-box-content -->
 
-					</div> <!-- .acr-box-div -->
-				</div> <!-- .accordian-box -->
+						</div> <!-- .acr-box-div -->
+					</div> <!-- .accordian-box -->
+
+				</section> <!-- .board-advisors -->
 
 				<section class="supporters container">
 					<h2>Our Supporters</h2>
@@ -267,6 +269,8 @@ get_header();?>
 									<span>November 2015</span>
 									<i class="fa fa-plus-circle"></i>
 								</div>
+
+							</div> <!-- .acr-box-content -->
 
 						</div> <!-- .acr-box-div -->
 					</div> <!-- .accordian-box -->
