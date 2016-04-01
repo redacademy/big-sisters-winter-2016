@@ -7,7 +7,7 @@ get_header(); ?>
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
             <section class="hero-slider bxstyles1">
-                <ul class="bxslider bxslider1">
+                <ul class="bxslider">
                     <li class="bigsister-hero-fp hero1">
                         <p class="hero-quote ">
                             "Becoming a Big Sister gave me purpose to my life."<br/>- Anita
@@ -92,12 +92,12 @@ get_header(); ?>
                     </li>
                 </ul>
             </section>
-			<section class="fp-recent-donors bxstyles2">
+			<section class="fp-recent-donors">
 				<h1>Thank you to our recent donors</h1>
-				<ul class="bxslider bxslider2">
+				<ul class="main-carousel js-flickity">
 					<?php $fields = CFS()->get( 'donation_information' );
 					foreach ( $fields as $field ) : ?>
-					<li class="individual-donor">
+					<li class="individual-donor carousel-cell">
 					    <h3 class="donor-name"><?php echo $field['donor_name']; ?></h3>
 						<p class="donation-amount"><?php echo $field['donation_amount']; ?></p>
 						<p class="program-type"><?php echo $field['program_name']; ?></p>

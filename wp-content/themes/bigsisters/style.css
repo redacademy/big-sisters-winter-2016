@@ -1222,14 +1222,6 @@ object {
     padding-left: 0; }
     .fp-recent-donors ul :last-child .donor-name {
       line-height: 1.75rem; }
-    @media (min-width: 900px) {
-      .fp-recent-donors ul {
-        display: -webkit-flex;
-        display: -ms-flexbox;
-        display: flex;
-        -webkit-justify-content: space-around;
-            -ms-flex-pack: distribute;
-                justify-content: space-around; } }
 
 .individual-donor {
   display: -webkit-flex;
@@ -1243,6 +1235,9 @@ object {
           align-items: center;
   padding: 10px;
   width: 100%; }
+  @media (min-width: 900px) {
+    .individual-donor {
+      width: 25%; } }
   .individual-donor .donor-name {
     font-size: 1rem;
     text-align: center;
@@ -1257,33 +1252,9 @@ object {
     .individual-donor .donation-amount {
       color: #006699; } }
 
-.bxstyles2 .individual-donor .bx-clone {
-  display: none; }
-
-.bxstyles2 .bx-wrapper {
-  max-width: 90% !important; }
-
-.bxstyles2 .bx-wrapper .bx-viewport {
-  box-shadow: none;
-  border: 0;
-  left: 0;
-  background: #fff; }
-
-.bxstyles2 .bx-wrapper {
-  width: 100vw; }
-
-.bxstyles2 .bx-wrapper .bx-pager,
-.bxstyles2 .bx-wrapper .bx-controls-auto {
-  position: absolute;
-  bottom: -30px;
-  width: 100%; }
-
-.bxstyles2 .bx-wrapper .bx-pager.bx-default-pager a {
-  background: rgba(102, 102, 102, 0.7); }
-
-.bxstyles2 .bx-wrapper .bx-pager.bx-default-pager a:hover,
-.bxstyles2 .bx-wrapper .bx-pager.bx-default-pager a.active {
-  background: #fff; }
+@media (min-width: 900px) {
+  .flickity-slider :last-child {
+    display: none; } }
 
 .program-sponsors {
   background-color: #F0F0F0;

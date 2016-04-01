@@ -288,6 +288,7 @@
   padding-right: 1.6rem;
   text-align: right;
 }
+
 // Recent donor section
 .fp-recent-donors {
   padding: 2.5rem 2.5rem 5rem;
@@ -300,26 +301,25 @@
       font-size: 2rem;
     }
   }
-  ul {
-    list-style-type: none;
-    margin: 0;
-    padding-left: 0;
-    & :last-child .donor-name {
-      line-height: 1.75rem;
+      ul {
+        list-style-type: none;
+        margin: 0;
+        padding-left: 0;
+        & :last-child .donor-name {
+          line-height: 1.75rem;
+        }
     }
-    @include desktop {
-      display: flex;
-      justify-content: space-around;
-    }
-  }
 }
 
 .individual-donor {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 10px;
-  width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    width: 100%;
+    @include desktop {
+        width: 25%;
+    }
   .donor-name {
     font-size: 1rem;
     text-align: center;
@@ -340,43 +340,53 @@
   }
 }
 
-//bxslider2 styles
+.flickity-slider {
 
-.bxstyles2 {
-    .individual-donor .bx-clone {
-        display: none;
-    }
+    @include desktop {
 
-    .bx-wrapper {
-        max-width: 90% !important;
-    }
-
-    .bx-wrapper .bx-viewport {
-    	-moz-box-shadow: none;
-    	-webkit-box-shadow: none;
-    	box-shadow: none;
-    	border:  0;
-    	left: 0;
-    	background: #fff;
-
-    }
-    .bx-wrapper {
-        width: 100vw;
-    }
-    .bx-wrapper .bx-pager,
-    .bx-wrapper .bx-controls-auto {
-    	position: absolute;
-    	bottom: -30px;
-    	width: 100%;
-    }
-    .bx-wrapper .bx-pager.bx-default-pager a {
-    	background: rgba(102,102,102,0.7);
-    }
-    .bx-wrapper .bx-pager.bx-default-pager a:hover,
-    .bx-wrapper .bx-pager.bx-default-pager a.active {
-    	background: #fff;
+        & :last-child {
+            display: none;
+        }
     }
 }
+
+// //bxslider2 styles
+//
+// .bxstyles2 {
+//     .individual-donor .bx-clone {
+//         display: none;
+//     }
+//
+//     .bx-wrapper {
+//         max-width: 90% !important;
+//     }
+//
+//     .bx-wrapper .bx-viewport {
+//     	-moz-box-shadow: none;
+//     	-webkit-box-shadow: none;
+//     	box-shadow: none;
+//     	border:  0;
+//     	left: 0;
+//     	background: #fff;
+//
+//     }
+//     .bx-wrapper {
+//         width: 100vw;
+//     }
+//     .bx-wrapper .bx-pager,
+//     .bx-wrapper .bx-controls-auto {
+//     	position: absolute;
+//     	bottom: -30px;
+//     	width: 100%;
+//     }
+//     .bx-wrapper .bx-pager.bx-default-pager a {
+//     	background: rgba(102,102,102,0.7);
+//     }
+//     .bx-wrapper .bx-pager.bx-default-pager a:hover,
+//     .bx-wrapper .bx-pager.bx-default-pager a.active {
+//     	background: #fff;
+//     }
+// }
 
 // Program sponsor section
 .program-sponsors {
