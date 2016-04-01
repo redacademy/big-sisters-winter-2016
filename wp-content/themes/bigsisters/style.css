@@ -2217,7 +2217,8 @@ div#pp_full_res img {
   -webkit-align-items: flex-start;
       -ms-flex-align: start;
           align-items: flex-start;
-  color: #FFF; }
+  color: #FFF;
+  padding: 0 1rem; }
   @media (min-width: 900px) {
     .contact-follow {
       padding-top: 1rem; } }
@@ -2266,7 +2267,10 @@ div#pp_full_res img {
       color: #FFF;
       text-decoration: none; }
     .follow .social-icons i {
-      padding: 0 1rem; }
+      padding: 0 0.25rem; }
+      @media (min-width: 900px) {
+        .follow .social-icons i {
+          padding: 0 1rem; } }
 
 /*--------------------------------------------------------------
 # About Page
