@@ -12,7 +12,7 @@ get_header(); ?>
 
 			<div class="refer-a-little-container">
 				<header class="refer-header container">
-					<h1 class="page-header-style"><?php echo esc_html(CFS()->get( 'title_refer' ) ); ?></h1>
+					<h1 class="refer-title page-header-style"><?php echo esc_html(CFS()->get( 'title_refer' ) ); ?></h1>
 				</header>
 
 				<section class="hero-stories">

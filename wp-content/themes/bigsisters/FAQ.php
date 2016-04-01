@@ -8,9 +8,10 @@ get_header(); ?>
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
 
-        <h1 class="page-header-style container">Frequently Asked Questions</h1>
-
-        <h2 class="container">ABOUT THE PROGRAM</h2>
+			<section class="page-header-style container">
+        <h1>Frequently Asked Questions</h1>
+        <h2>ABOUT THE PROGRAM</h2>
+			</section>
 
         <div class="accordian-box container">
           <div class="acr-box-div">
@@ -74,7 +75,9 @@ get_header(); ?>
           </div>
         </div>
 
-        <h2 class="container">HOSTING A FUNDRAISER</h2>
+				<section class="page-header-style container">
+        	<h2>HOSTING A FUNDRAISER</h2>
+				</section>
 
         <div class="accordian-box container">
           <div class="acr-box-div">
