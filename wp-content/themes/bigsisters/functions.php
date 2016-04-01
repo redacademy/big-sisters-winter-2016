@@ -118,3 +118,22 @@ require get_template_directory() . '/inc/template-tags.php';
  * Custom functions that act independently of the theme templates.
  */
 require get_template_directory() . '/inc/extras.php';
+
+/**
+* Allow SVG files into WordPress
+*/
+function cc_mime_types($mimes) {
+  $mimes['svg'] = 'image/svg+xml';
+  return $mimes;
+}
+add_filter('upload_mimes', 'cc_mime_types');
+
+function fix_svg_thumb_display() {
+  echo '
+    td.media-icon img[src$=".svg"], img[src$=".svg"].attachment-post-thumbnail {
+      width: 100% !important;
+      height: auto !important;
+    }
+  ';
+}
+add_action('admin_head', 'fix_svg_thumb_display');

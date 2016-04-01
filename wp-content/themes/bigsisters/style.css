@@ -1901,42 +1901,60 @@ ul {
         line-height: 2.7rem;
         font-size: 2.15rem; } }
 
-.give-flex {
+.give-flex ul {
+  list-style: none;
+  margin: 0;
+  padding: 0; }
+
+.give-flex li {
+  width: 100vw; }
+  @media (min-width: 900px) {
+    .give-flex li:nth-child(odd) {
+      background: #F0F0F0; } }
+
+.give-flex h3 {
+  color: #006699; }
+
+.give-flex .container {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  -webkit-flex-direction: column;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -webkit-flex-flow: row wrap;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
   -webkit-align-items: center;
       -ms-flex-align: center;
           align-items: center; }
-  .give-flex h3 {
-    color: #006699; }
-  .give-flex .donate-icon {
-    -webkit-flex: 0 1 10%;
-        -ms-flex: 0 1 10%;
-            flex: 0 1 10%; }
-    .give-flex .donate-icon img {
-      width: 100%;
-      border: 1px solid black;
-      border-radius: 50%; }
-  @media (min-width: 900px) {
-    .give-flex {
-      -webkit-flex-direction: row;
-          -ms-flex-direction: row;
-              flex-direction: row; } }
-  .give-flex .donate-option-description {
-    -webkit-flex: 0 1 75%;
-        -ms-flex: 0 1 75%;
-            flex: 0 1 75%;
-    margin-left: 2rem; }
 
-.donate-option {
-  border-bottom: 1px solid black; }
+.give-flex .donate-icon {
+  -webkit-flex: 0 1 10%;
+      -ms-flex: 0 1 10%;
+          flex: 0 1 10%;
+  border-radius: 50%;
+  border: 1px solid black;
+  padding: 1rem; }
+  .give-flex .donate-icon img {
+    width: 100px; }
 
-.odd-color {
-  background-color: #F0F0F0; }
+@media (min-width: 900px) {
+  .give-flex {
+    -webkit-flex-direction: row;
+        -ms-flex-direction: row;
+            flex-direction: row; } }
+
+.give-flex .donate-option-description {
+  -webkit-flex: 0 1 75%;
+      -ms-flex: 0 1 75%;
+          flex: 0 1 75%;
+  margin-left: 2rem; }
+
+@media (min-width: 900px) {
+  .donate-option {
+    border-bottom: 2px solid #ccc; } }
+
+@media (min-width: 900px) {
+  .odd-color {
+    background-color: #F0F0F0; } }
 
 .director-wrapper {
   width: 100%; }

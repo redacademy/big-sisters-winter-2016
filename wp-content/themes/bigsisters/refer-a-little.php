@@ -15,33 +15,25 @@ get_header(); ?>
 					<h1 class="refer-title page-header-style"><?php echo esc_html(CFS()->get( 'title_refer' ) ); ?></h1>
 				</header>
 
-				<section class="hero-stories">
-	                <ul>
-	                    <li class="individual-hero-stories">
-							<div class"hero-quote-wrap">
-		                        <p class="stories-quote">
-		                            "Offering my time and <span class="quote-orange">support to my little sister</span> is one of the most <span class="quote-green">fulfilling</span> things I have done in my life."
-		                        </p>
-								<p class="quoter">- Big Sister Carolyn</p>
-							</div>
-	                    </li>
-						<li class="individual-hero-stories">
-							<div class"hero-quote-wrap">
-		                        <p class="stories-quote">
-		                            <span class="quote-dusk">92%</span> of  Little Sisters <span class="quote-blue">feel confident</span>
-		                        </p>
-							</div>
-	                    </li>
-						<li class="individual-hero-stories">
-							<div class"hero-quote-wrap">
-		                        <p class="stories-quote">
-		                            "I have seen the girls <span class="quote-green">develop new friendships</span> with each other and display greater <span class="quote-orange">confidence</span>"
-		                        </p>
-								<p class="quoter">- Shanny, Go Girls Mentor</p>
-							</div>
-	                    </li>
-	                </ul>
-	            </section>
+				<section class="quote-image-sections container">
+					<div class="hero-grid">
+						<div class="program-hero">
+							<div class="program-hero-img"><img src="<?php echo CFS()->get( 'quote_image_one' ); ?>"></div>
+						<p class="program-quote"><?php echo esc_html(CFS()->get( 'quote_text_one' ) ); ?></p>
+					</div>
+
+					<div class="program-hero">
+						<div class="program-hero-img"><img src="<?php echo CFS()->get( 'quote_image_two' ); ?>"></div>
+						<p class="program-quote"><?php echo esc_html(CFS()->get( 'quote_text_two' ) ); ?></p>
+					</div>
+
+					<div class="program-hero">
+						<div class="program-hero-img"><img src="<?php echo CFS()->get( 'quote_image_three' ); ?>"></div>
+						<p class="program-quote"><?php echo esc_html(CFS()->get( 'quote_text_three' ) ); ?></p>
+					</div>
+				</div>
+			</section>
+
 
 				<div class="enroll-content">
 					<h2 class="enroll-title"><?php echo esc_html(CFS()->get( 'title_enroll' ) ); ?></h1>
