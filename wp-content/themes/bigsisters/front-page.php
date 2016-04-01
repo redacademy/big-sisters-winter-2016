@@ -94,10 +94,10 @@ get_header(); ?>
             </section>
 			<section class="fp-recent-donors">
 				<h1>Thank you to our recent donors</h1>
-				<ul class="main-carousel js-flickity">
+				<ul class="carousel js-flickity" data-flickity-options='{"wrapAround": true, "freeScroll": true, "cellAlign": "left", "autoPlay": true}'>
 					<?php $fields = CFS()->get( 'donation_information' );
 					foreach ( $fields as $field ) : ?>
-					<li class="individual-donor carousel-cell">
+					<li class="carousel-cell individual-donor">
 					    <h3 class="donor-name"><?php echo $field['donor_name']; ?></h3>
 						<p class="donation-amount"><?php echo $field['donation_amount']; ?></p>
 						<p class="program-type"><?php echo $field['program_name']; ?></p>

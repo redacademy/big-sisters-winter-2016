@@ -625,8 +625,7 @@ a {
   .main-navigation .current-menu-item > a,
   .main-navigation .current_page_ancestor > a {
     color: #FF9933;
-    padding: 40px;
-    text-decoration: underline; }
+    padding: 40px; }
 
 .site-header {
   width: 100vw; }
