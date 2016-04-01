@@ -1,7 +1,10 @@
 <?php
 /**
-* Template Name: Get Involved
-**/
+ * The template for Get Involved page
+ *
+ * @package Big_Sisters_Theme
+ */
+
 get_header();?>
 
 <div id="primary" class="content-area">
@@ -64,7 +67,7 @@ get_header();?>
 			<div class="little-sister-hero">
 				<div class="little-sister-quote">
 					<p>"Big Sisters is the best thing that has happenend to our family!"</p>
-					<a href="<?php get_template_directory_uri(); ?>/story"><button class="button-brightblue">Learn More</button></a>
+					<form action="<?php get_template_directory_uri(); ?>/story"><button class="button-brightblue">Learn More</button></form>
 				</div>
 			</div>
 		</section>
