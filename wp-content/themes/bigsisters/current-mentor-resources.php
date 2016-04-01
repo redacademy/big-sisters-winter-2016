@@ -83,10 +83,6 @@ get_header(); ?>
 					</li>
 				</ul>
 
-		<?php while ( have_posts() ) : the_post(); ?>
-
-		<?php endwhile; // End of the loop. ?>
-
 		</main><!-- #main -->
 	</div><!-- #primary -->
 

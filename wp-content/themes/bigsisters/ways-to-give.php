@@ -8,7 +8,24 @@ get_header(); ?>
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
 
-			<section class="ways2give-hero">
+			<section class="give-flex">
+				<ul>
+					<?php
+						$loop = CFS()->get('ways_to_give');
+						foreach($loop as $row) : ?>
+					 <li><div class="container">
+						 <div class="donate-icon"><img src="<?php echo $row['donate_icon']; ?>" /></div>
+						 <div class="donate-option-description">
+					 	<h2><?php echo $row['donate_title']; ?></h2>
+					 	<p><?php echo $row['donation_description']; ?></p>
+				 </div>
+			 </div>
+					 <?php endforeach; ?>
+				 </li>
+				 </ul>
+		  </section>
+
+			<!--<section class="ways2give-hero">
 				<p class="ways2give-quote">When you contribute to Big Sisters you're
 				helping a child reach their full potential.</p>
 				<button class="button-brightblue">LEARN MORE</button>
@@ -214,7 +231,7 @@ get_header(); ?>
 					</div>
         </div>
 
-      </section>
+      </section> -->
 
 
 

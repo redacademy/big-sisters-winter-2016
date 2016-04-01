@@ -908,18 +908,35 @@ ul {
 }
 
 .give-flex {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  li {
+    width: 100vw;
+    &:nth-child(odd) {
+      @include desktop {
+        background: $color__offwhite-brand;
+      }
+    }
+  }
   h3 {
     color: #006699;
   }
+  .container {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+
+  }
   .donate-icon {
     flex: 0 1 10%;
+    border-radius: 50%;
+    border: 1px solid black;
+    padding: 1rem;
     img {
-      width: 100%;
-      border: 1px solid black;
-      border-radius: 50%;
+      width: 100px;
     }
   }
   @include desktop {
@@ -932,10 +949,14 @@ ul {
 }
 
 .donate-option {
-  border-bottom: 1px solid black;
+  @include desktop {
+    border-bottom: 2px solid #ccc;
+  }
 }
 .odd-color {
-  background-color: $color__offwhite-brand;
+  @include desktop {
+    background-color: $color__offwhite-brand;
+  }
 }
 
 //--------------------- Board of Directors --------------------------
