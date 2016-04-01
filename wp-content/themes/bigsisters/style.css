@@ -297,7 +297,8 @@ html {
 body {
   background: #fff;
   /* Fallback for when there is no custom background color defined. */
-  font-size: 12px; }
+  font-size: 12px;
+  font-weight: 300; }
   @media (min-width: 900px) {
     body {
       font-size: 20px; } }
