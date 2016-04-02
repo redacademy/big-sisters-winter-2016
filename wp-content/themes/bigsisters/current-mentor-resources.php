@@ -24,7 +24,7 @@ get_header(); ?>
 				<div class="mentor-article">
 					<img class="article-one-image" src="<?php echo CFS()->get( 'article_one_image' ); ?>">
 						<div class="ma-content">
-							<p class="event-date"><?php echo esc_html(CFS()->get( 'event_one_date' ) ); ?></br>
+							<p class="event-date"><?php echo esc_html(CFS()->get( 'event_one_date' ) ); ?><br/>
 																		<span class="cmr-color"><?php echo esc_html(CFS()->get( 'event_one_title' ) ); ?></span></p>
 							<p class="event-description"><?php echo esc_html(CFS()->get( 'event_one_description' ) ); ?></p>
 						</div>
@@ -51,7 +51,7 @@ get_header(); ?>
 				<div class="mentor-article">
 					<img class="article-four-image" src="<?php echo CFS()->get( 'article_four_image' ); ?>">
 						<div class="ma-content">
-							<p class="event-date"><?php echo esc_html(CFS()->get( 'event_four_date' ) ); ?></br>
+							<p class="event-date"><?php echo esc_html(CFS()->get( 'event_four_date' ) ); ?><br/>
 																		<span class="cmr-color"><?php echo esc_html(CFS()->get( 'event_four_title' ) ); ?></span></p>
 							<p class="event-description"><?php echo esc_html(CFS()->get( 'event_four_description' ) ); ?></p>
 						</div>
