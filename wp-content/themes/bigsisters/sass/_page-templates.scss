@@ -831,20 +831,20 @@ ul {
   margin: 6px 0;
   box-shadow: 3px 3px 3px 3px #ccc;
   background-color: $color__offwhite-brand;
-    @include desktop {
-      flex: 0 1 32%;
-      padding: 2rem;
-      height: 200px;
-    }
-    img {
-      padding: 1rem;
-      max-height: 100px;
-      width: auto;
+  @include desktop {
+    flex: 0 1 32%;
+    padding: 2rem;
+    height: 200px;
   }
-    a {
-      text-decoration: none;
-      color: black;
-    }
+  img {
+    padding: 1rem;
+    max-height: 100px;
+    width: auto;
+  }
+  a {
+    text-decoration: none;
+    color: black;
+  }
 }
 /* Ways to Give Page ---------------------------------------------------- */
 
@@ -1050,14 +1050,14 @@ ul {
     text-align: center;
     padding: 20px 0;
     @include desktop {
-        height: 250px;
-        flex: 1 0 25%;
-        padding: 40px 20px;
-        font-size: 1.25rem;
-        box-shadow: $shadow__main;
-        line-height: 40px;
-            & :hover {
-            cursor: pointer;
+      height: 250px;
+      flex: 1 0 25%;
+      padding: 40px 20px;
+      font-size: 1.25rem;
+      box-shadow: $shadow__main;
+      line-height: 40px;
+      & :hover {
+        cursor: pointer;
       }
     }
   }
