@@ -950,31 +950,32 @@ object {
   .hero-slider ul .hero3 {
     background: url("../../assets/images/hero-images/hero-big-little-snow.jpg") no-repeat center center;
     background-size: cover; }
-  .hero-slider ul .bigsister-hero-fp {
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-flex-direction: column;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    padding: 2rem 2.5rem 0 2rem;
-    height: 16.9rem; }
+
+.bigsister-hero-fp {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 2rem 2.5rem 0 2rem;
+  height: 16.9rem; }
+  @media (min-width: 900px) {
+    .bigsister-hero-fp {
+      padding: 5rem 0 0 5rem;
+      height: 82vh; } }
+  .bigsister-hero-fp .hero-quote {
+    padding: 0.5rem;
+    line-height: 1.5rem;
+    width: 16.5rem;
+    color: #fff;
+    background-color: rgba(100, 100, 100, 0.3);
+    font-size: 1.2rem; }
     @media (min-width: 900px) {
-      .hero-slider ul .bigsister-hero-fp {
-        padding: 5rem 0 0 5rem;
-        height: 82vh; } }
-    .hero-slider ul .bigsister-hero-fp .hero-quote {
-      padding: 0.5rem;
-      line-height: 1.5rem;
-      width: 16.5rem;
-      color: #fff;
-      background-color: rgba(100, 100, 100, 0.3);
-      font-size: 1.2rem; }
-      @media (min-width: 900px) {
-        .hero-slider ul .bigsister-hero-fp .hero-quote {
-          width: 29.6rem;
-          line-height: 2.7rem;
-          font-size: 2.15rem; } }
+      .bigsister-hero-fp .hero-quote {
+        width: 29.6rem;
+        line-height: 2.7rem;
+        font-size: 2.15rem; } }
 
 .bxstyles1 {
   margin-bottom: -40px; }
@@ -1234,9 +1235,6 @@ object {
           align-items: center;
   padding: 10px;
   width: 100%; }
-  @media (min-width: 900px) {
-    .individual-donor {
-      width: 25%; } }
   .individual-donor .donor-name {
     font-size: 1rem;
     text-align: center;
@@ -1250,10 +1248,6 @@ object {
   @media (min-width: 900px) {
     .individual-donor .donation-amount {
       color: #006699; } }
-
-@media (min-width: 900px) {
-  .flickity-slider :last-child {
-    display: none; } }
 
 .program-sponsors {
   background-color: #F0F0F0;
