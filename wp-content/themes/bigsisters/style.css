@@ -941,9 +941,6 @@ object {
   .hero-slider ul .hero1 {
     background: url("../../assets/images/hero-images/hero-donate.jpg") no-repeat center center;
     background-size: cover; }
-    @media (min-width: 900px) {
-      .hero-slider ul .hero1 {
-        display: none; } }
   .hero-slider ul .hero2 {
     background: url("../../assets/images/hero-images/hero-fishing.jpg") no-repeat center center;
     background-size: cover; }
@@ -1134,22 +1131,29 @@ object {
                 flex-basis: 32.7%;
         margin: 0; } }
   .hero-stories ul li:first-child {
-    background: url("../../assets/images/hero-images/hero-front.jpg") no-repeat left;
+    background: url("../../assets/images/hero-images/hero-front.jpg") no-repeat left top;
     background-size: cover; }
   .hero-stories ul li:nth-child(2) {
     background: url("../../assets/images/quote-image.jpg") no-repeat center;
     background-size: cover; }
+    .hero-stories ul li:nth-child(2) div {
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-justify-content: center;
+          -ms-flex-pack: center;
+              justify-content: center;
+      -webkit-align-items: center;
+          -ms-flex-align: center;
+              align-items: center; }
     .hero-stories ul li:nth-child(2) p {
-      height: 4rem;
-      line-height: 2rem;
-      font-size: 1.43rem;
-      padding: 0 2.83rem; }
+      line-height: 1.8rem;
+      font-size: 1.6rem; }
       @media (min-width: 900px) {
         .hero-stories ul li:nth-child(2) p {
-          height: 4.5rem;
-          line-height: 2.3rem;
-          font-size: 1.8rem;
-          padding: 0 70px; } }
+          margin: 0 0.45rem;
+          line-height: 2rem;
+          font-size: 1.6rem; } }
   .hero-stories ul li:last-child {
     background: url("../../assets/images/hero-images/hero-big-little-snow.jpg") no-repeat center;
     background-size: cover; }
@@ -1178,7 +1182,8 @@ object {
         bottom: 35px; } }
   .individual-hero-stories p {
     margin: 0;
-    padding: 0 1.6rem; }
+    padding: 0 1.3rem;
+    line-height: 1.3rem; }
 
 .stories-quote {
   color: #fff;

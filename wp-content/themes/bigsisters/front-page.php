@@ -9,27 +9,27 @@ get_header(); ?>
             <section class="hero-slider bxstyles1">
                 <ul class="bxslider">
                     <li class="bigsister-hero-fp hero1">
-                        <p class="hero-quote ">
+                        <p class="hero-quote">
                             "Becoming a Big Sister gave me purpose to my life."<br/>- Anita
                         </p>
-                        <button class="button-brightblue">Learn more</button>
+                        <a href="/get-involved/"><button  class="button-brightblue">Learn more</button></a>
 					</li>
 					<li class="bigsister-hero-fp hero2">
                         <p class="hero-quote">
                             "Becoming a Big Sister gave me purpose to my life."<br/>- Anita
                         </p>
-                        <button class="button-brightblue">Learn more</button>
+                        <a href="/get-involved/"><button  class="button-brightblue">Learn more</button></a>
 					</li>
 					<li class="bigsister-hero-fp hero3">
                         <p class="hero-quote">
                             "Becoming a Big Sister gave me purpose to my life."<br/>- Anita
                         </p>
-                        <button class="button-brightblue">Learn more</button>
+                        <a href="/get-involved/"><button  class="button-brightblue">Learn more</button></a>
 					</li>
                 </ul>
             </section>
             <section class="colored-menu-sections">
-                <a href="#">
+                <a href="/get-involved/">
                     <div class="colored-menu">
                         <div class="icon-container">
                             <img src="<?php echo get_template_directory_uri(); ?>/assets/images/icons/hands-up-icon.png" alt="Big Sisters Becoming a Mentor">
@@ -37,7 +37,7 @@ get_header(); ?>
                         <p>Becoming a Mentor</p>
                     </div>
                 </a>
-                <a href="#">
+                <a href="/refer-a-little/">
                     <div class="colored-menu">
                         <div class="icon-container">
                             <img src="<?php echo get_template_directory_uri(); ?>/assets/images/icons/two-girls-icon.png" alt="Big Sisters Refer a Little">
@@ -45,7 +45,7 @@ get_header(); ?>
                         <p>Refer A Little</p>
                     </div>
                 </a>
-                <a href="#">
+                <a href="/events/">
                     <div class="colored-menu">
                         <div class="icon-container">
                             <img src="<?php echo get_template_directory_uri(); ?>/assets/images/icons/events-calendar-icon.png" alt="Big Sisters Events">
@@ -85,7 +85,7 @@ get_header(); ?>
 					<li class="individual-hero-stories">
 						<div class"hero-quote-wrap">
 	                        <p class="stories-quote">
-	                            "I have seen the girls <span class="quote-green">develop new friendships</span> with each other and display greater <span class="quote-orange">confidence</span>"
+	                            "I have seen the girls <span class="quote-green">develop new friendships</span> with each other and display greater <span class="quote-orange">confidence.</span>"
 	                        </p>
 							<p class="quoter">- Shanny, Go Girls Mentor</p>
 						</div>
@@ -110,13 +110,13 @@ get_header(); ?>
 				<h1>Special Thanks To Our Programming Sponsors</h1>
 				<ul>
 					<li class="sponsor-logo-wrap">
-						<img src="<?php echo get_template_directory_uri(); ?>/assets/images/sponsors/cityofvancouver-logo.png" alt="City of Vancouver Logo">
+						<a href="http://vancouver.ca/" target="_blank"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/sponsors/cityofvancouver-logo.png" alt="City of Vancouver Logo"></a>
 					</li>
 					<li class="sponsor-logo-wrap">
-						<img src="<?php echo get_template_directory_uri(); ?>/assets/images/sponsors/unitedway-logo.png" alt="United Way Vancouver Logo">
+						<a href="http://www.uwlm.ca/" target="_blank"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/sponsors/unitedway-logo.png" alt="United Way Vancouver Logo"></a>
 					</li>
 					<li class="sponsor-logo-wrap">
-						<img src="<?php echo get_template_directory_uri(); ?>/assets/images/sponsors/britishcolumbia-logo.png" alt="British Columbia Logo">
+						<a href="http://www2.gov.bc.ca/" target="_blank"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/sponsors/britishcolumbia-logo.png" alt="British Columbia Logo"></a>
 					</li>
 				</ul>
 			</section>
