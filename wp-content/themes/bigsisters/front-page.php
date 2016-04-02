@@ -85,7 +85,7 @@ get_header(); ?>
 					<li class="individual-hero-stories">
 						<div class"hero-quote-wrap">
 	                        <p class="stories-quote">
-	                            "I have seen the girls <span class="quote-green">develop new friendships</span> with each other and display greater <span class="quote-orange">confidence</span>"
+	                            "I have seen the girls <span class="quote-green">develop new friendships</span> with each other and display greater <span class="quote-orange">confidence.</span>"
 	                        </p>
 							<p class="quoter">- Shanny, Go Girls Mentor</p>
 						</div>
