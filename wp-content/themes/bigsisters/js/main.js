@@ -45,20 +45,12 @@
     }
   });
 
-  // bxSlider
-      $('.bxslider1').bxSlider({
+  // bxSlider functionality
+      $('.bxslider').bxSlider({
          speed: 500,
          controls: false,
          auto: true
       });
-
-   $('.bxslider2').bxSlider({
-      speed: 500,
-      controls: true,
-      auto: true,
-      pager: false,
-      minSlides: 4
-   });
 
    // Instagram API Functionality
 
