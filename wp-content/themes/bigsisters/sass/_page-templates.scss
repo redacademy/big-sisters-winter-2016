@@ -1085,11 +1085,9 @@ ul {
   }
 }
 
-// -------------------------- Host a fundraiser event page -------------------------- //
+// ------------- Host a fundraiser event page & some Host a big little event -------------------------- //
 
-.fundraiser-event-hero {
-    background: url('../../assets/images/hero-images/hero-host-a-fundraiser.jpg') no-repeat center center;
-    background-size: cover;
+.fundraiser-event-hero, .big-little-event-hero {
     height: 16.9rem;
     padding: 20px 0 0 20px;
     h1 {
@@ -1110,7 +1108,12 @@ ul {
     }
 }
 
-.host-fundraiser-title {
+.fundraiser-event-hero {
+    background: url('../../assets/images/hero-images/hero-host-a-fundraiser.jpg') no-repeat center center;
+    background-size: cover;
+}
+
+.host-fundraiser-title, .host-bl-activity-title  {
     text-align: center;
     margin: 30px 0;
     font-size: 1.5rem;
@@ -1120,16 +1123,23 @@ ul {
     }
 }
 
-.fe-step-color {
+.fe-step-color, .bl-step-color {
     color: $color__deepblue-brand;
 }
 
-.host-fundraiser-inforation-panels {
+.host-fundraiser-inforation-panels,
+.host-activity-inforation-panels  {
     .info-panel-content {
         p {
             font-weight: bold;
         }
     }
+}
+// -------------------------- Host a big little event page -------------------------- //
+
+.big-little-event-hero {
+    background: url('../../assets/images/big-little-activity.jpg') no-repeat center top;
+    background-size: cover;
 }
 
 // -------------------------- Override Lightobx plugin styles -------------------------- //

@@ -2,7 +2,9 @@
 /**
  * Template Name: Front Page
  */
-get_header(); ?>
+get_header();
+$directory = get_template_directory_uri();
+?>
 
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
@@ -12,19 +14,25 @@ get_header(); ?>
                         <p class="hero-quote">
                             "Becoming a Big Sister gave me purpose to my life."<br/>- Anita
                         </p>
-                        <a href="/get-involved/"><button  class="button-brightblue">Learn more</button></a>
+                        <a href="/get-involved/">
+							<button  class="button-brightblue">Learn more</button>
+						</a>
 					</li>
 					<li class="bigsister-hero-fp hero2">
                         <p class="hero-quote">
                             "Becoming a Big Sister gave me purpose to my life."<br/>- Anita
                         </p>
-                        <a href="/get-involved/"><button  class="button-brightblue">Learn more</button></a>
+                        <a href="/get-involved/">
+							<button  class="button-brightblue">Learn more</button>
+						</a>
 					</li>
 					<li class="bigsister-hero-fp hero3">
                         <p class="hero-quote">
                             "Becoming a Big Sister gave me purpose to my life."<br/>- Anita
                         </p>
-                        <a href="/get-involved/"><button  class="button-brightblue">Learn more</button></a>
+                        <a href="/get-involved/">
+							<button  class="button-brightblue">Learn more</button>
+						</a>
 					</li>
                 </ul>
             </section>
@@ -32,7 +40,8 @@ get_header(); ?>
                 <a href="/get-involved/">
                     <div class="colored-menu">
                         <div class="icon-container">
-                            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/icons/hands-up-icon.png" alt="Big Sisters Becoming a Mentor">
+                            <img src="<?php echo $directory; ?>/assets/images/icons/hands-up-icon.png"
+								 alt="Big Sisters Becoming a Mentor">
                         </div>
                         <p>Becoming a Mentor</p>
                     </div>
@@ -40,7 +49,8 @@ get_header(); ?>
                 <a href="/refer-a-little/">
                     <div class="colored-menu">
                         <div class="icon-container">
-                            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/icons/two-girls-icon.png" alt="Big Sisters Refer a Little">
+                            <img src="<?php echo $directory; ?>/assets/images/icons/two-girls-icon.png"
+								 alt="Big Sisters Refer a Little">
                         </div>
                         <p>Refer A Little</p>
                     </div>
@@ -48,7 +58,8 @@ get_header(); ?>
                 <a href="/events/">
                     <div class="colored-menu">
                         <div class="icon-container">
-                            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/icons/events-calendar-icon.png" alt="Big Sisters Events">
+                            <img src="<?php echo $directory; ?>/assets/images/icons/events-calendar-icon.png"
+								 alt="Big Sisters Events">
                         </div>
                         <p>Events</p>
                     </div>
@@ -71,7 +82,8 @@ get_header(); ?>
 	                    <li class="individual-hero-stories">
 							<div class"hero-quote-wrap">
 		                        <p class="stories-quote">
-		                            "Offering my time and <span class="quote-orange">support to my little sister</span> is one of the most <span class="quote-green">fulfilling</span> things I have done in my life."
+		                            "Offering my time and <span class="quote-orange">support to my little sister</span>
+									is one of the most <span class="quote-green">fulfilling</span> things I have done in my life."
 		                        </p>
 								<p class="quoter">- Big Sister Carolyn</p>
 							</div>
@@ -79,14 +91,16 @@ get_header(); ?>
 						<li class="individual-hero-stories">
 							<div class"hero-quote-wrap">
 		                        <p class="stories-quote">
-		                            <span class="quote-dusk">92%</span> of  Little Sisters <span class="quote-blue">feel confident</span>
+		                            <span class="quote-dusk">92%</span> of  Little Sisters
+									<span class="quote-blue">feel confident</span>
 		                        </p>
 							</div>
 	                    </li>
 						<li class="individual-hero-stories">
 							<div class"hero-quote-wrap">
 		                        <p class="stories-quote">
-		                            "I have seen the girls <span class="quote-green">develop new friendships</span> with each other and display greater <span class="quote-orange">confidence.</span>"
+		                            "I have seen the girls <span class="quote-green">develop new friendships</span>
+									with each other and display greater <span class="quote-orange">confidence.</span>"
 		                        </p>
 								<p class="quoter">- Shanny, Go Girls Mentor</p>
 							</div>
@@ -96,7 +110,8 @@ get_header(); ?>
             </section>
 			<section class="fp-recent-donors">
 				<h1>Thank you to our recent donors</h1>
-				<ul class="carousel js-flickity" data-flickity-options='{"wrapAround": true, "freeScroll": true, "cellAlign": "left", "autoPlay": true}'>
+				<ul class="carousel js-flickity"
+					data-flickity-options='{"wrapAround": true, "freeScroll": true, "cellAlign": "left", "autoPlay": true}'>
 					<?php $fields = CFS()->get( 'donation_information' );
 					foreach ( $fields as $field ) : ?>
 					<li class="carousel-cell individual-donor">
@@ -112,13 +127,22 @@ get_header(); ?>
 				<h1>Special Thanks To Our Programming Sponsors</h1>
 				<ul>
 					<li class="sponsor-logo-wrap">
-						<a href="http://vancouver.ca/" target="_blank"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/sponsors/cityofvancouver-logo.png" alt="City of Vancouver Logo"></a>
+						<a href="http://vancouver.ca/" target="_blank">
+							<img src="<?php echo $directory; ?>/assets/images/sponsors/cityofvancouver-logo.png"
+								 alt="City of Vancouver Logo" />
+						</a>
 					</li>
 					<li class="sponsor-logo-wrap">
-						<a href="http://www.uwlm.ca/" target="_blank"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/sponsors/unitedway-logo.png" alt="United Way Vancouver Logo"></a>
+						<a href="http://www.uwlm.ca/" target="_blank">
+							<img src="<?php echo $directory; ?>/assets/images/sponsors/unitedway-logo.png"
+							     alt="United Way Vancouver Logo" />
+						</a>
 					</li>
 					<li class="sponsor-logo-wrap">
-						<a href="http://www2.gov.bc.ca/" target="_blank"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/sponsors/britishcolumbia-logo.png" alt="British Columbia Logo"></a>
+						<a href="http://www2.gov.bc.ca/" target="_blank">
+							<img src="<?php echo $directory; ?>/assets/images/sponsors/britishcolumbia-logo.png"
+							     alt="British Columbia Logo" />
+						</a>
 					</li>
 				</ul>
 			</section>

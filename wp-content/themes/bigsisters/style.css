@@ -2104,40 +2104,47 @@ ul {
         .donor-contact .name-number-wrap span {
           margin-right: 50px; } }
 
-.fundraiser-event-hero {
-  background: url("../../assets/images/hero-images/hero-host-a-fundraiser.jpg") no-repeat center center;
-  background-size: cover;
+.fundraiser-event-hero, .big-little-event-hero {
   height: 16.9rem;
   padding: 20px 0 0 20px; }
-  .fundraiser-event-hero h1 {
+  .fundraiser-event-hero h1, .big-little-event-hero h1 {
     width: 200px;
     font-size: 23px;
     line-height: 32px;
     color: #fff; }
   @media (min-width: 900px) {
-    .fundraiser-event-hero {
+    .fundraiser-event-hero, .big-little-event-hero {
       padding: 3rem 0 0 4rem;
       height: 82vh; }
-      .fundraiser-event-hero h1 {
+      .fundraiser-event-hero h1, .big-little-event-hero h1 {
         font-size: 45px;
         width: 490px;
         line-height: 55px;
         color: #fff; } }
 
-.host-fundraiser-title {
+.fundraiser-event-hero {
+  background: url("../../assets/images/hero-images/hero-host-a-fundraiser.jpg") no-repeat center center;
+  background-size: cover; }
+
+.host-fundraiser-title, .host-bl-activity-title {
   text-align: center;
   margin: 30px 0;
   font-size: 1.5rem; }
   @media (min-width: 900px) {
-    .host-fundraiser-title {
+    .host-fundraiser-title, .host-bl-activity-title {
       margin: 50px 0;
       font-size: 2.4rem; } }
 
-.fe-step-color {
+.fe-step-color, .bl-step-color {
   color: #006699; }
 
-.host-fundraiser-inforation-panels .info-panel-content p {
+.host-fundraiser-inforation-panels .info-panel-content p,
+.host-activity-inforation-panels .info-panel-content p {
   font-weight: bold; }
+
+.big-little-event-hero {
+  background: url("../../assets/images/big-little-activity.jpg") no-repeat center top;
+  background-size: cover; }
 
 div.pp_pic_holder {
   width: 800px !important; }
