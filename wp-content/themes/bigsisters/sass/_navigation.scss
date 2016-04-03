@@ -150,12 +150,19 @@ a {
 	}
 
 	.current_page_item > a,
-	.current-menu-item > a,
-	.current_page_ancestor > a {
+	.current-menu-item > a {
 		color: $color__orange-brand;
 		padding: 40px;
 	}
 }
+
+.sub-menu {
+	.current_page_item > a,
+	.current-menu-item > a {
+		padding: 0;
+	}
+}
+
 
 .site-header {
 	width: 100vw;
@@ -257,7 +264,7 @@ a {
 	background-color: #fff;
 	li {
 		background-color: #fff;
-		padding: 10px;
+		padding: 5px 10px;
 		width: 200px;
 		border: 0;
 		a {
