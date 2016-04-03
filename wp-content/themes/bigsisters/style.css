@@ -1517,8 +1517,7 @@ object {
   padding: 0 2rem; }
   @media (min-width: 900px) {
     .page-template-get-involved .other-way-blocks, .site-main .other-way-blocks {
-      padding: 0;
-      width: 100vw; } }
+      padding: 0; } }
   .page-template-get-involved .other-way-blocks a:link, .page-template-get-involved .other-way-blocks a:hover, .page-template-get-involved .other-way-blocks a:visited, .page-template-get-involved .other-way-blocks a:active, .site-main .other-way-blocks a:link, .site-main .other-way-blocks a:hover, .site-main .other-way-blocks a:visited, .site-main .other-way-blocks a:active {
     color: #fff;
     text-decoration: none; }
@@ -1575,11 +1574,10 @@ object {
   color: #006699; }
 
 .little-sister-hero {
-  background: url("../../assets/images/big-little-bench.jpg") 0 -25px no-repeat;
+  background: url("../../assets/images/big-little-bench.jpg") 0 0 no-repeat;
   background-size: cover;
   height: 300px;
-  margin: 2rem 0;
-  width: 100vw; }
+  margin: 2rem 0; }
   @media (min-width: 900px) {
     .little-sister-hero {
       height: 600px; } }

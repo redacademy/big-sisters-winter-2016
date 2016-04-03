@@ -563,7 +563,6 @@
     padding: 0 2rem;
     @include desktop {
       padding: 0;
-      width: 100vw;
     }
     a:link, a:hover, a:visited, a:active {
       color: #fff;
@@ -611,11 +610,10 @@
   color: $color__deepblue-brand;
 }
 .little-sister-hero {
-  background: url('../../assets/images/big-little-bench.jpg') 0 -25px no-repeat;
+  background: url('../../assets/images/big-little-bench.jpg') 0 0 no-repeat;
   background-size: cover;
   height: 300px;
   margin: 2rem 0;
-  width: 100vw;
   @include desktop {
     height: 600px;
   }
