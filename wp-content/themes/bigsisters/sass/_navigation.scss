@@ -26,39 +26,59 @@ a {
 
 /* Menus ----------------------------------------------------------------------*/
 
-//Responsive Menu (#click-menu)
+// Responsive Menu (#click-menu)
 
-#click-menu {
-	position: fixed !important;
-	top: 18px !important;
-	right: 20px !important;
+#click-menu {							//don't touch
+	position: fixed !important; 		//don't touch
+	top: 18px !important;				//don't touch
+	right: 20px !important;				//don't touch
 }
 
-#responsive-menu.RMOpened {
-	margin-top: 72px !important;
-}
-
-.menu-mobile-menu-container {
-	margin: 0 auto !important;
+#responsive-menu.RMOpened {				//don't touch
+	margin-top: 72px !important;		//don't touch
 }
 
 #responsive-menu {
 	.responsive-menu li a {
-		border-top: 0 !important;
-		border-bottom: 1px solid #ff6633 !important;
-		padding: 12px 0px 12px 1% !important;
+		width: 100% !important;
+		border-top: 0 !important;							//don't touch
+		border-bottom: 1px solid #ff6633 !important;		//don't touch
+		padding: 12px 0px 12px 1% !important;				//don't touch
 	}
-	.responsive-menu li {
-		width: 70vw !important;
-	}
-	.appendLink {
+	.responsive-menu li .appendLink {
+		position: relative !important;
 		border: 0 !important;
+		right: 0px !important;
+		top: 10px !important;
 	}
-	.sub-menu {
-		border-bottom: 0 !important;
+	.menu-main-menu-container {
+		width: auto !important;
+		margin: 0 20px;
 	}
+}
+
+#responsive-menu .sub-menu {
+	li {
+		padding: 0 0;
+		.appendLink {
+			position: relative !important;
+			border: 0 !important;
+			right: 0px !important;
+			top: 3px !important;
+		}
+		a {
+			border-bottom: 0 !important;
+			margin: 0 !important;
+			padding: 5px 0px 5px 1% !important;
+			width: 100% !important;
+		}
+	}
+}
 
 
+
+#responsive-menu .responsive-menu li li a {
+	width: auto !important;
 }
 
 .responsive-menu a {
@@ -150,12 +170,19 @@ a {
 	}
 
 	.current_page_item > a,
-	.current-menu-item > a,
-	.current_page_ancestor > a {
+	.current-menu-item > a {
 		color: $color__orange-brand;
 		padding: 40px;
 	}
 }
+
+.sub-menu {
+	.current_page_item > a,
+	.current-menu-item > a {
+		padding: 0;
+	}
+}
+
 
 .site-header {
 	width: 100vw;
@@ -257,7 +284,7 @@ a {
 	background-color: #fff;
 	li {
 		background-color: #fff;
-		padding: 10px;
+		padding: 5px 10px;
 		width: 200px;
 		border: 0;
 		a {
