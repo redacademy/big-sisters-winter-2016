@@ -553,22 +553,37 @@ a {
 #responsive-menu.RMOpened {
   margin-top: 72px !important; }
 
-.menu-mobile-menu-container {
-  margin: 0 auto !important; }
-
 #responsive-menu .responsive-menu li a {
+  width: 100% !important;
   border-top: 0 !important;
   border-bottom: 1px solid #ff6633 !important;
   padding: 12px 0px 12px 1% !important; }
 
-#responsive-menu .responsive-menu li {
-  width: 70vw !important; }
+#responsive-menu .responsive-menu li .appendLink {
+  position: relative !important;
+  border: 0 !important;
+  right: 0px !important;
+  top: 10px !important; }
 
-#responsive-menu .appendLink {
-  border: 0 !important; }
+#responsive-menu .menu-main-menu-container {
+  width: auto !important;
+  margin: 0 20px; }
 
-#responsive-menu .sub-menu {
-  border-bottom: 0 !important; }
+#responsive-menu .sub-menu li {
+  padding: 0 0; }
+  #responsive-menu .sub-menu li .appendLink {
+    position: relative !important;
+    border: 0 !important;
+    right: 0px !important;
+    top: 3px !important; }
+  #responsive-menu .sub-menu li a {
+    border-bottom: 0 !important;
+    margin: 0 !important;
+    padding: 5px 0px 5px 1% !important;
+    width: 100% !important; }
+
+#responsive-menu .responsive-menu li li a {
+  width: auto !important; }
 
 .responsive-menu a {
   text-transform: uppercase; }
