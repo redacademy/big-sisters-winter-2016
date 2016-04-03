@@ -254,23 +254,20 @@ get_header();?>
 								<i class="fa fa-plus-circle"></i>
 							</div>
 							<div class="acr-box-content">
-
-								<div class="month-panel">
-									<span>January 2016</span>
-									<i class="fa fa-plus-circle"></i>
+									<?php
+									$loop = CFS()->get('applause');
+									foreach($loop as $row) : ?>
+									<div class="info-panel-content month-panel">
+										<span><?php echo $row['month']; ?></span>
+										<i class="fa fa-plus-circle"></i>
+									</div>
+									<div class="acr-box-content donor-list">
+									<?php echo $row['applause_donors']; ?>
 								</div>
-
-								<div class="month-panel">
-									<span>December 2015</span>
-									<i class="fa fa-plus-circle"></i>
-								</div>
-
-								<div class="month-panel">
-									<span>November 2015</span>
-									<i class="fa fa-plus-circle"></i>
-								</div>
+								<?php endforeach; ?>
 
 							</div> <!-- .acr-box-content -->
+						</div>
 
 						</div> <!-- .acr-box-div -->
 					</div> <!-- .accordian-box -->
