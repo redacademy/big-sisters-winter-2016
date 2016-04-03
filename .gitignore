@@ -39,6 +39,7 @@ wp-content/themes/bigsisters/gulpfile.js
 /*
 !.gitignore
 !wp-content/
+!README.md
 
 # Ignore everything in "wp-content" except the "plugins", "themes", and "uploads" directories. #
 # ============================================================================================ #
