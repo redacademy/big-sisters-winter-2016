@@ -317,7 +317,8 @@ body {
 
 .acr-box-content {
   display: none;
-  overflow: hidden; }
+  overflow: hidden;
+  padding-bottom: 40px; }
 
 .page-header-style h1 {
   margin-top: 96px; }
@@ -2000,10 +2001,19 @@ ul {
   background: url("../../assets/images/hero-images/hero-donate.jpg") no-repeat center center;
   background-size: cover;
   height: 16.9rem;
-  padding: 30px 0 0 30px; }
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-left: 1.6rem; }
   @media (min-width: 900px) {
     .hero-dp {
-      padding: 100px 0 0 50px;
+      padding-left: 2.5rem;
       height: 82vh; } }
   .hero-dp p {
     width: 75%;
@@ -2030,61 +2040,6 @@ ul {
         font-size: 2.5rem; } }
   .why-donate p {
     text-align: center; }
-
-.donate-types {
-  padding: 0 0.83rem;
-  font-size: 1.1rem; }
-  @media (min-width: 900px) {
-    .donate-types {
-      width: 100%;
-      display: -webkit-flex;
-      display: -ms-flexbox;
-      display: flex;
-      -webkit-justify-content: center;
-          -ms-flex-pack: center;
-              justify-content: center; } }
-  .donate-types a {
-    text-decoration: none; }
-  .donate-types div {
-    color: #fff;
-    text-align: center;
-    padding: 20px 0; }
-    @media (min-width: 900px) {
-      .donate-types div {
-        height: 250px;
-        -webkit-flex: 1 0 25%;
-            -ms-flex: 1 0 25%;
-                flex: 1 0 25%;
-        padding: 40px 20px;
-        font-size: 1.25rem;
-        box-shadow: 0px 2px 8px #888888;
-        line-height: 40px; }
-        .donate-types div :hover {
-          cursor: pointer; } }
-
-.donate-types :first-child div, .donate-types :nth-child(2) div, .donate-types :nth-child(3) div {
-  margin-bottom: 0.5rem; }
-  @media (min-width: 900px) {
-    .donate-types :first-child div, .donate-types :nth-child(2) div, .donate-types :nth-child(3) div {
-      margin-bottom: 0; } }
-
-.donate-types :first-child div {
-  background-color: #FFCC66; }
-
-.donate-types :nth-child(2) div {
-  background-color: #006699; }
-  @media (min-width: 900px) {
-    .donate-types :nth-child(2) div {
-      padding: 40px 50px; } }
-
-.donate-types :nth-child(3) div {
-  background-color: #FF6633; }
-  @media (min-width: 900px) {
-    .donate-types :nth-child(3) div {
-      padding: 40px; } }
-
-.donate-types :last-child div {
-  background-color: #99CC33; }
 
 .to-donate-sponsor {
   display: -webkit-flex;
@@ -2148,6 +2103,41 @@ ul {
         width: auto; }
         .donor-contact .name-number-wrap span {
           margin-right: 50px; } }
+
+.fundraiser-event-hero {
+  background: url("../../assets/images/hero-images/hero-host-a-fundraiser.jpg") no-repeat center center;
+  background-size: cover;
+  height: 16.9rem;
+  padding: 20px 0 0 20px; }
+  .fundraiser-event-hero h1 {
+    width: 200px;
+    font-size: 23px;
+    line-height: 32px;
+    color: #fff; }
+  @media (min-width: 900px) {
+    .fundraiser-event-hero {
+      padding: 3rem 0 0 4rem;
+      height: 82vh; }
+      .fundraiser-event-hero h1 {
+        font-size: 45px;
+        width: 490px;
+        line-height: 55px;
+        color: #fff; } }
+
+.host-fundraiser-title {
+  text-align: center;
+  margin: 30px 0;
+  font-size: 1.5rem; }
+  @media (min-width: 900px) {
+    .host-fundraiser-title {
+      margin: 50px 0;
+      font-size: 2.4rem; } }
+
+.fe-step-color {
+  color: #006699; }
+
+.host-fundraiser-inforation-panels .info-panel-content p {
+  font-weight: bold; }
 
 div.pp_pic_holder {
   width: 800px !important; }

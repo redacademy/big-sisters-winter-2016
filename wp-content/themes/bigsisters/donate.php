@@ -19,13 +19,7 @@ get_header(); ?>
             </section>
 
 			<?php include_once('inc/otherways.php'); ?>
-			
-            <!-- <div class="donate-types container">
-                <a href="#"><div>Other ways to Donate</div></a>
-                <a href="#"><div>Corporate Giving</div></a>
-                <a href="#"><div>Host A Fundraiser Or Event</div></a>
-                <a href="#"><div>Host A Big And Little Event</div></a>
-            </div> -->
+
             <section class="to-donate-sponsor">
                 <h1>Want to sponsor or donate to an event?</h1>
                 <p>Please contact our manager of Corporate and Foundation giving</p>
