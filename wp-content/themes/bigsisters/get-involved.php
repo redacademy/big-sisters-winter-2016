@@ -1,9 +1,7 @@
 <?php
 /**
- * The template for Get Involved page
- *
- * @package Big_Sisters_Theme
- */
+* Template Name: Get Involved
+**/
 
 get_header();?>
 
@@ -77,16 +75,7 @@ get_header();?>
 
 		<!-- Sponsor thank you -->
 		<section class="container">
-			<div class="sponsor-grid">
-				<h2><?php echo CFS()->get('thank_you_msg'); ?></h2>
-				<ul>
-				<?php
-					$loop = CFS()->get('sponsor');
-				  foreach($loop as $row) : ?>
-				 <li>	<img src="<?php echo $row['sponsor_logo']; ?>" /></li>
-				 <?php endforeach; ?>
-			 </ul>
-	</div>
+				<?php include_once('inc/sponsor-grid.php'); ?>
 	</section>
 	</main> <!-- #main -->
 </div> <!-- #primary -->

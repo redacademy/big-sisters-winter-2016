@@ -26,15 +26,15 @@ get_header(); ?>
 								<div class="story-thumb"><?php the_post_thumbnail( 'large' ); ?></div>
 							<?php endif; ?>
 							<div class="story-block">
-								<p class="story-title"><?php the_title(); ?></p>
+								<?php the_title('<p class="story-title">', '</p>'); ?>
 								<p class="story-subhead"><?php echo CFS()->get('subhead')?></p>
-								<p><span class="story-excerpt"> <?php the_excerpt(); ?></span></p>
+								<?php the_excerpt(); ?>
 
 								<div class="story-box">
 									<div class="story-box-div">
 										<div class="story-box-content">
 											<div class="story-more">
-												<p><?php echo CFS() -> get('story')?></p>
+												<?php echo CFS() -> get('story')?>
 											</div>
 										</div>
 										<div class="story-panel-content">
@@ -66,7 +66,7 @@ get_header(); ?>
 						?>
 						<?php if ( have_posts() ) : ?>
 						<?php foreach($all_stories as $post) : setup_postdata( $post ); ?>
-							<a href="<?php the_permalink() ?>"><p><?php the_title(); ?></p></a>
+							<p><a href="<?php the_permalink() ?>"><?php the_title(); ?></a></p>
 						<?php endforeach; wp_reset_postdata(); ?>
 						<?php else : ?>
 						<?php get_template_part( 'template-parts/content', 'none' ); ?>

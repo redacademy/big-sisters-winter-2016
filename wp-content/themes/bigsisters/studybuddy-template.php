@@ -12,7 +12,8 @@ get_header();?>
 <div class="hero-grid container">
 		<section class="program-hero">
 				<div class="program-hero-img">
-					<img src="<?php echo CFS()->get('hero1_img')?>" />
+					<?php $img_ALT = CFS()->get('hero1_quote'); ?>
+					<img src="<?php echo CFS()->get('hero1_img')?>" alt="<?php echo wp_strip_all_tags( $img_ALT ); ?>"/>
 				</div>
 				<div class="program-quote container">
 					<?php echo CFS()->get('hero1_quote')?>
@@ -21,7 +22,8 @@ get_header();?>
 
 		<section class="program-hero">
 				<div class="program-hero-img">
-					<img src="<?php echo CFS()->get('hero2_img')?>" />
+					<?php $img_ALT = CFS()->get('hero1_quote'); ?>
+					<img src="<?php echo CFS()->get('hero2_img')?>" alt="<?php echo wp_strip_all_tags( $img_ALT ); ?>"/>
 				</div>
 				<div class="program-quote container">
 					<?php echo CFS()->get('hero2_quote')?>
@@ -30,7 +32,8 @@ get_header();?>
 
 		<section class="program-hero">
 				<div class="program-hero-img">
-					<img src="<?php echo CFS()->get('hero3_img')?>" />
+					<?php $img_ALT = CFS()->get('hero1_quote'); ?>
+					<img src="<?php echo CFS()->get('hero3_img')?>" alt="<?php echo wp_strip_all_tags( $img_ALT ); ?>"/>
 				</div>
 				<div class="program-quote container">
 					<?php echo CFS()->get('hero3_quote')?>
@@ -103,12 +106,17 @@ get_header();?>
 
 				<h2><?php echo CFS()->get('sbs_thank_you_msg'); ?></h2>
 				<ul>
-				<?php
-					$loop = CFS()->get('sbs_sponsor');
-					foreach($loop as $row) : ?>
-				 <li>	<img src="<?php echo $row['sbs_sponsor_logo']; ?>" /></li>
-				 <?php endforeach; ?>
-			 </ul>
+				 <?php
+				 $upload_path = content_url() . '/uploads/';
+				 $loop = CFS()->get('sbs_sponsor');
+				 foreach($loop as $row) : ?>
+				 <?php $logo_image_ID = $row['sbs_sponsor_logo']; ?>
+				 <?php $logo_image_ALT = get_post_meta($logo_image_ID, '_wp_attachment_image_alt', true); ?>
+				 <?php $logo_image_URL_data = wp_get_attachment_metadata($logo_image_ID, true); ?>
+				 <?php $logo_image_URL = $logo_image_URL_data["file"]; ?>
+				 <li>	<img src="<?php echo $upload_path . $logo_image_URL; ?>" alt="<?php echo get_post_meta($row['sbs_sponsor_logo'], '_wp_attachment_image_alt', true)?>" /></li>
+			 <?php endforeach; ?>
+		 </ul>
 
 		 <h2>The Study Buddy Program is in partnership with</h2>
 		 <ul>
@@ -116,7 +124,6 @@ get_header();?>
 			 <li><img src="<?php echo get_template_directory_uri(); ?>/assets/images/burnaby_school_district.gif" alt="Burnaby School District"/></li>
 		 </ul>
 	</div>
-	<h2>
 	</section>
 
 	</main> <!-- #main -->
