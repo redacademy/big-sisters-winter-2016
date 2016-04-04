@@ -1,0 +1,170 @@
+/*--------------------------------------------------------------
+# Contact Us
+--------------------------------------------------------------*/
+
+.contact-us {
+  padding: 0 1rem;
+  line-height: 1;
+
+  h1 {
+    margin-bottom: 5rem;
+  }
+
+  h2 {
+    font-weight: 400;
+    font-size: 1.25rem;
+    text-align: center;
+    margin: 0 0 2.5rem;
+
+    @include desktop {
+      color: $color__purple-brand;
+      font-size: 2rem;
+      margin: 2.5rem ;
+    }
+  }
+
+  h3 {
+    margin: 0 0 1rem;
+  }
+
+  p {
+    margin: 0;
+    line-height: 1;
+  }
+
+  img {
+    height: 125px;
+    width: 125px;
+
+    @include desktop {
+      height: 175px;
+      width: 175px;
+    }
+  }
+
+  iframe {
+    height: 12.5rem;
+    width: 24rem;
+
+    @include desktop {
+      width: 35rem;
+    }
+
+  }
+
+  .google-map {
+    text-align: center;
+  }
+
+  .address, .phone-fax-email {
+    margin: 0;
+
+    a {
+      color: #000;
+      text-decoration: none;
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+
+  }
+
+}
+
+.locations-questions {
+
+  @include desktop {
+    display: flex;
+    justify-content: space-around;
+  }
+
+}
+
+.our-locations {
+  margin-bottom: 3rem;
+
+  @include desktop {
+    height: 65rem;
+    width: 45%;
+    order: 2;
+    padding: 0 5rem;
+    border: solid 1px #000;
+  }
+}
+
+.questions-feedback {
+  text-align: center;
+
+  @include desktop {
+    height: 65rem;
+    width: 45%;
+    padding: 0 5rem;
+    border: solid 1px #000;
+  }
+
+  input[type="text"],
+  input[type="tel"],
+  input[type="email"],
+  textarea {
+    margin-bottom: 2rem;
+    resize: none;
+  }
+}
+
+.contact-location {
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+  margin-bottom: 2.5rem;
+}
+
+.contact-info {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+}
+
+.staff-directory {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-direction: column;
+
+  @include desktop {
+    padding: 0 2rem;
+  }
+
+  .dataTables_wrapper {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    overflow: hidden;
+
+    table {
+      width: 100% !important;
+    }
+
+    table.dataTable.dtr-inline.collapsed > tbody > tr > td:first-child:before,
+    table.dataTable.dtr-inline.collapsed > tbody > tr > th:first-child:before {
+      background-color: $color__deepblue-brand;
+      border: 0;
+      box-shadow: none;
+    }
+
+    .dtr-title {
+      color: $color__deepblue-brand;
+    }
+
+    td { font-weight: 400; }
+
+    tr,
+    tbody td,
+    thead th,
+    tfoot th {
+      border: none;
+    }
+
+  }
+
+}

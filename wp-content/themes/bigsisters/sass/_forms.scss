@@ -38,6 +38,7 @@ input[type="submit"] {
 /* Fields */
 
 input[type="text"],
+input[type="tel"],
 input[type="email"],
 input[type="url"],
 input[type="password"],
@@ -50,6 +51,7 @@ textarea {
 	width: 94vw;
 	padding: 0.25rem 0.25rem 0.25rem 0.75rem;
 	margin: 0 auto 0.83rem auto;
+	width: 100%;
 	&::placeholder {
 		color: darken($color__offwhite-brand, 20%);
 	}
