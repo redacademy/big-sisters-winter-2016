@@ -432,7 +432,7 @@
     flex: 0 1 70%;
   }
 }
-.story-title, .story-subhead {
+.story-title, .story-subhead, .news-title {
   font-weight: 700;
   font-size: $font__basesize * 1.75;
 }
@@ -467,6 +467,19 @@
     justify-content: center;
     align-items: center;
   }
+}
+
+//=========== News ==============
+
+.news-date {
+  margin: 0;
+  padding: 0;
+}
+.news-title {
+  color: $color__deepblue-brand;
+  font-size: $font__basesize * 4;
+  font-weight: 500;
+  margin: 0;
 }
 // ========== Initiative blocks ============
 .volunteer-progs {
@@ -1176,4 +1189,9 @@ div.pp_details {
 div#pp_full_res img{
   width: 150px !important;
   height: auto !important;
+}
+
+//====== Archive general styles =========
+.archive .entry-header, .single .entry-meta {
+  text-align: left;
 }

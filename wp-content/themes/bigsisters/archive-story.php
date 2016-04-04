@@ -59,7 +59,7 @@ get_header(); ?>
 						<h3>More Stories</h3>
 						<i class="fa fa-plus-circle"></i>
 					</div>
-					<div class="acr-box-content">
+					<div class="acr-box-content container">
 						<?php
 						$args = array('post_type' => 'story', 'posts_per_page' => -1);
 						$all_stories = get_posts( $args );
