@@ -15,10 +15,10 @@
 					<section class="ig-grid">
 						<div class="ig-header">
 							<h3>
-								<a href="https://www.instagram.com/bigsistersbclm/">
+								<a href="https://www.instagram.com/bigsistersbclm/"  target="_blank">
 									<i class="fa fa-instagram fa-2x"></i>
 								</a>
-								<a class="bs-ig-username" href="https://www.instagram.com/bigsistersbclm/">
+								<a class="bs-ig-username" href="https://www.instagram.com/bigsistersbclm/" target="_blank">
 									@BigSistersBCLM
 								</a>
 							</h3>

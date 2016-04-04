@@ -4,7 +4,6 @@
 
 .site-footer {
   font-size: $font__basesize;
-  background-color: $color__purple-brand;
 
   p {
     margin: 0;
@@ -106,6 +105,7 @@
   align-items: flex-start;
   color: #FFF;
   padding: 0 1rem;
+  background-color: $color__purple-brand;
 
   @include desktop {
     padding-top: 1rem;
@@ -162,7 +162,7 @@
   text-align: center;
 
   .social-icons {
-    margin-top: 4rem;
+    margin-top: 0.8rem;
     font-size: 1.7rem;
 
     a {
