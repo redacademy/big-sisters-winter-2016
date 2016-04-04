@@ -26,30 +26,31 @@ a {
 
 /* Menus ----------------------------------------------------------------------*/
 
-// Responsive Menu (#click-menu)
+// Responsive Menu (#click-menu) - Overide styles
 
-#click-menu {							//don't touch
-	position: fixed !important; 		//don't touch
-	top: 18px !important;				//don't touch
-	right: 20px !important;				//don't touch
+#click-menu {
+	position: fixed !important;
+	top: 18px !important;
+	right: 20px !important;
 }
 
-#responsive-menu.RMOpened {				//don't touch
-	margin-top: 72px !important;		//don't touch
+#responsive-menu.RMOpened {
+	margin-top: 72px !important;
 }
 
 #responsive-menu {
 	.responsive-menu li a {
 		width: 100% !important;
-		border-top: 0 !important;							//don't touch
-		border-bottom: 1px solid #ff6633 !important;		//don't touch
-		padding: 12px 0px 12px 1% !important;				//don't touch
+		border-top: 0 !important;
+		border-bottom: 1px solid #ff6633 !important;
+		padding: 12px 0px 12px 1% !important;			
 	}
 	.responsive-menu li .appendLink {
-		position: relative !important;
+		position: absolute !important;
 		border: 0 !important;
 		right: 0px !important;
 		top: 10px !important;
+		padding: 0 !important;
 	}
 	.menu-main-menu-container {
 		width: auto !important;
@@ -61,10 +62,11 @@ a {
 	li {
 		padding: 0 0;
 		.appendLink {
-			position: relative !important;
+			position: absolute !important;
 			border: 0 !important;
 			right: 0px !important;
 			top: 3px !important;
+			padding: 0 !important;
 		}
 		a {
 			border-bottom: 0 !important;
