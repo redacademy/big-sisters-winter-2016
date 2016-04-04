@@ -22,7 +22,7 @@ get_header();?>
 						<h3>Other Volunteer Opportunities</h3>
 						<i class="fa fa-plus-circle"></i>
 					</div>
-					<div class="acr-box-content">
+					<div class="acr-box-content container">
 						<h4>Activities Committee Member<br /> (6 hours/month)</h4>
 						<p>Help plan group activities for Big &amp; Little Sister matches such as sporting activities, First Nations cultural events, seasonal parties, craft days, slumber parties, and more. <a href="" target="_blank">Download volunteer application.</a></p>
 						<hr>
@@ -42,7 +42,7 @@ get_header();?>
 						<h3>Career Opportunities</h3>
 						<i class="fa fa-plus-circle"></i>
 					</div>
-					<div class="acr-box-content">
+					<div class="acr-box-content container">
 							<?php
 							$args = array('post_type' => 'career', 'posts_per_page' => -1);
 							$all_careers = get_posts( $args );

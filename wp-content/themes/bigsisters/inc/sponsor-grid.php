@@ -9,7 +9,11 @@
     <?php $logo_image_ALT = get_post_meta($logo_image_ID, '_wp_attachment_image_alt', true); ?>
     <?php $logo_image_URL_data = wp_get_attachment_metadata($logo_image_ID, true); ?>
     <?php $logo_image_URL = $logo_image_URL_data['file']; ?>
-    <li>	<img src="<?php echo $upload_path . $logo_image_URL; ?>" alt="<?php echo get_post_meta($row['sponsor_logo'], '_wp_attachment_image_alt', true)?>" /></li>
+    <li>
+      <a href="<?php echo $row['website']; ?>" target="_blank" >
+      <img src="<?php echo $upload_path . $logo_image_URL; ?>" alt="<?php echo get_post_meta($row['sponsor_logo'], '_wp_attachment_image_alt', true)?>" />
+    </a>
+    </li>
   <?php endforeach; ?>
 </ul>
 </div>
