@@ -1317,6 +1317,12 @@ object {
     .program-sponsors .sponsor-logo-wrap img {
       width: 100%; }
 
+.carousel-cell {
+  width: 100%; }
+  @media (min-width: 900px) {
+    .carousel-cell {
+      max-width: 25.5%; } }
+
 /* generic styles: success stories, get involved */
 .story-page-copy h1 {
   text-align: center; }

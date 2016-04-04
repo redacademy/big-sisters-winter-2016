@@ -110,8 +110,7 @@ $directory = get_template_directory_uri();
             </section>
 			<section class="fp-recent-donors">
 				<h1>Thank you to our recent donors</h1>
-				<ul class="carousel js-flickity"
-					data-flickity-options='{"wrapAround": true, "freeScroll": true, "cellAlign": "left", "autoPlay": true}'>
+				<ul class="main-carousel">
 					<?php $fields = CFS()->get( 'donation_information' );
 					foreach ( $fields as $field ) : ?>
 					<li class="carousel-cell individual-donor">
