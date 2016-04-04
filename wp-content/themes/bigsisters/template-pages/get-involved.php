@@ -12,7 +12,7 @@ get_header();?>
 		</header>
 
 		<section class="container involved-copy">
-			<?php include_once('inc/initatives.php'); ?>
+			<?php include_once(trailingslashit( get_template_directory() ).'/inc/initatives.php'); ?>
 		</section>
 		<!-- other volunteer opportunities -->
 		<section class="container involved-copy">
@@ -71,11 +71,11 @@ get_header();?>
 		</section>
 
 		<!-- Other ways to get involved -->
-	<?php include_once('inc/otherways.php'); ?>
+	<?php include_once(trailingslashit( get_template_directory() ).'inc/otherways.php'); ?>
 
 		<!-- Sponsor thank you -->
 		<section class="container">
-				<?php include_once('inc/sponsor-grid.php'); ?>
+				<?php include_once(trailingslashit( get_template_directory() ).'inc/sponsor-grid.php'); ?>
 	</section>
 	</main> <!-- #main -->
 </div> <!-- #primary -->

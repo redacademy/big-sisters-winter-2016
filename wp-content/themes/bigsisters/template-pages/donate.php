@@ -18,7 +18,7 @@ get_header(); ?>
                 <p><?php echo CFS()->get('why_donate'); ?></p>
             </section>
 
-			<?php include_once('inc/otherways.php'); ?>
+			<?php include_once(trailingslashit( get_template_directory() ).'inc/otherways.php'); ?>
 
             <section class="to-donate-sponsor">
                 <h1>Want to sponsor or donate to an event?</h1>

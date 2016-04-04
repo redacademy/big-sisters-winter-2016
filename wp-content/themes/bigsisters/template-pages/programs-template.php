@@ -100,7 +100,7 @@ get_header();?>
 		<section class="container">
 
 
-		 <?php include_once('inc/sponsor-grid.php'); ?>
+		 <?php include_once(trailingslashit( get_template_directory() ).'inc/sponsor-grid.php'); ?>
 
 	</section>
 

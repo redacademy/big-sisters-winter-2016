@@ -576,8 +576,9 @@
     }
   }
   .other-ways {
-    font-size: 1.25rem;
+    box-shadow: $shadow__main; // 0 2px 5px rgba(50, 50, 50, .5);
     color: #fff;
+    font-size: 1.25rem;
     list-style: none;
     margin: 3rem 0;
     padding: 0;
@@ -589,7 +590,7 @@
   .other-ways li,  .other-way-links {
     width: 100%;
     height: 75px;
-    margin: .5rem 0;
+    margin: 0;
     display: flex;
     justify-content: center;
     align-items: center;
