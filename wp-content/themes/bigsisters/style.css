@@ -477,6 +477,7 @@ input[type="submit"] {
 
 /* Fields */
 input[type="text"],
+input[type="tel"],
 input[type="email"],
 input[type="url"],
 input[type="password"],
@@ -492,8 +493,10 @@ textarea {
   border: 1px solid #000;
   width: 94vw;
   padding: 0.25rem 0.25rem 0.25rem 0.75rem;
-  margin: 0 auto 0.83rem auto; }
+  margin: 0 auto 0.83rem auto;
+  width: 100%; }
   input[type="text"]::-webkit-input-placeholder,
+  input[type="tel"]::-webkit-input-placeholder,
   input[type="email"]::-webkit-input-placeholder,
   input[type="url"]::-webkit-input-placeholder,
   input[type="password"]::-webkit-input-placeholder,
@@ -501,6 +504,7 @@ textarea {
   textarea::-webkit-input-placeholder {
     color: #bdbdbd; }
   input[type="text"]::-moz-placeholder,
+  input[type="tel"]::-moz-placeholder,
   input[type="email"]::-moz-placeholder,
   input[type="url"]::-moz-placeholder,
   input[type="password"]::-moz-placeholder,
@@ -508,6 +512,7 @@ textarea {
   textarea::-moz-placeholder {
     color: #bdbdbd; }
   input[type="text"]:-ms-input-placeholder,
+  input[type="tel"]:-ms-input-placeholder,
   input[type="email"]:-ms-input-placeholder,
   input[type="url"]:-ms-input-placeholder,
   input[type="password"]:-ms-input-placeholder,
@@ -515,6 +520,7 @@ textarea {
   textarea:-ms-input-placeholder {
     color: #bdbdbd; }
   input[type="text"]::placeholder,
+  input[type="tel"]::placeholder,
   input[type="email"]::placeholder,
   input[type="url"]::placeholder,
   input[type="password"]::placeholder,
@@ -522,6 +528,7 @@ textarea {
   textarea::placeholder {
     color: #bdbdbd; }
   input[type="text"]:focus,
+  input[type="tel"]:focus,
   input[type="email"]:focus,
   input[type="url"]:focus,
   input[type="password"]:focus,
@@ -2530,3 +2537,150 @@ div#pp_full_res img {
         font-size: 1.5rem; } }
   .recent-news .read-more {
     margin-top: 1.5rem; }
+
+/*--------------------------------------------------------------
+# Contact Us
+--------------------------------------------------------------*/
+.contact-us {
+  padding: 0 1rem;
+  line-height: 1; }
+  .contact-us h1 {
+    margin-bottom: 5rem; }
+  .contact-us h2 {
+    font-weight: 400;
+    font-size: 1.25rem;
+    text-align: center;
+    margin: 0 0 2.5rem; }
+    @media (min-width: 900px) {
+      .contact-us h2 {
+        color: #663399;
+        font-size: 2rem;
+        margin: 2.5rem; } }
+  .contact-us h3 {
+    margin: 0 0 1rem; }
+  .contact-us p {
+    margin: 0;
+    line-height: 1; }
+  .contact-us img {
+    height: 125px;
+    width: 125px; }
+    @media (min-width: 900px) {
+      .contact-us img {
+        height: 175px;
+        width: 175px; } }
+  .contact-us iframe {
+    height: 12.5rem;
+    width: 24rem; }
+    @media (min-width: 900px) {
+      .contact-us iframe {
+        width: 35rem; } }
+  .contact-us .google-map {
+    text-align: center; }
+  .contact-us .address, .contact-us .phone-fax-email {
+    margin: 0; }
+    .contact-us .address a, .contact-us .phone-fax-email a {
+      color: #000;
+      text-decoration: none; }
+      .contact-us .address a:hover, .contact-us .phone-fax-email a:hover {
+        text-decoration: underline; }
+
+@media (min-width: 900px) {
+  .locations-questions {
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-justify-content: space-around;
+        -ms-flex-pack: distribute;
+            justify-content: space-around; } }
+
+.our-locations {
+  margin-bottom: 3rem; }
+  @media (min-width: 900px) {
+    .our-locations {
+      height: 65rem;
+      width: 45%;
+      -webkit-order: 2;
+          -ms-flex-order: 2;
+              order: 2;
+      padding: 0 5rem;
+      border: solid 1px #000; } }
+
+.questions-feedback {
+  text-align: center; }
+  @media (min-width: 900px) {
+    .questions-feedback {
+      height: 65rem;
+      width: 45%;
+      padding: 0 5rem;
+      border: solid 1px #000; } }
+  .questions-feedback input[type="text"],
+  .questions-feedback input[type="tel"],
+  .questions-feedback input[type="email"],
+  .questions-feedback textarea {
+    margin-bottom: 2rem;
+    resize: none; }
+
+.contact-location {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-align-content: center;
+      -ms-flex-line-pack: center;
+          align-content: center;
+  margin-bottom: 2.5rem; }
+
+.contact-info {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column; }
+
+.staff-directory {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-align-content: center;
+      -ms-flex-line-pack: center;
+          align-content: center;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column; }
+  @media (min-width: 900px) {
+    .staff-directory {
+      padding: 0 2rem; } }
+  .staff-directory .dataTables_wrapper {
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    width: 100%;
+    overflow: hidden; }
+    .staff-directory .dataTables_wrapper table {
+      width: 100% !important; }
+    .staff-directory .dataTables_wrapper table.dataTable.dtr-inline.collapsed > tbody > tr > td:first-child:before,
+    .staff-directory .dataTables_wrapper table.dataTable.dtr-inline.collapsed > tbody > tr > th:first-child:before {
+      background-color: #006699;
+      border: 0;
+      box-shadow: none; }
+    .staff-directory .dataTables_wrapper .dtr-title {
+      color: #006699; }
+    .staff-directory .dataTables_wrapper td {
+      font-weight: 400; }
+    .staff-directory .dataTables_wrapper tr,
+    .staff-directory .dataTables_wrapper tbody td,
+    .staff-directory .dataTables_wrapper thead th,
+    .staff-directory .dataTables_wrapper tfoot th {
+      border: none; }
