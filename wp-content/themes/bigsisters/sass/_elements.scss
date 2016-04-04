@@ -34,7 +34,10 @@ body {
 	margin: 0 auto;
 	padding: 0 2rem;
 	max-width: $desktop-maxwidth;
-	margin: 0 auto;
+}
+
+.entry-header {
+	text-align: center;
 }
 
 .acr-box-content {
