@@ -743,11 +743,15 @@ ul {
 
 .info-panel-content {
   @include info-panel-styles;
+  p {
+      font-weight: bold;
+      .step-color {
+        color: $color__deepblue-brand;
+      }
+  }
 }
 
-.step-color {
-  font-weight: bold;
-}
+
 
 .steps-button {
   margin: 0 auto 2rem 6rem;
@@ -1024,7 +1028,7 @@ ul {
 //Why Donate Section
 
 .why-donate {
-  padding: 1.6rem 0.83rem;
+  padding: 30px 30px 0 30px;
   h1 {
     font-size: 1.3rem;
     width: 90%;
@@ -1036,6 +1040,7 @@ ul {
   }
   p {
     text-align: center;
+    margin-bottom: 0;
   }
 }
 
@@ -1044,7 +1049,7 @@ ul {
 .to-donate-sponsor {
     display: flex;
     flex-direction: column;
-    padding: 30px;
+    padding: 0 30px;
     h1 {
         font-size: 1.3rem;
         width: 90%;
