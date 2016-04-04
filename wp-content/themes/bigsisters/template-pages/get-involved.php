@@ -8,7 +8,7 @@ get_header();?>
 <div id="primary" class="content-area">
 	<main id="main" class="site-main" role="main">
 		<header class="container story-page-copy">
-			<h1 class="involved-header">Learn About Becoming a Mentor!</h1>
+			<h1 class="page-header-style">Learn About Becoming a Mentor!</h1>
 		</header>
 
 		<section class="container involved-copy">
