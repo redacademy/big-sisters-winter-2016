@@ -375,6 +375,12 @@
     }
   }
 }
+.carousel-cell {
+  width: 100%;
+  @include desktop {
+    max-width: 25.5%;
+  }
+}
 
 /* generic styles: success stories, get involved */
 .story-page-copy {
