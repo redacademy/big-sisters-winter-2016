@@ -51,6 +51,7 @@ wp-content/*
 # ========================================================== #
 wp-content/plugins/*
 !wp-content/plugins/bigsisters-functionality/
+!wp-content/plugins/tablepress-responsive-tables/
 
 # Ignore everything in "themes" except the active theme. #
 # ========================================================== #
