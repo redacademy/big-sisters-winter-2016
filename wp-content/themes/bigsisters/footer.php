@@ -30,7 +30,7 @@
 					<section class="contact-follow">
 
 						<div class="contact">
-							<h3><a href="#" class="contact-button">Contact Us</a></h3>
+							<h3><a href="/bigsisters/contact-us/" class="contact-button">Contact Us</a></h3>
 							<div class="address">
 								<p>34 E. 12th Avenue</p>
 								<p>Vancouver, BC</p>
