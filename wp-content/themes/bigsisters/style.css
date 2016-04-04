@@ -616,8 +616,8 @@ a {
     -webkit-order: 1 !important;
         -ms-flex-order: 1 !important;
             order: 1 !important; }
-    #responsive-menu .responsive-menu :last-child a {
-      color: #0BB7FF !important; }
+  #responsive-menu .responsive-menu .menu-item-118 a {
+    color: #0BB7FF !important; }
 
 #responsive-menu .responsive-menu li li a {
   width: auto !important; }
@@ -2246,7 +2246,8 @@ div#pp_full_res img {
   padding-bottom: 1rem; }
 
 .ig-grid {
-  padding: 1.5rem 1rem; }
+  padding: 1.5rem 1rem;
+  background-color: #663399; }
   @media (min-width: 900px) {
     .ig-grid {
       background-color: #FFF;
