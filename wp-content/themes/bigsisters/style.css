@@ -2210,8 +2210,7 @@ div#pp_full_res img {
 # Footer
 --------------------------------------------------------------*/
 .site-footer {
-  font-size: 12px;
-  background-color: #663399; }
+  font-size: 12px; }
   .site-footer p {
     margin: 0; }
 
@@ -2302,7 +2301,8 @@ div#pp_full_res img {
       -ms-flex-align: start;
           align-items: flex-start;
   color: #FFF;
-  padding: 0 1rem; }
+  padding: 0 1rem;
+  background-color: #663399; }
   @media (min-width: 900px) {
     .contact-follow {
       padding-top: 1rem; } }
@@ -2345,7 +2345,7 @@ div#pp_full_res img {
 .follow {
   text-align: center; }
   .follow .social-icons {
-    margin-top: 4rem;
+    margin-top: 0.8rem;
     font-size: 1.7rem; }
     .follow .social-icons a {
       color: #FFF;
