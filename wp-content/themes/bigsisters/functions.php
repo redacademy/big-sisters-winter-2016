@@ -107,7 +107,9 @@ add_action( 'wp_enqueue_scripts', 'big_sisters_scripts' );
 function bigsisters_archive_title($title) {
     if (is_post_type_archive( array('story'))) {
         $title = 'Success Stories';
-    }
+    } elseif (is_post_type_archive( array('news'))) {
+			$title = 'In The News';
+		}
     return $title;
 }
 add_filter('get_the_archive_title', 'bigsisters_archive_title');

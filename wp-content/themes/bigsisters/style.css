@@ -1390,7 +1390,7 @@ object {
         -ms-flex: 0 1 70%;
             flex: 0 1 70%; } }
 
-.story-title, .story-subhead {
+.story-title, .story-subhead, .news-title {
   font-weight: 700;
   font-size: 21px; }
 
@@ -1437,6 +1437,16 @@ object {
   -webkit-align-items: center;
       -ms-flex-align: center;
           align-items: center; }
+
+.news-date {
+  margin: 0;
+  padding: 0; }
+
+.news-title {
+  color: #006699;
+  font-size: 48px;
+  font-weight: 500;
+  margin: 0; }
 
 .volunteer-progs {
   margin: 4rem 0 0;
@@ -2205,6 +2215,9 @@ div.pp_details {
 div#pp_full_res img {
   width: 150px !important;
   height: auto !important; }
+
+.archive .entry-header, .single .entry-meta {
+  text-align: left; }
 
 /*--------------------------------------------------------------
 # Footer

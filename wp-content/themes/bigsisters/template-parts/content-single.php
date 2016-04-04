@@ -13,7 +13,7 @@
 			<?php the_post_thumbnail( 'large' ); ?>
 		<?php endif; ?>
 
-		<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
+		<?php the_title( '<h1 class="page-header-style">', '</h1>' ); ?>
 
 		<div class="entry-meta">
 			<?php big_sisters_posted_on(); ?>
