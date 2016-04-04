@@ -41,7 +41,7 @@ get_header(); ?>
 						<div class="accordian-box">
 							<div class="acr-box-div container">
 								<div class="info-panel-content">
-									<h3><span class="step-color">Step 1.</span> General Information</h3>
+									<p><span class="step-color">Step 1.</span> General Information</p>
 									<i class="fa fa-plus-circle"></i>
 								</div>
 								<div class="acr-box-content container">
@@ -63,10 +63,11 @@ get_header(); ?>
 									</ul>
 								</div>
 							</div>
-
+						</div>
+						<div class="accordian-box">
 							<div class="acr-box-div container">
 								<div class="info-panel-content">
-									<h3><span class="step-color">Step 2.</span> Requirements</h3>
+									<p><span class="step-color">Step 2.</span> Requirements</p>
 									<i class="fa fa-plus-circle"></i>
 								</div>
 								<div class="acr-box-content container">
@@ -80,10 +81,11 @@ get_header(); ?>
 									</ul>
 								</div>
 							</div>
-
+						</div>
+						<div class="accordian-box">
 							<div class="acr-box-div container">
 								<div class="info-panel-content">
-									<h3><span class="step-color">Step 3.</span> Apply Now!</h3>
+									<p><span class="step-color">Step 3.</span> Apply Now!</p>
 									<i class="fa fa-plus-circle"></i>
 								</div>
 								<div class="acr-box-content container">
@@ -100,10 +102,11 @@ get_header(); ?>
 										<button class="button-deepblue steps-button">Apply Now</button>
 								</div>
 							</div>
-
+						</div>
+						<div class="accordian-box">
 							<div class="acr-box-div container">
 								<div class="info-panel-content">
-									<h3><span class="step-color">Step 4.</span> Next Steps</h3>
+									<p><span class="step-color">Step 4. </span>Next Steps</p>
 									<i class="fa fa-plus-circle"></i>
 								</div>
 								<div class="acr-box-content container">
@@ -127,15 +130,13 @@ get_header(); ?>
 								</div>
 							</div>
 						</div>
-					</div>
-
 					<div class="enroll-study-buddy-content">
 						<h2 class="study-buddy-title"><?php echo esc_html(CFS()->get( 'title_study_buddy' ) ); ?></h1>
 
 						<div class="accordian-box">
 							<div class="acr-box-div container">
 								<div class="info-panel-content">
-									<h3><span class="step-color">Step 1.</span>General Information</h3>
+									<p><span class="step-color">Step 1. </span>General Information</p>
 									<i class="fa fa-plus-circle"></i>
 								</div>
 								<div class="acr-box-content container">
@@ -147,10 +148,11 @@ get_header(); ?>
 									facilisis vel leo.
 								</div>
 							</div>
-
+						</div>
+						<div class="accordian-box">
 							<div class="acr-box-div container">
 								<div class="info-panel-content">
-									<h3><span class="step-color">Step 2.</span> Requirements</h3>
+									<p><span class="step-color">Step 2.</span> Requirements</p>
 									<i class="fa fa-plus-circle"></i>
 								</div>
 								<div class="acr-box-content container">
@@ -162,10 +164,11 @@ get_header(); ?>
 									facilisis vel leo.
 								</div>
 							</div>
-
+						</div>
+						<div class="accordian-box">
 							<div class="acr-box-div container">
 								<div class="info-panel-content">
-									<h3><span class="step-color">Step 3.</span> Apply Now!</h3>
+									<p><span class="step-color">Step 3.</span> Apply Now!</p>
 									<i class="fa fa-plus-circle"></i>
 								</div>
 								<div class="acr-box-content container">
@@ -177,10 +180,11 @@ get_header(); ?>
 									facilisis vel leo.
 								</div>
 							</div>
-
+						</div>
+						<div class="accordian-box">
 							<div class="acr-box-div container">
 								<div class="info-panel-content">
-									<h3><span class="step-color">Step 4.</span> Next Steps</h3>
+									<p><span class="step-color">Step 4.</span> Next Steps</p>
 									<i class="fa fa-plus-circle"></i>
 								</div>
 								<div class="acr-box-content container">

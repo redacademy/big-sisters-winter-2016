@@ -83,8 +83,8 @@
     wrapAround: true,
     freeScroll: true,
     cellAlign: 'left',
-    autoPlay: true
-    //contain: true
+    autoPlay: true,
+    pageDots: false
   });
 
 
