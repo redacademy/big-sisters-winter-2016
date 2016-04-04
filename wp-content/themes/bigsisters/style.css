@@ -560,10 +560,11 @@ a {
   padding: 12px 0px 12px 1% !important; }
 
 #responsive-menu .responsive-menu li .appendLink {
-  position: relative !important;
+  position: absolute !important;
   border: 0 !important;
   right: 0px !important;
-  top: 10px !important; }
+  top: 10px !important;
+  padding: 0 !important; }
 
 #responsive-menu .menu-main-menu-container {
   width: auto !important;
@@ -572,7 +573,7 @@ a {
 #responsive-menu .sub-menu li {
   padding: 0 0; }
   #responsive-menu .sub-menu li .appendLink {
-    position: relative !important;
+    position: absolute !important;
     border: 0 !important;
     right: 0px !important;
     top: 3px !important; }
