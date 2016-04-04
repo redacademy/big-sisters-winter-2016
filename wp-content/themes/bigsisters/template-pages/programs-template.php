@@ -48,7 +48,7 @@ get_header();?>
 						<h3><span class="step-color">Step 1.</span> General Information</h3>
 						<i class="fa fa-plus-circle"></i>
 					</div>
-					<div class="acr-box-content">
+					<div class="acr-box-content container">
 						<?php echo CFS()->get('step_1')?>
 					</div>
 				</div>
@@ -62,7 +62,7 @@ get_header();?>
 						<h3><span class="step-color">Step 2.</span> Requirements</h3>
 						<i class="fa fa-plus-circle"></i>
 					</div>
-					<div class="acr-box-content">
+					<div class="acr-box-content container">
 						<?php echo CFS()->get('step_2')?>
 					</div>
 				</div>
@@ -76,7 +76,7 @@ get_header();?>
 						<h3><span class="step-color">Step 3.</span> Apply Now!</h3>
 						<i class="fa fa-plus-circle"></i>
 					</div>
-					<div class="acr-box-content">
+					<div class="acr-box-content container">
 						<?php echo CFS()->get('step_3')?>
 					</div>
 				</div>
@@ -90,7 +90,7 @@ get_header();?>
 						<h3><span class="step-color">Step 4.</span> Next Steps</h3>
 						<i class="fa fa-plus-circle"></i>
 					</div>
-					<div class="acr-box-content">
+					<div class="acr-box-content container">
 						<?php echo CFS()->get('step_4')?>
 					</div>
 				</div>

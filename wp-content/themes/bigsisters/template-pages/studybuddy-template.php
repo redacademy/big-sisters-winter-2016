@@ -48,7 +48,7 @@ get_header();?>
 						<h3><span class="step-color">Step 1.</span> General Information</h3>
 						<i class="fa fa-plus-circle"></i>
 					</div>
-					<div class="acr-box-content">
+					<div class="acr-box-content container">
 						<?php echo CFS()->get('step_1')?>
 					</div>
 				</div>
@@ -62,7 +62,7 @@ get_header();?>
 						<h3><span class="step-color">Step 2.</span> Requirements</h3>
 						<i class="fa fa-plus-circle"></i>
 					</div>
-					<div class="acr-box-content">
+					<div class="acr-box-content container">
 						<?php echo CFS()->get('step_2')?>
 					</div>
 				</div>
@@ -76,7 +76,7 @@ get_header();?>
 						<h3><span class="step-color">Step 3.</span> Apply Now!</h3>
 						<i class="fa fa-plus-circle"></i>
 					</div>
-					<div class="acr-box-content">
+					<div class="acr-box-content container">
 						<?php echo CFS()->get('step_3')?>
 					</div>
 				</div>
@@ -90,7 +90,7 @@ get_header();?>
 						<h3><span class="step-color">Step 4.</span> Next Steps</h3>
 						<i class="fa fa-plus-circle"></i>
 					</div>
-					<div class="acr-box-content">
+					<div class="acr-box-content container">
 						<?php echo CFS()->get('step_4')?>
 					</div>
 				</div>
@@ -101,7 +101,11 @@ get_header();?>
 			<div class="sponsor-grid">
 				<h2>Founding Partner</h2>
 			<ul>
-				<li><img src="<?php echo get_template_directory_uri(); ?>/assets/images/raymond_james.gif" alt="Founding Partner Raymond James"/></li>
+				<li>
+					<a href="http://www.raymondjames.ca" target="_blank">
+						<img src="<?php echo get_template_directory_uri(); ?>/assets/images/raymond_james.gif" alt="Founding Partner Raymond James"/>
+					</a>
+				</li>
 			</ul>
 
 				<h2><?php echo CFS()->get('sbs_thank_you_msg'); ?></h2>
@@ -114,14 +118,26 @@ get_header();?>
 				 <?php $logo_image_ALT = get_post_meta($logo_image_ID, '_wp_attachment_image_alt', true); ?>
 				 <?php $logo_image_URL_data = wp_get_attachment_metadata($logo_image_ID, true); ?>
 				 <?php $logo_image_URL = $logo_image_URL_data["file"]; ?>
-				 <li>	<img src="<?php echo $upload_path . $logo_image_URL; ?>" alt="<?php echo get_post_meta($row['sbs_sponsor_logo'], '_wp_attachment_image_alt', true)?>" /></li>
+				 <li>
+					 <a href="<?php echo $row['sbs_website'] ?>" target="_blank">
+					 <img src="<?php echo $upload_path . $logo_image_URL; ?>" alt="<?php echo get_post_meta($row['sbs_sponsor_logo'], '_wp_attachment_image_alt', true)?>" />
+				 </a>
+			 </li>
 			 <?php endforeach; ?>
 		 </ul>
 
 		 <h2>The Study Buddy Program is in partnership with</h2>
 		 <ul>
-			 <li><img src="<?php echo get_template_directory_uri(); ?>/assets/images/vsb_logo.gif" alt="Vancouver School Board"/></li>
-			 <li><img src="<?php echo get_template_directory_uri(); ?>/assets/images/burnaby_school_district.gif" alt="Burnaby School District"/></li>
+			 <li>
+				 <a href="http://www.vsb.bc.ca/" target="_blank">
+				 <img src="<?php echo get_template_directory_uri(); ?>/assets/images/vsb_logo.gif" alt="Vancouver School Board"/>
+			 </a>
+			 </li>
+			 <li>
+				 <a href="http://www.sd41.bc.ca/" target="_blank">
+				 <img src="<?php echo get_template_directory_uri(); ?>/assets/images/burnaby_school_district.gif" alt="Burnaby School District"/>
+			 </a>
+		 </li>
 		 </ul>
 	</div>
 	</section>
