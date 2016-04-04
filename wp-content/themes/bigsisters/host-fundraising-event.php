@@ -30,6 +30,8 @@ get_header(); ?>
                             facilisis vel leo.
                         </div>
                     </div>
+				</div>
+				<div class="accordian-box container">
                     <div class="acr-box-div">
                         <div class="info-panel-content">
                             <p><span class="fe-step-color">Step 2.</span> Complete application</p>
@@ -44,6 +46,8 @@ get_header(); ?>
                             facilisis vel leo.
                         </div>
                     </div>
+				</div>
+				<div class="accordian-box container">
                     <div class="acr-box-div">
                         <div class="info-panel-content">
                             <p><span class="fe-step-color">Step 3.</span> Receive approval and start planning</p>
@@ -58,6 +62,8 @@ get_header(); ?>
                             facilisis vel leo.
                         </div>
                     </div>
+				</div>
+				<div class="accordian-box container">
                     <div class="acr-box-div">
                         <div class="info-panel-content">
                             <p><span class="fe-step-color">Step 4.</span> Activity time!</p>
