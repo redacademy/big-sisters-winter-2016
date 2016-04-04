@@ -576,7 +576,8 @@ a {
     position: absolute !important;
     border: 0 !important;
     right: 0px !important;
-    top: 3px !important; }
+    top: 3px !important;
+    padding: 0 !important; }
   #responsive-menu .sub-menu li a {
     border-bottom: 0 !important;
     margin: 0 !important;
