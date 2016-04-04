@@ -44,11 +44,9 @@ body {
   }
 
 .page-header-style {
-	h1 {
-		margin-top: 96px;
+		margin-top: 7rem;
 		@include desktop {
-			margin-top: 132px;
-		}
+			margin-top: 9rem;
 	}
 }
 
