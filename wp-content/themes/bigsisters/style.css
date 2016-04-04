@@ -593,6 +593,32 @@ a {
     padding: 5px 0px 5px 1% !important;
     width: 100% !important; }
 
+#responsive-menu .responsive-menu {
+  display: -webkit-flex !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
+  -webkit-flex-direction: column !important;
+      -ms-flex-direction: column !important;
+          flex-direction: column !important; }
+  #responsive-menu .responsive-menu :first-child {
+    -webkit-order: 2 !important;
+        -ms-flex-order: 2 !important;
+            order: 2 !important; }
+  #responsive-menu .responsive-menu :nth-child(2) {
+    -webkit-order: 3 !important;
+        -ms-flex-order: 3 !important;
+            order: 3 !important; }
+  #responsive-menu .responsive-menu :nth-child(3) {
+    -webkit-order: 4 !important;
+        -ms-flex-order: 4 !important;
+            order: 4 !important; }
+  #responsive-menu .responsive-menu :last-child {
+    -webkit-order: 1 !important;
+        -ms-flex-order: 1 !important;
+            order: 1 !important; }
+    #responsive-menu .responsive-menu :last-child a {
+      color: #0BB7FF !important; }
+
 #responsive-menu .responsive-menu li li a {
   width: auto !important; }
 
