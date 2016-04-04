@@ -80,11 +80,10 @@
 
   // Flickity init
   $('.main-carousel').flickity({
-    // options
     wrapAround: true,
     freeScroll: true,
     cellAlign: 'left',
-    autoPlay: true,
+    autoPlay: true
     //contain: true
   });
 
