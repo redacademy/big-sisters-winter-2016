@@ -320,7 +320,7 @@ body {
 .acr-box-content {
   display: none;
   overflow: hidden;
-  padding-bottom: 40px; }
+  padding: 0 5rem 40px; }
 
 .page-header-style {
   margin-top: 7rem; }
@@ -1547,15 +1547,13 @@ object {
   @media (min-width: 900px) {
     .initiative-cta {
       min-height: 16rem;
-      max-height: 20rem;
       min-width: 16rem;
       max-width: 90%;
       font-size: 1.25rem;
       line-height: 1;
-      padding-top: 6rem;
-      top: 4.5rem; }
-      .initiative-cta p {
-        margin: 0; } }
+      padding-top: 7rem;
+      margin-bottom: 6rem;
+      top: 4.5rem; } }
   .initiative-cta .initiative-head {
     color: #fff; }
     @media (min-width: 900px) {
@@ -1570,12 +1568,6 @@ object {
 
 .go-girls-mentor {
   background-color: #FF9933; }
-
-@media (min-width: 900px) {
-  .button-white {
-    -webkit-transform: scale(0.75);
-            transform: scale(0.75);
-    margin: 0; } }
 
 /* Get Involved Main Page ----------------------------------------------------*/
 .page-template-get-involved .involved-header, .site-main .involved-header {
@@ -1652,6 +1644,8 @@ object {
   margin: 2rem 0; }
   @media (min-width: 900px) {
     .little-sister-hero {
+      background: url("../../assets/images/big-little-bench.jpg") 0 -100px no-repeat;
+      background-size: 115%;
       height: 600px; } }
 
 .little-sister-quote {
@@ -1710,6 +1704,9 @@ object {
     padding: 0;
     margin: 0; }
 
+.sponsor-grid h2 {
+  color: #663399; }
+
 /* Volunteer programs -----------------------------------------*/
 @media (min-width: 900px) {
   .hero-grid {
@@ -1734,7 +1731,7 @@ object {
     overflow: hidden; }
     @media (min-width: 900px) {
       .program-hero .program-hero-img {
-        height: 300px; } }
+        height: 360px; } }
     .program-hero .program-hero-img img {
       width: 100%; }
       @media (min-width: 900px) {
@@ -1744,13 +1741,14 @@ object {
   .program-hero .program-quote {
     background: rgba(50, 50, 50, 0.5);
     color: #fff;
-    font-size: .95rem;
-    margin-bottom: 1rem;
+    margin-bottom: 2rem;
     position: absolute;
     width: 100%;
     bottom: 0; }
     .program-hero .program-quote p {
       line-height: 1.25; }
+  .program-hero .prog-hero-quote {
+    font-size: 1.5rem; }
 
 /* Refer A Little Page -------------------------------------------------*/
 .quote-image-container {
@@ -1778,7 +1776,7 @@ object {
 .page-header-style {
   text-align: center; }
 
-.enroll-title, .study-buddy-title, .step-color {
+.enroll-title, .study-buddy-title {
   color: #663399; }
 
 ul {
@@ -1813,7 +1811,7 @@ ul {
     cursor: pointer; }
   .info-panel-content p {
     font-weight: bold; }
-    .info-panel-content p .step-color {
+    .info-panel-content p.step-color {
       color: #006699; }
 
 .steps-button {
@@ -2042,8 +2040,7 @@ ul {
   margin: 0 auto .5rem;
   overflow: hidden;
   padding: 0 1rem;
-  position: relative;
-  width: 175px; }
+  position: relative; }
   @media (min-width: 900px) {
     .director-img {
       height: 200px; } }
@@ -2543,7 +2540,7 @@ div#pp_full_res img {
 .about .recent-news {
   background-color: #F0F0F0;
   padding: 3rem 0;
-  margin: 0; }
+  margin: 0 0 3rem; }
   .about .recent-news .post-meta p {
     display: none;
     font-size: 1.25rem;

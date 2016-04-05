@@ -9,8 +9,8 @@ get_header();?>
 
       <div class="contact-us">
 
-        <div class="page-header-style">
-          <h1>Contact Us</h1>
+        <div>
+          <h1 class="page-header-style">Contact Us</h1>
         </div> <!-- .page-header -->
 
         <div class="locations-questions">

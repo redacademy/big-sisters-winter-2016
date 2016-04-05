@@ -536,16 +536,13 @@
   line-height: 1.25;
   @include desktop {
     min-height: 16rem;
-    max-height: 20rem;
     min-width: 16rem;
     max-width: 90%;
     font-size: 1.25rem;
     line-height: 1;
-    padding-top: 6rem;
+    padding-top: 7rem;
+    margin-bottom: 6rem;
     top:4.5rem;
-    p {
-      margin: 0;
-    }
   }
   .initiative-head {
     color: #fff;
@@ -562,12 +559,6 @@
 }
 .go-girls-mentor {
   background-color: $color__orange-brand;
-}
-.button-white {
-  @include desktop {
-    transform: scale(.75);
-    margin: 0;
-  }
 }
 
 /* Get Involved Main Page ----------------------------------------------------*/
@@ -635,6 +626,8 @@
   height: 300px;
   margin: 2rem 0;
   @include desktop {
+    background: url('../../assets/images/big-little-bench.jpg') 0 -100px no-repeat;
+    background-size: 115%;
     height: 600px;
   }
 }
@@ -677,6 +670,11 @@
     margin: 0;
   }
 }
+.sponsor-grid {
+  h2 {
+    color: $color__purple-brand;
+  }
+}
 
 /* Volunteer programs -----------------------------------------*/
 .hero-grid {
@@ -696,7 +694,7 @@
     height: 225px;
     overflow: hidden;
     @include desktop {
-      height: 300px;
+      height: 360px;
     }
     img {
       width: 100%;
@@ -708,14 +706,16 @@
   .program-quote {
     background: rgba(50, 50, 50, .5);
     color: #fff;
-    font-size: .95rem;
-    margin-bottom: 1rem;
+    margin-bottom: 2rem;
     position: absolute;
     width: 100%;
     bottom: 0;
     p {
       line-height: 1.25;
     }
+  }
+  .prog-hero-quote {
+    font-size: 1.5rem;
   }
 }
 
@@ -746,7 +746,7 @@
   text-align: center;
 }
 
-.enroll-title, .study-buddy-title, .step-color {
+.enroll-title, .study-buddy-title, {
   color: #663399;
 }
 
@@ -758,7 +758,7 @@ ul {
   @include info-panel-styles;
   p {
     font-weight: bold;
-    .step-color {
+    &.step-color {
       color: $color__deepblue-brand;
     }
   }
@@ -980,7 +980,6 @@ ul {
   overflow: hidden;
   padding: 0 1rem;
   position: relative;
-  width: 175px;
   @include desktop {
     height: 200px;
   }

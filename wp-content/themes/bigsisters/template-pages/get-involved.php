@@ -19,7 +19,7 @@ get_header();?>
 			<div class="accordian-box">
 				<div class="acr-box-div">
 					<div class="info-panel-content">
-						<h3>Other Volunteer Opportunities</h3>
+						<p class="step-color">Other Volunteer Opportunities</p>
 						<i class="fa fa-plus-circle"></i>
 					</div>
 					<div class="acr-box-content container">
@@ -39,7 +39,7 @@ get_header();?>
 			<div class="accordian-box">
 				<div class="acr-box-div">
 					<div class="info-panel-content">
-						<h3>Career Opportunities</h3>
+						<p class="step-color">Career Opportunities</p>
 						<i class="fa fa-plus-circle"></i>
 					</div>
 					<div class="acr-box-content container">
@@ -65,13 +65,13 @@ get_header();?>
 			<div class="little-sister-hero">
 				<div class="little-sister-quote">
 					<p>"Big Sisters is the best thing that has happenend to our family!"</p>
-					<form action="<?php get_template_directory_uri(); ?>/story"><button class="button-brightblue">Learn More</button></form>
+					<a href="<?php get_template_directory_uri(); ?>/story" class="button-brightblue">Learn More</a>
 				</div>
 			</div>
 		</section>
 
 		<!-- Other ways to get involved -->
-	<?php include_once(trailingslashit( get_template_directory() ).'inc/otherways.php'); ?>
+	<?php include_once(trailingslashit( get_template_directory() ).'inc/otherways-involved.php'); ?>
 
 		<!-- Sponsor thank you -->
 		<section class="container">
