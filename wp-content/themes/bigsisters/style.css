@@ -2244,8 +2244,14 @@ div#pp_full_res img {
   width: 150px !important;
   height: auto !important; }
 
-.archive .entry-header, .single .entry-meta {
+.archive .entry-header, .single .entry-meta, .about-news {
   text-align: left; }
+
+.about-news h2 {
+  padding-left: 24px; }
+
+.page-template-about-page button.button-white {
+  margin-bottom: 3rem; }
 
 /*--------------------------------------------------------------
 # Footer
