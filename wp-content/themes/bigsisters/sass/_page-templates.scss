@@ -733,16 +733,15 @@
   }
 }
 
-.quote-image-one, .quote-image-two, .quote-image-three {
-  width: 300px;
-  height: 170px;
-}
-
 .refer-title,
 .enroll-title,
 .study-buddy-title,
 .art-resc-title,
-.page-header-style {
+.page-header-style,
+.annual-reports,
+.press-releases,
+.page-header
+ {
   text-align: center;
 }
 
@@ -779,10 +778,11 @@ ul {
   flex-direction: column;
   padding: 2rem 2.5rem 0 2rem;
   height: 16.9rem;
-  @include desktop {
-    padding: 5rem 0 0 5rem;
-    height: 82vh;
-  }
+    @include desktop {
+        padding: 5rem 0 0 5rem;
+        height: 77vh;
+    }
+
   .little-sister-quote {
     padding: 0.5rem;
     line-height: 1.5rem;
@@ -875,10 +875,11 @@ ul {
   flex-direction: column;
   padding: 2rem 2.5rem 0 2rem;
   height: 16.9rem;
-  @include desktop {
-    padding: 5rem 0 0 5rem;
-    height: 82vh;
-  }
+    @include desktop {
+        padding: 5rem 0 0 5rem;
+        height: 77vh;
+    }
+
   .ways2give-quote {
     padding: 0.5rem;
     line-height: 1.5rem;
