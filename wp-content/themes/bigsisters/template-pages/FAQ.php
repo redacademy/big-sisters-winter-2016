@@ -28,7 +28,8 @@ get_header(); ?>
               facilisis vel leo.
             </div>
           </div>
-
+	  	</div>
+		<div class="accordian-box container">
           <div class="acr-box-div">
             <div class="info-panel-content">
               <h3>What is Big Sisters?</h3>
@@ -43,10 +44,11 @@ get_header(); ?>
               facilisis vel leo.
             </div>
           </div>
-
+	    </div>  
+		<div class="accordian-box container">
           <div class="acr-box-div">
             <div class="info-panel-content">
-              <h3>What king of support can I expect after joining Big Sisters?</h3>
+              <h3>What kind of support can I expect after joining Big Sisters?</h3>
               <i class="fa fa-plus-circle"></i>
             </div>
             <div class="acr-box-content container">
@@ -58,7 +60,8 @@ get_header(); ?>
               facilisis vel leo.
             </div>
           </div>
-
+	  	</div>
+		<div class="accordian-box container">
           <div class="acr-box-div">
             <div class="info-panel-content">
               <h3>When can I see my Little Sister?</h3>
@@ -75,9 +78,9 @@ get_header(); ?>
           </div>
         </div>
 
-				<section class="page-header-style container">
+		<section class="page-header-style container">
         	<h2>HOSTING A FUNDRAISER</h2>
-				</section>
+		</section>
 
         <div class="accordian-box container">
           <div class="acr-box-div">
@@ -94,7 +97,8 @@ get_header(); ?>
               facilisis vel leo.
             </div>
           </div>
-
+	  	</div>
+	  	<div class="accordian-box container">
           <div class="acr-box-div">
             <div class="info-panel-content">
               <h3>Will my donation make a difference?</h3>
@@ -109,7 +113,8 @@ get_header(); ?>
               facilisis vel leo.
             </div>
           </div>
-
+	  	</div>
+		<div class="accordian-box container">
           <div class="acr-box-div">
             <div class="info-panel-content">
               <h3>How much does it cost to match a Big and Little?</h3>
@@ -124,7 +129,8 @@ get_header(); ?>
               facilisis vel leo.
             </div>
           </div>
-
+	  	</div>
+		<div class="accordian-box container">
           <div class="acr-box-div">
             <div class="info-panel-content">
               <h3>Can I make a corporate donation?</h3>
@@ -140,7 +146,6 @@ get_header(); ?>
             </div>
           </div>
         </div>
-
 		</main><!-- #main -->
 	</div><!-- #primary -->
 
