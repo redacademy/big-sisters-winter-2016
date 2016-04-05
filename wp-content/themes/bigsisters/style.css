@@ -2717,3 +2717,139 @@ div#pp_full_res img {
     .staff-directory .dataTables_wrapper thead th,
     .staff-directory .dataTables_wrapper tfoot th {
       border: none; }
+
+/*--------------------------------------------------------------
+# Events Page
+--------------------------------------------------------------*/
+/*    Events Archive   */
+.events h1, .events h2 {
+  color: #663399;
+  font-size: 1.5rem;
+  margin-bottom: 2rem;
+  text-align: center;
+  line-height: 1.75rem; }
+  @media (min-width: 900px) {
+    .events h1, .events h2 {
+      font-size: 2.5rem; } }
+
+.events ul {
+  padding: 0;
+  margin: 0; }
+
+.events li {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-align-content: center;
+      -ms-flex-line-pack: center;
+          align-content: center; }
+  @media (min-width: 900px) {
+    .events li {
+      padding: 2rem;
+      margin-bottom: 5rem; } }
+
+.events a {
+  text-align: center; }
+
+.events img {
+  height: auto;
+  width: 100%; }
+
+.events hr {
+  display: none; }
+  @media (min-width: 900px) {
+    .events hr {
+      display: block; } }
+
+@media (min-width: 900px) {
+  .premier-events ul {
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap; } }
+
+@media (min-width: 900px) {
+  .premier-events li {
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 33%; } }
+
+.partner-events .event-thumbnail {
+  width: 50%; }
+
+.event-thumbnail {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center; }
+  .event-thumbnail .thumb-img-div {
+    width: 75%; }
+    @media (min-width: 900px) {
+      .event-thumbnail .thumb-img-div {
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-justify-content: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+        -webkit-align-items: center;
+            -ms-flex-align: center;
+                align-items: center;
+        height: 175px;
+        margin-bottom: 2rem; } }
+
+.event-content {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 50%; }
+  @media (min-width: 900px) {
+    .event-content {
+      width: 100%;
+      margin-top: 1rem; } }
+  .event-content h3 {
+    color: #663399;
+    font-size: 1rem;
+    margin-top: 0;
+    line-height: 1.25rem; }
+    @media (min-width: 900px) {
+      .event-content h3 {
+        font-size: 2rem; } }
+
+.host-fundraiser-event {
+  background-color: #F0F0F0;
+  padding: 2rem 0 1rem;
+  text-align: center; }
+  @media (min-width: 900px) {
+    .host-fundraiser-event {
+      padding: 5rem 0; } }
+
+.to-donate-sponsor h2 {
+  margin-bottom: 0; }
+
+/*    Single Event Page    */
+.single .entry-header img {
+  width: auto; }
