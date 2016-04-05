@@ -61,7 +61,7 @@ get_header(); ?>
 							</div>
 							<div class="acr-box-content container">
 								<?php
-								$args = array('post_type' => 'news', 'orderby' => 'title', 'order' => 'DESC', 'posts_per_page' => -1);
+								$args = array('post_type' => 'news', 'order' => 'ASC', 'posts_per_page' => -1);
 								$all_news = get_posts( $args );
 								?>
 								<?php if ( have_posts() ) : ?>

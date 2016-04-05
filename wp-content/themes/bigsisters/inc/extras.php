@@ -26,8 +26,8 @@ add_filter( 'body_class', 'big_sisters_body_classes' );
 */
 function bigsisters_modify_archive_loop( $query ) {
 	if ( is_post_type_archive( array( 'story', 'news' ) ) && !is_admin() && $query->is_main_query() ) {
-		$query->set( 'orderby', 'title' );
-		$query->set( 'order', 'DESC' );
+		// $query->set( 'orderby', 'title' );
+		$query->set( 'order', 'ASC' );
 		$query->set( 'posts_per_page', 3 );
 	}
 }

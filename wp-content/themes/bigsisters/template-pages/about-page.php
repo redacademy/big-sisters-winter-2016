@@ -62,31 +62,22 @@ get_header();?>
 					<div class="container">
 
 						<h2>Recent News</h2>
-
 						<?php
-							$args = array('post_type' => 'post', 'posts_per_page' => 2);
-							$latest_posts = get_posts( $args );
+						$args = array('post_type' => 'news', 'order' => 'ASC', 'posts_per_page' => 2);
+						$all_news = get_posts( $args );
 						?>
+						<?php if ( have_posts() ) : ?>
+						<?php foreach($all_news as $post) : setup_postdata( $post ); ?>
+							<div class="about-news">
+							<?php the_title('<h2 class="news-title">', '</h2>'); ?>
+							<?php echo CFS()->get('excerpt')?>
 
-						<ul>
-							<?php foreach($latest_posts as $post) : setup_postdata( $post ); ?>
-								<li class="post-wrapper">
-
-									<div class="post-meta">
-										<h3 class="post-title"><?php the_title(); ?></h3>
-										<p><?php big_sisters_posted_on(); ?></p>
-										<?php the_content(); ?>
-
-										<a href="<?php the_permalink(); ?>">
-											<button class="read-more button-white" type="button" name="button">Read More</button>
-										</a>
-
-									</div>
-
-								</li>
-							<?php endforeach; wp_reset_postdata(); ?>
-						</ul>
-
+						</div>
+							<form action="<?php the_permalink() ?>"><button class="button-white">Read More</button></form>
+						<?php endforeach; wp_reset_postdata(); ?>
+						<?php else : ?>
+						<?php get_template_part( 'template-parts/content', 'none' ); ?>
+						<?php endif; ?>
 						<div class="accordian-box">
 							<div class="acr-box-div">
 
