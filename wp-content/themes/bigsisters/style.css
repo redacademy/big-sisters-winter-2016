@@ -2408,7 +2408,8 @@ div#pp_full_res img {
           align-items: flex-start;
   color: #FFF;
   padding: 0 1rem;
-  background-color: #663399; }
+  background-color: #663399;
+  margin-bottom: -16px; }
   @media (min-width: 900px) {
     .contact-follow {
       padding-top: 1rem; } }
