@@ -14,25 +14,30 @@ get_header(); ?>
 					<h1 class="refer-title page-header-style"><?php echo esc_html(CFS()->get( 'title_refer' ) ); ?></h1>
 				</header>
 
-				<section class="quote-image-sections container">
-					<div class="hero-grid">
+				<div class="hero-grid container">
+				<section class="program-hero">
+						<div class="program-hero-img">
+						<img src="<?php echo CFS()->get( 'quote_image_one' ); ?>" alt="<?php echo esc_html(CFS()->get( 'quote_image_one_description' ) ); ?>">
+					</div>
+						<div class="program-quote"><?php echo CFS()->get( 'quote_text_one' ); ?></div>
+					</section>
+
+					<section class="program-hero">
 						<div class="program-hero">
-							<div class="program-hero-img"><img src="<?php echo CFS()->get( 'quote_image_one' ); ?>" alt="<?php echo esc_html(CFS()->get( 'quote_image_one_description' ) ); ?>"></div>
-						<p class="program-quote"><?php echo CFS()->get( 'quote_text_one' ); ?></p>
+						<div class="program-hero-img">
+						<img src="<?php echo CFS()->get( 'quote_image_two' ); ?>" alt="<?php echo esc_html(CFS()->get( 'quote_image_two_description' ) ); ?>"></div>
+						<div class="program-quote"><?php echo CFS()->get( 'quote_text_two' ); ?></div>
 					</div>
-
+				</section>
+				
+				<section class="program-hero">
 					<div class="program-hero">
-						<div class="program-hero-img"><img src="<?php echo CFS()->get( 'quote_image_two' ); ?>" alt="<?php echo esc_html(CFS()->get( 'quote_image_two_description' ) ); ?>"></div>
-						<p class="program-quote"><?php echo CFS()->get( 'quote_text_two' ); ?></p>
+						<div class="program-hero-img">
+						<img src="<?php echo CFS()->get( 'quote_image_three' ); ?>" alt="<?php echo esc_html(CFS()->get( 'quote_image_three_description' ) ); ?>"></div>
+						<div class="program-quote"><?php echo CFS()->get( 'quote_text_three' ); ?></div>
 					</div>
-
-					<div class="program-hero">
-						<div class="program-hero-img"><img src="<?php echo CFS()->get( 'quote_image_three' ); ?>" alt="<?php echo esc_html(CFS()->get( 'quote_image_three_description' ) ); ?>"></div>
-						<p class="program-quote"><?php echo CFS()->get( 'quote_text_three' ); ?></p>
-					</div>
-				</div>
 			</section>
-
+			</div>
 
 				<div class="enroll-content">
 					<h2 class="enroll-title"><?php echo esc_html(CFS()->get( 'title_enroll' ) ); ?></h2>
