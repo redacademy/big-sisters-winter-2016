@@ -1,0 +1,156 @@
+/*--------------------------------------------------------------
+# Events Page
+--------------------------------------------------------------*/
+
+/*    Events Archive   */
+
+.events {
+
+  h1, h2 {
+    color: $color__purple-brand;
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+    text-align: center;
+    line-height: 1.75rem;
+
+    @include desktop {
+      font-size: 2.5rem;
+    }
+  }
+
+  ul {
+    padding: 0;
+    margin: 0;
+  }
+
+  li {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+
+    @include desktop {
+      padding: 2rem;
+      margin-bottom: 5rem;
+    }
+
+  }
+
+  a {
+    text-align: center;
+  }
+
+  img {
+    height: auto;
+    width: 100%;
+  }
+
+  hr {
+    display: none;
+
+    @include desktop {
+      display: block;
+    }
+  }
+
+}
+
+.premier-events {
+
+  ul {
+    @include desktop {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+  }
+
+  li {
+    @include desktop {
+      display: flex;
+      flex-direction: column;
+      width: 33%;
+    }
+  }
+
+}
+
+.partner-events {
+
+  .event-thumbnail {
+      width: 50%;
+  }
+
+}
+
+.event-thumbnail {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .thumb-img-div {
+    width: 75%;
+
+    @include desktop {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 175px;
+      margin-bottom: 2rem;
+    }
+  }
+
+}
+
+.event-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 50%;
+
+  @include desktop {
+    width: 100%;
+    margin-top: 1rem;
+  }
+
+  h3 {
+    color: $color__purple-brand;
+    font-size: 1rem;
+    margin-top: 0;
+    line-height: 1.25rem;
+
+    @include desktop {
+      font-size: 2rem;
+    }
+  }
+
+}
+
+.host-fundraiser-event {
+  background-color: $color__offwhite-brand;
+  padding: 2rem 0 1rem;
+  text-align: center;
+
+  @include desktop {
+    padding: 5rem 0;
+  }
+}
+
+.to-donate-sponsor {
+
+  h2 {
+    margin-bottom: 0;
+  }
+
+}
+
+/*    Single Event Page    */
+
+.single {
+
+  .entry-header {
+    img {
+      width: auto;
+    }
+  }
+
+}

@@ -129,15 +129,12 @@ get_header(); ?>
 								</div>
 							</div>
 						</div>
-<<<<<<< HEAD:wp-content/themes/bigsisters/template-pages/refer-a-little.php
-					<div class="enroll-study-buddy-content">
-						<h2 class="study-buddy-title"><?php echo esc_html(CFS()->get( 'title_study_buddy' ) ); ?></h1>
-=======
+
 					</div>
 
 
 						<h2 class="study-buddy-title"><?php echo esc_html(CFS()->get( 'title_study_buddy' ) ); ?></h2>
->>>>>>> start_media_page:wp-content/themes/bigsisters/refer-a-little.php
+
 
 						<div class="accordian-box">
 							<div class="acr-box-div container">
