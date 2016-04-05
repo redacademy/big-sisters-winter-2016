@@ -43,7 +43,10 @@ body {
 .acr-box-content {
     display: none;
     overflow: hidden;
-		padding: 0 5rem 40px;
+		padding: 0 0 40px;
+		@include desktop {
+			padding: 0 5rem 40px;
+		}
   }
 
 .page-header-style {

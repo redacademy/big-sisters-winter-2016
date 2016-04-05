@@ -706,18 +706,20 @@
   position: relative;
   @include desktop {
     flex: 0 1 33%;
+    width: 33%;
   }
   .program-hero-img {
     height: 375px;
     overflow: hidden;
+    background-color: #f00;
     @include desktop {
       height: 375px;
     }
     img {
-      width: 125%;
-      transform: translateY(25%) scale(1.5);
+      overflow: hidden;
       @include desktop {
-        transform: translateY(55%) scale(2);
+        max-height: none;
+        max-width: 100%;
       }
     }
   }
