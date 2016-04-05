@@ -55,8 +55,8 @@ get_header(); ?>
 		<section class="container">
 			<div class="accordian-box">
 				<div class="acr-box-div">
-					<div class="info-panel-content">
-						<h3>More Stories</h3>
+					<div class="info-panel-content involved-copy">
+						<h3>More Success Stories</h3>
 						<i class="fa fa-plus-circle"></i>
 					</div>
 					<div class="acr-box-content container">
@@ -77,6 +77,7 @@ get_header(); ?>
 		</section>
 
 		<section class="container story-page-copy">
+			<h2 class="involved-header">Learn more about our programs</h2>
 			<?php include_once('inc/initatives.php'); ?>
 		</section>
 
