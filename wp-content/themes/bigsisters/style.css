@@ -1066,7 +1066,7 @@ object {
   @media (min-width: 900px) {
     .bigsister-hero-fp {
       padding: 5rem 0 0 5rem;
-      height: 82vh; } }
+      height: 77vh; } }
   .bigsister-hero-fp .hero-quote {
     padding: 0.5rem;
     line-height: 1.5rem;
@@ -1079,13 +1079,8 @@ object {
         width: 29.6rem;
         line-height: 2.7rem;
         font-size: 2.15rem;
-<<<<<<< HEAD
         padding: 1rem 0 0 1rem;
         height: 168px; } }
-=======
-        padding: 5rem 0 0 5rem;
-        height: 77vh; } }
->>>>>>> tyler_qa_changes
 
 .bxstyles1 {
   margin-bottom: -40px; }
@@ -1928,9 +1923,6 @@ ul {
 @media (min-width: 900px) {
   .cmr-color {
     color: #006699; } }
-
-.mentor-article p {
-  font-weight: bold; }
 
 .ar-menu-sections h3 {
   color: #663399;
