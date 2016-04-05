@@ -731,9 +731,6 @@ a {
 .sub-menu .current-menu-item > a {
   padding: 0; }
 
-.site-header {
-  width: 100vw; }
-
 .main-navigation .menu li > ul::before {
   content: '';
   margin: 0 auto;
