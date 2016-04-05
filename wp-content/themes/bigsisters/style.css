@@ -1066,7 +1066,7 @@ object {
   @media (min-width: 900px) {
     .bigsister-hero-fp {
       padding: 5rem 0 0 5rem;
-      height: 82vh; } }
+      height: 77vh; } }
   .bigsister-hero-fp .hero-quote {
     padding: 0.5rem;
     line-height: 1.5rem;
@@ -1079,8 +1079,8 @@ object {
         width: 29.6rem;
         line-height: 2.7rem;
         font-size: 2.15rem;
-        padding: 5rem 0 0 5rem;
-        height: 77vh; } }
+        padding: 1rem 0 0 1rem;
+        height: 168px; } }
 
 .bxstyles1 {
   margin-bottom: -40px; }
@@ -2176,7 +2176,10 @@ ul {
   -webkit-flex-direction: column;
       -ms-flex-direction: column;
           flex-direction: column;
-  padding: 0 30px; }
+  padding: 30px; }
+  @media (min-width: 900px) {
+    .to-donate-sponsor {
+      padding: 0 30px; } }
   .to-donate-sponsor h1 {
     font-size: 1.3rem;
     width: 90%;
