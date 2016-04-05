@@ -22,7 +22,7 @@ get_header(); ?>
 				</header>
 
 				<div class="mentor-article">
-					<img class="article-one-image" src="<?php echo CFS()->get( 'article_one_image' ); ?>">
+					<img class="article-one-image" src="<?php echo CFS()->get( 'article_one_image' ); ?>" alt="<?php echo esc_html(CFS()->get( 'article_image_one_description' ) ); ?>">
 						<div class="ma-content">
 							<p class="event-date"><?php echo esc_html(CFS()->get( 'event_one_date' ) ); ?><br/>
 																		<span class="cmr-color"><?php echo esc_html(CFS()->get( 'event_one_title' ) ); ?></span></p>
@@ -31,7 +31,7 @@ get_header(); ?>
 				</div>
 
 				<div class="mentor-article">
-					<img class="article-two-image" src="<?php echo CFS()->get( 'article_two_image' ); ?>">
+					<img class="article-two-image" src="<?php echo CFS()->get( 'article_two_image' ); ?>" alt="<?php echo esc_html(CFS()->get( 'quote_image_two_description' ) ); ?>">
 						<div class="ma-content">
 							<p class="event-date"><?php echo esc_html(CFS()->get( 'event_two_date' ) ); ?><br/>
 																		<span class="cmr-color"><?php echo esc_html(CFS()->get( 'event_two_title' ) ); ?></span></p>
@@ -40,7 +40,7 @@ get_header(); ?>
 				</div>
 
 				<div class="mentor-article">
-					<img class="article-three-image" src="<?php echo CFS()->get( 'article_three_image' ); ?>">
+					<img class="article-three-image" src="<?php echo CFS()->get( 'article_three_image' ); ?>" alt="<?php echo esc_html(CFS()->get( 'quote_image_three_description' ) ); ?>">
 						<div class="ma-content">
 							<p class="event-date"><?php echo esc_html(CFS()->get( 'event_three_date' ) ); ?><br/>
 																		<span class="cmr-color"><?php echo esc_html(CFS()->get( 'event_three_title' ) ); ?></span></p>
@@ -49,7 +49,7 @@ get_header(); ?>
 				</div>
 
 				<div class="mentor-article">
-					<img class="article-four-image" src="<?php echo CFS()->get( 'article_four_image' ); ?>">
+					<img class="article-four-image" src="<?php echo CFS()->get( 'article_four_image' ); ?>" alt="<?php echo esc_html(CFS()->get( 'quote_image_four_description' ) ); ?>">
 						<div class="ma-content">
 							<p class="event-date"><?php echo esc_html(CFS()->get( 'event_four_date' ) ); ?><br/>
 																		<span class="cmr-color"><?php echo esc_html(CFS()->get( 'event_four_title' ) ); ?></span></p>

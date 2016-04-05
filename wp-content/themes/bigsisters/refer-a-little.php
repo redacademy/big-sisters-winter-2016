@@ -10,7 +10,6 @@ get_header(); ?>
 
 		<?php while ( have_posts() ) : the_post(); ?>
 
-			<div class="refer-a-little-container">
 				<header class="refer-header container">
 					<h1 class="refer-title page-header-style"><?php echo esc_html(CFS()->get( 'title_refer' ) ); ?></h1>
 				</header>
@@ -18,17 +17,17 @@ get_header(); ?>
 				<section class="quote-image-sections container">
 					<div class="hero-grid">
 						<div class="program-hero">
-							<div class="program-hero-img"><img src="<?php echo CFS()->get( 'quote_image_one' ); ?>"></div>
+							<div class="program-hero-img"><img src="<?php echo CFS()->get( 'quote_image_one' ); ?>" alt="<?php echo esc_html(CFS()->get( 'quote_image_one_description' ) ); ?>"></div>
 						<p class="program-quote"><?php echo esc_html(CFS()->get( 'quote_text_one' ) ); ?></p>
 					</div>
 
 					<div class="program-hero">
-						<div class="program-hero-img"><img src="<?php echo CFS()->get( 'quote_image_two' ); ?>"></div>
+						<div class="program-hero-img"><img src="<?php echo CFS()->get( 'quote_image_two' ); ?>" alt="<?php echo esc_html(CFS()->get( 'quote_image_two_description' ) ); ?>"></div>
 						<p class="program-quote"><?php echo esc_html(CFS()->get( 'quote_text_two' ) ); ?></p>
 					</div>
 
 					<div class="program-hero">
-						<div class="program-hero-img"><img src="<?php echo CFS()->get( 'quote_image_three' ); ?>"></div>
+						<div class="program-hero-img"><img src="<?php echo CFS()->get( 'quote_image_three' ); ?>" alt="<?php echo esc_html(CFS()->get( 'quote_image_three_description' ) ); ?>"></div>
 						<p class="program-quote"><?php echo esc_html(CFS()->get( 'quote_text_three' ) ); ?></p>
 					</div>
 				</div>
@@ -36,7 +35,7 @@ get_header(); ?>
 
 
 				<div class="enroll-content">
-					<h2 class="enroll-title"><?php echo esc_html(CFS()->get( 'title_enroll' ) ); ?></h1>
+					<h2 class="enroll-title"><?php echo esc_html(CFS()->get( 'title_enroll' ) ); ?></h2>
 
 						<div class="accordian-box">
 							<div class="acr-box-div container">
@@ -129,8 +128,8 @@ get_header(); ?>
 						</div>
 					</div>
 
-					<div class="enroll-study-buddy-content">
-						<h2 class="study-buddy-title"><?php echo esc_html(CFS()->get( 'title_study_buddy' ) ); ?></h1>
+
+						<h2 class="study-buddy-title"><?php echo esc_html(CFS()->get( 'title_study_buddy' ) ); ?></h2>
 
 						<div class="accordian-box">
 							<div class="acr-box-div container">
@@ -193,8 +192,7 @@ get_header(); ?>
 								</div>
 							</div>
 						</div>
-					</div>
-				</div>
+
 
 			<?php
 				// If comments are open or we have at least one comment, load up the comment template.

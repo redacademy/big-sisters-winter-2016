@@ -1696,15 +1696,14 @@ object {
     line-height: 24px;
     width: 235px; }
 
-.quote-image-one, .quote-image-two, .quote-image-three {
-  width: 300px;
-  height: 170px; }
-
 .refer-title,
 .enroll-title,
 .study-buddy-title,
 .art-resc-title,
-.page-header-style {
+.page-header-style,
+.annual-reports,
+.press-releases,
+.page-header {
   text-align: center; }
 
 .enroll-title, .study-buddy-title, .step-color {
@@ -1762,7 +1761,7 @@ ul {
   @media (min-width: 900px) {
     .mentor-hero {
       padding: 5rem 0 0 5rem;
-      height: 82vh; } }
+      height: 77vh; } }
   .mentor-hero .little-sister-quote {
     padding: 0.5rem;
     line-height: 1.5rem;
@@ -1859,7 +1858,7 @@ ul {
   @media (min-width: 900px) {
     .ways2give-hero {
       padding: 5rem 0 0 5rem;
-      height: 82vh; } }
+      height: 77vh; } }
   .ways2give-hero .ways2give-quote {
     padding: 0.5rem;
     line-height: 1.5rem;

@@ -29,7 +29,7 @@ get_header(); ?>
 						$loop = CFS()->get('ways_to_give');
 						foreach($loop as $row) : ?>
 					 <li><div class="container">
-						 <div class="donate-icon"><img src="<?php echo $row['donate_icon']; ?>" /></div>
+						 <div class="donate-icon"><img src="<?php echo $row['donate_icon']; ?>" alt="<?php echo esc_html(CFS()->get( 'donate_icon_description' ) ); ?>"/></div>
 						 <div class="donate-option-description">
 					 	<h2><?php echo $row['donate_title']; ?></h2>
 					 	<p><?php echo $row['donation_description']; ?></p>

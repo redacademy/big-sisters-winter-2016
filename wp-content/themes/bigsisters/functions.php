@@ -140,3 +140,64 @@ function fix_svg_thumb_display() {
   ';
 }
 add_action('admin_head', 'fix_svg_thumb_display');
+
+// Register Custom Post Type
+function press_releases() {
+
+	$labels = array(
+		'name'                  => _x( 'Press Releases', 'Post Type General Name', 'press_releases' ),
+		'singular_name'         => _x( 'Press Release', 'Post Type Singular Name', 'press_releases' ),
+		'menu_name'             => __( 'Press Releases', 'press_releases' ),
+		'name_admin_bar'        => __( 'Press Releases', 'press_releases' ),
+		'archives'              => __( 'Item Archives', 'press_releases' ),
+		'parent_item_colon'     => __( 'Parent Press Releases:', 'press_releases' ),
+		'all_items'             => __( 'All Press Releases', 'press_releases' ),
+		'add_new_item'          => __( 'Add New Press Releases', 'press_releases' ),
+		'add_new'               => __( 'Add New Press Release', 'press_releases' ),
+		'new_item'              => __( 'New Press Release', 'press_releases' ),
+		'edit_item'             => __( 'Edit Press Release', 'press_releases' ),
+		'update_item'           => __( 'UpdatePress Release', 'press_releases' ),
+		'view_item'             => __( 'View Press Release', 'press_releases' ),
+		'search_items'          => __( 'Search Press Release', 'press_releases' ),
+		'not_found'             => __( 'Not found', 'press_releases' ),
+		'not_found_in_trash'    => __( 'Not found in Trash', 'press_releases' ),
+		'featured_image'        => __( 'Featured Image', 'press_releases' ),
+		'set_featured_image'    => __( 'Set featured image', 'press_releases' ),
+		'remove_featured_image' => __( 'Remove featured image', 'press_releases' ),
+		'use_featured_image'    => __( 'Use as featured image', 'press_releases' ),
+		'insert_into_item'      => __( 'Insert into item', 'press_releases' ),
+		'uploaded_to_this_item' => __( 'Uploaded to this item', 'press_releases' ),
+		'items_list'            => __( 'Items list', 'press_releases' ),
+		'items_list_navigation' => __( 'Items list navigation', 'press_releases' ),
+		'filter_items_list'     => __( 'Filter items list', 'press_releases' ),
+	);
+	$rewrite = array(
+		'slug'                  => 'press_release',
+		'with_front'            => true,
+		'pages'                 => true,
+		'feeds'                 => false,
+	);
+	$args = array(
+		'label'                 => __( 'Press Release', 'press_releases' ),
+		'description'           => __( 'Creates Post for Big Sisters Press Releases', 'press_releases' ),
+		'labels'                => $labels,
+		'supports'              => array( 'title', 'editor', 'thumbnail', 'revisions', 'page-attributes', ),
+		'hierarchical'          => true,
+		'public'                => true,
+		'show_ui'               => true,
+		'show_in_menu'          => true,
+		'menu_position'         => 5,
+		'menu_icon'             => 'megaphone',
+		'show_in_admin_bar'     => true,
+		'show_in_nav_menus'     => true,
+		'can_export'            => true,
+		'has_archive'           => true,
+		'exclude_from_search'   => false,
+		'publicly_queryable'    => true,
+		'rewrite'               => $rewrite,
+		'capability_type'       => 'page',
+	);
+	register_post_type( 'press_releases', $args );
+
+}
+add_action( 'init', 'press_releases', 0 );
