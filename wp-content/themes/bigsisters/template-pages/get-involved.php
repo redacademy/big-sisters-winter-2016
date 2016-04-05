@@ -19,7 +19,7 @@ get_header();?>
 			<div class="accordian-box">
 				<div class="acr-box-div">
 					<div class="info-panel-content">
-						<p class="step-color">Other Volunteer Opportunities</p>
+						<p><span class="step-color">Other Volunteer Opportunities</span></p>
 						<i class="fa fa-plus-circle"></i>
 					</div>
 					<div class="acr-box-content container">
@@ -39,7 +39,7 @@ get_header();?>
 			<div class="accordian-box">
 				<div class="acr-box-div">
 					<div class="info-panel-content">
-						<p class="step-color">Career Opportunities</p>
+						<p><span class="step-color">Career Opportunities</span></p>
 						<i class="fa fa-plus-circle"></i>
 					</div>
 					<div class="acr-box-content container">
