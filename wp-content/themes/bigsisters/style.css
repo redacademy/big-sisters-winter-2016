@@ -1562,6 +1562,8 @@ object {
   @media (min-width: 900px) {
     .initiative-block {
       width: 33.33%; } }
+  .initiative-block .button-white {
+    margin: 0 auto; }
 
 .initiative-logo {
   position: absolute;
@@ -1657,7 +1659,7 @@ object {
           -ms-flex-pack: justify;
               justify-content: space-between; } }
 
-.page-template-get-involved .other-ways li, .page-template-get-involved .other-way-links, .site-main .other-ways li, .site-main .other-way-links {
+.page-template-get-involved .other-ways li, .site-main .other-ways li {
   width: 100%;
   height: 75px;
   margin: 0;
@@ -1671,12 +1673,13 @@ object {
       -ms-flex-align: center;
           align-items: center; }
   @media (min-width: 900px) {
-    .page-template-get-involved .other-ways li, .page-template-get-involved .other-way-links, .site-main .other-ways li, .site-main .other-way-links {
-      -webkit-flex: 1 0 25%;
-          -ms-flex: 1 0 25%;
-              flex: 1 0 25%;
+    .page-template-get-involved .other-ways li, .site-main .other-ways li {
+      -webkit-flex: 0 1 25%;
+          -ms-flex: 0 1 25%;
+              flex: 0 1 25%;
+      max-width: 25%;
       text-align: center;
-      padding: 5rem 2rem; } }
+      padding: 5rem 0rem; } }
 
 .page-template-get-involved .other-ways li:first-child, .site-main .other-ways li:first-child {
   background: #FFCC66; }
@@ -1750,6 +1753,8 @@ object {
     -webkit-align-items: center;
         -ms-flex-align: center;
             align-items: center; }
+    .sponsor-grid li img, .sponsor-grid ul li img {
+      width: 75%; }
     @media (min-width: 900px) {
       .sponsor-grid li, .sponsor-grid ul li {
         -webkit-flex: 0 1 20%;
@@ -1783,17 +1788,19 @@ object {
           -ms-flex: 0 1 33%;
               flex: 0 1 33%; } }
   .program-hero .program-hero-img {
-    height: 225px;
+    height: 375px;
     overflow: hidden; }
     @media (min-width: 900px) {
       .program-hero .program-hero-img {
-        height: 360px; } }
+        height: 375px; } }
     .program-hero .program-hero-img img {
-      width: 100%; }
+      width: 125%;
+      -webkit-transform: translateY(25%) scale(1.5);
+              transform: translateY(25%) scale(1.5); }
       @media (min-width: 900px) {
         .program-hero .program-hero-img img {
-          -webkit-transform: scale(1.5);
-                  transform: scale(1.5); } }
+          -webkit-transform: translateY(55%) scale(2);
+                  transform: translateY(55%) scale(2); } }
   .program-hero .program-quote {
     background: rgba(50, 50, 50, 0.5);
     color: #fff;
@@ -1866,7 +1873,7 @@ ul {
     cursor: pointer; }
   .info-panel-content p {
     font-weight: bold; }
-    .info-panel-content p.step-color {
+    .info-panel-content p .step-color {
       color: #006699; }
 
 .steps-button {
