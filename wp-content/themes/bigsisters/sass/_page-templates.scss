@@ -30,7 +30,7 @@
   height: 16.9rem;
   @include desktop {
     padding: 5rem 0 0 5rem;
-    height: 82vh;
+    height: 77vh;
   }
   .hero-quote {
     padding: 0.5rem;
@@ -43,8 +43,8 @@
       width: 29.6rem;
       line-height: 2.7rem;
       font-size: 2.15rem;
-      padding: 5rem 0 0 5rem;
-      height: 77vh;
+      padding: 1rem 0 0 1rem;
+      height: 168px;
     }
 
   }
@@ -1072,7 +1072,10 @@ ul {
 .to-donate-sponsor {
   display: flex;
   flex-direction: column;
-  padding: 0 30px;
+  padding: 30px;
+  @include desktop {
+       padding: 0 30px;
+  }
   h1 {
     font-size: 1.3rem;
     width: 90%;
@@ -1213,4 +1216,10 @@ div#pp_full_res img{
   button.button-white {
     margin-bottom: 3rem;
   }
+}
+
+.not-found {
+    .page-content {
+        text-align: center;
+    }
 }
