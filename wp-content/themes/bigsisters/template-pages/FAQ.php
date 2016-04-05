@@ -44,15 +44,11 @@ get_header(); ?>
               facilisis vel leo.
             </div>
           </div>
-	    </div>  
+	    </div>
 		<div class="accordian-box container">
           <div class="acr-box-div">
             <div class="info-panel-content">
-<<<<<<< HEAD:wp-content/themes/bigsisters/template-pages/FAQ.php
-              <h3>What kind of support can I expect after joining Big Sisters?</h3>
-=======
               <p>What king of support can I expect after joining Big Sisters?</p>
->>>>>>> start_media_page:wp-content/themes/bigsisters/FAQ.php
               <i class="fa fa-plus-circle"></i>
             </div>
             <div class="acr-box-content container">

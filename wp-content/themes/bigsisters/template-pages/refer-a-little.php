@@ -18,17 +18,17 @@ get_header(); ?>
 					<div class="hero-grid">
 						<div class="program-hero">
 							<div class="program-hero-img"><img src="<?php echo CFS()->get( 'quote_image_one' ); ?>" alt="<?php echo esc_html(CFS()->get( 'quote_image_one_description' ) ); ?>"></div>
-						<p class="program-quote"><?php echo esc_html(CFS()->get( 'quote_text_one' ) ); ?></p>
+						<p class="program-quote"><?php echo CFS()->get( 'quote_text_one' ); ?></p>
 					</div>
 
 					<div class="program-hero">
 						<div class="program-hero-img"><img src="<?php echo CFS()->get( 'quote_image_two' ); ?>" alt="<?php echo esc_html(CFS()->get( 'quote_image_two_description' ) ); ?>"></div>
-						<p class="program-quote"><?php echo esc_html(CFS()->get( 'quote_text_two' ) ); ?></p>
+						<p class="program-quote"><?php echo CFS()->get( 'quote_text_two' ); ?></p>
 					</div>
 
 					<div class="program-hero">
 						<div class="program-hero-img"><img src="<?php echo CFS()->get( 'quote_image_three' ); ?>" alt="<?php echo esc_html(CFS()->get( 'quote_image_three_description' ) ); ?>"></div>
-						<p class="program-quote"><?php echo esc_html(CFS()->get( 'quote_text_three' ) ); ?></p>
+						<p class="program-quote"><?php echo CFS()->get( 'quote_text_three' ); ?></p>
 					</div>
 				</div>
 			</section>

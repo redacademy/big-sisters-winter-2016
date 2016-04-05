@@ -11,7 +11,7 @@ get_header(); ?>
 			<section class="ways2give-hero">
 				<p class="ways2give-quote">When you contribute to Big Sisters you're
 				helping a child reach their full potential.</p>
-				<button class="button-brightblue">LEARN MORE</button>
+				<a href="/who-we-are/" class="button-brightblue">LEARN MORE</a>
 			</section>
 
 			<section class="container">
