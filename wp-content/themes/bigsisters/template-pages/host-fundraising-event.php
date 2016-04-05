@@ -5,7 +5,7 @@
 get_header(); ?>
 
 	<div id="primary" class="content-area">
-		<main id="main" class="site-main" role="main">
+		<main id="main" class="site-main">
             <section class="fundraiser-event-hero">
                 <h1>
                     Fundraising events are the heart and soul of Big Sisters

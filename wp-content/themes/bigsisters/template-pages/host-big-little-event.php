@@ -5,7 +5,7 @@
 get_header(); ?>
 
 	<div id="primary" class="content-area">
-		<main id="main" class="site-main" role="main">
+		<main id="main" class="site-main">
             <section class="big-little-event-hero">
                 <h1>
                     Activities provide opportunities to build friendships, confidence and FUN!
