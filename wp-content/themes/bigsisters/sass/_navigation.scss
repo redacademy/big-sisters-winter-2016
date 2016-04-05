@@ -30,12 +30,12 @@ a {
 
 #click-menu {
 	position: fixed !important;
-	top: 18px !important;
-	right: 20px !important;
+	top: 9px!important;
+	right: 10px!important;
 }
 
 #responsive-menu.RMOpened {
-	margin-top: 72px !important;
+	margin-top: 54px !important;
 }
 
 #responsive-menu {
@@ -194,7 +194,7 @@ a {
 	.current_page_item > a,
 	.current-menu-item > a {
 		color: $color__orange-brand;
-		padding: 40px;
+		padding: 53px 25px;
 	}
 }
 
@@ -210,6 +210,7 @@ a {
 	width: 100vw;
 }
 
+// navigation arrow up (item 1 and 2)
 .main-navigation .menu li > ul::before {
 	content: '';
 	margin: 0 auto;
@@ -222,9 +223,10 @@ a {
 	background-color: transparent;
 	position: absolute;
 	top: -28px;
-	left: 72px;
+	left: 58px;
 }
 
+// navigation arrow up (item 3)
 .main-navigation .menu :nth-child(3) > ul::before {
 	content: '';
 	margin: 0 auto;
@@ -237,9 +239,10 @@ a {
 	background-color: transparent;
 	position: absolute;
 	top: -28px;
-	left: 45px;
+	left: 33px;
 }
 
+//navigation arrow up (sub-menu items)
 .main-navigation .menu li ul ul::before {
 	content: none;
 }
@@ -249,21 +252,21 @@ a {
     justify-content: space-between;
     align-items: center;
     background-color: $color__purple-header;
-    height: 4.5rem;
+    height: 54px;
 	position: fixed;
 	top: 0;
 	left: 0;
 	right: 0;
 	z-index: 999;
     @include desktop {
-        height: 7rem;
+        height: 140px;
     }
 }
 
 
 .menu-main-menu-container {
 	display: flex;
-	width: 750px;
+	width: 656px;
 	position: relative;
 	margin-right: 30px;
 	flex-wrap: nowrap;
@@ -271,29 +274,31 @@ a {
 
 .main-navigation li {
 	a {
-		padding: 40px ;
+		padding: 53px 25px;
 		color: #fff;
 		font-size: 18px;
 		text-transform: uppercase;
 	}
 }
 
-.main-navigation #menu-item-118 a {
+.main-navigation #menu-item-106 a {
 	padding: 1rem 3.5rem;
 	background: $color__brightblue-brand;
 	border-radius: 41px;
 	position: absolute;
-	top: 23px;
-	margin-left: 30px;
+	top: 37px;
+	margin-left: 20px;
 }
 
 .logo-wrap {
-	width: 250px;
-	margin-left: 10px;
+	width: 300px;
+	margin-left: 20px;
 	a {
 		padding: 0;
+		:focus {
+			outline: none;
+		}
 	}
-
 	img {
 		width: 100%;
 	}

@@ -24,15 +24,27 @@ input[type="submit"] {
 	color: $color__deepblue-brand;
 	border: 2px solid $color__deepblue-brand;
 	background-color: #fff;
+	&:hover, &:visited  {
+		color: $color__deepblue-brand;
+		text-decoration: none;
+	}
 }
 
 .button-deepblue {
 	@include button-default-styles;
 	background-color: $color__deepblue-brand;
+	&:hover, &:visited {
+		color: #fff;
+		text-decoration: none;
+	}
 }
 
 .button-brightblue {
 	@include button-default-styles;
+	&:hover, &:visited {
+		color: #fff;
+		text-decoration: none;
+	}
 }
 
 /* Fields */
@@ -47,7 +59,7 @@ textarea {
 	display: flex;
 	justify-content: center;
 	color: #000;
-	border: 1px solid #000;
+	border: 1px solid #D3D3D3;
 	width: 94vw;
 	padding: 0.25rem 0.25rem 0.25rem 0.75rem;
 	margin: 0 auto 0.83rem auto;
