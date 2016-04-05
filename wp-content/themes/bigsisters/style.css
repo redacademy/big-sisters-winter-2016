@@ -2311,6 +2311,9 @@ div#pp_full_res img {
 .page-template-about-page button.button-white {
   margin-bottom: 3rem; }
 
+.not-found .page-content {
+  text-align: center; }
+
 /*--------------------------------------------------------------
 # Footer
 --------------------------------------------------------------*/
