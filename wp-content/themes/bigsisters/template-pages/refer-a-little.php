@@ -29,7 +29,7 @@ get_header(); ?>
 						<div class="program-quote"><?php echo CFS()->get( 'quote_text_two' ); ?></div>
 					</div>
 				</section>
-				
+
 				<section class="program-hero">
 					<div class="program-hero">
 						<div class="program-hero-img">
@@ -220,15 +220,16 @@ get_header(); ?>
 									<p>Remember- you are a mentor! You will always have a case
 										worker assigned to you to help you in case any issues come up.</p>
 									<p>Big Sisters strives to do the following:</p>
+								</div>
 									<ul>
 										<li>Provide a role model and friend for girls and young women</li>
 										<li>Promote the importance of staying in school and healthy relationships with family and peers</li>
 										<li>Instill trust and self-confidence in order to make healthy decisions</li>
 										<li>Encourage leadership skills and independent thinking</li>
 										<li>Above all, <b>make a difference</b> while <b>having fun</b></li>
+									</ul>
 								</div>
 							</div>
-						</div>
 
 
 			<?php
