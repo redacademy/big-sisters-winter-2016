@@ -129,17 +129,9 @@ get_header(); ?>
 								</div>
 							</div>
 						</div>
-<<<<<<< HEAD
-
-=======
->>>>>>> changes_before_last_deploy
 					</div>
 
 						<h2 class="study-buddy-title"><?php echo esc_html(CFS()->get( 'title_study_buddy' ) ); ?></h2>
-<<<<<<< HEAD
-
-=======
->>>>>>> changes_before_last_deploy
 
 						<div class="accordian-box">
 							<div class="acr-box-div container">
