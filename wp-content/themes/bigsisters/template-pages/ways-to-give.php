@@ -15,7 +15,7 @@ get_header(); ?>
 			</section>
 
 			<section class="container">
-			  <h1 class="page-header-style">Our Donors make Big Sisters possible. Every little bit helps.</h1>
+			  <h1 class="refer-title">Our Donors make Big Sisters possible. Every little bit helps.</h1>
 				  <p>
 				    We undestand that every one is different. Which is why Big Sisters
 				    offers so many different ways to contribute to our cause. We

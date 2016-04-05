@@ -78,9 +78,7 @@ get_header(); ?>
           </div>
         </div>
 
-		<section class="page-header-style container">
-        	<h2>HOSTING A FUNDRAISER</h2>
-		</section>
+        	<h2 class="host-a-fund-title">HOSTING A FUNDRAISER</h2>
 
         <div class="accordian-box container">
           <div class="acr-box-div">
