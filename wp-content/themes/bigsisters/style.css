@@ -1790,8 +1790,7 @@ object {
       width: 33%; } }
   .program-hero .program-hero-img {
     height: 375px;
-    overflow: hidden;
-    background-color: #f00; }
+    overflow: hidden; }
     @media (min-width: 900px) {
       .program-hero .program-hero-img {
         height: 375px; } }
