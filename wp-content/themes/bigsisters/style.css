@@ -1066,7 +1066,7 @@ object {
   @media (min-width: 900px) {
     .bigsister-hero-fp {
       padding: 5rem 0 0 5rem;
-      height: 77vh; } }
+      height: 82vh; } }
   .bigsister-hero-fp .hero-quote {
     padding: 0.5rem;
     line-height: 1.5rem;
@@ -1078,7 +1078,9 @@ object {
       .bigsister-hero-fp .hero-quote {
         width: 29.6rem;
         line-height: 2.7rem;
-        font-size: 2.15rem; } }
+        font-size: 2.15rem;
+        padding: 5rem 0 0 5rem;
+        height: 77vh; } }
 
 .bxstyles1 {
   margin-bottom: -40px; }
@@ -1164,7 +1166,10 @@ object {
     margin: 0; }
 
 .newsletter {
-  padding-top: 2rem; }
+  padding: 2rem 0; }
+  @media (min-width: 900px) {
+    .newsletter {
+      padding-bottom: 0; } }
   .newsletter h1 {
     margin-top: 0;
     text-align: center;
@@ -1174,7 +1179,7 @@ object {
         font-size: 2.3rem; } }
   .newsletter .name-container {
     width: 100%;
-    margin-bottom: 2rem; }
+    margin-bottom: 1.3rem; }
     @media (min-width: 900px) {
       .newsletter .name-container {
         display: -webkit-flex;
@@ -1182,7 +1187,8 @@ object {
         display: flex;
         -webkit-justify-content: space-between;
             -ms-flex-pack: justify;
-                justify-content: space-between; }
+                justify-content: space-between;
+        margin-bottom: 2rem; }
         .newsletter .name-container :first-child, .newsletter .name-container :last-child {
           margin: 0;
           -webkit-flex-basis: 48%;
