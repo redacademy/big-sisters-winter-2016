@@ -14,25 +14,19 @@ $directory = get_template_directory_uri();
                         <p class="hero-quote">
                             "Becoming a Big Sister gave me purpose to my life."<br/>- Anita
                         </p>
-                        <a href="/get-involved/">
-							<button  class="button-brightblue">Learn more</button>
-						</a>
+						<a  href="/get-involved/" class="button-brightblue">Learn more</a>
 					</li>
 					<li class="bigsister-hero-fp hero2">
                         <p class="hero-quote">
                             "Becoming a Big Sister gave me purpose to my life."<br/>- Anita
                         </p>
-                        <a href="/get-involved/">
-							<button  class="button-brightblue">Learn more</button>
-						</a>
+                        <a  href="/get-involved/" class="button-brightblue">Learn more</a>
 					</li>
 					<li class="bigsister-hero-fp hero3">
                         <p class="hero-quote">
                             "Becoming a Big Sister gave me purpose to my life."<br/>- Anita
                         </p>
-                        <a href="/get-involved/">
-							<button  class="button-brightblue">Learn more</button>
-						</a>
+                        <a  href="/get-involved/" class="button-brightblue">Learn more</a>
 					</li>
                 </ul>
             </section>
@@ -73,7 +67,7 @@ $directory = get_template_directory_uri();
 	                    <input type="text" placeholder="Last name" />
 					</div>
 					<input type="email" placeholder="Email address" />
-                    <button class="button-white">Sign Up</button>
+                    <a class="button-white" href="#">Sign Up</a>
                 </form>
             </section>
 			<section class="hero-stories">

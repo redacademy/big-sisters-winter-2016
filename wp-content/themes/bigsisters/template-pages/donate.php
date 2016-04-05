@@ -11,7 +11,7 @@ get_header(); ?>
                 <p>
                     It costs $2000/year to sponsor one Little Sister mentorship. Our  donors make this happen.
                 </p>
-                <a href="#"><button class="button-brightblue">Donate Now</button></a>
+                <a href="#" class="button-brightblue">Donate Now</a>
             </section>
             <section class="why-donate">
                 <h1>Why Donate to Big Sisters</h1>
