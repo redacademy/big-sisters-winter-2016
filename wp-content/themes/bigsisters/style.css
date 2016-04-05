@@ -320,7 +320,10 @@ body {
 .acr-box-content {
   display: none;
   overflow: hidden;
-  padding: 0 5rem 40px; }
+  padding: 0 0 40px; }
+  @media (min-width: 900px) {
+    .acr-box-content {
+      padding: 0 5rem 40px; } }
 
 .page-header-style {
   margin-top: 6rem; }
@@ -1783,21 +1786,21 @@ object {
     .program-hero {
       -webkit-flex: 0 1 33%;
           -ms-flex: 0 1 33%;
-              flex: 0 1 33%; } }
+              flex: 0 1 33%;
+      width: 33%; } }
   .program-hero .program-hero-img {
     height: 375px;
-    overflow: hidden; }
+    overflow: hidden;
+    background-color: #f00; }
     @media (min-width: 900px) {
       .program-hero .program-hero-img {
         height: 375px; } }
     .program-hero .program-hero-img img {
-      width: 125%;
-      -webkit-transform: translateY(25%) scale(1.5);
-              transform: translateY(25%) scale(1.5); }
+      overflow: hidden; }
       @media (min-width: 900px) {
         .program-hero .program-hero-img img {
-          -webkit-transform: translateY(55%) scale(2);
-                  transform: translateY(55%) scale(2); } }
+          max-height: none;
+          max-width: 100%; } }
   .program-hero .program-quote {
     background: rgba(50, 50, 50, 0.5);
     color: #fff;
@@ -2481,6 +2484,8 @@ div#pp_full_res img {
   .about p {
     font-size: 1.25rem;
     padding: 0 1.5rem; }
+  .about .button-white {
+    margin: 0 auto 3rem; }
 
 .about-video {
   background-color: #F0F0F0; }
