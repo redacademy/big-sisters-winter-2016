@@ -55,7 +55,7 @@
   // Instagram API Functionality
 
   var $photoList = $('.ig-photo-list');
-  var endpointURL = 'https://api.instagram.com/v1/users/self/media/recent/?count=6&access_token=260006638.ec2ce43.e6b06a897b984941ad22bae3fb27f977';
+  var endpointURL = 'https://api.instagram.com/v1/users/self/media/recent/?count=6&access_token=1451980773.5e3fb12.161d646a49354c3986bb494cb27fa347';
   var photoElements = '';
   var buildPhotoGrid = function (value) {
     photoElements +=  '<li>';
