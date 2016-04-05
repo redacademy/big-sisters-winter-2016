@@ -34,9 +34,7 @@ get_header(); ?>
 									<div class="event-content">
 										<h3> <?php the_title(); ?></h3>
 										<?php the_excerpt(); ?>
-										<a href="<?php the_permalink(); ?>">
-											<button class="learn-more button-white" type="button" name="learn-more">Learn More</button>
-										</a>
+										<a class="learn-more button-white" href="<?php the_permalink(); ?>">Learn More</a>
 									</div> <!-- .event-content -->
 							</li>
 						<?php endwhile; ?>
@@ -69,9 +67,7 @@ get_header(); ?>
 								<div class="event-content">
 									<h3> <?php the_title(); ?></h3>
 									<?php the_excerpt(); ?>
-									<a href="<?php the_permalink(); ?>">
-										<button class="learn-more button-white" type="button" name="learn-more">Learn More</button>
-									</a>
+									<a class="learn-more button-white" href="<?php the_permalink(); ?>">Learn More</a>
 								</div> <!-- .event-content -->
 							</li>
 						<?php endwhile; ?>
