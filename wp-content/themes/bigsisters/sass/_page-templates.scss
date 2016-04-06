@@ -715,6 +715,7 @@
       height: 375px;
     }
     img {
+      transform: translateY(-15%);
       overflow: hidden;
       @include desktop {
         max-height: none;
