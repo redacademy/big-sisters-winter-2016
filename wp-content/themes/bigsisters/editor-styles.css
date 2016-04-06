@@ -1,0 +1,23 @@
+body#tinymce.wp-editor .button-deepblue {
+    background-color: #069;
+    border-radius: 25px;
+    color: #fff;
+    padding: 10px 30px;
+    text-decoration: none;
+}
+
+body#tinymce.wp-editor .button-white {
+    border: 1px solid #069;
+    border-radius: 25px;
+    color: #069;
+    padding: 10px 30px;
+    text-decoration: none;
+}
+
+body#tinymce.wp-editor .button-brightblue {
+    border-radius: 25px;
+    background-color: #0BB7FF;
+    color: #fff;
+    padding: 10px 30px;
+    text-decoration: none;
+}
