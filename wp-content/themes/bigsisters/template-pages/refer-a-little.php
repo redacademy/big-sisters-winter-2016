@@ -17,25 +17,20 @@ get_header(); ?>
 				<div class="hero-grid container">
 				<section class="program-hero">
 						<div class="program-hero-img">
-						<img src="<?php echo CFS()->get( 'quote_image_one' ); ?>" alt="<?php echo esc_html(CFS()->get( 'quote_image_one_description' ) ); ?>">
-					</div>
+						<img src="<?php echo CFS()->get( 'quote_image_one' ); ?>" alt="<?php echo esc_html(CFS()->get( 'quote_image_one_description' ) ); ?>"></div>
 						<div class="program-quote"><?php echo CFS()->get( 'quote_text_one' ); ?></div>
 					</section>
 
 					<section class="program-hero">
-						<div class="program-hero">
 						<div class="program-hero-img">
 						<img src="<?php echo CFS()->get( 'quote_image_two' ); ?>" alt="<?php echo esc_html(CFS()->get( 'quote_image_two_description' ) ); ?>"></div>
 						<div class="program-quote"><?php echo CFS()->get( 'quote_text_two' ); ?></div>
-					</div>
 				</section>
 
 				<section class="program-hero">
-					<div class="program-hero">
 						<div class="program-hero-img">
 						<img src="<?php echo CFS()->get( 'quote_image_three' ); ?>" alt="<?php echo esc_html(CFS()->get( 'quote_image_three_description' ) ); ?>"></div>
 						<div class="program-quote"><?php echo CFS()->get( 'quote_text_three' ); ?></div>
-					</div>
 			</section>
 			</div>
 
@@ -220,7 +215,6 @@ get_header(); ?>
 									<p>Remember- you are a mentor! You will always have a case
 										worker assigned to you to help you in case any issues come up.</p>
 									<p>Big Sisters strives to do the following:</p>
-								</div>
 									<ul>
 										<li>Provide a role model and friend for girls and young women</li>
 										<li>Promote the importance of staying in school and healthy relationships with family and peers</li>
@@ -230,6 +224,7 @@ get_header(); ?>
 									</ul>
 								</div>
 							</div>
+						</div>
 
 
 			<?php
