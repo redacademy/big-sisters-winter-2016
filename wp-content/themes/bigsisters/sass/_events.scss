@@ -35,10 +35,6 @@
 
   }
 
-  a {
-    text-align: center;
-  }
-
   img {
     height: auto;
     width: 100%;
@@ -72,12 +68,20 @@
     }
   }
 
+  a {
+    margin: 0 auto;
+  }
+
 }
 
 .partner-events {
 
   .event-thumbnail {
       width: 50%;
+  }
+
+  a {
+    margin: 0 auto;
   }
 
 }
@@ -123,16 +127,23 @@
     }
   }
 
+  a {
+    margin: 0 auto;
+  }
+
 }
 
 .host-fundraiser-event {
   background-color: $color__offwhite-brand;
   padding: 2rem 0 1rem;
   text-align: center;
-  margin: 0 auto;
 
   @include desktop {
     padding: 5rem 0;
+  }
+
+  a {
+    margin: 0 auto;
   }
 }
 
