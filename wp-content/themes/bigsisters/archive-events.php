@@ -83,9 +83,7 @@ get_header(); ?>
 			<section class="host-fundraiser-event">
 				<div class="container">
 					<h2>Want to host a fundraiser or event?</h2>
-					<a href="/bigsisters/host-a-fundraising-event/">
-						<button class="learn-more button-white" type="button" name="learn-more">Learn More</button>
-					</a>
+					<a class="learn-more button-white"href="/bigsisters/host-a-fundraising-event/">Learn More</a>
 				</div>
 			</section>
 
