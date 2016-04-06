@@ -1795,6 +1795,8 @@ object {
       .program-hero .program-hero-img {
         height: 375px; } }
     .program-hero .program-hero-img img {
+      -webkit-transform: translateY(-15%);
+              transform: translateY(-15%);
       overflow: hidden; }
       @media (min-width: 900px) {
         .program-hero .program-hero-img img {
@@ -2965,7 +2967,8 @@ div#pp_full_res img {
 .host-fundraiser-event {
   background-color: #F0F0F0;
   padding: 2rem 0 1rem;
-  text-align: center; }
+  text-align: center;
+  margin: 0 auto; }
   @media (min-width: 900px) {
     .host-fundraiser-event {
       padding: 5rem 0; } }
