@@ -2876,9 +2876,6 @@ div#pp_full_res img {
       padding: 2rem;
       margin-bottom: 5rem; } }
 
-.events a {
-  text-align: center; }
-
 .events img {
   height: auto;
   width: 100%; }
@@ -2911,8 +2908,14 @@ div#pp_full_res img {
             flex-direction: column;
     width: 33%; } }
 
+.premier-events a {
+  margin: 0 auto; }
+
 .partner-events .event-thumbnail {
   width: 50%; }
+
+.partner-events a {
+  margin: 0 auto; }
 
 .event-thumbnail {
   display: -webkit-flex;
@@ -2963,6 +2966,8 @@ div#pp_full_res img {
     @media (min-width: 900px) {
       .event-content h3 {
         font-size: 2rem; } }
+  .event-content a {
+    margin: 0 auto; }
 
 .host-fundraiser-event {
   background-color: #F0F0F0;
@@ -2972,6 +2977,8 @@ div#pp_full_res img {
   @media (min-width: 900px) {
     .host-fundraiser-event {
       padding: 5rem 0; } }
+  .host-fundraiser-event a {
+    margin: 0 auto; }
 
 .to-donate-sponsor h2 {
   margin-bottom: 0; }
