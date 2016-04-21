@@ -1066,7 +1066,7 @@ object {
   @media (min-width: 900px) {
     .bigsister-hero-fp {
       padding: 5rem 0 0 5rem;
-      height: 77vh; } }
+      height: 80vh; } }
   .bigsister-hero-fp .hero-quote {
     padding: 0.5rem;
     line-height: 1.5rem;
@@ -1082,28 +1082,15 @@ object {
         padding: 1rem 0 0 1rem;
         height: 168px; } }
 
-.bxstyles1 {
-  margin-bottom: -40px; }
-  @media (min-width: 900px) {
-    .bxstyles1 {
-      margin-bottom: -61px; } }
-  .bxstyles1 .bx-wrapper .bx-viewport {
-    box-shadow: none;
-    border: 0;
-    left: 0;
-    background: #fff; }
-  .bxstyles1 .bx-wrapper {
-    width: 100vw; }
-  .bxstyles1 .bx-wrapper .bx-pager,
-  .bxstyles1 .bx-wrapper .bx-controls-auto {
-    position: absolute;
-    bottom: 5px;
-    width: 100%; }
-  .bxstyles1 .bx-wrapper .bx-pager.bx-default-pager a {
-    background: rgba(102, 102, 102, 0.7); }
-  .bxstyles1 .bx-wrapper .bx-pager.bx-default-pager a:hover,
-  .bxstyles1 .bx-wrapper .bx-pager.bx-default-pager a.active {
-    background: #fff; }
+.hero-carousel .hero-carousel-cell {
+  width: 100vw; }
+
+.hero-carousel .flickity-page-dots {
+  padding: 60px; }
+  .hero-carousel .flickity-page-dots .dot {
+    background-color: rgba(128, 128, 128, 0.8); }
+  .hero-carousel .flickity-page-dots .is-selected {
+    background-color: #fff; }
 
 .colored-menu-sections a {
   text-decoration: none;

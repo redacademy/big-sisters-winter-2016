@@ -45,13 +45,6 @@
     }
   });
 
-  // bxSlider functionality
-  $('.bxslider').bxSlider({
-    speed: 500,
-    controls: false,
-    auto: true
-  });
-
   // Instagram API Functionality
 
   var $photoList = $('.ig-photo-list');
@@ -79,6 +72,14 @@
   });
 
   // Flickity init
+
+  $('.hero-carousel').flickity({
+    wrapAround: true,
+    freeScroll: true,
+    autoPlay: true,
+    prevNextButtons: false
+  });
+
   $('.main-carousel').flickity({
     wrapAround: true,
     freeScroll: true,
