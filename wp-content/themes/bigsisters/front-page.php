@@ -8,21 +8,21 @@ $directory = get_template_directory_uri();
 
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main">
-            <section class="hero-slider bxstyles1">
-                <ul class="bxslider">
-                    <li class="bigsister-hero-fp hero1">
+            <section class="hero-slider">
+                <ul class="hero-carousel">
+                    <li class="hero-carousel-cell bigsister-hero-fp hero1">
                         <p class="hero-quote">
                             "Becoming a Big Sister gave me purpose to my life."<br/>- Anita
                         </p>
 						<a  href="/get-involved/" class="button-brightblue">Learn more</a>
 					</li>
-					<li class="bigsister-hero-fp hero2">
+					<li class="hero-carousel-cell bigsister-hero-fp hero2">
                         <p class="hero-quote">
                             "Becoming a Big Sister gave me purpose to my life."<br/>- Anita
                         </p>
                         <a  href="/get-involved/" class="button-brightblue">Learn more</a>
 					</li>
-					<li class="bigsister-hero-fp hero3">
+					<li class="hero-carousel-cell bigsister-hero-fp hero3">
                         <p class="hero-quote">
                             "Becoming a Big Sister gave me purpose to my life."<br/>- Anita
                         </p>
