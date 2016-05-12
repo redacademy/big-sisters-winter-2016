@@ -9,37 +9,28 @@ get_header();?>
 		<header class="container story-page-copy">
 			<?php the_title( '<h1 class="page-header-style">', '</h1>' ); ?>
 		</header>
-<div class="hero-grid container">
-		<section class="program-hero">
-				<div class="program-hero-img">
-					<?php $img_ALT = CFS()->get('hero1_quote'); ?>
-					<img src="<?php echo CFS()->get('hero1_img'); ?>" alt="<?php echo wp_strip_all_tags( $img_ALT ); ?>"/>
+<section class="tri-img-grid container">
+		<div class="tri-img">
+					<img src="<?php echo CFS()->get('hero1_img'); ?>" alt="<?php echo wp_strip_all_tags(CFS()->get( 'hero1_quote' ) ); ?>"/>
+				<div class="tri-img-quote container">
+					<?php echo CFS()->get( 'hero1_quote' ); ?>
 				</div>
-				<div class="program-quote container prog-hero-quote">
-					<?php echo CFS()->get('hero1_quote')?>
-				</div>
-		</section>
+		</div>
 
-		<section class="program-hero">
-				<div class="program-hero-img">
-					<?php $img_ALT = CFS()->get('hero2_quote'); ?>
-					<img src="<?php echo CFS()->get('hero2_img')?>" alt="<?php echo wp_strip_all_tags( $img_ALT ); ?>"/>
+		<div class="tri-img">
+					<img src="<?php echo CFS()->get('hero2_img')?>" alt="<?php echo wp_strip_all_tags(CFS()->get( 'hero2_quote' ) ); ?>"/>
+				<div class="tri-img-quote container">
+					<?php echo CFS()->get( 'hero2_quote' ); ?>
 				</div>
-				<div class="program-quote container prog-hero-quote">
-					<?php echo CFS()->get('hero2_quote')?>
-				</div>
-		</section>
+		</div>
 
-		<section class="program-hero">
-				<div class="program-hero-img">
-					<?php $img_ALT = CFS()->get('hero3_quote'); ?>
-					<img src="<?php echo CFS()->get('hero3_img')?>" alt="<?php echo wp_strip_all_tags( $img_ALT ); ?>"/>
+		<div class="tri-img">
+					<img src="<?php echo CFS()->get('hero3_img')?>" alt="<?php echo wp_strip_all_tags(CFS()->get( 'hero3_quote' ) ); ?>"/>
+				<div class="tri-img-quote container">
+					<?php echo CFS()->get( 'hero3_quote' ); ?>
 				</div>
-				<div class="program-quote container prog-hero-quote">
-					<?php echo CFS()->get('hero3_quote')?>
-				</div>
-		</section>
-</div>
+		</div>
+</section>
 		<!-- Step 1 -->
 		<section class="container">
 			<div class="accordian-box">

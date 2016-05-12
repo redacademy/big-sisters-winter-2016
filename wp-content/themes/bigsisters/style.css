@@ -976,6 +976,85 @@ a {
 .bypostauthor {
   display: block; }
 
+/* Tri Hero Images */
+@media (min-width: 900px) {
+  .tri-img-grid {
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+            justify-content: space-between; } }
+
+.tri-img {
+  background: #7f7f7f;
+  -webkit-flex: 0 1 100%;
+      -ms-flex: 0 1 100%;
+          flex: 0 1 100%;
+  height: 375px;
+  margin-bottom: 2rem;
+  overflow: hidden;
+  position: relative; }
+  .tri-img img {
+    top: 50%;
+    left: 50%;
+    max-width: 100%;
+    max-height: none;
+    position: absolute;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%); }
+    @media (min-width: 900px) {
+      .tri-img img {
+        max-width: none;
+        max-height: 100%; } }
+  @media (min-width: 900px) {
+    .tri-img {
+      -webkit-flex: 0 1 32%;
+          -ms-flex: 0 1 32%;
+              flex: 0 1 32%; } }
+
+.tri-img-quote {
+  background: rgba(100, 100, 100, 0.5);
+  bottom: 0;
+  color: #fff;
+  margin-bottom: 1rem;
+  position: absolute;
+  width: 100%; }
+  .tri-img-quote p {
+    font-size: 1.15rem;
+    line-height: 1.15; }
+
+/* Full Width Hero Image */
+.page-hero {
+  height: 300px;
+  overflow: hidden;
+  position: relative; }
+  .page-hero img {
+    position: absolute;
+    top: -50px; }
+    @media (min-width: 900px) {
+      .page-hero img {
+        top: 0; } }
+  @media (min-width: 900px) {
+    .page-hero {
+      height: 500px; } }
+
+.hero-quote {
+  color: #fff;
+  font-size: 1.15rem;
+  max-width: 50%;
+  padding-left: 2rem;
+  position: absolute;
+  text-align: left;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%); }
+  @media (min-width: 900px) {
+    .hero-quote {
+      font-size: 2rem;
+      max-width: 45%;
+      padding-left: 5rem; } }
+
 /*--------------------------------------------------------------
 # Media
 --------------------------------------------------------------*/
@@ -1696,33 +1775,6 @@ object {
 .involved-copy h3 {
   color: #006699; }
 
-.little-sister-hero {
-  background: url("../../assets/images/big-little-bench.jpg") 0 0 no-repeat;
-  background-size: cover;
-  height: 300px;
-  margin: 2rem 0; }
-  @media (min-width: 900px) {
-    .little-sister-hero {
-      background: url("../../assets/images/big-little-bench.jpg") 0 -100px no-repeat;
-      background-size: 115%;
-      height: 600px; } }
-
-.little-sister-quote {
-  color: #fff;
-  font-size: 1.15rem;
-  max-width: 50%;
-  padding-left: 2rem;
-  position: relative;
-  text-align: left;
-  top: 50%;
-  -webkit-transform: translateY(-50%);
-          transform: translateY(-50%); }
-  @media (min-width: 900px) {
-    .little-sister-quote {
-      font-size: 2rem;
-      max-width: 35%;
-      padding-left: 5rem; } }
-
 .sponsor-grid, .sponsor-grid ul {
   width: 100%;
   margin: 3rem 0;
@@ -1767,52 +1819,6 @@ object {
 
 .sponsor-grid h2 {
   color: #663399; }
-
-/* Volunteer programs -----------------------------------------*/
-@media (min-width: 900px) {
-  .hero-grid {
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-justify-content: space-between;
-        -ms-flex-pack: justify;
-            justify-content: space-between; } }
-
-.program-hero {
-  width: 100%;
-  margin-bottom: 2rem;
-  position: relative; }
-  @media (min-width: 900px) {
-    .program-hero {
-      -webkit-flex: 0 1 33%;
-          -ms-flex: 0 1 33%;
-              flex: 0 1 33%;
-      width: 33%; } }
-  .program-hero .program-hero-img {
-    height: 375px;
-    overflow: hidden; }
-    @media (min-width: 900px) {
-      .program-hero .program-hero-img {
-        height: 375px; } }
-    .program-hero .program-hero-img img {
-      -webkit-transform: translateY(-15%);
-              transform: translateY(-15%);
-      overflow: hidden; }
-      @media (min-width: 900px) {
-        .program-hero .program-hero-img img {
-          max-height: none;
-          max-width: 100%; } }
-  .program-hero .program-quote {
-    background: rgba(50, 50, 50, 0.5);
-    color: #fff;
-    margin-bottom: 2rem;
-    position: absolute;
-    width: 100%;
-    bottom: 0; }
-    .program-hero .program-quote p {
-      line-height: 1.25; }
-  .program-hero .prog-hero-quote {
-    font-size: 1.5rem; }
 
 /* Refer A Little Page -------------------------------------------------*/
 .quote-image-container {
@@ -2972,8 +2978,7 @@ div#pp_full_res img {
 .host-fundraiser-event {
   background-color: #F0F0F0;
   padding: 2rem 0 1rem;
-  text-align: center;
-  margin: 0 auto; }
+  text-align: center; }
   @media (min-width: 900px) {
     .host-fundraiser-event {
       padding: 5rem 0; } }

@@ -9,37 +9,28 @@ get_header();?>
 		<header class="container story-page-copy">
 			<?php the_title( '<h1 class="page-header-style">', '</h1>' ); ?>
 		</header>
-<div class="hero-grid container">
-		<section class="program-hero">
-				<div class="program-hero-img">
-					<?php $img_ALT = CFS()->get('hero1_quote'); ?>
-					<img src="<?php echo CFS()->get('hero1_img')?>" alt="<?php echo wp_strip_all_tags( $img_ALT ); ?>"/>
+		<section class="tri-img-grid container">
+				<div class="tri-img">
+							<img src="<?php echo CFS()->get('hero1_img'); ?>" alt="<?php echo wp_strip_all_tags(CFS()->get( 'hero1_quote' ) ); ?>"/>
+						<div class="tri-img-quote container">
+							<?php echo CFS()->get( 'hero1_quote' ); ?>
+						</div>
 				</div>
-				<div class="program-quote container prog-hero-quote">
-					<?php echo CFS()->get('hero1_quote')?>
-				</div>
-		</section>
 
-		<section class="program-hero">
-				<div class="program-hero-img">
-					<?php $img_ALT = CFS()->get('hero1_quote'); ?>
-					<img src="<?php echo CFS()->get('hero2_img')?>" alt="<?php echo wp_strip_all_tags( $img_ALT ); ?>"/>
+				<div class="tri-img">
+							<img src="<?php echo CFS()->get('hero2_img')?>" alt="<?php echo wp_strip_all_tags(CFS()->get( 'hero2_quote' ) ); ?>"/>
+						<div class="tri-img-quote container">
+							<?php echo CFS()->get( 'hero2_quote' ); ?>
+						</div>
 				</div>
-				<div class="program-quote container prog-hero-quote">
-					<?php echo CFS()->get('hero2_quote')?>
-				</div>
-		</section>
 
-		<section class="program-hero">
-				<div class="program-hero-img">
-					<?php $img_ALT = CFS()->get('hero1_quote'); ?>
-					<img src="<?php echo CFS()->get('hero3_img')?>" alt="<?php echo wp_strip_all_tags( $img_ALT ); ?>"/>
-				</div>
-				<div class="program-quote container prog-hero-quote">
-					<?php echo CFS()->get('hero3_quote')?>
+				<div class="tri-img">
+							<img src="<?php echo CFS()->get('hero3_img')?>" alt="<?php echo wp_strip_all_tags(CFS()->get( 'hero3_quote' ) ); ?>"/>
+						<div class="tri-img-quote container">
+							<?php echo CFS()->get( 'hero3_quote' ); ?>
+						</div>
 				</div>
 		</section>
-</div>
 		<!-- Step 1 -->
 		<section class="container">
 			<div class="accordian-box">
@@ -118,6 +109,7 @@ get_header();?>
 				 <?php $logo_image_ALT = get_post_meta($logo_image_ID, '_wp_attachment_image_alt', true); ?>
 				 <?php $logo_image_URL_data = wp_get_attachment_metadata($logo_image_ID, true); ?>
 				 <?php $logo_image_URL = $logo_image_URL_data["file"]; ?>
+				 <?php echo $logo_image_URL_data["link"]; ?>
 				 <li>
 					 <a href="<?php echo $row['sbs_website'] ?>" target="_blank">
 					 <img src="<?php echo $upload_path . $logo_image_URL; ?>" alt="<?php echo get_post_meta($row['sbs_sponsor_logo'], '_wp_attachment_image_alt', true)?>" />

@@ -53,34 +53,34 @@
 //bxslider1 styles
 
 .bxstyles1 {
-    margin-bottom: -40px;
-    @include desktop {
-        margin-bottom: -61px;
-    }
-    .bx-wrapper .bx-viewport {
-    	-moz-box-shadow: none;
-    	-webkit-box-shadow: none;
-    	box-shadow: none;
-    	border:  0;
-    	left: 0;
-    	background: #fff;
-    }
-    .bx-wrapper {
-        width: 100vw;
-    }
-    .bx-wrapper .bx-pager,
-    .bx-wrapper .bx-controls-auto {
-    	position: absolute;
-    	bottom: 5px;
-    	width: 100%;
-    }
-    .bx-wrapper .bx-pager.bx-default-pager a {
-    	background: rgba(102,102,102,0.7);
-    }
-    .bx-wrapper .bx-pager.bx-default-pager a:hover,
-    .bx-wrapper .bx-pager.bx-default-pager a.active {
-    	background: #fff;
-    }
+  margin-bottom: -40px;
+  @include desktop {
+    margin-bottom: -61px;
+  }
+  .bx-wrapper .bx-viewport {
+    -moz-box-shadow: none;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    border:  0;
+    left: 0;
+    background: #fff;
+  }
+  .bx-wrapper {
+    width: 100vw;
+  }
+  .bx-wrapper .bx-pager,
+  .bx-wrapper .bx-controls-auto {
+    position: absolute;
+    bottom: 5px;
+    width: 100%;
+  }
+  .bx-wrapper .bx-pager.bx-default-pager a {
+    background: rgba(102,102,102,0.7);
+  }
+  .bx-wrapper .bx-pager.bx-default-pager a:hover,
+  .bx-wrapper .bx-pager.bx-default-pager a.active {
+    background: #fff;
+  }
 
 }
 
@@ -145,15 +145,15 @@
 .newsletter {
   padding: 2rem 0;
   @include desktop {
-      padding-bottom: 0;
+    padding-bottom: 0;
   }
 
-    h1 {
-        margin-top: 0;
-        text-align: center;
-        font-size: 1.2rem;
-        @include desktop {
-             font-size: 2.3rem;
+  h1 {
+    margin-top: 0;
+    text-align: center;
+    font-size: 1.2rem;
+    @include desktop {
+      font-size: 2.3rem;
 
     }
   }
@@ -634,32 +634,6 @@
 .involved-copy h3{
   color: $color__deepblue-brand;
 }
-.little-sister-hero {
-  background: url('../../assets/images/big-little-bench.jpg') 0 0 no-repeat;
-  background-size: cover;
-  height: 300px;
-  margin: 2rem 0;
-  @include desktop {
-    background: url('../../assets/images/big-little-bench.jpg') 0 -100px no-repeat;
-    background-size: 115%;
-    height: 600px;
-  }
-}
-.little-sister-quote {
-  color: #fff;
-  font-size: 1.15rem;
-  max-width: 50%;
-  padding-left: 2rem;
-  position: relative;
-  text-align: left;
-  top: 50%;
-  transform: translateY(-50%);
-  @include desktop {
-    font-size: 2rem;
-    max-width: 35%;
-    padding-left: 5rem;
-  }
-}
 .sponsor-grid, .sponsor-grid ul {
   width: 100%;
   margin: 3rem 0;
@@ -693,52 +667,6 @@
   }
 }
 
-/* Volunteer programs -----------------------------------------*/
-.hero-grid {
-  @include desktop {
-    display: flex;
-    justify-content: space-between;
-  }
-}
-.program-hero {
-  width: 100%;
-  margin-bottom: 2rem;
-  position: relative;
-  @include desktop {
-    flex: 0 1 33%;
-    width: 33%;
-  }
-  .program-hero-img {
-    height: 375px;
-    overflow: hidden;
-    @include desktop {
-      height: 375px;
-    }
-    img {
-      transform: translateY(-15%);
-      overflow: hidden;
-      @include desktop {
-        max-height: none;
-        max-width: 100%;
-      }
-    }
-  }
-  .program-quote {
-    background: rgba(50, 50, 50, .5);
-    color: #fff;
-    margin-bottom: 2rem;
-    position: absolute;
-    width: 100%;
-    bottom: 0;
-    p {
-      line-height: 1.25;
-    }
-  }
-  .prog-hero-quote {
-    font-size: 1.5rem;
-  }
-}
-
 /* Refer A Little Page -------------------------------------------------*/
 
 .quote-image-container {
@@ -762,7 +690,7 @@
 .press-releases,
 .page-header,
 .host-a-fund-title
- {
+{
   text-align: center;
 }
 
@@ -799,10 +727,10 @@ ul {
   flex-direction: column;
   padding: 2rem 2.5rem 0 2rem;
   height: 16.9rem;
-    @include desktop {
-        padding: 5rem 0 0 5rem;
-        height: 77vh;
-    }
+  @include desktop {
+    padding: 5rem 0 0 5rem;
+    height: 77vh;
+  }
 
   .little-sister-quote {
     padding: 0.5rem;
@@ -892,10 +820,10 @@ ul {
   flex-direction: column;
   padding: 2rem 2.5rem 0 2rem;
   height: 16.9rem;
-    @include desktop {
-        padding: 5rem 0 0 5rem;
-        height: 77vh;
-    }
+  @include desktop {
+    padding: 5rem 0 0 5rem;
+    height: 77vh;
+  }
 
   .ways2give-quote {
     padding: 0.5rem;
@@ -1081,7 +1009,7 @@ ul {
   flex-direction: column;
   padding: 30px;
   @include desktop {
-       padding: 0 30px;
+    padding: 0 30px;
   }
   h1 {
     font-size: 1.3rem;
@@ -1140,16 +1068,16 @@ ul {
     line-height: 32px;
     color: #fff;
   }
-    @include desktop {
-        padding: 3rem 0 0 4rem;
-        height: 77vh;
-        h1 {
-            font-size: 45px;
-            width: 490px;
-            line-height: 55px;
-            color: #fff;
-        }
+  @include desktop {
+    padding: 3rem 0 0 4rem;
+    height: 77vh;
+    h1 {
+      font-size: 45px;
+      width: 490px;
+      line-height: 55px;
+      color: #fff;
     }
+  }
 }
 
 .fundraiser-event-hero {
@@ -1227,7 +1155,7 @@ div#pp_full_res img{
 }
 
 .not-found {
-    .page-content {
-        text-align: center;
-    }
+  .page-content {
+    text-align: center;
+  }
 }
