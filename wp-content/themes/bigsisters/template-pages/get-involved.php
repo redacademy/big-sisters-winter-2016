@@ -28,8 +28,8 @@ get_header();?>
 						<hr>
 						<h4>Event and Fundraising Admin Volunteer Opportunity</h4>
 						<p>The fundraising team is looking for a superstar volunteer to help with upcoming events and various administrative tasks. Download the <a href="" target="_blank">full volunteer posting here.</a> To apply send your resume and cover letter to Meagan Smith, Events Manager at <a href="mailto:msmith@bigsisters.bc.ca">msmith@bigsisters.bc.ca</a> by March 14th, 2016</p>
-					<hr>
-					<p>Interested in being a Big Brother? Contact Big Brothers of Greater Vancouver at 604-876-2447 or visit <a href="http://www.bigbrothersvancouver.com" target="_blank">http://www.bigbrothersvancouver.com</a></p>
+						<hr>
+						<p>Interested in being a Big Brother? Contact Big Brothers of Greater Vancouver at 604-876-2447 or visit <a href="http://www.bigbrothersvancouver.com" target="_blank">http://www.bigbrothersvancouver.com</a></p>
 					</div>
 				</div>
 			</div>
@@ -43,11 +43,11 @@ get_header();?>
 						<i class="fa fa-plus-circle"></i>
 					</div>
 					<div class="acr-box-content container">
-							<?php
-							$args = array('post_type' => 'career', 'posts_per_page' => -1);
-							$all_careers = get_posts( $args );
-							?>
-							<?php if ( have_posts() ) : ?>
+						<?php
+						$args = array('post_type' => 'career', 'posts_per_page' => -1);
+						$all_careers = get_posts( $args );
+						?>
+						<?php if ( have_posts() ) : ?>
 							<?php foreach($all_careers as $post) : setup_postdata( $post ); ?>
 								<a href="<?php the_permalink() ?>"><p><?php the_title(); ?></p></a>
 							<?php endforeach; wp_reset_postdata(); ?>
@@ -60,23 +60,21 @@ get_header();?>
 		</section>
 
 		<!-- Refer a Little Sisiter -->
-		<section>
+		<section class="page-hero">
 			<h2 class="involved-header">Refer A Little Sister</h2>
-			<div class="little-sister-hero">
-				<div class="little-sister-quote">
-					<p>"Big Sisters is the best thing that has happenend to our family!"</p>
-					<a href="<?php get_template_directory_uri(); ?>/story" class="button-brightblue">Learn More</a>
-				</div>
+			<img src="<?php echo CFS()->get('hero_image'); ?>" alt="Read more Big Sisters Success Stories" />
+			<div class="hero-quote">
+				<?php echo CFS()->get('hero_quote'); ?>
 			</div>
 		</section>
 
 		<!-- Other ways to get involved -->
-	<?php include_once(trailingslashit( get_template_directory() ).'inc/otherways-involved.php'); ?>
+		<?php include_once(trailingslashit( get_template_directory() ).'inc/otherways-involved.php'); ?>
 
 		<!-- Sponsor thank you -->
 		<section class="container">
-				<?php include_once(trailingslashit( get_template_directory() ).'inc/sponsor-grid.php'); ?>
-	</section>
+			<?php include_once(trailingslashit( get_template_directory() ).'inc/sponsor-grid.php'); ?>
+		</section>
 	</main> <!-- #main -->
 </div> <!-- #primary -->
 

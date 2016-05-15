@@ -50,3 +50,73 @@
 .bypostauthor {
 	display: block;
 }
+
+/* Tri Hero Images */
+.tri-img-grid {
+  @include desktop {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.tri-img {
+  background: #663399;
+  flex: 0 1 100%;
+  height: 375px;
+  margin-bottom: 2rem;
+  overflow: hidden;
+  position: relative;
+  img {
+    top: 50%;
+    left: 50%;
+    max-width: none;;
+    max-height: 100%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+  }
+  @include desktop {
+    flex: 0 1 32%;
+  }
+}
+
+.tri-img-quote {
+  background: rgba(100, 100, 100, .5);
+  bottom: 0;
+  color: #fff;
+  margin-bottom: 1rem;
+  position: absolute;
+  width: 100%;
+  p {
+    font-size: 1.15rem;
+    line-height: 1.15;
+  }
+}
+
+/* Full Width Hero Image */
+.page-hero {
+  height: 400px;
+  overflow: hidden;
+  position: relative;
+  img {
+    position: absolute;
+		width: 100vw;
+  }
+  @include desktop {
+    height: 500px;
+  }
+}
+.hero-quote {
+  color: #fff;
+  font-size: 1.15rem;
+  max-width: 50%;
+  padding-left: 2rem;
+  position: absolute;
+  text-align: left;
+  top: 50%;
+  transform: translateY(-50%);
+  @include desktop {
+    font-size: 2rem;
+    max-width: 45%;
+    padding-left: 5rem;
+  }
+}
