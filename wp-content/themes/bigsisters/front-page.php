@@ -10,7 +10,21 @@ $directory = get_template_directory_uri();
 		<main id="main" class="site-main">
             <section class="hero-slider">
                 <ul class="hero-carousel">
-                    <li class="hero-carousel-cell bigsister-hero-fp hero1">
+					<?php $fields = CFS()->get( 'hero_content' );
+					foreach ( $fields as $field ) : ?>
+					<li class="hero-carousel-cell bigsister-hero-fp page-hero">
+						<img src="<?php echo $field['hero_image']; ?>" alt="Big Sisters Feature Story" />
+						<div class="hero-quote">
+						    <?php echo $field['hero_quote']; ?>
+                        </div>
+					</li>
+					<?php endforeach; ?>
+
+
+
+
+<!--
+					<li class="hero-carousel-cell bigsister-hero-fp hero1">
                         <p class="hero-quote">
                             "Becoming a Big Sister gave me purpose to my life."<br/>- Anita
                         </p>
@@ -27,7 +41,7 @@ $directory = get_template_directory_uri();
                             "Becoming a Big Sister gave me purpose to my life."<br/>- Anita
                         </p>
                         <a  href="/get-involved/" class="button-brightblue">Learn more</a>
-					</li>
+					</li> -->
                 </ul>
             </section>
             <section class="colored-menu-sections">
