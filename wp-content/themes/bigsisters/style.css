@@ -1061,11 +1061,9 @@ object {
   -webkit-flex-direction: column;
       -ms-flex-direction: column;
           flex-direction: column;
-  padding: 2rem 2.5rem 0 2rem;
   height: 16.9rem; }
   @media (min-width: 900px) {
     .bigsister-hero-fp {
-      padding: 5rem 0 0 5rem;
       height: 80vh; } }
   .bigsister-hero-fp .hero-quote {
     padding: 0.5rem;
@@ -2959,8 +2957,7 @@ div#pp_full_res img {
 .host-fundraiser-event {
   background-color: #F0F0F0;
   padding: 2rem 0 1rem;
-  text-align: center;
-  margin: 0 auto; }
+  text-align: center; }
   @media (min-width: 900px) {
     .host-fundraiser-event {
       padding: 5rem 0; } }

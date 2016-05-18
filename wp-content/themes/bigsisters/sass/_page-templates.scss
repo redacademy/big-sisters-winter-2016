@@ -26,10 +26,10 @@
 .bigsister-hero-fp {
   display: flex;
   flex-direction: column;
-  padding: 2rem 2.5rem 0 2rem;
+  // padding: 2rem 2.5rem 0 2rem;
   height: 16.9rem;
   @include desktop {
-    padding: 5rem 0 0 5rem;
+    // padding: 5rem 0 0 5rem;
     height: 80vh;
   }
   .hero-quote {
