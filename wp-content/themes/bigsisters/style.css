@@ -1044,15 +1044,6 @@ object {
   list-style-type: none;
   margin: 0 auto;
   padding-left: 0; }
-  .hero-slider ul .hero1 {
-    background: url("../../assets/images/hero-images/hero-donate.jpg") no-repeat center center;
-    background-size: cover; }
-  .hero-slider ul .hero2 {
-    background: url("../../assets/images/hero-images/hero-fishing.jpg") no-repeat center center;
-    background-size: cover; }
-  .hero-slider ul .hero3 {
-    background: url("../../assets/images/hero-images/hero-big-little-snow.jpg") no-repeat center center;
-    background-size: cover; }
 
 .fp-quote {
   position: absolute;
