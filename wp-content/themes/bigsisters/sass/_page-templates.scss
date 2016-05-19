@@ -28,27 +28,28 @@
     top: 5px;
     left: 20px;
     width: 14rem;
+    height: 16rem;
     @include desktop {
-        top: 20px;
+        top: 40px;
         left: 50px;
         width: 16.5rem;
     }
+    p:first-child{
+            background-color: rgba(100, 100, 100, 0.3);
+            padding: 0.5rem 1rem 0.5rem 0.5rem;
+            line-height: 1.5rem;
+            color: #fff;
+            font-size: 1rem;
+            @include desktop {
+                    width: 29.6rem;
+                    padding: 0.5rem 1.5rem 0.5rem 0;
+                    line-height: 2.7rem;
+                    font-size: 2.15rem;
+                    height: 168px;
+            }
+    }
 }
 
-.fp-quote p:first-child{
-        background-color: rgba(100, 100, 100, 0.3);
-        padding: 0.5rem 1rem 0.5rem 0.5rem;
-        line-height: 1.5rem;
-        color: #fff;
-        font-size: 1rem;
-        @include desktop {
-                width: 29.6rem;
-                padding: 0.5rem 1.5rem 0.5rem 0;
-                line-height: 2.7rem;
-                font-size: 2.15rem;
-                height: 168px;
-        }
-}
 
 //flickity slider styles
 
@@ -56,13 +57,17 @@
     .hero-carousel-cell {
         position: relative;
         width: 100vw;
-        height: 16.9rem;
+        height: 14.5rem;
         @include desktop {
           height: 80vh;
       }
     }
     .flickity-page-dots {
-        padding: 60px;
+        position: absolute;
+        bottom: 10px;
+        @include desktop {
+            bottom: 40px;
+        }
         .dot {
             background-color: rgba(128, 128, 128, 0.8);
         }
