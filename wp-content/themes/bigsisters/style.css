@@ -1054,34 +1054,38 @@ object {
     background: url("../../assets/images/hero-images/hero-big-little-snow.jpg") no-repeat center center;
     background-size: cover; }
 
-.bigsister-hero-fp {
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-direction: column;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  height: 16.9rem; }
+.fp-quote {
+  position: absolute;
+  top: 5px;
+  left: 20px;
+  width: 14rem; }
   @media (min-width: 900px) {
-    .bigsister-hero-fp {
-      height: 80vh; } }
-  .bigsister-hero-fp .hero-quote {
-    padding: 0.5rem;
-    line-height: 1.5rem;
-    width: 16.5rem;
-    color: #fff;
-    background-color: rgba(100, 100, 100, 0.3);
-    font-size: 1.2rem; }
-    @media (min-width: 900px) {
-      .bigsister-hero-fp .hero-quote {
-        width: 29.6rem;
-        line-height: 2.7rem;
-        font-size: 2.15rem;
-        padding: 1rem 0 0 1rem;
-        height: 168px; } }
+    .fp-quote {
+      top: 20px;
+      left: 50px;
+      width: 16.5rem; } }
+
+.fp-quote p:first-child {
+  background-color: rgba(100, 100, 100, 0.3);
+  padding: 0.5rem 1rem 0.5rem 0.5rem;
+  line-height: 1.5rem;
+  color: #fff;
+  font-size: 1rem; }
+  @media (min-width: 900px) {
+    .fp-quote p:first-child {
+      width: 29.6rem;
+      padding: 0.5rem 1.5rem 0.5rem 0;
+      line-height: 2.7rem;
+      font-size: 2.15rem;
+      height: 168px; } }
 
 .hero-carousel .hero-carousel-cell {
-  width: 100vw; }
+  position: relative;
+  width: 100vw;
+  height: 16.9rem; }
+  @media (min-width: 900px) {
+    .hero-carousel .hero-carousel-cell {
+      height: 80vh; } }
 
 .hero-carousel .flickity-page-dots {
   padding: 60px; }
