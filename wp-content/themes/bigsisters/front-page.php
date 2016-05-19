@@ -12,9 +12,9 @@ $directory = get_template_directory_uri();
                 <ul class="hero-carousel">
 					<?php $fields = CFS()->get( 'hero_content' );
 					foreach ( $fields as $field ) : ?>
-					<li class="hero-carousel-cell bigsister-hero-fp page-hero">
+					<li class="hero-carousel-cell page-hero">
 						<img src="<?php echo $field['hero_image']; ?>" alt="Big Sisters Feature Story" />
-						<div class="hero-quote">
+						<div class="hero-quote fp-quote">
 						    <?php echo $field['hero_quote']; ?>
                         </div>
 					</li>
