@@ -6,12 +6,17 @@ get_header(); ?>
 
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main">
+			
+			<?php $fields = CFS()->get( 'hero_content' );
+			foreach ( $fields as $field ) : ?>
 			<section class="page-hero">
-				<img src="<?php echo CFS()->get('hero_image');?>" alt="Host a fundraising event hero image" />
+				<img src="<?php echo $field['hero_image']; ?>" alt="Host a big little event hero image" />
 				<div class="hero-quote">
-					<?php echo CFS()->get('hero_quote'); ?>
+					<?php echo $field['hero_quote']; ?>
 				</div>
 			</section>
+			<?php endforeach; ?>
+
             <section class="host-activity-inforation-panels">
                 <h1 class="host-bl-activity-title">
                     Host a Big Little Activity
