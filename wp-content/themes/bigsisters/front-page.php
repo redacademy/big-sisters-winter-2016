@@ -61,38 +61,29 @@ $directory = get_template_directory_uri();
                     <a class="button-white" href="#">Sign Up</a>
                 </form>
             </section>
-			<section class="hero-stories">
-				<a href="/story/">
-	                <ul>
-	                    <li class="individual-hero-stories">
-							<div class="hero-quote-wrap">
-		                        <p class="stories-quote">
-		                            "Offering my time and <span class="quote-orange">support to my little sister</span>
-									is one of the most <span class="quote-green">fulfilling</span> things I have done in my life."
-		                        </p>
-								<p class="quoter">- Big Sister Carolyn</p>
-							</div>
-	                    </li>
-						<li class="individual-hero-stories">
-							<div class="hero-quote-wrap">
-		                        <p class="stories-quote">
-		                            <span class="quote-dusk">92%</span> of  Little Sisters
-									<span class="quote-blue">feel confident</span>
-		                        </p>
-							</div>
-	                    </li>
-						<li class="individual-hero-stories">
-							<div class="hero-quote-wrap">
-		                        <p class="stories-quote">
-		                            "I have seen the girls <span class="quote-green">develop new friendships</span>
-									with each other and display greater <span class="quote-orange">confidence.</span>"
-		                        </p>
-								<p class="quoter">- Shanny, Go Girls Mentor</p>
-							</div>
-	                    </li>
-	                </ul>
-				</a>
-            </section>
+			<section class="tri-img-grid container">
+				<div class="tri-img">
+					<img src="<?php echo CFS()->get('hero1_img');?>"
+						alt="<?php echo wp_strip_all_tags(CFS()->get('hero1_quote'));?>"/>
+					<div class="tri-img-quote container">
+						<?php echo CFS()->get('hero1_quote');?>
+					</div>
+				</div>
+				<div class="tri-img">
+					<img src="<?php echo CFS()->get('hero2_img');?>"
+						alt="<?php echo wp_strip_all_tags(CFS()->get('hero2_quote'));?>"/>
+					<div class="tri-img-quote container">
+						<?php echo CFS()->get('hero2_quote');?>
+					</div>
+				</div>
+				<div class="tri-img">
+					<img src="<?php echo CFS()->get('hero3_img');?>"
+						alt="<?php echo wp_strip_all_tags(CFS()->get('hero3_quote'));?>"/>
+					<div class="tri-img-quote container">
+						<?php echo CFS()->get('hero3_quote');?>
+					</div>
+				</div>
+			</section>
 			<section class="fp-recent-donors">
 				<h1>Thank you to our recent donors</h1>
 				<ul class="main-carousel">
