@@ -936,32 +936,6 @@ ul {
 
 // ------------- Host a fundraiser event page & some Host a big little event -------------------------- //
 
-.fundraiser-event-hero, .big-little-event-hero {
-  height: 16.9rem;
-  padding: 20px 0 0 20px;
-  h1 {
-    width: 200px;
-    font-size: 23px;
-    line-height: 32px;
-    color: #fff;
-  }
-  @include desktop {
-    padding: 3rem 0 0 4rem;
-    height: 77vh;
-    h1 {
-      font-size: 45px;
-      width: 490px;
-      line-height: 55px;
-      color: #fff;
-    }
-  }
-}
-
-.fundraiser-event-hero {
-  background: url('../../assets/images/hero-images/hero-host-a-fundraiser.jpg') no-repeat center center;
-  background-size: cover;
-}
-
 .host-fundraiser-title, .host-bl-activity-title  {
   text-align: center;
   margin: 30px 0;
