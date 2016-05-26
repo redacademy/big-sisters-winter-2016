@@ -6,11 +6,12 @@ get_header(); ?>
 
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main">
-            <section class="fundraiser-event-hero">
-                <h1>
-                    Fundraising events are the heart and soul of Big Sisters
-                </h1>
-            </section>
+			<section class="page-hero">
+				<img src="<?php echo CFS()->get('hero_image');?>" alt="Host a fundraising event hero image" />
+				<div class="hero-quote">
+					<?php echo CFS()->get('hero_quote'); ?>
+				</div>
+			</section>
             <section class="host-fundraiser-inforation-panels">
                 <h1 class="host-fundraiser-title">
                     Host a Fundraising Event
