@@ -61,7 +61,7 @@ $directory = get_template_directory_uri();
                     <a class="button-white" href="#">Sign Up</a>
                 </form>
             </section>
-			<section class="tri-grid container">
+			<section class="tri-img-grid container">
 				<div class="tri-img">
 					<img src="<?php echo CFS()->get('hero1_img');?>"
 						alt="<?php echo wp_strip_all_tags(CFS()->get('hero1_quote'));?>"/>
