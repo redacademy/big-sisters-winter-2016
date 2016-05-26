@@ -6,11 +6,12 @@ get_header(); ?>
 
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main">
-            <section class="big-little-event-hero">
-                <h1>
-                    Activities provide opportunities to build friendships, confidence and FUN!
-                </h1>
-            </section>
+			<section class="page-hero">
+				<img src="<?php echo CFS()->get('hero_image');?>" alt="Host a fundraising event hero image" />
+				<div class="hero-quote">
+					<?php echo CFS()->get('hero_quote'); ?>
+				</div>
+			</section>
             <section class="host-activity-inforation-panels">
                 <h1 class="host-bl-activity-title">
                     Host a Big Little Activity
