@@ -6,7 +6,7 @@ get_header(); ?>
 
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main">
-			
+
 			<?php $fields = CFS()->get( 'hero_content' );
 			foreach ( $fields as $field ) : ?>
 			<section class="page-hero">
@@ -28,12 +28,7 @@ get_header(); ?>
                             <i class="fa fa-plus-circle"></i>
                         </div>
                         <div class="acr-box-content container">
-                            Duis dapibus non tortor vitae congue.
-                            Donec ut facilisis leo. Donec tincidunt condimentum ex, eu fermentum
-                            felis venenatis non. Sed molestie dapibus tellus, id ultricies tellus
-                            tempus ac. Nam nunc est, vehicula sit amet pretium ac, accumsan non
-                            justo. Curabitur justo lectus, sodales at placerat vitae,
-                            facilisis vel leo.
+                            <?php echo CFS()->get('step_1'); ?>
                         </div>
                     </div>
 				</div>
@@ -44,12 +39,7 @@ get_header(); ?>
                             <i class="fa fa-plus-circle"></i>
                         </div>
                         <div class="acr-box-content container">
-                            Duis dapibus non tortor vitae congue.
-                            Donec ut facilisis leo. Donec tincidunt condimentum ex, eu fermentum
-                            felis venenatis non. Sed molestie dapibus tellus, id ultricies tellus
-                            tempus ac. Nam nunc est, vehicula sit amet pretium ac, accumsan non
-                            justo. Curabitur justo lectus, sodales at placerat vitae,
-                            facilisis vel leo.
+                            <?php echo CFS()->get('step_2'); ?>
                         </div>
                     </div>
 				</div>
@@ -60,12 +50,7 @@ get_header(); ?>
                             <i class="fa fa-plus-circle"></i>
                         </div>
                         <div class="acr-box-content container">
-                            Duis dapibus non tortor vitae congue.
-                            Donec ut facilisis leo. Donec tincidunt condimentum ex, eu fermentum
-                            felis venenatis non. Sed molestie dapibus tellus, id ultricies tellus
-                            tempus ac. Nam nunc est, vehicula sit amet pretium ac, accumsan non
-                            justo. Curabitur justo lectus, sodales at placerat vitae,
-                            facilisis vel leo.
+                            <?php echo CFS()->get('step_3'); ?>
                         </div>
                     </div>
 				</div>
@@ -76,12 +61,7 @@ get_header(); ?>
                             <i class="fa fa-plus-circle"></i>
                         </div>
                         <div class="acr-box-content container">
-                            Duis dapibus non tortor vitae congue.
-                            Donec ut facilisis leo. Donec tincidunt condimentum ex, eu fermentum
-                            felis venenatis non. Sed molestie dapibus tellus, id ultricies tellus
-                            tempus ac. Nam nunc est, vehicula sit amet pretium ac, accumsan non
-                            justo. Curabitur justo lectus, sodales at placerat vitae,
-                            facilisis vel leo.
+                            <?php echo CFS()->get('step_4'); ?>
                         </div>
                     </div>
                 </div>
