@@ -1116,49 +1116,46 @@ object {
   list-style-type: none;
   margin: 0 auto;
   padding-left: 0; }
-  .hero-slider ul .hero1 {
-    background: url("../../assets/images/hero-images/hero-donate.jpg") no-repeat center center;
-    background-size: cover; }
-  .hero-slider ul .hero2 {
-    background: url("../../assets/images/hero-images/hero-fishing.jpg") no-repeat center center;
-    background-size: cover; }
-  .hero-slider ul .hero3 {
-    background: url("../../assets/images/hero-images/hero-big-little-snow.jpg") no-repeat center center;
-    background-size: cover; }
 
-.bigsister-hero-fp {
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-direction: column;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  padding: 2rem 2.5rem 0 2rem;
-  height: 16.9rem; }
+.fp-quote {
+  position: absolute;
+  top: 5px;
+  left: 20px;
+  width: 14rem;
+  height: 16rem; }
   @media (min-width: 900px) {
-    .bigsister-hero-fp {
-      padding: 5rem 0 0 5rem;
-      height: 80vh; } }
-  .bigsister-hero-fp .hero-quote {
-    padding: 0.5rem;
-    line-height: 1.5rem;
-    width: 16.5rem;
-    color: #fff;
+    .fp-quote {
+      top: 40px;
+      left: 50px;
+      width: 16.5rem; } }
+  .fp-quote p:first-child {
     background-color: rgba(100, 100, 100, 0.3);
-    font-size: 1.2rem; }
+    padding: 0.5rem 1rem 0.5rem 0.5rem;
+    line-height: 1.5rem;
+    color: #fff;
+    font-size: 1rem; }
     @media (min-width: 900px) {
-      .bigsister-hero-fp .hero-quote {
+      .fp-quote p:first-child {
         width: 29.6rem;
+        padding: 0.5rem 1.5rem 0.5rem 0;
         line-height: 2.7rem;
         font-size: 2.15rem;
-        padding: 1rem 0 0 1rem;
         height: 168px; } }
 
 .hero-carousel .hero-carousel-cell {
-  width: 100vw; }
+  position: relative;
+  width: 100vw;
+  height: 14.5rem; }
+  @media (min-width: 900px) {
+    .hero-carousel .hero-carousel-cell {
+      height: 80vh; } }
 
 .hero-carousel .flickity-page-dots {
-  padding: 60px; }
+  position: absolute;
+  bottom: 10px; }
+  @media (min-width: 900px) {
+    .hero-carousel .flickity-page-dots {
+      bottom: 40px; } }
   .hero-carousel .flickity-page-dots .dot {
     background-color: rgba(128, 128, 128, 0.8); }
   .hero-carousel .flickity-page-dots .is-selected {
