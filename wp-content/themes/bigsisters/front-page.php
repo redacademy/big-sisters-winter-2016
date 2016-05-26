@@ -61,7 +61,35 @@ $directory = get_template_directory_uri();
                     <a class="button-white" href="#">Sign Up</a>
                 </form>
             </section>
-			<section class="hero-stories">
+			<section class="tri-grid container">
+				<div class="tri-img">
+					<img src="<?php echo CFS()->get('hero1_img');?>"
+						alt="<?php echo wp_strip_all_tags(CFS()->get('hero1_quote'));?>"/>
+					<div class="tri-img-quote container">
+						<?php echo CFS()->get('hero1_quote');?>
+					</div>
+				</div>
+				<div class="tri-img">
+					<img src="<?php echo CFS()->get('hero2_img');?>"
+						alt="<?php echo wp_strip_all_tags(CFS()->get('hero2_quote'));?>"/>
+					<div class="tri-img-quote container">
+						<?php echo CFS()->get('hero2_quote');?>
+					</div>
+				</div>
+				<div class="tri-img">
+					<img src="<?php echo CFS()->get('hero3_img');?>"
+						alt="<?php echo wp_strip_all_tags(CFS()->get('hero3_quote'));?>"/>
+					<div class="tri-img-quote container">
+						<?php echo CFS()->get('hero3_quote');?>
+					</div>
+				</div>
+			</section>
+
+
+
+
+
+			<!-- <section class="hero-stories">
 				<a href="/story/">
 	                <ul>
 	                    <li class="individual-hero-stories">
@@ -92,7 +120,7 @@ $directory = get_template_directory_uri();
 	                    </li>
 	                </ul>
 				</a>
-            </section>
+            </section> -->
 			<section class="fp-recent-donors">
 				<h1>Thank you to our recent donors</h1>
 				<ul class="main-carousel">
