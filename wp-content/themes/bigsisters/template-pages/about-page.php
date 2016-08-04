@@ -14,7 +14,7 @@ get_header();?>
 			</div> <!-- .page-header -->
 
 			<div class="about-video">
-				<iframe src="https://www.youtube.com/embed/nNSrSozCeU4?&showinfo=0" allowfullscreen></iframe>
+				<iframe src="https://www.youtube.com/embed/nNSrSozCeU4?&showinfo=0&autoplay=1" allowfullscreen ></iframe>
 			</div> <!-- .about-video -->
 
 			<section class="our-vision container">

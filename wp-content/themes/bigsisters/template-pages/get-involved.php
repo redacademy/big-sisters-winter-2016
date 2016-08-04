@@ -2,38 +2,34 @@
 /**
 * Template Name: Get Involved
 **/
-
 get_header();?>
 
-<div id="primary" class="content-area">
-	<main id="main" class="site-main" role="main">
-		<header class="container story-page-copy">
-			<h1 class="page-header-style">Learn About Becoming a Mentor!</h1>
-		</header>
+	<header class="container story-page-copy">
+		<?php the_title( '<h1 class="page-header-style">', '</h1>' ); ?>
 
-		<section class="container involved-copy">
-			<?php include_once(trailingslashit( get_template_directory() ).'/inc/initatives.php'); ?>
-		</section>
-		<!-- other volunteer opportunities -->
-		<section class="container involved-copy">
-			<div class="accordian-box">
-				<div class="acr-box-div">
-					<div class="info-panel-content">
-						<p><span class="step-color">Other Volunteer Opportunities</span></p>
-						<i class="fa fa-plus-circle"></i>
-					</div>
-					<div class="acr-box-content container">
-						<h4>Activities Committee Member<br /> (6 hours/month)</h4>
-						<p>Help plan group activities for Big &amp; Little Sister matches such as sporting activities, First Nations cultural events, seasonal parties, craft days, slumber parties, and more. <a href="" target="_blank">Download volunteer application.</a></p>
-						<hr>
-						<h4>Event and Fundraising Admin Volunteer Opportunity</h4>
-						<p>The fundraising team is looking for a superstar volunteer to help with upcoming events and various administrative tasks. Download the <a href="" target="_blank">full volunteer posting here.</a> To apply send your resume and cover letter to Meagan Smith, Events Manager at <a href="mailto:msmith@bigsisters.bc.ca">msmith@bigsisters.bc.ca</a> by March 14th, 2016</p>
-						<hr>
-						<p>Interested in being a Big Brother? Contact Big Brothers of Greater Vancouver at 604-876-2447 or visit <a href="http://www.bigbrothersvancouver.com" target="_blank">http://www.bigbrothersvancouver.com</a></p>
-					</div>
+	</header>
+	<section class="container involved-copy">
+		<?php include_once(trailingslashit( get_template_directory() ).'/inc/initatives.php'); ?>
+	</section>
+	<!-- other volunteer opportunities -->
+	<section class="container involved-copy">
+		<div class="accordian-box">
+			<div class="acr-box-div">
+				<div class="info-panel-content">
+					<p><span class="step-color">Other Volunteer Opportunities</span></p>
+
+					<i class="fa fa-plus-circle"></i>
+				</div>
+				<div class="acr-box-content container">
+					<?php
+					$include = get_pages('include=408');
+					$content = apply_filters('the_content',$include[0]->post_content);
+					echo $content;
+					?>
 				</div>
 			</div>
-		</section>
+		</div>
+	</section>
 		<!-- Career opportunities -->
 		<section class="container involved-copy">
 			<div class="accordian-box">

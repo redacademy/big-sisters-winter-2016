@@ -1026,8 +1026,12 @@ a {
   overflow: hidden;
   position: relative; }
   .page-hero img {
+    top: 50%;
+    left: 50%;
     position: absolute;
-    width: 100vw; }
+    width: 100vw;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%); }
   @media (min-width: 900px) {
     .page-hero {
       height: 500px; } }
@@ -1634,7 +1638,7 @@ object {
       padding: 5rem 1rem; } }
 
 .page-template-get-involved .other-ways li:first-child, .site-main .other-ways li:first-child {
-  background: #FFCC66; }
+  background: #FF9933; }
 
 .page-template-get-involved .other-ways li:nth-child(2), .site-main .other-ways li:nth-child(2) {
   background: #006699; }
@@ -2116,28 +2120,6 @@ ul {
         width: auto; }
         .donor-contact .name-number-wrap span {
           margin-right: 50px; } }
-
-.fundraiser-event-hero, .big-little-event-hero {
-  height: 16.9rem;
-  padding: 20px 0 0 20px; }
-  .fundraiser-event-hero h1, .big-little-event-hero h1 {
-    width: 200px;
-    font-size: 23px;
-    line-height: 32px;
-    color: #fff; }
-  @media (min-width: 900px) {
-    .fundraiser-event-hero, .big-little-event-hero {
-      padding: 3rem 0 0 4rem;
-      height: 77vh; }
-      .fundraiser-event-hero h1, .big-little-event-hero h1 {
-        font-size: 45px;
-        width: 490px;
-        line-height: 55px;
-        color: #fff; } }
-
-.fundraiser-event-hero {
-  background: url("../../assets/images/hero-images/hero-host-a-fundraiser.jpg") no-repeat center center;
-  background-size: cover; }
 
 .host-fundraiser-title, .host-bl-activity-title {
   text-align: center;
