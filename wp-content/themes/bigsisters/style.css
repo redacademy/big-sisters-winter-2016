@@ -705,7 +705,7 @@ a {
     .main-navigation ul ul {
       float: left;
       position: absolute;
-      top: 8.65rem;
+      top: 7.1rem;
       left: -999em;
       z-index: 99999; }
       .main-navigation ul ul ul {
@@ -2116,28 +2116,6 @@ ul {
         width: auto; }
         .donor-contact .name-number-wrap span {
           margin-right: 50px; } }
-
-.fundraiser-event-hero, .big-little-event-hero {
-  height: 16.9rem;
-  padding: 20px 0 0 20px; }
-  .fundraiser-event-hero h1, .big-little-event-hero h1 {
-    width: 200px;
-    font-size: 23px;
-    line-height: 32px;
-    color: #fff; }
-  @media (min-width: 900px) {
-    .fundraiser-event-hero, .big-little-event-hero {
-      padding: 3rem 0 0 4rem;
-      height: 77vh; }
-      .fundraiser-event-hero h1, .big-little-event-hero h1 {
-        font-size: 45px;
-        width: 490px;
-        line-height: 55px;
-        color: #fff; } }
-
-.fundraiser-event-hero {
-  background: url("../../assets/images/hero-images/hero-host-a-fundraiser.jpg") no-repeat center center;
-  background-size: cover; }
 
 .host-fundraiser-title, .host-bl-activity-title {
   text-align: center;
