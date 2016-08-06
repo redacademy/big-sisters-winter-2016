@@ -822,7 +822,7 @@ a {
     width: 100%; }
   @media (min-width: 900px) {
     .logo-wrap {
-      width: 200px; } }
+      width: 135px; } }
 
 .sub-menu {
   background-color: #fff; }
@@ -1148,14 +1148,14 @@ object {
   height: 14.5rem; }
   @media (min-width: 900px) {
     .hero-carousel .hero-carousel-cell {
-      height: 80vh; } }
+      height: 58vh; } }
 
 .hero-carousel .flickity-page-dots {
   position: absolute;
   bottom: 10px; }
   @media (min-width: 900px) {
     .hero-carousel .flickity-page-dots {
-      bottom: 40px; } }
+      bottom: 13px; } }
   .hero-carousel .flickity-page-dots .dot {
     background-color: rgba(128, 128, 128, 0.8); }
   .hero-carousel .flickity-page-dots .is-selected {

@@ -47,14 +47,14 @@
         width: 100vw;
         height: 14.5rem;
         @include desktop {
-          height: 80vh;
+          height: 58vh;
       }
     }
     .flickity-page-dots {
         position: absolute;
         bottom: 10px;
         @include desktop {
-            bottom: 40px;
+            bottom: 13px;
         }
         .dot {
             background-color: rgba(128, 128, 128, 0.8);
