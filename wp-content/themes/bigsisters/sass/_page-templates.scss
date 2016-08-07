@@ -13,7 +13,7 @@
 
 .fp-quote {
     position: absolute;
-    top: 8rem;
+    top: 45%;
     left: 20px;
     width: 14rem;
     height: 16rem;
@@ -29,10 +29,10 @@
             color: #fff;
             font-size: 1rem;
             @include desktop {
-                    width: 29.6rem;
+                    width: 23rem;
                     padding: 0.5rem 1.5rem 0.5rem 0;
-                    line-height: 2.7rem;
-                    font-size: 2.15rem;
+                    line-height: 2rem;
+                    font-size: 1.5rem;
                     height: 168px;
             }
     }
@@ -47,7 +47,7 @@
         width: 100vw;
         height: 14.5rem;
         @include desktop {
-          height: 58vh;
+            height: 58vh;
       }
     }
     .flickity-page-dots {
@@ -104,7 +104,7 @@
   height: 14.2rem;
   margin: 1rem 0.83rem;
   @include desktop {
-    height: 10rem;
+    height: 15rem;
   }
 
   .icon-container {

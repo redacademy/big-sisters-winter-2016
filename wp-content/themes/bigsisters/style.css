@@ -1119,7 +1119,7 @@ object {
 
 .fp-quote {
   position: absolute;
-  top: 8rem;
+  top: 45%;
   left: 20px;
   width: 14rem;
   height: 16rem; }
@@ -1136,10 +1136,10 @@ object {
     font-size: 1rem; }
     @media (min-width: 900px) {
       .fp-quote p:first-child {
-        width: 29.6rem;
+        width: 23rem;
         padding: 0.5rem 1.5rem 0.5rem 0;
-        line-height: 2.7rem;
-        font-size: 2.15rem;
+        line-height: 2rem;
+        font-size: 1.5rem;
         height: 168px; } }
 
 .hero-carousel .hero-carousel-cell {
@@ -1210,7 +1210,7 @@ object {
   margin: 1rem 0.83rem; }
   @media (min-width: 900px) {
     .colored-menu {
-      height: 10rem; } }
+      height: 15rem; } }
   .colored-menu .icon-container {
     width: 5rem; }
     @media (min-width: 900px) {
