@@ -1210,12 +1210,12 @@ object {
   margin: 1rem 0.83rem; }
   @media (min-width: 900px) {
     .colored-menu {
-      height: 16rem; } }
+      height: 10rem; } }
   .colored-menu .icon-container {
     width: 5rem; }
     @media (min-width: 900px) {
       .colored-menu .icon-container {
-        width: 100px; } }
+        width: 15%; } }
     .colored-menu .icon-container img {
       width: 100%; }
   .colored-menu p {

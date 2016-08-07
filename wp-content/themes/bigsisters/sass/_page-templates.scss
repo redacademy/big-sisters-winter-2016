@@ -104,13 +104,13 @@
   height: 14.2rem;
   margin: 1rem 0.83rem;
   @include desktop {
-    height: 16rem;
+    height: 10rem;
   }
 
   .icon-container {
     width: 5rem;
     @include desktop {
-      width: 100px;
+      width: 15%;
     }
     img {
       width: 100%;
