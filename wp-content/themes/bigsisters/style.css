@@ -1119,13 +1119,13 @@ object {
 
 .fp-quote {
   position: absolute;
-  top: 45%;
-  left: 20px;
-  width: 14rem;
+  top: 55%;
+  left: 10px;
+  width: 14.5rem;
   height: 16rem; }
   @media (min-width: 900px) {
     .fp-quote {
-      top: 9rem;
+      top: 45%;
       left: 50px;
       width: 16.5rem; } }
   .fp-quote p:first-child {
