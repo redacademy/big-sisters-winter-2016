@@ -784,7 +784,7 @@ a {
   z-index: 999; }
   @media (min-width: 900px) {
     .main-navigation:not(.sub-menu) {
-      height: 140px; } }
+      height: 85px; } }
 
 .menu-main-menu-container {
   display: -webkit-flex;
@@ -804,11 +804,11 @@ a {
   text-transform: uppercase; }
 
 .main-navigation #menu-item-118 a {
-  padding: 1rem 3.5rem;
+  padding: .6rem 2.8rem;
   background: #0BB7FF;
   border-radius: 41px;
   position: absolute;
-  top: 37px;
+  top: 44px;
   margin-left: 20px; }
 
 .logo-wrap {
