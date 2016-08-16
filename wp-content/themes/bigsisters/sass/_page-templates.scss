@@ -47,7 +47,7 @@
         width: 100vw;
         height: 14.5rem;
         @include desktop {
-          height: 80vh;
+          height: 70vh;
       }
     }
     .flickity-page-dots {
@@ -104,13 +104,13 @@
   height: 14.2rem;
   margin: 1rem 0.83rem;
   @include desktop {
-    height: 16rem;
+    height: 11rem;
   }
 
   .icon-container {
     width: 5rem;
     @include desktop {
-      width: 100px;
+      width: 80px;
     }
     img {
       width: 100%;

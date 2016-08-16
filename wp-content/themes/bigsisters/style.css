@@ -1161,7 +1161,7 @@ object {
   height: 14.5rem; }
   @media (min-width: 900px) {
     .hero-carousel .hero-carousel-cell {
-      height: 80vh; } }
+      height: 70vh; } }
 
 .hero-carousel .flickity-page-dots {
   position: absolute;
@@ -1223,12 +1223,12 @@ object {
   margin: 1rem 0.83rem; }
   @media (min-width: 900px) {
     .colored-menu {
-      height: 16rem; } }
+      height: 11rem; } }
   .colored-menu .icon-container {
     width: 5rem; }
     @media (min-width: 900px) {
       .colored-menu .icon-container {
-        width: 100px; } }
+        width: 80px; } }
     .colored-menu .icon-container img {
       width: 100%; }
   .colored-menu p {
