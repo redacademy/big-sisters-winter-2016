@@ -815,6 +815,15 @@ a {
   width: 300px;
   margin-left: 20px; }
   .logo-wrap a {
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
     padding: 0; }
     .logo-wrap a :focus {
       outline: none; }

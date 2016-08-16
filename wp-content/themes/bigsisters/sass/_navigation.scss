@@ -289,6 +289,9 @@ a {
 	width: 300px;
 	margin-left: 20px;
 	a {
+		display: flex;
+		justify-content: center;
+		flex-direction: column;
 		padding: 0;
 		:focus {
 			outline: none;
