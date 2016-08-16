@@ -18,7 +18,7 @@
     width: 14rem;
     height: 16rem;
     @include desktop {
-        top: 9rem;
+        top: 45%;
         left: 50px;
         width: 16.5rem;
     }
@@ -54,7 +54,7 @@
         position: absolute;
         bottom: 10px;
         @include desktop {
-            bottom: 40px;
+            bottom: 25px;
         }
         .dot {
             background-color: rgba(128, 128, 128, 0.8);

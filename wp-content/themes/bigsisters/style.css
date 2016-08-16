@@ -1138,7 +1138,7 @@ object {
   height: 16rem; }
   @media (min-width: 900px) {
     .fp-quote {
-      top: 9rem;
+      top: 45%;
       left: 50px;
       width: 16.5rem; } }
   .fp-quote p:first-child {
@@ -1168,7 +1168,7 @@ object {
   bottom: 10px; }
   @media (min-width: 900px) {
     .hero-carousel .flickity-page-dots {
-      bottom: 40px; } }
+      bottom: 25px; } }
   .hero-carousel .flickity-page-dots .dot {
     background-color: rgba(128, 128, 128, 0.8); }
   .hero-carousel .flickity-page-dots .is-selected {
