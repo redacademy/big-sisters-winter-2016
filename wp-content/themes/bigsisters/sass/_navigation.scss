@@ -285,23 +285,22 @@ a {
 	margin-left: 20px;
 }
 
-.logo-wrap {
-	width: 300px;
-	margin-left: 20px;
-	a {
-		display: flex;
-		justify-content: center;
-		flex-direction: column;
-		padding: 0;
-		:focus {
-			outline: none;
-		}
+.main-navigation .logo-wrap {
+	margin-left: 10px;
+	min-width: 110px;
+	max-width: 130px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	&:focus {
+		outline: none;
 	}
 	img {
 		width: 100%;
 	}
 	@include desktop {
-		width: 145px;
+		margin-left: 25px;
+		max-width: 145px;
 	}
 }
 

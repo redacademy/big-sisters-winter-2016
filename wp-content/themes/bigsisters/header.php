@@ -22,9 +22,9 @@
 
 			<header id="masthead" class="site-header">
 				<nav id="site-navigation" class="main-navigation">
-					<div class="logo-wrap">
-						<a href="<?php echo esc_url( home_url( '/' ) ); ?>"><img class="header-logo" src="<?php echo get_template_directory_uri(); ?>/assets/images/bigsisters-logo.png" alt="Big Sisters of BC Lower Mainland"></a>
-					</div>
+					<a class="logo-wrap" href="<?php echo esc_url( home_url( '/' ) ); ?>">
+						<img class="header-logo" src="<?php echo get_template_directory_uri(); ?>/assets/images/bigsisters-logo.png" alt="Big Sisters of BC Lower Mainland">
+					</a>
 					<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu' ) ); ?>
 				</nav><!-- #site-navigation -->
 			</header><!-- #masthead -->

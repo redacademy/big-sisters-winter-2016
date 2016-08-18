@@ -811,27 +811,27 @@ a {
   top: 44px;
   margin-left: 20px; }
 
-.logo-wrap {
-  width: 300px;
-  margin-left: 20px; }
-  .logo-wrap a {
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-justify-content: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-flex-direction: column;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    padding: 0; }
-    .logo-wrap a :focus {
-      outline: none; }
-  .logo-wrap img {
+.main-navigation .logo-wrap {
+  margin-left: 10px;
+  min-width: 110px;
+  max-width: 130px;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center; }
+  .main-navigation .logo-wrap:focus {
+    outline: none; }
+  .main-navigation .logo-wrap img {
     width: 100%; }
   @media (min-width: 900px) {
-    .logo-wrap {
-      width: 145px; } }
+    .main-navigation .logo-wrap {
+      margin-left: 25px;
+      max-width: 145px; } }
 
 .sub-menu {
   background-color: #fff; }
