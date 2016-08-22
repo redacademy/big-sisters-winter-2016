@@ -1235,7 +1235,7 @@ object {
     margin: 0; }
 
 .newsletter {
-  padding: 2rem 0; }
+  padding: 0.3rem 0; }
   @media (min-width: 900px) {
     .newsletter {
       padding-bottom: 0; } }
@@ -1268,11 +1268,12 @@ form {
       -ms-flex-direction: column;
           flex-direction: column;
   width: 80%;
-  margin-bottom: 40px; }
+  margin-bottom: 30px; }
   form .button-white {
     border: 3px solid #006699; }
   @media (min-width: 900px) {
     form {
+      margin-bottom: 40px;
       width: 45%; } }
 
 @media (min-width: 900px) {
