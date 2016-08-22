@@ -1246,47 +1246,47 @@ object {
     @media (min-width: 900px) {
       .newsletter h1 {
         font-size: 2.3rem; } }
-  .newsletter .name-container {
-    width: 100%;
-    margin-bottom: 1.3rem; }
-    @media (min-width: 900px) {
-      .newsletter .name-container {
-        display: -webkit-flex;
-        display: -ms-flexbox;
-        display: flex;
-        -webkit-justify-content: space-between;
-            -ms-flex-pack: justify;
-                justify-content: space-between;
-        margin-bottom: 2rem; }
-        .newsletter .name-container :first-child, .newsletter .name-container :last-child {
-          margin: 0;
-          -webkit-flex-basis: 48%;
-              -ms-flex-preferred-size: 48%;
-                  flex-basis: 48%; } }
-  .newsletter form {
+  .newsletter .wpcf7 {
     display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
-    -webkit-flex-direction: column;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-align-items: center;
-        -ms-flex-align: center;
-            align-items: center;
-    width: 80%;
-    padding: 0.83rem;
-    margin: 0 auto; }
-    @media (min-width: 900px) {
-      .newsletter form {
-        width: 50%; } }
-    .newsletter form input {
-      width: 100%; }
-      @media (min-width: 900px) {
-        .newsletter form input {
-          height: 2.5rem;
-          margin-bottom: 1rem; } }
-    .newsletter form :last-child {
-      margin: 20px auto 0; }
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center; }
+  .newsletter p {
+    margin: 0; }
+    .newsletter p .wpcf7-submit {
+      margin: 0 auto; }
+    .newsletter p .ajax-loader {
+      display: none; }
+
+form {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 80%;
+  margin-bottom: 40px; }
+  form .button-white {
+    border: 3px solid #006699; }
+  @media (min-width: 900px) {
+    form {
+      width: 45%; } }
+
+@media (min-width: 900px) {
+  .name-wrap {
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+            justify-content: space-between; }
+    .name-wrap .first-name, .name-wrap .last-name {
+      -webkit-flex-basis: 49%;
+          -ms-flex-preferred-size: 49%;
+              flex-basis: 49%; } }
 
 .fp-recent-donors {
   padding: 2.5rem 2.5rem 5rem; }
