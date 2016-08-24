@@ -52,7 +52,7 @@ $directory = get_template_directory_uri();
             </section>
             <section class="newsletter">
                 <h1>Sign Up for Big Sisters Newsletter</h1>
-				<?php echo do_shortcode( '[contact-form-7 id="144" title="Newsletter Sign-up Form"]' ); ?>
+				<?php echo do_shortcode( '[contact-form-7 id="525" title="Newsletter Sign-up Form"]' ); ?>
             </section>
 			<section class="tri-img-grid container">
 				<div class="tri-img">
