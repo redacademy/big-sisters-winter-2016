@@ -14,19 +14,18 @@ get_header();?>
 				</section>
 
 		<header class="container involved-copy">
-		<?php the_title( '<h1>', '</h1>' ); ?>
+		<?php the_title( '<h1 class="refer-title">', '</h1>' ); ?>
 		</header>
 
 	<?php
-	    // TO SHOW THE PAGE CONTENTS
-	    while ( have_posts() ) : the_post(); ?> <!--Because the_content() works only inside a WP Loop -->
+	    while ( have_posts() ) : the_post(); ?>
 			<section class="container involved-copy">
-	            <?php the_content(); ?> <!-- Page Content -->
-	      </section><!-- .entry-content-page -->
+	            <?php the_content(); ?>
+	      </section>
 
 	    <?php
-	    endwhile; //resetting the page loop
-	    wp_reset_query(); //resetting the page query
+	    endwhile;
+	    wp_reset_query();
 	    ?>
 
 	</main> <!-- #main -->

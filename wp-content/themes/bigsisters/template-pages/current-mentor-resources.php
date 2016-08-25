@@ -9,79 +9,38 @@ get_header(); ?>
 		<main id="main" class="site-main" role="main">
 
 			<section class="mentor-hero">
-				<p class="little-sister-quote">We <span style="color: red">LOVE</span> our mentors are we're here to support them!</p>
+				<p class="little-sister-quote">We <span style="color: red">LOVE</span> our mentors and we're here to support them!</p>
 			</section>
 
 			<section class="upcoming-events-section container">
 				<header class="cmr-header">
-					<h2>Upcoming Big and Little Events</h2>
-						<p>
-							Check out these events happening in our own community! These are great
-							ideas to do with your Little for the upcoming weeks!
-						</p>
+					<h1 class="refer-title"><?php echo CFS()->get('page_title'); ?></h1>
+					<p>
+						<?php echo CFS()->get('introduction_paragraph'); ?>
+					</p>
 				</header>
-
-				<div class="mentor-article">
-					<img class="article-one-image" src="<?php echo CFS()->get( 'article_one_image' ); ?>" alt="<?php echo esc_html(CFS()->get( 'article_image_one_description' ) ); ?>">
-						<div class="ma-content">
-							<p class="event-date"><?php echo esc_html(CFS()->get( 'event_one_date' ) ); ?><br/>
-																		<span class="cmr-color"><?php echo esc_html(CFS()->get( 'event_one_title' ) ); ?></span></p>
-							<p class="event-description"><?php echo esc_html(CFS()->get( 'event_one_description' ) ); ?></p>
-						</div>
-				</div>
-
-				<div class="mentor-article">
-					<img class="article-two-image" src="<?php echo CFS()->get( 'article_two_image' ); ?>" alt="<?php echo esc_html(CFS()->get( 'quote_image_two_description' ) ); ?>">
-						<div class="ma-content">
-							<p class="event-date"><?php echo esc_html(CFS()->get( 'event_two_date' ) ); ?><br/>
-																		<span class="cmr-color"><?php echo esc_html(CFS()->get( 'event_two_title' ) ); ?></span></p>
-							<p class="event-description"><?php echo esc_html(CFS()->get( 'event_two_description' ) ); ?></p>
-						</div>
-				</div>
-
-				<div class="mentor-article">
-					<img class="article-three-image" src="<?php echo CFS()->get( 'article_three_image' ); ?>" alt="<?php echo esc_html(CFS()->get( 'quote_image_three_description' ) ); ?>">
-						<div class="ma-content">
-							<p class="event-date"><?php echo esc_html(CFS()->get( 'event_three_date' ) ); ?><br/>
-																		<span class="cmr-color"><?php echo esc_html(CFS()->get( 'event_three_title' ) ); ?></span></p>
-							<p class="event-description"><?php echo esc_html(CFS()->get( 'event_three_description' ) ); ?></p>
-						</div>
-				</div>
-
-				<div class="mentor-article">
-					<img class="article-four-image" src="<?php echo CFS()->get( 'article_four_image' ); ?>" alt="<?php echo esc_html(CFS()->get( 'quote_image_four_description' ) ); ?>">
-						<div class="ma-content">
-							<p class="event-date"><?php echo esc_html(CFS()->get( 'event_four_date' ) ); ?><br/>
-																		<span class="cmr-color"><?php echo esc_html(CFS()->get( 'event_four_title' ) ); ?></span></p>
-							<p class="event-description"><?php echo esc_html(CFS()->get( 'event_four_description' ) ); ?></p>
-						</div>
-				</div>
-			</section>
 
 			<section class="art-resc-title container">
 				<h2>Articles and Resources</h2>
 			</section>
 
-				<ul class="ar-grid container">
-					<li class="grid-icon">
-						<a href="#"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/mentor-resources-images/healthy-eating-icon.png" alt="Big Sisters Healthy Eating Resource"><br/>Healthy Eating</a>
-					</li>
-					<li class="grid-icon">
-						<a href="#"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/mentor-resources-images/lgtb-icon.png" alt="Big Sisters LGTB Resource"><br/>LGTB Youth</a>
-					</li>
-					<li class="grid-icon">
-						<a href="#"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/mentor-resources-images/fitting-in-icon.png" alt="Big Sisters Fitting In Resource"><br/>Fitting In</a>
-					</li>
-					<li class="grid-icon">
-						<a href="#"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/mentor-resources-images/grief-icon.png" alt="Big Sisters Grief Resource"><br/>Grief</a>
-					</li>
-					<li class="grid-icon">
-						<a href="#"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/mentor-resources-images/pregnancy-icon.png" alt="Big Sisters Pregnancy Resource"><br/>Teenage Pregnancy</a>
-					</li>
-					<li class="grid-icon">
-						<a href="#"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/mentor-resources-images/hiv-icon.png" alt="Big Sisters HIV Resource"><br/>HIV</a>
-					</li>
-				</ul>
+			<ul class="ar-grid container">
+				<?php
+				$upload_path = content_url() . '/uploads/';
+				$loop = CFS()->get('resource_categories');
+				foreach($loop as $row) : ?>
+				<?php $logo_image_ID = $row['category_icon']; ?>
+				<?php $logo_image_ALT = get_post_meta($logo_image_ID, '_wp_attachment_image_alt', true); ?>
+				<?php $logo_image_URL_data = wp_get_attachment_metadata($logo_image_ID, true); ?>
+				<?php $logo_image_URL = $logo_image_URL_data['file']; ?>
+				<li class="grid-icon">
+					<a href="<?php echo $row['resource_link']; ?>" target="_blank" >
+					<img src="<?php echo $upload_path . $logo_image_URL; ?>" alt="<?php echo get_post_meta($row['category_icon'], '_wp_attachment_image_alt', true)?>" />
+					<br /><?php echo $row['category_name'] ?>
+				</a>
+				</li>
+			<?php endforeach; ?>
+			</ul>
 
 		</main><!-- #main -->
 	</div><!-- #primary -->
