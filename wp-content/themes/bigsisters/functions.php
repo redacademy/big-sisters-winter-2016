@@ -95,6 +95,7 @@ if ( ! function_exists( 'big_sisters_setup' ) ) :
 
 			wp_enqueue_script( 'red-starter-skip-link-focus-fix', get_template_directory_uri() . '/build/js/skip-link-focus-fix.min.js', array(), '20130115', true );
 			wp_enqueue_script( 'script', get_template_directory_uri() . '/js/main.js', array ( 'jquery' ), 1.1, true);
+			wp_enqueue_script( 'YTplayer', get_template_directory_uri() . '/js/ytplayer.js', array(), true );
 
 
 			if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {

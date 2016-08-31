@@ -13,10 +13,11 @@ get_header();?>
 				<h1 class="page-header-style">Who We Are</h1>
 			</div> <!-- .page-header -->
 
-			<div class="about-video">
-				<iframe src="https://www.youtube.com/embed/nNSrSozCeU4?&showinfo=0" allowfullscreen ></iframe>
+      <a id="jump-video"></a>
+			<div class="about-video" id="YTplayer">
 			</div> <!-- .about-video -->
 
+      <a id="jump-vision"></a>
 			<section class="our-vision container">
 				<div class="vision">
 					<h2>Our Vision</h2>
@@ -26,6 +27,7 @@ get_header();?>
 
 			<hr>
 
+      <a id="jump-mission"></a>
 			<section class="our-mission-beliefs container">
 
 				<div class="mission">
@@ -37,9 +39,10 @@ get_header();?>
 
 			<hr>
 
+      <a id="jump-values"></a>
 			<section class="our-beliefs container">
-
-				<h2>Our Beliefs</h2>
+        <div class="container">
+				<h2>Core Values</h2>
 				<?php echo CFS()->get('beliefs'); ?>
 
 				<div class="accordian-box">
@@ -55,30 +58,10 @@ get_header();?>
 
 					</div> <!-- .acr-box-div -->
 				</div> <!-- .accordian-box -->
-
+      </div>
 			</section> <!-- .our-beliefs -->
 
-			<section class="recent-news">
-				<div class="container">
-					<h2>Recent News</h2>
-					<?php
-					$args = array('post_type' => 'news', 'order' => 'ASC', 'posts_per_page' => 2);
-					$all_news = get_posts( $args );
-					?>
-					<?php if ( have_posts() ) : ?>
-						<?php foreach($all_news as $post) : setup_postdata( $post ); ?>
-							<div class="about-news">
-								<?php the_title('<h2 class="news-title">', '</h2>'); ?>
-								<?php echo CFS()->get('excerpt')?>
-							</div>
-							<a href="<?php the_permalink() ?>" class="button-white">Read More</a>
-						<?php endforeach; wp_reset_postdata(); ?>
-					<?php else : ?>
-						<?php get_template_part( 'template-parts/content', 'none' ); ?>
-					<?php endif; ?>
-				</div>
-			</section> <!-- .recent-news -->
-
+      <a id="jump-directors"></a>
 			<section class="board-advisors container">
 				<h2>Board of Directors</h2>
 
@@ -121,7 +104,8 @@ get_header();?>
 
 					</div> <!-- .acr-box-div -->
 				</div> <!-- .accordian-box -->
-
+        
+        <a id="jump-honourary"></a>
 				<h2>Honourary Advisory Board</h2>
 
 				<div class="accordian-box">
@@ -140,6 +124,7 @@ get_header();?>
 
 			</section> <!-- .board-advisors -->
 
+      <a id="jump-supporters"></a>
 			<section class="supporters container">
 				<h2>Our Supporters</h2>
 				<?php echo CFS()->get('supporters_paragraph'); ?>
