@@ -56,12 +56,19 @@ get_header();?>
 		</section>
 
 		<!-- Refer a Little Sisiter -->
-		<section class="page-hero">
+
+		<section class="container">
 			<h2 class="involved-header">Refer A Little Sister</h2>
-			<img src="<?php echo CFS()->get('hero_image'); ?>" alt="Read more Big Sisters Success Stories" />
+		</section>
+		<section class="page-hero">
+		<?php $fields = CFS()->get( 'hero_content' );
+		foreach ( $fields as $field ) : ?>
+			<img src="<?php echo $field['hero_image']; ?>" alt="Read more Big Sisters Success Stories" />
 			<div class="hero-quote">
-				<?php echo CFS()->get('hero_quote'); ?>
+				<?php echo $field['hero_quote']; ?>
 			</div>
+		<?php endforeach; ?>
+
 		</section>
 
 		<!-- Other ways to get involved -->
