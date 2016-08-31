@@ -26,11 +26,11 @@
   li {
     display: flex;
     justify-content: center;
-    align-content: center;
+    align-items: flex-start;
 
     @include desktop {
       padding: 2rem;
-      margin-bottom: 5rem;
+      margin-bottom: 3rem;
     }
 
   }
@@ -55,14 +55,13 @@
   ul {
     @include desktop {
       display: flex;
-      justify-content: center;
       flex-wrap: wrap;
+      align-items: flex-start;
     }
   }
 
   li {
     @include desktop {
-      display: flex;
       flex-direction: column;
       width: 33%;
     }
@@ -71,13 +70,27 @@
   a {
     margin: 0 auto;
   }
-
+  .event-thumbnail {
+    width: 35%;
+    @include desktop {
+      width: 100%;
+    }
+  }
+  .event-content {
+    width: 65%;
+    @include desktop {
+      width: 100%;
+    }
+  }
 }
 
 .partner-events {
 
   .event-thumbnail {
-      width: 50%;
+    width: 35%;
+    @include desktop {
+      width: 65%;
+    }
   }
 
   a {
@@ -92,14 +105,11 @@
   align-items: center;
 
   .thumb-img-div {
-    width: 75%;
+    width: 50%;
 
     @include desktop {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      height: 175px;
-      margin-bottom: 2rem;
+      margin-bottom: 1rem;
+      width: 65%;
     }
   }
 
@@ -109,8 +119,8 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  width: 50%;
-
+  width: 65%;
+  margin-bottom: 2rem;
   @include desktop {
     width: 100%;
     margin-top: 1rem;
@@ -120,8 +130,8 @@
     color: $color__purple-brand;
     font-size: 1rem;
     margin-top: 0;
-    line-height: 1.25rem;
-
+    margin-bottom: 0;
+    line-height: 2rem;
     @include desktop {
       font-size: 2rem;
     }
@@ -164,5 +174,9 @@
       width: auto;
     }
   }
-
+  .entry-content {
+    img {
+      width: auto;
+    }
+  }
 }

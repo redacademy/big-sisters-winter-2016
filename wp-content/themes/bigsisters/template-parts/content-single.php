@@ -13,11 +13,11 @@
 		<?php the_title( '<h1 class="page-header-style">', '</h1>' ); ?>
 
 		<?php if ( has_post_thumbnail() ) : ?>
-			<?php the_post_thumbnail( 'large' ); ?>
+			<?php the_post_thumbnail( 'medium' ); ?>
 		<?php endif; ?>
 
 		<div class="entry-meta">
-			<?php big_sisters_posted_on(); ?>
+			<?php //big_sisters_posted_on(); ?>
 		</div><!-- .entry-meta -->
 	</header><!-- .entry-header -->
 

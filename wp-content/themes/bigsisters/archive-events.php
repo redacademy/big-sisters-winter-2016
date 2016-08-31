@@ -4,7 +4,6 @@
  *
  * @package Big_Sisters_Theme
  */
-
 get_header(); ?>
 
 	<div id="primary" class="content-area">
