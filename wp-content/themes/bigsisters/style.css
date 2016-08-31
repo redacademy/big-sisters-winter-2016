@@ -1008,10 +1008,14 @@ a {
     top: 50%;
     left: 50%;
     max-width: none;
-    max-height: 100%;
+    max-height: 150%;
     position: absolute;
     -webkit-transform: translate(-50%, -50%);
             transform: translate(-50%, -50%); }
+    @media (min-width: 900px) {
+      .tri-img img {
+        max-width: none;
+        max-height: 100%; } }
   @media (min-width: 900px) {
     .tri-img {
       -webkit-flex: 0 1 32%;
