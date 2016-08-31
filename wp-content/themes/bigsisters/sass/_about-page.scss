@@ -25,6 +25,14 @@
   }
 }
 
+.about-video-wrapper {
+  background-color: $color__offwhite-brand;
+
+    @include desktop {
+      padding: 0.5rem 0 0;
+    }
+}
+
 .about-video {
   background-color: $color__offwhite-brand;
 
@@ -74,12 +82,20 @@
 
 .our-beliefs {
 
-  h2, ul {
-    display: none;
+  ul {
+    //display: none;
+    margin-bottom: 2rem;
   }
 
   li {
-    text-align: left;
+    //text-align: left;
+    margin-left: -2rem;
+    font-size: 1.25rem;
+    list-style: none;
+    @include desktop {
+      margin-left: 0rem;
+      font-size: inherit;
+    }
   }
 
   .acr-box-content ul {
@@ -90,7 +106,7 @@
     padding-bottom: 5rem;
 
     h2 {
-      display: inline-block;
+      display: block;
     }
 
     ul {
@@ -100,7 +116,7 @@
     }
 
     .info-panel-content {
-      display: none;
+      //display: none;
     }
 
   }

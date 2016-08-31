@@ -2359,6 +2359,12 @@ div#pp_full_res img {
   .about .button-white {
     margin: 0 auto 3rem; }
 
+.about-video-wrapper {
+  background-color: #F0F0F0; }
+  @media (min-width: 900px) {
+    .about-video-wrapper {
+      padding: 0.5rem 0 0; } }
+
 .about-video {
   background-color: #F0F0F0; }
   @media (min-width: 900px) {
@@ -2467,11 +2473,17 @@ div#pp_full_res img {
     font-size: 0.9rem;
     margin: 0; }
 
-.our-beliefs h2, .our-beliefs ul {
-  display: none; }
+.our-beliefs ul {
+  margin-bottom: 2rem; }
 
 .our-beliefs li {
-  text-align: left; }
+  margin-left: -2rem;
+  font-size: 1.25rem;
+  list-style: none; }
+  @media (min-width: 900px) {
+    .our-beliefs li {
+      margin-left: 0rem;
+      font-size: inherit; } }
 
 .our-beliefs .acr-box-content ul {
   display: block; }
@@ -2480,13 +2492,11 @@ div#pp_full_res img {
   .our-beliefs {
     padding-bottom: 5rem; }
     .our-beliefs h2 {
-      display: inline-block; }
+      display: block; }
     .our-beliefs ul {
       display: inline-block;
       padding: 0 18rem;
-      margin: 0 auto; }
-    .our-beliefs .info-panel-content {
-      display: none; } }
+      margin: 0 auto; } }
 
 .about .recent-news {
   background-color: #F0F0F0;

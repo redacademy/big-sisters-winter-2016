@@ -14,8 +14,10 @@ get_header();?>
 			</div> <!-- .page-header -->
 
       <a id="jump-video"></a>
+			<div class="about-video-wrapper">
 			<div class="about-video" id="YTplayer">
 			</div> <!-- .about-video -->
+		</div>
 
       <a id="jump-vision"></a>
 			<section class="our-vision container">
@@ -41,23 +43,10 @@ get_header();?>
 
       <a id="jump-values"></a>
 			<section class="our-beliefs container">
-        <div class="container">
+        <div class="miggssion">
 				<h2>Core Values</h2>
 				<?php echo CFS()->get('beliefs'); ?>
 
-				<div class="accordian-box">
-					<div class="acr-box-div">
-
-						<div class="info-panel-content beliefs">
-							<span>Our Beliefs</span>
-							<i class="fa fa-plus-circle"></i>
-						</div> <!-- .beliefs -->
-						<div class="acr-box-content">
-							<?php echo CFS()->get('beliefs'); ?>
-						</div> <!-- .acr-box-content -->
-
-					</div> <!-- .acr-box-div -->
-				</div> <!-- .accordian-box -->
       </div>
 			</section> <!-- .our-beliefs -->
 
@@ -104,7 +93,7 @@ get_header();?>
 
 					</div> <!-- .acr-box-div -->
 				</div> <!-- .accordian-box -->
-        
+
         <a id="jump-honourary"></a>
 				<h2>Honourary Advisory Board</h2>
 
