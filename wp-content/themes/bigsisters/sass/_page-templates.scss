@@ -12,57 +12,57 @@
 }
 
 .fp-quote {
-    position: absolute;
-    top: 8rem;
-    left: 20px;
-    width: 14rem;
-    height: 16rem;
+  position: absolute;
+  top: 8rem;
+  left: 20px;
+  width: 14rem;
+  height: 16rem;
+  @include desktop {
+    top: 45%;
+    left: 50px;
+    width: 16.5rem;
+  }
+  p:first-child{
+    background-color: rgba(100, 100, 100, 0.3);
+    padding: 0.5rem 1rem 0.5rem 0.5rem;
+    line-height: 1.5rem;
+    color: #fff;
+    font-size: 1rem;
     @include desktop {
-        top: 45%;
-        left: 50px;
-        width: 16.5rem;
+      width: 29.6rem;
+      padding: 0.5rem 1.5rem 0.5rem 0;
+      line-height: 2.7rem;
+      font-size: 2.15rem;
+      height: 168px;
     }
-    p:first-child{
-            background-color: rgba(100, 100, 100, 0.3);
-            padding: 0.5rem 1rem 0.5rem 0.5rem;
-            line-height: 1.5rem;
-            color: #fff;
-            font-size: 1rem;
-            @include desktop {
-                    width: 29.6rem;
-                    padding: 0.5rem 1.5rem 0.5rem 0;
-                    line-height: 2.7rem;
-                    font-size: 2.15rem;
-                    height: 168px;
-            }
-    }
+  }
 }
 
 
 //flickity slider styles
 
 .hero-carousel {
-    .hero-carousel-cell {
-        position: relative;
-        width: 100vw;
-        height: 14.5rem;
-        @include desktop {
-          height: 70vh;
-      }
+  .hero-carousel-cell {
+    position: relative;
+    width: 100vw;
+    height: 14.5rem;
+    @include desktop {
+      height: 70vh;
     }
-    .flickity-page-dots {
-        position: absolute;
-        bottom: 10px;
-        @include desktop {
-            bottom: 25px;
-        }
-        .dot {
-            background-color: rgba(128, 128, 128, 0.8);
-        }
-        .is-selected {
-            background-color: #fff;
-        }
+  }
+  .flickity-page-dots {
+    position: absolute;
+    bottom: 10px;
+    @include desktop {
+      bottom: 25px;
     }
+    .dot {
+      background-color: rgba(128, 128, 128, 0.8);
+    }
+    .is-selected {
+      background-color: #fff;
+    }
+  }
 }
 
 // Colored section of front-page
@@ -124,55 +124,55 @@
 // Newsletter Sign Up
 
 .newsletter {
-    padding: 0.3rem 0;
-    @include desktop {
-        padding-bottom: 0;
-    }
+  padding: 0.3rem 0;
+  @include desktop {
+    padding-bottom: 0;
+  }
 
-    h1 {
-        margin-top: 0;
-        text-align: center;
-        font-size: 1.2rem;
-        @include desktop {
-            font-size: 2.3rem;
-        }
+  h1 {
+    margin-top: 0;
+    text-align: center;
+    font-size: 1.2rem;
+    @include desktop {
+      font-size: 2.3rem;
     }
-    .wpcf7 {
-        display: flex;
-        justify-content: center;
-        }
-        p {
-            margin: 0;
-            .wpcf7-submit {
-                margin: 0 auto;
-            }
-            .ajax-loader {
-                display: none;
-            }
-        }
+  }
+  .wpcf7 {
+    display: flex;
+    justify-content: center;
+  }
+  p {
+    margin: 0;
+    .wpcf7-submit {
+      margin: 0 auto;
     }
-    form {
-        display: flex;
-        flex-direction: column;
-        width: 80%;
-        margin-bottom: 30px;
-        .button-white {
-            border: 3px solid $color__deepblue-brand;
-        }
-        @include desktop {
-            margin-bottom: 40px;
-            width: 45%;
-        }
+    .ajax-loader {
+      display: none;
+    }
+  }
+}
+form {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  margin-bottom: 30px;
+  .button-white {
+    border: 3px solid $color__deepblue-brand;
+  }
+  @include desktop {
+    margin-bottom: 40px;
+    width: 45%;
+  }
 }
 
 .name-wrap {
-    @include desktop {
-        display: flex;
-        justify-content: space-between;
-        .first-name, .last-name {
-            flex-basis: 49%;
-        }
+  @include desktop {
+    display: flex;
+    justify-content: space-between;
+    .first-name, .last-name {
+      flex-basis: 49%;
     }
+  }
 }
 
 // Recent donor section

@@ -19,7 +19,7 @@
     @include desktop {
       color: $color__purple-brand;
       font-size: 2rem;
-      margin: 2.5rem ;
+      margin: 2.5rem 0;
     }
   }
 
@@ -30,16 +30,6 @@
   p {
     margin: 0;
     line-height: 1;
-  }
-
-  img {
-    height: 125px;
-    width: 125px;
-
-    @include desktop {
-      height: 175px;
-      width: 175px;
-    }
   }
 
   iframe {
@@ -54,6 +44,7 @@
 
   .google-map {
     text-align: center;
+    margin-bottom: 2rem;
   }
 
   .address, .phone-fax-email {
@@ -71,14 +62,40 @@
   }
 
 }
-
+.location-photo {
+  height: 125px;
+  width: 125px;
+  overflow: hidden;
+  position: relative;
+  @include desktop {
+    height: 175px;
+    width: 175px;
+  }
+  img {
+    position: absolute;
+    height: 100%;
+    max-width: none;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
 .locations-questions {
 
   @include desktop {
     display: flex;
     justify-content: space-around;
   }
-
+  form {
+    width: 100%;
+    .button-white {
+      border: 3px solid $color__deepblue-brand;
+    }
+    @include desktop {
+      width: 100%;
+      margin-bottom: 0;
+    }
+  }
 }
 
 .our-locations {
@@ -88,7 +105,7 @@
     height: 65rem;
     width: 45%;
     order: 2;
-    padding: 0 5rem;
+    padding: 0 2rem;
     border: solid 1px #000;
   }
 }
@@ -99,7 +116,7 @@
   @include desktop {
     height: 65rem;
     width: 45%;
-    padding: 0 5rem;
+    padding: 0 2rem;
     border: solid 1px #000;
   }
 
