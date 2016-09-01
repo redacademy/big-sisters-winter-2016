@@ -644,6 +644,15 @@ a {
     padding: 5px 0px 5px 1% !important;
     width: 100% !important; }
 
+#responsive-menu-wrapper {
+  padding-top: 6rem !important; }
+
+.responsive-menu-subarrow {
+  padding-top: .5rem !important; }
+
+.is-active .responsive-menu-inner, .is-active .responsive-menu-inner:after {
+  background-color: #663399 !important; }
+
 #responsive-menu .responsive-menu {
   display: -webkit-flex !important;
   display: -ms-flexbox !important;
@@ -776,7 +785,7 @@ a {
       -ms-flex-align: center;
           align-items: center;
   background-color: #673BB6;
-  height: 54px;
+  height: 80px;
   position: fixed;
   top: 0;
   left: 0;

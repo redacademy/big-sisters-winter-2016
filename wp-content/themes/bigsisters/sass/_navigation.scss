@@ -76,7 +76,15 @@ a {
 		}
 	}
 }
-
+#responsive-menu-wrapper {
+	padding-top: 6rem !important;
+}
+.responsive-menu-subarrow {
+	padding-top: .5rem !important;
+}
+.is-active .responsive-menu-inner, .is-active .responsive-menu-inner:after {
+		background-color: $color__purple-brand !important;
+}
 #responsive-menu .responsive-menu {
 	display: flex !important;
 	flex-direction: column !important;
@@ -247,7 +255,7 @@ a {
     justify-content: space-between;
     align-items: center;
     background-color: $color__purple-header;
-    height: 54px;
+    height: 80px;//54px;
 	position: fixed;
 	top: 0;
 	left: 0;
