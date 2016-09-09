@@ -24,7 +24,9 @@ get_header();?>
 						<?php $photo_image_ID = $row['location_image']; ?>
 						<?php $photo_image_ALT = get_post_meta($photo_image_ID, '_wp_attachment_image_alt', true); ?>
 						<?php $photo_image_URL_data = wp_get_attachment_metadata($photo_image_ID, true); ?>
-						<?php $photo_image_URL = $photo_image_URL_data['file']; ?>
+						<?php if ($photo_image_ID) {
+							$photo_image_URL = $photo_image_URL_data['file'];
+						}  ?>
 						<div class="head-office">
 							<div class="contact-location">
 								<div class="contact-info">
@@ -41,7 +43,7 @@ get_header();?>
 									</div><!--phone-fax-email-->
 								</div><!--contact-info-->
 								<div class="location-photo">
-									<?php if( isset($photo_image_URL_data['file']) ): ?>
+									<?php if( $photo_image_ID ): ?>
 									<img src="<?php echo $upload_path . $photo_image_URL; ?>" alt="<?php echo get_post_meta($row['location_image'], '_wp_attachment_image_alt', true)?>" />
 								<?php else: ?>
 									<div></div>
