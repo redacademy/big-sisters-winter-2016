@@ -7,13 +7,18 @@ get_header(); ?>
 
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main">
-            <section class="hero-dp">
-                <p>
-                    It costs $2000/year to sponsor one Little Sister mentorship. Our  donors make this happen.
-                </p>
-                <a href="#" class="button-brightblue">Donate Now</a>
-            </section>
-            <section class="why-donate">
+
+			<?php $fields = CFS()->get( 'hero_content' );
+			foreach ( $fields as $field ) : ?>
+			<section class="page-hero">
+				<img src="<?php echo $field['hero_image']; ?>" alt="Current Mentor Resource Hero Image" />
+					<div class="hero-quote">
+					<?php echo $field['hero_quote']; ?>
+			</div>
+			</section>
+			<?php endforeach; ?>
+
+            <section class="why-donate container">
                 <h1>Why Donate to Big Sisters</h1>
                 <p><?php echo CFS()->get('why_donate'); ?></p>
             </section>

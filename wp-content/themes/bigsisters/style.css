@@ -231,7 +231,7 @@ select,
 textarea {
   color: #404040;
   font-family: "Roboto", sans-serif;
-  font-size: 16px;
+  font-size: 12px;
   font-size: 1rem;
   line-height: 1.75; }
 
@@ -255,7 +255,7 @@ address {
 pre {
   background: #eee;
   font-family: "Courier 10 Pitch", Courier, monospace;
-  font-size: 15px;
+  font-size: 11.25px;
   font-size: 0.9375rem;
   line-height: 1.6;
   margin-bottom: 1.6em;
@@ -265,7 +265,7 @@ pre {
 
 code, kbd, tt, var {
   font-family: Monaco, Consolas, "Andale Mono", "DejaVu Sans Mono", monospace;
-  font-size: 15px;
+  font-size: 11.25px;
   font-size: 0.9375rem; }
 
 abbr, acronym {
@@ -284,7 +284,7 @@ big {
 --------------------------------------------------------------*/
 html {
   box-sizing: border-box;
-  font-size: 16px;
+  font-size: 12px;
   font-size: 1rem; }
 
 *,
@@ -434,7 +434,7 @@ input[type="submit"] {
   background: #0BB7FF;
   margin-bottom: 2rem;
   color: #fff;
-  font-size: 13.28px;
+  font-size: 9.96px;
   font-size: 0.83rem;
   line-height: 1;
   width: 8.33rem;
@@ -472,7 +472,7 @@ input[type="submit"] {
   background: #0BB7FF;
   margin-bottom: 2rem;
   color: #fff;
-  font-size: 13.28px;
+  font-size: 9.96px;
   font-size: 0.83rem;
   line-height: 1;
   width: 8.33rem;
@@ -508,7 +508,7 @@ input[type="submit"] {
   background: #0BB7FF;
   margin-bottom: 2rem;
   color: #fff;
-  font-size: 13.28px;
+  font-size: 9.96px;
   font-size: 0.83rem;
   line-height: 1;
   width: 8.33rem;
@@ -902,7 +902,7 @@ a {
     clip: auto !important;
     color: #21759b;
     display: block;
-    font-size: 14px;
+    font-size: 10.5px;
     font-size: 0.875rem;
     font-weight: bold;
     height: auto;
@@ -1017,14 +1017,18 @@ a {
     top: 50%;
     left: 50%;
     max-width: none;
-    max-height: 150%;
+    max-height: 100%;
     position: absolute;
     -webkit-transform: translate(-50%, -50%);
             transform: translate(-50%, -50%); }
+    @media (min-width: 700px) {
+      .tri-img img {
+        width: 100%;
+        max-height: none; } }
     @media (min-width: 900px) {
       .tri-img img {
-        max-width: none;
-        max-height: 100%; } }
+        width: auto;
+        height: 100%; } }
   @media (min-width: 900px) {
     .tri-img {
       -webkit-flex: 0 1 32%;
@@ -1032,7 +1036,7 @@ a {
               flex: 0 1 32%; } }
 
 .tri-img-quote {
-  background: rgba(100, 100, 100, 0.5);
+  background: rgba(0, 0, 0, 0.5);
   bottom: 0;
   color: #fff;
   margin-bottom: 1rem;
@@ -1044,35 +1048,51 @@ a {
 
 /* Full Width Hero Image */
 .page-hero {
-  height: 400px;
+  height: 232px;
   overflow: hidden;
   position: relative; }
   .page-hero img {
     top: 50%;
     left: 50%;
     position: absolute;
-    width: 100vw;
-    -webkit-transform: translate(-50%, -50%);
-            transform: translate(-50%, -50%); }
+    width: 100%;
+    height: auto;
+    -webkit-transform: translate(-50%, -50%) scale(1.2);
+            transform: translate(-50%, -50%) scale(1.2); }
+    @media (min-width: 700px) {
+      .page-hero img {
+        width: 100%;
+        height: auto;
+        -webkit-transform: translate(-50%, -50%) scale(1);
+                transform: translate(-50%, -50%) scale(1); } }
   @media (min-width: 900px) {
     .page-hero {
       height: 500px; } }
 
 .hero-quote {
+  background-color: rgba(0, 0, 0, 0.5);
   color: #fff;
-  font-size: 1.15rem;
-  max-width: 50%;
-  padding-left: 2rem;
+  font-size: 1rem;
+  max-width: 60%;
+  margin-left: 1rem;
+  padding: 0 1rem;
   position: absolute;
   text-align: left;
   top: 50%;
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%); }
+  @media (min-width: 700px) {
+    .hero-quote {
+      left: auto;
+      margin-left: 2rem;
+      top: 2rem;
+      -webkit-transform: translateY(0%);
+              transform: translateY(0%); } }
   @media (min-width: 900px) {
     .hero-quote {
-      font-size: 2rem;
-      max-width: 45%;
-      padding-left: 5rem; } }
+      font-size: 1.75rem;
+      padding: 0 2rem;
+      max-width: 40%; } }
 
 /*--------------------------------------------------------------
 # Media
@@ -1168,10 +1188,14 @@ object {
         font-size: 2.15rem;
         height: 168px; } }
 
+.flickity-slider .hero-quote {
+  left: 0; }
+
 .hero-carousel .hero-carousel-cell {
   position: relative;
   width: 100vw;
-  height: 14.5rem; }
+  height: 14.5rem;
+  padding: 1rem 0; }
   @media (min-width: 900px) {
     .hero-carousel .hero-carousel-cell {
       height: 70vh; } }
@@ -1928,34 +1952,46 @@ ul {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  -webkit-flex-flow: row wrap;
-      -ms-flex-flow: row wrap;
-          flex-flow: row wrap;
+  -webkit-flex-flow: column;
+      -ms-flex-flow: column;
+          flex-flow: column;
   -webkit-align-items: center;
       -ms-flex-align: center;
           align-items: center; }
+  @media (min-width: 700px) {
+    .give-flex .container {
+      -webkit-flex-flow: row;
+          -ms-flex-flow: row;
+              flex-flow: row; } }
 
 .give-flex .donate-icon {
-  -webkit-flex: 0 1 10%;
-      -ms-flex: 0 1 10%;
-          flex: 0 1 10%;
   border-radius: 50%;
   border: 1px solid black;
-  padding: 1rem; }
+  position: relative;
+  min-height: 100px;
+  min-width: 100px;
+  overflow: hidden; }
+  @media (min-width: 700px) {
+    .give-flex .donate-icon {
+      -webkit-flex: 0 1 25%;
+          -ms-flex: 0 1 25%;
+              flex: 0 1 25%;
+      max-width: 100px;
+      max-height: 100px; } }
   .give-flex .donate-icon img {
-    width: 100px; }
+    position: absolute;
+    width: 70px;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%); }
 
-@media (min-width: 900px) {
-  .give-flex {
-    -webkit-flex-direction: row;
-        -ms-flex-direction: row;
-            flex-direction: row; } }
-
-.give-flex .donate-option-description {
-  -webkit-flex: 0 1 75%;
-      -ms-flex: 0 1 75%;
-          flex: 0 1 75%;
-  margin-left: 2rem; }
+@media (min-width: 700px) {
+  .give-flex .donate-option-description {
+    -webkit-flex: 0 1 75%;
+        -ms-flex: 0 1 75%;
+            flex: 0 1 75%;
+    margin-left: 2rem; } }
 
 @media (min-width: 900px) {
   .donate-option {

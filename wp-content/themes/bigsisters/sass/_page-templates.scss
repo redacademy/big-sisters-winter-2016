@@ -40,12 +40,17 @@
 
 
 //flickity slider styles
-
+.flickity-slider {
+  .hero-quote {
+    left: 0;
+  }
+}
 .hero-carousel {
   .hero-carousel-cell {
     position: relative;
     width: 100vw;
     height: 14.5rem;
+    padding: 1rem 0;
     @include desktop {
       height: 70vh;
     }
@@ -735,25 +740,38 @@ ul {
   }
   .container {
     display: flex;
-    flex-flow: row wrap;
+    flex-flow: column;
     align-items: center;
-
-  }
-  .donate-icon {
-    flex: 0 1 10%;
-    border-radius: 50%;
-    border: 1px solid black;
-    padding: 1rem;
-    img {
-      width: 100px;
+    @include tablet {
+      flex-flow: row;
     }
   }
-  @include desktop {
-    flex-direction: row;
+  .donate-icon {
+    border-radius: 50%;
+    border: 1px solid black;
+    //padding: .5rem;
+    position: relative;
+    min-height: 100px;
+    min-width: 100px;
+    overflow: hidden;
+    @include tablet {
+      flex: 0 1 25%;
+      max-width: 100px;
+      max-height: 100px;
+    }
+    img {
+      position: absolute;
+      width: 70px;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
   }
   .donate-option-description {
+    @include tablet {
     flex: 0 1 75%;
     margin-left: 2rem;
+  }
   }
 }
 

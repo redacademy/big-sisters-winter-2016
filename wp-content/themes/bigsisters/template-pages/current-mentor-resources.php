@@ -8,9 +8,15 @@ get_header(); ?>
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
 
-			<section class="mentor-hero">
-				<p class="little-sister-quote">We <span style="color: red">LOVE</span> our mentors and we're here to support them!</p>
+			<?php $fields = CFS()->get( 'hero_content' );
+			foreach ( $fields as $field ) : ?>
+			<section class="page-hero">
+				<img src="<?php echo $field['hero_image']; ?>" alt="Current Mentor Resource Hero Image" />
+					<div class="hero-quote">
+					<?php echo $field['hero_quote']; ?>
+				</div>
 			</section>
+			<?php endforeach; ?>
 
 			<section class="upcoming-events-section container">
 				<header class="cmr-header">
