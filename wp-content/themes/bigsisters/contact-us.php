@@ -41,7 +41,7 @@ get_header();?>
 									</div><!--phone-fax-email-->
 								</div><!--contact-info-->
 								<div class="location-photo">
-									<?php if( $photo_image_ID ): ?>
+									<?php if( isset($photo_image_URL_data['file']) ): ?>
 									<img src="<?php echo $upload_path . $photo_image_URL; ?>" alt="<?php echo get_post_meta($row['location_image'], '_wp_attachment_image_alt', true)?>" />
 								<?php else: ?>
 									<div></div>
