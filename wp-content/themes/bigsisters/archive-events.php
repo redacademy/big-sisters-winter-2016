@@ -1,9 +1,10 @@
 <?php
-/**
- * Template Name: Events Archive
+ /**
+ * The template for displaying archive pages.
+ *
  * @package Big_Sisters_Theme
- */
-get_header(); ?>
+*/
+ get_header(); ?>
 
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
