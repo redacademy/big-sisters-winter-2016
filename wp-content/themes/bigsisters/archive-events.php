@@ -1,7 +1,6 @@
 <?php
 /**
- * The template for displaying archive pages.
- *
+ * Template Name: Events Archive
  * @package Big_Sisters_Theme
  */
 get_header(); ?>
@@ -10,18 +9,17 @@ get_header(); ?>
 		<main id="main" class="site-main" role="main">
 
 		<div class="events">
-
 			<section class="premier-events container">
 				<?php if ( have_posts() ) : ?>
 
 					<header class="page-header-style">
 						<h1>Premier Events</h1>
 					</header><!-- .page-header -->
-
 					<?php /* Start the Loop */ ?>
 					<?php query_posts( array( 'events_tax' => 'premier', 'showposts' => 3 ) ); ?>
 					<ul>
 						<?php while ( have_posts() ) : the_post(); ?>
+
 							<li>
 									<?php if (has_post_thumbnail() ) : ?>
 										<div class="event-thumbnail">
@@ -69,6 +67,7 @@ get_header(); ?>
 									<a class="learn-more button-white" href="<?php the_permalink(); ?>">Learn More</a>
 								</div> <!-- .event-content -->
 							</li>
+
 						<?php endwhile; ?>
 					</ul>
 
@@ -85,24 +84,15 @@ get_header(); ?>
 					<a class="learn-more button-white"href="/bigsisters/host-a-fundraising-event/">Learn More</a>
 				</div>
 			</section>
-
-			<section class="to-donate-sponsor">
-				<h2>Want to sponsor or donate to an event?</h2>
-				<p>Please contact our manager of Corporate and Foundation giving</p>
-				<div class="donor-contact">
-					<div class="name-number-wrap">
-						<span>Fleur Cooper</span>
-						<span>604-873-4525 ext. 317</span>
-					</div> <!-- .name-number-up -->
-					<span>Fcooper@BigSisters.bc.ca</span>
-				</div> <!-- .donor-contact -->
-			</section>
-
+			<?php
+					$id = 608;
+					$post = get_post( $id );
+					?>
+				<?php get_template_part('template-pages/events-contact'); ?>
 			<hr>
 
 		</div> <!-- .events -->
 
 		</main><!-- #main -->
 	</div><!-- #primary -->
-
 <?php get_footer(); ?>
