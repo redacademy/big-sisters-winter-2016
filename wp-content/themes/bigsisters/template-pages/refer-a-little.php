@@ -38,8 +38,29 @@ get_header(); ?>
 			</section>
 
 			<div class="enroll-content">
-				<h2 class="enroll-title"><?php echo esc_html(CFS()->get( 'title_enroll' ) ); ?></h2>
+				<?php
+				$loop1 = CFS()->get('enrollment_steps');
+				foreach($loop1 as $row1) : ?>
+				<h2 class="enroll-title"><?php echo $row1['program_title']; ?></h2>
+				<?php
+				$loop2 = $row1['steps'];
+				$step_no = 1;
+				foreach($loop2 as $row2) : ?>
+				<div class="accordian-box container">
+					<div class="acr-box-div">
+						<div class="info-panel-content">
+							<p><span class="step-color">Step <?php echo $step_no; $step_no += 1 ?>:</span> <?php echo $row2['step_title']; ?></p>
+							<i class="fa fa-plus-circle"></i>
+						</div>
+						<div class="acr-box-content container">
+							<?php echo $row2['step_instructions'] ?>
+						</div>
+					</div>
+				</div>
+				<?php endforeach; ?>
+				<?php endforeach; ?>
 
+<?php /*
 				<div class="accordian-box">
 					<div class="acr-box-div container">
 						<div class="info-panel-content">
@@ -47,22 +68,7 @@ get_header(); ?>
 							<i class="fa fa-plus-circle"></i>
 						</div>
 						<div class="acr-box-content container">
-							<p>The Big Sisters Mentoring program matches girls, ages 7–17, with 
-								a role model and a friend to talk to and share the experience
-								of growing up. Through once a week outings, a relationship is
-								developed between the mentor and Little Sister, that is built
-								on trust and common interests and is supported by our
-								experienced case workers. The result is a life changing
-								experience for both the volunteer and the mentor.</p>
-
-								<p>Big Sisters strives to do the following:</p>
-								<ul>
-									<li>Provide a role model and friend for girls and young women (ages 7-17)</li>
-									<li>Promote the importance of staying in school and healthy relationships with family and peers</li>
-									<li>Instill trust and self-confidence in order to make healthy decisions</li>
-									<li>Encourage leadership skills and independent thinking</li>
-									<li>Above all, <b>make a difference</b> while <b>having fun</b></li>
-								</ul>
+							<p>The </p>
 							</div>
 						</div>
 					</div>
@@ -228,6 +234,7 @@ get_header(); ?>
 																			</div>
 																		</div>
 																	</div>
+																	*/ ?>
 
 
 																	<?php
@@ -238,7 +245,6 @@ get_header(); ?>
 																	?>
 
 																<?php endwhile; // End of the loop. ?>
-
 															</main><!-- #main -->
 														</div><!-- #primary -->
 
