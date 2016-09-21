@@ -5,8 +5,7 @@
 //get_header();?>
 
 <section class="to-donate-sponsor">
-  <h2>Want to sponsor or donate to an event?</h2>
-  <p>Please contact our manager of Corporate and Foundation giving</p>
+  <?php echo CFS()->get('introduction_text'); ?>
   <div class="donor-contact">
     <div class="name-number-wrap">
       <span><?php echo CFS()->get('contact_name'); ?></span>

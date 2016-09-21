@@ -6,18 +6,6 @@
 
 .events {
 
-  h1, h2 {
-    color: $color__purple-brand;
-    font-size: 1.5rem;
-    margin-bottom: 2rem;
-    text-align: center;
-    line-height: 1.75rem;
-
-    @include desktop {
-      font-size: 2.5rem;
-    }
-  }
-
   ul {
     padding: 0;
     margin: 0;
@@ -49,7 +37,21 @@
   }
 
 }
+.to-donate-sponsor {
 
+
+    h1, h2 {
+      color: $color__purple-brand;
+      font-size: 1.5rem;
+      margin-bottom: 2rem;
+      text-align: center;
+      line-height: 1.75rem;
+
+      @include desktop {
+        font-size: 2.5rem;
+      }
+    }
+}
 .premier-events {
 
   ul {

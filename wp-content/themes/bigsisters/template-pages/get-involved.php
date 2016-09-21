@@ -63,7 +63,11 @@ get_header();?>
 		<section class="page-hero">
 		<?php $fields = CFS()->get( 'hero_content' );
 		foreach ( $fields as $field ) : ?>
-			<img src="<?php echo $field['hero_image']; ?>" alt="Read more Big Sisters Success Stories" />
+		<?php if ( $field['hero_image_link'] ) : ?>
+		<a href="<?php echo $field['hero_image_link']; ?>"><img src="<?php echo $field['hero_image']; ?>" alt="Get Involved Hero Image" /></a>
+	<?php else: ?>
+		<img src="<?php echo $field['hero_image']; ?>" alt="Get Involved Hero Image" />
+	<?php endif; ?>
 			<div class="hero-quote">
 				<?php echo $field['hero_quote']; ?>
 			</div>

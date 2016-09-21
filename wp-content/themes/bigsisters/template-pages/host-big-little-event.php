@@ -10,7 +10,11 @@ get_header(); ?>
 			<?php $fields = CFS()->get( 'hero_content' );
 			foreach ( $fields as $field ) : ?>
 			<section class="page-hero">
+				<?php if ( $field['hero_image_link'] ) : ?>
+				<a href="<?php echo $field['hero_image_link']; ?>"><img src="<?php echo $field['hero_image']; ?>" alt="Host a big little event hero image" /></a>
+			<?php else: ?>
 				<img src="<?php echo $field['hero_image']; ?>" alt="Host a big little event hero image" />
+			<?php endif; ?>
 				<div class="hero-quote">
 					<?php echo $field['hero_quote']; ?>
 				</div>
@@ -24,7 +28,7 @@ get_header(); ?>
                 <div class="accordian-box container">
                     <div class="acr-box-div">
                         <div class="info-panel-content">
-                            <p><span class="fe-step-color">Step 1.</span> General information</p>
+                            <p><span class="fe-step-color">Step 1.</span> <?php echo CFS()->get('step_1_title'); ?></p>
                             <i class="fa fa-plus-circle"></i>
                         </div>
                         <div class="acr-box-content container">
@@ -35,7 +39,7 @@ get_header(); ?>
 				<div class="accordian-box container">
                     <div class="acr-box-div">
                         <div class="info-panel-content">
-                            <p><span class="fe-step-color">Step 2.</span> Complete application</p>
+                            <p><span class="fe-step-color">Step 2.</span> <?php echo CFS()->get('step_2_title'); ?></p>
                             <i class="fa fa-plus-circle"></i>
                         </div>
                         <div class="acr-box-content container">
@@ -46,7 +50,7 @@ get_header(); ?>
 				<div class="accordian-box container">
                     <div class="acr-box-div">
                         <div class="info-panel-content">
-                            <p><span class="fe-step-color">Step 3.</span> Receive approval and start planning</p>
+                            <p><span class="fe-step-color">Step 3.</span> <?php echo CFS()->get('step_3_title'); ?></p>
                             <i class="fa fa-plus-circle"></i>
                         </div>
                         <div class="acr-box-content container">
@@ -57,7 +61,7 @@ get_header(); ?>
 				<div class="accordian-box container">
                     <div class="acr-box-div">
                         <div class="info-panel-content">
-                            <p><span class="fe-step-color">Step 4.</span> Hold your event and have fun!</p>
+                            <p><span class="fe-step-color">Step 4.</span> <?php echo CFS()->get('step_4_title'); ?></p>
                             <i class="fa fa-plus-circle"></i>
                         </div>
                         <div class="acr-box-content container">

@@ -36,7 +36,7 @@ get_header();?>
 			<div class="accordian-box">
 				<div class="acr-box-div">
 					<div class="info-panel-content">
-						<p><span class="step-color">Step 1.</span> General Information</p>
+						<p><span class="step-color">Step 1.</span> <?php echo CFS()->get('step_1_title'); ?></p>
 						<i class="fa fa-plus-circle"></i>
 					</div>
 					<div class="acr-box-content container">
@@ -50,7 +50,7 @@ get_header();?>
 			<div class="accordian-box">
 				<div class="acr-box-div">
 					<div class="info-panel-content">
-						<p><span class="step-color">Step 2.</span> Requirements</p>
+						<p><span class="step-color">Step 2.</span> <?php echo CFS()->get('step_2_title'); ?></p>
 						<i class="fa fa-plus-circle"></i>
 					</div>
 					<div class="acr-box-content container">
@@ -64,7 +64,7 @@ get_header();?>
 			<div class="accordian-box">
 				<div class="acr-box-div">
 					<div class="info-panel-content">
-						<p><span class="step-color">Step 3.</span> Apply Now!</p>
+						<p><span class="step-color">Step 3.</span> <?php echo CFS()->get('step_3_title'); ?></p>
 						<i class="fa fa-plus-circle"></i>
 					</div>
 					<div class="acr-box-content container">
@@ -78,7 +78,7 @@ get_header();?>
 			<div class="accordian-box">
 				<div class="acr-box-div">
 					<div class="info-panel-content">
-						<p><span class="step-color">Step 4.</span> Next Steps</p>
+						<p><span class="step-color">Step 4.</span> <?php echo CFS()->get('step_4_title'); ?></p>
 						<i class="fa fa-plus-circle"></i>
 					</div>
 					<div class="acr-box-content container">

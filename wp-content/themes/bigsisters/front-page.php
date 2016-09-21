@@ -13,9 +13,14 @@ $directory = get_template_directory_uri();
 				<?php $fields = CFS()->get( 'hero_content' );
 				foreach ( $fields as $field ) : ?>
 				<li class="hero-carousel-cell page-hero">
+					<?php if ( $field['hero_image_link'] ) : ?>
+					<a href="<?php echo $field['hero_image_link']; ?>"><img src="<?php echo $field['hero_image']; ?>" alt="Big Sisters Feature Story" /></a>
+				<?php else: ?>
 					<img src="<?php echo $field['hero_image']; ?>" alt="Big Sisters Feature Story" />
+				<?php endif; ?>
+
 					<div class="container">
-					<div class="hero-quote"><!-- fp-quote"-->
+					<div class="hero-quote">
 						<?php echo $field['hero_quote']; ?>
 					</div>
 				</div>

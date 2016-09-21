@@ -71,8 +71,8 @@ if ( ! function_exists( 'big_sisters_setup' ) ) :
 		* Filter the stylesheet_uri to output the minified CSS file.
 		*/
 		function big_sisters_minified_css( $stylesheet_uri, $stylesheet_dir_uri ) {
-			if ( file_exists( get_template_directory() . '/build/css/style.min.css' ) ) {
-				$stylesheet_uri = $stylesheet_dir_uri . '/build/css/style.min.css';
+			if ( file_exists( get_template_directory() . '/build/css/style.css' ) ) {
+				$stylesheet_uri = $stylesheet_dir_uri . '/build/css/style.css';
 			}
 
 			return $stylesheet_uri;

@@ -11,7 +11,11 @@ get_header(); ?>
 			<?php $fields = CFS()->get( 'hero_content' );
 			foreach ( $fields as $field ) : ?>
 			<section class="page-hero">
-				<img src="<?php echo $field['hero_image']; ?>" alt="Current Mentor Resource Hero Image" />
+				<?php if ( $field['hero_image_link'] ) : ?>
+				<a href="<?php echo $field['hero_image_link']; ?>"><img src="<?php echo $field['hero_image']; ?>" alt="Donation Hero Image" /></a>
+			<?php else: ?>
+				<img src="<?php echo $field['hero_image']; ?>" alt="Donation Hero Image" />
+			<?php endif; ?>
 					<div class="hero-quote">
 					<?php echo $field['hero_quote']; ?>
 			</div>
@@ -25,17 +29,11 @@ get_header(); ?>
 
 			<?php include_once(trailingslashit( get_template_directory() ).'inc/otherways.php'); ?>
 
-            <section class="to-donate-sponsor">
-                <h1>Want to sponsor or donate to an event?</h1>
-                <p>Please contact our manager of Corporate and Foundation giving</p>
-                <div class="donor-contact">
-					<div class="name-number-wrap">
-                    	<span><?php echo CFS()->get('donation_manager_name'); ?></span>
-                    	<span><?php echo CFS()->get('manager_phone'); ?></span>
-					</div>
-                    <span><?php echo CFS()->get('manager_email'); ?></span>
-                </div>
-            </section>
+			<?php
+					$id =  608;
+					$post = get_post( $id );
+					?>
+				<?php get_template_part('template-pages/events-contact'); ?>
 		</main><!-- #main -->
 	</div><!-- #primary -->
 
