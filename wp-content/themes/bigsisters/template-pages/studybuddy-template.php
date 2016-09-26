@@ -87,7 +87,7 @@ get_header();?>
 				</div>
 			</div>
 		</section>
-
+<!--
 		<section class="container">
 			<div class="sponsor-grid">
 				<h2>Founding Partner</h2>
@@ -133,7 +133,33 @@ get_header();?>
 		 </ul>
 	</div>
 	</section>
+-->
+			<?php
+			$upload_path = content_url() . '/uploads/';
+			$loop = CFS()->get('new_sponsor_section');
+			foreach($loop as $row) : ?>
+			<section class="container">
+				<div class="sponsor-grid">
 
+			<h2><?php echo $row['section_title']; ?></h2>
+			<ul>
+
+			<?php foreach($row['new_logos'] as $logos) : ?>
+				<?php $logo_image_ID = $logos['company_logo']; ?>
+				<?php $logo_image_ALT = get_post_meta($logo_image_ID, '_wp_attachment_image_alt', true); ?>
+				<?php $logo_image_URL_data = wp_get_attachment_metadata($logo_image_ID, true); ?>
+				<?php $logo_image_URL = $logo_image_URL_data['file']; ?>
+				<li>
+					<a href="<?php echo $logos['company_website']; ?>" target="_blank" >
+						<img src="<?php echo $upload_path . $logo_image_URL; ?>" alt="<?php echo get_post_meta($logos['sponsor_logo'], '_wp_attachment_image_alt', true)?>" />
+					</a>
+				</li>
+			<?php endforeach; ?>
+		</div>
+			</section>
+
+		<?php endforeach; ?>
+	</ul>
 	</main> <!-- #main -->
 </div> <!-- #primary -->
 

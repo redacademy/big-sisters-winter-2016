@@ -14,16 +14,16 @@ $directory = get_template_directory_uri();
 				foreach ( $fields as $field ) : ?>
 				<li class="hero-carousel-cell page-hero">
 					<?php if ( $field['hero_image_link'] ) : ?>
-					<a href="<?php echo $field['hero_image_link']; ?>"><img src="<?php echo $field['hero_image']; ?>" alt="Big Sisters Feature Story" /></a>
-				<?php else: ?>
-					<img src="<?php echo $field['hero_image']; ?>" alt="Big Sisters Feature Story" />
-				<?php endif; ?>
+						<a href="<?php echo $field['hero_image_link']; ?>"><img src="<?php echo $field['hero_image']; ?>" alt="Big Sisters Feature Story" /></a>
+					<?php else: ?>
+						<img src="<?php echo $field['hero_image']; ?>" alt="Big Sisters Feature Story" />
+					<?php endif; ?>
 
 					<div class="container">
-					<div class="hero-quote">
-						<?php echo $field['hero_quote']; ?>
+						<div class="hero-quote">
+							<?php echo $field['hero_quote']; ?>
+						</div>
 					</div>
-				</div>
 				</li>
 			<?php endforeach; ?>
 		</ul>
@@ -99,27 +99,27 @@ $directory = get_template_directory_uri();
 	</ul>
 </section>
 <section class="program-sponsors">
-	<h1>Special Thanks To Our Programming Sponsors</h1>
-	<ul>
-		<li class="sponsor-logo-wrap">
-			<a href="http://vancouver.ca/" target="_blank">
-				<img src="<?php echo $directory; ?>/assets/images/sponsors/cityofvancouver-logo.png"
-				alt="City of Vancouver Logo" />
-			</a>
-		</li>
-		<li class="sponsor-logo-wrap">
-			<a href="http://www.uwlm.ca/" target="_blank">
-				<img src="<?php echo $directory; ?>/assets/images/sponsors/unitedway-logo.png"
-				alt="United Way Vancouver Logo" />
-			</a>
-		</li>
-		<li class="sponsor-logo-wrap">
-			<a href="http://www2.gov.bc.ca/" target="_blank">
-				<img src="<?php echo $directory; ?>/assets/images/sponsors/britishcolumbia-logo.png"
-				alt="British Columbia Logo" />
-			</a>
-		</li>
-	</ul>
+		<?php
+		$upload_path = content_url() . '/uploads/';
+		$loop = CFS()->get('new_sponsor_section');
+		foreach($loop as $row) : ?>
+		<h1><?php echo $row['section_title']; ?></h1>
+		<ul>
+
+		<?php foreach($row['new_logos'] as $logos) : ?>
+			<?php $logo_image_ID = $logos['company_logo']; ?>
+			<?php $logo_image_ALT = get_post_meta($logo_image_ID, '_wp_attachment_image_alt', true); ?>
+			<?php $logo_image_URL_data = wp_get_attachment_metadata($logo_image_ID, true); ?>
+			<?php $logo_image_URL = $logo_image_URL_data['file']; ?>
+			<li class="sponsor-logo-wrap">
+				<a href="<?php echo $logos['company_website']; ?>" target="_blank" >
+					<img src="<?php echo $upload_path . $logo_image_URL; ?>" alt="<?php echo get_post_meta($logos['sponsor_logo'], '_wp_attachment_image_alt', true)?>" />
+				</a>
+			</li>
+		<?php endforeach; ?>
+	<?php endforeach; ?>
+</ul>
+
 </section>
 </main><!-- #main -->
 </div><!-- #primary -->

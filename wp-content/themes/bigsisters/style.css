@@ -1193,12 +1193,7 @@ object {
 
 .hero-carousel .hero-carousel-cell {
   position: relative;
-  width: 100vw;
-  height: 14.5rem;
-  padding: 1rem 0; }
-  @media (min-width: 900px) {
-    .hero-carousel .hero-carousel-cell {
-      height: 70vh; } }
+  width: 100vw; }
 
 .hero-carousel .flickity-page-dots {
   position: absolute;
@@ -1729,13 +1724,18 @@ form {
     -webkit-align-items: center;
         -ms-flex-align: center;
             align-items: center; }
-    .sponsor-grid li img, .sponsor-grid ul li img {
-      width: 75%; }
     @media (min-width: 900px) {
       .sponsor-grid li, .sponsor-grid ul li {
+        padding: 0rem 1rem;
         -webkit-flex: 0 1 20%;
             -ms-flex: 0 1 20%;
                 flex: 0 1 20%; } }
+    .sponsor-grid li img, .sponsor-grid ul li img {
+      width: 75%; }
+      @media (min-width: 900px) {
+        .sponsor-grid li img, .sponsor-grid ul li img {
+          width: 100%;
+          max-width: 100%; } }
   .sponsor-grid ul, .sponsor-grid ul ul {
     list-style: none;
     padding: 0;

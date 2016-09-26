@@ -258,7 +258,7 @@ function events_post_type() {
 		'label'                 => 'Event',
 		'description'           => 'Big Sisters Events',
 		'labels'                => $labels,
-		'supports'              => array( 'title', 'editor', 'thumbnail', ),
+		'supports'              => array( 'title', 'editor', 'thumbnail', 'excerpt',),
 		'hierarchical'          => false,
 		'public'                => true,
 		'show_ui'               => true,
