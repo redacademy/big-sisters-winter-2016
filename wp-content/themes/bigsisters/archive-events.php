@@ -69,13 +69,12 @@ get_header(); ?>
           <?php get_template_part( 'template-parts/content', 'none' ); ?>
         <?php endif; ?>
       </section> <!-- .partner-events -->
-
+<?php /*
       <section class="premier-events container">
           <header class="page-header-style">
             <h1>Third Party Events</h1>
           </header><!-- .page-header -->
           <?php if ( have_posts() ) : ?>
-          <?php /* Start the Loop */ ?>
           <ul>
             <?php query_posts( array( 'events_tax' => 'third-party', 'showposts' => 3 ) ); ?>
             <?php while ( have_posts() ) : the_post(); ?>
@@ -100,12 +99,10 @@ get_header(); ?>
         <?php endif; ?>
       </section> <!-- .premier-events -->
 
-
       <section class="premier-events container">
         <header class="page-header-style">
           <h1>Past Events</h1>
         </header><!-- .page-header -->
-          <?php /* Start the Loop */ ?>
           <?php if ( have_posts() ) : ?>
           <ul>
               <?php $i = 1; while (have_posts() && $i < 7) : the_post(); ?>
@@ -127,7 +124,7 @@ get_header(); ?>
           </ul>
         <?php endif; ?>
       </section> <!-- .partner-events -->
-
+*/ ?>
       <section class="host-fundraiser-event">
         <div class="container">
           <h2>Want to host a fundraiser or event?</h2>
